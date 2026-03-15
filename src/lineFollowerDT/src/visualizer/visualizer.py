@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Client 2 — Visualizer/Logger for Line-Following Robot (headless-safe).
+"""Client 2 — Visualizer/Logger for Line-Following Robot.
 
 Observes all CAN signals, logs time-series data, computes KPIs
-(overshoot, settling time, steady-state error), and saves CSV + PNG
-results after the simulation ends.
+(overshoot, settling time, steady-state error), saves CSV + PNG
+results after the simulation ends, and shows a real-time PyQtGraph
+dashboard during the run.
 """
 from __future__ import print_function
 import struct
@@ -22,6 +23,10 @@ sys.path.append(PythonGateways)
 
 import VsiCommonPythonApi as vsiCommonPythonApi
 import VsiCanPythonGateway as vsiCanPythonGateway
+
+src_vis_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, src_vis_dir)
+from realTimePlotter import RealTimePlotter
 
 
 class KPILogger:
@@ -146,6 +151,7 @@ class Visualizer:
         self.mySignals = MySignals()
         self.kpi_logger = KPILogger()
         self.output_tag = args.output_tag
+        self.plotter = RealTimePlotter(buffer_size=2000, update_frequency=5)
 
     def mainThread(self):
         dSession = vsiCommonPythonApi.connectToServer(
@@ -182,6 +188,11 @@ class Visualizer:
                 self.kpi_logger.log(t_sec, e_lat, s.x_robot, s.y_robot,
                                     s.x_path, s.y_path, s.v_cmd, s.omega_cmd)
 
+                self.plotter.update_data(
+                    t_sec, s.x_robot, s.y_robot, s.theta_robot,
+                    s.x_path, s.y_path, s.theta_path,
+                    s.v_cmd, s.omega_cmd, e_lat)
+
                 print(f"\n+=visualizer+=  t={t_sec:.3f}s  e_lat={e_lat:.6f}")
 
                 self.updateInternalVariables()
@@ -206,6 +217,8 @@ class Visualizer:
                 print(f"Error: {e}")
         except:
             vsiCommonPythonApi.advanceSimulation(self.simulationStep + 1)
+
+        self.plotter.close()
 
         # Save results after simulation ends
         base = f"../../results/{self.output_tag}"

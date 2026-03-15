@@ -114,10 +114,10 @@ class Controller:
 
                 # --- Send velocity commands on CAN ---
                 packed_v = self.packBytes('d', v_cmd)
-                vsiCanPythonGateway.sendVariableOnCanPacket(packed_v, 0, 64, 10)
+                self.sendCanVariable(packed_v, 0, 64, 10)
 
                 packed_w = self.packBytes('d', omega_cmd)
-                vsiCanPythonGateway.sendVariableOnCanPacket(packed_w, 0, 64, 11)
+                self.sendCanVariable(packed_w, 0, 64, 11)
 
                 print(f"\n+=controller+=")
                 print(f"  VSI time: {vsiCommonPythonApi.getSimulationTimeInNs()} ns")
@@ -145,6 +145,11 @@ class Controller:
                 print(f"Error: {e}")
         except:
             vsiCommonPythonApi.advanceSimulation(self.simulationStep + 1)
+
+    def sendCanVariable(self, packed_data, start_bit, bit_size, can_id):
+        vsiCanPythonGateway.setCanId(can_id)
+        vsiCanPythonGateway.setCanPayloadBits(packed_data, start_bit, bit_size)
+        vsiCanPythonGateway.sendCanPacket()
 
     def packBytes(self, signalType, signal):
         return struct.pack(f'={signalType}', signal)

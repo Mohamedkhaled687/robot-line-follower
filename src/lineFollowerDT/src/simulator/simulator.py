@@ -217,7 +217,7 @@ class Simulator:
                     (25, self.mySignals.theta_path),
                 ]:
                     packed = self.packBytes('d', value)
-                    vsiCanPythonGateway.sendVariableOnCanPacket(packed, 0, 64, can_id)
+                    self.sendCanVariable(packed, 0, 64, can_id)
 
                 print(f"\n+=simulator+=")
                 print(f"  VSI time: {vsiCommonPythonApi.getSimulationTimeInNs()} ns")
@@ -247,6 +247,11 @@ class Simulator:
                 print(f"Error: {e}")
         except:
             vsiCommonPythonApi.advanceSimulation(self.simulationStep + 1)
+
+    def sendCanVariable(self, packed_data, start_bit, bit_size, can_id):
+        vsiCanPythonGateway.setCanId(can_id)
+        vsiCanPythonGateway.setCanPayloadBits(packed_data, start_bit, bit_size)
+        vsiCanPythonGateway.sendCanPacket()
 
     def packBytes(self, signalType, signal):
         return struct.pack(f'={signalType}', signal)
