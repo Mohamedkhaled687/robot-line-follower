@@ -75,7 +75,7 @@ class Controller:
             kp=args.kp, ki=args.ki, kd=args.kd, dt=0.001
         )
 
-        self.converge_threshold = 0.02
+        self.converge_threshold = 0.03
         self.converge_hold_steps = 500
         self._converge_counter = 0
         self._converged = False
