@@ -220,10 +220,14 @@ class Visualizer:
 
         self.plotter.close()
 
-        # Save results after simulation ends
-        base = f"../../results/{self.output_tag}"
-        self.kpi_logger.save_csv(f"{base}.csv")
-        self.kpi_logger.save_plots(f"../../results/figures/{self.output_tag}")
+        # Save results to <project_root>/results/
+        # Script is at: <root>/src/lineFollowerDT/src/visualizer/visualizer.py
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.abspath(os.path.join(script_dir, '..', '..', '..', '..'))
+        results_dir = os.path.join(project_root, 'results')
+        figures_dir = os.path.join(results_dir, 'figures')
+        self.kpi_logger.save_csv(os.path.join(results_dir, f"{self.output_tag}.csv"))
+        self.kpi_logger.save_plots(os.path.join(figures_dir, self.output_tag))
         kpis = self.kpi_logger.compute_kpis()
         print("\n" + "=" * 50)
         print(f"  KPI RESULTS ({self.output_tag})")

@@ -75,6 +75,11 @@ class Controller:
             kp=args.kp, ki=args.ki, kd=args.kd, dt=0.001
         )
 
+        self.converge_threshold = 0.02
+        self.converge_hold_steps = 500
+        self._converge_counter = 0
+        self._converged = False
+
     def mainThread(self):
         dSession = vsiCommonPythonApi.connectToServer(
             self.localHost, self.domain, self.portNum, self.componentId)
@@ -106,8 +111,22 @@ class Controller:
                 e_lat = (-math.sin(s.theta_path) * (s.x_robot - s.x_path)
                          + math.cos(s.theta_path) * (s.y_robot - s.y_path))
 
-                omega_cmd = -self.pid.compute(e_lat)
-                v_cmd = self.v_const
+                if self._converged:
+                    v_cmd = 0.0
+                    omega_cmd = 0.0
+                else:
+                    omega_cmd = -self.pid.compute(e_lat)
+                    v_cmd = self.v_const
+
+                    if abs(e_lat) < self.converge_threshold:
+                        self._converge_counter += 1
+                    else:
+                        self._converge_counter = 0
+
+                    if self._converge_counter >= self.converge_hold_steps:
+                        self._converged = True
+                        self.pid.reset()
+                        print("\n*** CONVERGED — robot reached the path, stopping. ***\n")
 
                 self.mySignals.v_cmd = v_cmd
                 self.mySignals.omega_cmd = omega_cmd
