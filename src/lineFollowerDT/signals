@@ -1,0 +1,56 @@
+-N
+0 simulator 1
+v_cmd double i 0
+omega_cmd double i 0
+x_robot double o 0
+y_robot double o 0
+theta_robot double o 0
+x_path double o 0
+y_path double o 0
+theta_path double o 0
+-N
+1 controller 1
+v_cmd double o 0
+omega_cmd double o 0
+x_robot double i 0
+y_robot double i 0
+theta_robot double i 0
+x_path double i 0
+y_path double i 0
+theta_path double i 0
+-N
+2 visualizer 1
+v_cmd double i 0
+omega_cmd double i 0
+x_robot double i 0
+y_robot double i 0
+theta_robot double i 0
+x_path double i 0
+y_path double i 0
+theta_path double i 0
+-CAN
+10 0 i [v_cmd:0:64]
+11 0 i [omega_cmd:0:64]
+20 0 o [x_robot:0:64]
+21 0 o [y_robot:0:64]
+22 0 o [theta_robot:0:64]
+23 0 o [x_path:0:64]
+24 0 o [y_path:0:64]
+25 0 o [theta_path:0:64]
+10 1 o [v_cmd:0:64]
+11 1 o [omega_cmd:0:64]
+20 1 i [x_robot:0:64]
+21 1 i [y_robot:0:64]
+22 1 i [theta_robot:0:64]
+23 1 i [x_path:0:64]
+24 1 i [y_path:0:64]
+25 1 i [theta_path:0:64]
+10 2 i [v_cmd:0:64]
+11 2 i [omega_cmd:0:64]
+20 2 i [x_robot:0:64]
+21 2 i [y_robot:0:64]
+22 2 i [theta_robot:0:64]
+23 2 i [x_path:0:64]
+24 2 i [y_path:0:64]
+25 2 i [theta_path:0:64]
+-END

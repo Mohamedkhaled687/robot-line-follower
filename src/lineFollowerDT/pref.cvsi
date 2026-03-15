@@ -1,0 +1,2 @@
+@tcl set VSI_step 1000000
+@tcl set VSI_totSim 30000000000

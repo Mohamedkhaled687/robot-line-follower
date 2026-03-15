@@ -1,0 +1,300 @@
+Script started on 2026-03-15 19:58:01+00:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot_line_follower/src/lineFollowerDT'
+././FabricServer\
+	--domain=AF_UNIX --cmdFile=
+
+        SystemC 2.3.4-Accellera --- Feb 12 2024 19:17:52
+        Copyright (c) 1996-2022 by all Contributors,
+        ALL RIGHTS RESERVED
+=+= VSI-DB-INFO: Ending Parser
+=+= VSI-SIMCTRL-INFO: Setting step size = 1000000
++=+ XLVIP-INFO: XlSyscTlmResetServer::connect() conduitName=:resetServerConduit0 index=0 calling uvmc_connect<>() ...
+Connecting an SC-side proxy port for 'fabricServer.resetServer.simple_target_socket_0' with lookup string ':resetServerConduit0' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit0_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit0_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0x1a491930
+Connecting an SC-side proxy port for 'fabricServer.timeServer.advanceTargetSocket' with lookup string ':timeServerConduit0' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit0_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit0_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy chan for 'fabricServer.canTlmBus.tlm_base_initiator_socket_0' with lookup string ':rxCanFrameConduit0' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.:rxCanFrameConduit0. Latter declaration will be renamed to fabricServer.:rxCanFrameConduit0_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.:rxCanFrameConduit0. Latter declaration will be renamed to fabricServer.:rxCanFrameConduit0_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy port for 'fabricServer.canTlmBus.simple_target_socket_tagged_0' with lookup string ':txCanFrameConduit0' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txCanFrameConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:txCanFrameConduit0_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txCanFrameConduit0. Latter declaration will be renamed to fabricServer.uvmc_registry.:txCanFrameConduit0_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy chan for 'fabricServer.vsiSimCtrl.txPort0' with lookup string ':rxConfigPort0' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.:rxConfigPort0. Latter declaration will be renamed to fabricServer.:rxConfigPort0_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.:rxConfigPort0. Latter declaration will be renamed to fabricServer.:rxConfigPort0_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy port for 'fabricServer.vsiSimCtrl.rxPort0' with lookup string ':txConfigPort0' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txConfigPort0. Latter declaration will be renamed to fabricServer.uvmc_registry.:txConfigPort0_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txConfigPort0. Latter declaration will be renamed to fabricServer.uvmc_registry.:txConfigPort0_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
++=+ XLVIP-INFO: XlSyscTlmResetServer::connect() conduitName=:resetServerConduit1 index=1 calling uvmc_connect<>() ...
+Connecting an SC-side proxy port for 'fabricServer.resetServer.simple_target_socket_1' with lookup string ':resetServerConduit1' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit1_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit1_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0x1a4a9d40
+Connecting an SC-side proxy port for 'fabricServer.imeServer.advanceTargetSocket' with lookup string ':timeServerConduit1' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit1_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit1_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy chan for 'fabricServer.canTlmBus.tlm_base_initiator_socket_1' with lookup string ':rxCanFrameConduit1' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.:rxCanFrameConduit1. Latter declaration will be renamed to fabricServer.:rxCanFrameConduit1_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.:rxCanFrameConduit1. Latter declaration will be renamed to fabricServer.:rxCanFrameConduit1_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy port for 'fabricServer.canTlmBus.simple_target_socket_tagged_1' with lookup string ':txCanFrameConduit1' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txCanFrameConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:txCanFrameConduit1_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txCanFrameConduit1. Latter declaration will be renamed to fabricServer.uvmc_registry.:txCanFrameConduit1_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy chan for 'fabricServer.vsiSimCtrl.txPort1' with lookup string ':rxConfigPort1' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.:rxConfigPort1. Latter declaration will be renamed to fabricServer.:rxConfigPort1_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.:rxConfigPort1. Latter declaration will be renamed to fabricServer.:rxConfigPort1_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy port for 'fabricServer.vsiSimCtrl.rxPort1' with lookup string ':txConfigPort1' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txConfigPort1. Latter declaration will be renamed to fabricServer.uvmc_registry.:txConfigPort1_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txConfigPort1. Latter declaration will be renamed to fabricServer.uvmc_registry.:txConfigPort1_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
++=+ XLVIP-INFO: XlSyscTlmResetServer::connect() conduitName=:resetServerConduit2 index=2 calling uvmc_connect<>() ...
+Connecting an SC-side proxy port for 'fabricServer.resetServer.simple_target_socket_2' with lookup string ':resetServerConduit2' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit2_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:resetServerConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:resetServerConduit2_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+XLVIP-INFO: XlSyscTlmResetServer::connect() uvmc_connect<>() returnedProxy=0x1a4bff20
+Connecting an SC-side proxy port for 'fabricServer.meServer.advanceTargetSocket' with lookup string ':timeServerConduit2' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit2_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:timeServerConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:timeServerConduit2_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy chan for 'fabricServer.canTlmBus.tlm_base_initiator_socket_2' with lookup string ':rxCanFrameConduit2' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.:rxCanFrameConduit2. Latter declaration will be renamed to fabricServer.:rxCanFrameConduit2_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.:rxCanFrameConduit2. Latter declaration will be renamed to fabricServer.:rxCanFrameConduit2_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy port for 'fabricServer.canTlmBus.simple_target_socket_tagged_2' with lookup string ':txCanFrameConduit2' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txCanFrameConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:txCanFrameConduit2_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txCanFrameConduit2. Latter declaration will be renamed to fabricServer.uvmc_registry.:txCanFrameConduit2_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy chan for 'fabricServer.vsiSimCtrl.txPort2' with lookup string ':rxConfigPort2' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.:rxConfigPort2. Latter declaration will be renamed to fabricServer.:rxConfigPort2_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.:rxConfigPort2. Latter declaration will be renamed to fabricServer.:rxConfigPort2_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+Connecting an SC-side proxy port for 'fabricServer.vsiSimCtrl.rxPort2' with lookup string ':txConfigPort2' for later connection with SV
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txConfigPort2. Latter declaration will be renamed to fabricServer.uvmc_registry.:txConfigPort2_0
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
+
+Warning: (W505) object already exists: fabricServer.uvmc_registry.:txConfigPort2. Latter declaration will be renamed to fabricServer.uvmc_registry.:txConfigPort2_1
+In file: ../../../src/sysc/kernel/sc_object_manager.cpp:153
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToClient():
++=+    Listening for client ':remoteSession0' domain=AF_UNIX portNum=50101 ...
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToClient():
++=+    Listening for client ':remoteSession1' domain=AF_UNIX portNum=50102 ...
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToClient():
++=+    Listening for client ':remoteSession2' domain=AF_UNIX portNum=50103 ...
++=+ XLVIP-INFO: XlTlmMessageLayer::listenForAllClients() Server 'localhost' listening for clients ...
++=+ INFO: FabricServer::start_of_simulation() Waiting for client connections ...
+@0 ns (SC time) +=+ INFO: Awaiting reset ...
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections():
++=+    Successfully connected to client ':remoteSession0@0.0.0.0'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections():
++=+    Successfully connected to client ':remoteSession1@0.0.0.0'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections():
++=+    Successfully connected to client ':remoteSession2@0.0.0.0'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: FabricServer: Using SALT library path: /data/tools/pave/innexis_home/vsi_2025.2//common/license/salt_2.4.2/salt_sdk/lnx64/bin
++=+ XLVIP-INFO: FabricServer: Package info file is: /data/tools/pave/innexis_home/vsi_2025.2//common/license/salt_2.4.2/salt_sdk/lnx64/bin/mgc.pkginfo
++=+ XLVIP-INFO: FabricServer: Attempting to checkout license 'VeloceStratoOS' : Checked out license.
+
+Info: XLVIP-INFO: TLM fabric backplane license checkout successful.
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:timeServerConduit0
+           remoteClientConduitHandle=0x618e160b6448
+           localServerProxyConduit=0x1a498370
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:resetServerConduit0
+           remoteClientConduitHandle=0x618e1611ea88
+           localServerProxyConduit=0x1a494470
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txConfigPort0
+           remoteClientConduitHandle=0x618e16397580
+           localServerProxyConduit=0x1a4a7c60
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxConfigPort0
+           remoteClientConduitHandle=0x618e16399420
+           localServerProxyConduit=0x1a4a3870
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txCanFrameConduit0
+           remoteClientConduitHandle=0x618e163996b0
+           localServerProxyConduit=0x1a49ce00
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxCanFrameConduit0
+           remoteClientConduitHandle=0x618e1639c1e0
+           localServerProxyConduit=0x1a49bb60
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:timeServerConduit1
+           remoteClientConduitHandle=0x6310769a39a8
+           localServerProxyConduit=0x1a4af910
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:resetServerConduit1
+           remoteClientConduitHandle=0x631076c6a5f8
+           localServerProxyConduit=0x1a4abb20
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txConfigPort1
+           remoteClientConduitHandle=0x631076ae5d80
+           localServerProxyConduit=0x1a4be290
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxConfigPort1
+           remoteClientConduitHandle=0x631076ae45d0
+           localServerProxyConduit=0x1a4ba690
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txCanFrameConduit1
+           remoteClientConduitHandle=0x631076ad1070
+           localServerProxyConduit=0x1a4b4130
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxCanFrameConduit1
+           remoteClientConduitHandle=0x631076b91190
+           localServerProxyConduit=0x1a4b2fc0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:timeServerConduit2
+           remoteClientConduitHandle=0x5a5cd1ae1778
+           localServerProxyConduit=0x1a4c56d0
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:resetServerConduit2
+           remoteClientConduitHandle=0x5a5cd1b8c4b8
+           localServerProxyConduit=0x1a4c1d00
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txConfigPort2
+           remoteClientConduitHandle=0x5a5cd188d930
+           localServerProxyConduit=0x1a4d4420
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxConfigPort2
+           remoteClientConduitHandle=0x5a5cd1ab2610
+           localServerProxyConduit=0x1a4d0820
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:txCanFrameConduit2
+           remoteClientConduitHandle=0x5a5cd1a4d750
+           localServerProxyConduit=0x1a4ca710
++=+ XLVIP-INFO: XlRemoteTlmConduit::ipcServiceLoop():
++=+    Received remote client ::connect() request:
+           clientUrl=0.0.0.0
++=+        conduitId=:rxCanFrameConduit2
+           remoteClientConduitHandle=0x5a5cd1afdd40
+           localServerProxyConduit=0x1a4c95a0
++=+ XLVIP-INFO: XlTlmMessageLayer::collectClientConnections(): Got all clients !
+@100 ns (SC time)+=+ INFO: ... got it!
+[0;34m
+//  Copyright Siemens 2022
+//  Innexis VSI Digital Twin Simulator
+//  This software and related documentation are proprietary
+//  and confidential to Siemens.
+//  release: v2025.2, Build: 04Jun2025
+
+[0;34m
+VSISim> step
+[0;34m
+VSISim> run 
+^C
+[0;34m
+VSISim> E-UHFO5aL/MCdnjbqUcCFeQlUbeXiN1mQI2w9j00ceRUEsvgfhJKQSUyYjirAp2EES3YShyJn6jOAzThg/m17ZE+ni+SkbV5R103qChZkWFrd6EI7I1+iPdCr4tIjyk8F01fxxSLLrTIzYyq/V7hEO/SiWmUzFiAwL0h1+LbHG04jjZyjWUB8pdyC1cLZeQz8s+3Rh39lS7MsJRr8uuRtKILPYkwEQgmhFgj/KohFH7EJ1by68uh9Iwr0XzpscEqt8IxBiNHZftCvb2HUEVYjU/y0/I4WiyPCVnfqmi0UdQP+hH0Z+jZ8+3SaTaf+rHZltORE98F/N2vhRxaTSpR32/jdft7yQrJE+vIJ2JDuMtmDxVWSmUCYj9PCmJGvFffE7dIlZcvb8K/hbaazCFNI9oWKPSiJYmck+ukDOWogKtyXsQEkcpiwakR0vgnwJTuOSR76wPCLZRmYW1VkxtJVYwKOoSv4K6Im8Yxc48xtkK5Ah+niDUJFEm3tCcrDdNsvzxK7YwvMb6Y2X44PA270v2tmtmnARFSD3MiZ5nO/SyaaIc6rFrJmrcw+rvMJ8QSdzm6VAfp2dJ8voZeOrMZidGtoMKU8Z+L99EwnghXbnwko3CQ37hKzbvGTJlISFzjAcPW4w6xXk5jgqW4i3a1OA4LwBriIqSoxNzRti4FqZPH4LfNCqtoUa4a5+/CDoe1y9/ifYUvrA+BVmhzEATr9lrIrr7qjMorIgvpgLAMUo/ae2t0TJgPkxbZOKHZa8tY2CjfJL6OZM6BpPz/yDm0OB136RjHPD4po9bac4irtGEM8s1U6lQe8PuJUk7PYSmwU=-F
+=+= VSI-SIMCTRL-ERROR: Failed to read from VsiSimInputParser
+make[1]: *** [Makefile.server:77: sim] Killed

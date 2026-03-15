@@ -1,0 +1,54 @@
+Script started on 2026-03-15 19:58:01+00:00 [TERM="xterm" TTY="/dev/pts/4" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot_line_follower/src/lineFollowerDT'
+python3 .//src/simulator/simulator.py --domain="AF_UNIX" --server-url="localhost" --path-type="straight" --spawn-offset=0.3 --noise-x=0.0 --noise-y=0.0 --noise-theta=0.0
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
++=+    Connecting clientId=':remoteSession0' to 'server@localhost' ...
++=+    Successfully connected 'client :remoteSession0' to 'server@localhost'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:timeServerConduit0
+           localClientConduitHandle=0x618e160b6448
+           remoteServerProxyConduitHandle=0x1a498370
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:resetServerConduit0
+           localClientConduitHandle=0x618e1611ea88
+           remoteServerProxyConduitHandle=0x1a494470
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:txConfigPort0
+           localClientConduitHandle=0x618e16397580
+           remoteServerProxyConduitHandle=0x1a4a7c60
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:rxConfigPort0
+           localClientConduitHandle=0x618e16399420
+           remoteServerProxyConduitHandle=0x1a4a3870
++=+ INFO: ... successfully connected to TLM FabricServer !
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:txCanFrameConduit0
+           localClientConduitHandle=0x618e163996b0
+           remoteServerProxyConduitHandle=0x1a49ce00
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession0
++=+        conduitId=:rxCanFrameConduit0
+           localClientConduitHandle=0x618e1639c1e0
+           remoteServerProxyConduitHandle=0x1a49bb60
+Error: module 'VsiCanPythonGateway' has no attribute 'sendVariableOnCanPacket'
++=+ XLVIP-INFO: XlTlmMessageLayer::disconnectFromServer():
++=+    Disconnecting this remote client from TLM fabric server:
++=+        clientId=:remoteSession0
+make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot_line_follower/src/lineFollowerDT'
+
+Script done on 2026-03-15 19:58:13+00:00 [COMMAND_EXIT_CODE="0"]

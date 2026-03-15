@@ -1,0 +1,67 @@
+# ============================================================
+#  Line-Following Robot — VSI Build Commands
+# ============================================================
+
+# --- Client 0: Simulator (Plant + Environment) ---
+add component -type Python -name simulator
+add port -componentName simulator -name simulator -gateway python2DtCan
+
+# --- Client 1: Controller (PID) ---
+add component -type Python -name controller
+add port -componentName controller -name controller -gateway python2DtCan
+
+# --- Client 2: Visualizer/Logger ---
+add component -type Python -name visualizer
+add port -componentName visualizer -name visualizer -gateway python2DtCan
+
+# --- Simulator signals ---
+define componentSignals -componentName simulator -signals "[v_cmd:double:input,omega_cmd:double:input,x_robot:double:output,y_robot:double:output,theta_robot:double:output,x_path:double:output,y_path:double:output,theta_path:double:output]"
+
+# --- Controller signals ---
+define componentSignals -componentName controller -signals "[v_cmd:double:output,omega_cmd:double:output,x_robot:double:input,y_robot:double:input,theta_robot:double:input,x_path:double:input,y_path:double:input,theta_path:double:input]"
+
+# --- Visualizer signals (all inputs - observes everything) ---
+define componentSignals -componentName visualizer -signals "[v_cmd:double:input,omega_cmd:double:input,x_robot:double:input,y_robot:double:input,theta_robot:double:input,x_path:double:input,y_path:double:input,theta_path:double:input]"
+
+# --- Controller -> Simulator: velocity commands ---
+define frame -componentName controller -portName controller -id 10 -signals [v_cmd:0:64]
+define frame -componentName simulator  -portName simulator  -id 10 -signals [v_cmd:0:64]
+define frame -componentName visualizer -portName visualizer -id 10 -signals [v_cmd:0:64]
+
+define frame -componentName controller -portName controller -id 11 -signals [omega_cmd:0:64]
+define frame -componentName simulator  -portName simulator  -id 11 -signals [omega_cmd:0:64]
+define frame -componentName visualizer -portName visualizer -id 11 -signals [omega_cmd:0:64]
+
+# --- Simulator -> Controller & Visualizer: robot state ---
+define frame -componentName simulator  -portName simulator  -id 20 -signals [x_robot:0:64]
+define frame -componentName controller -portName controller -id 20 -signals [x_robot:0:64]
+define frame -componentName visualizer -portName visualizer -id 20 -signals [x_robot:0:64]
+
+define frame -componentName simulator  -portName simulator  -id 21 -signals [y_robot:0:64]
+define frame -componentName controller -portName controller -id 21 -signals [y_robot:0:64]
+define frame -componentName visualizer -portName visualizer -id 21 -signals [y_robot:0:64]
+
+define frame -componentName simulator  -portName simulator  -id 22 -signals [theta_robot:0:64]
+define frame -componentName controller -portName controller -id 22 -signals [theta_robot:0:64]
+define frame -componentName visualizer -portName visualizer -id 22 -signals [theta_robot:0:64]
+
+define frame -componentName simulator  -portName simulator  -id 23 -signals [x_path:0:64]
+define frame -componentName controller -portName controller -id 23 -signals [x_path:0:64]
+define frame -componentName visualizer -portName visualizer -id 23 -signals [x_path:0:64]
+
+define frame -componentName simulator  -portName simulator  -id 24 -signals [y_path:0:64]
+define frame -componentName controller -portName controller -id 24 -signals [y_path:0:64]
+define frame -componentName visualizer -portName visualizer -id 24 -signals [y_path:0:64]
+
+define frame -componentName simulator  -portName simulator  -id 25 -signals [theta_path:0:64]
+define frame -componentName controller -portName controller -id 25 -signals [theta_path:0:64]
+define frame -componentName visualizer -portName visualizer -id 25 -signals [theta_path:0:64]
+
+# --- Simulation parameters ---
+set totalSimTime 30 s
+set simulationStep 0.001 s
+set workspaceDir .
+set digitalTwinName lineFollowerDT
+
+generate
+
