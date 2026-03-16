@@ -1,4 +1,4 @@
 KPI Results: E4_PID
-Overshoot:          0.175153 m
-Settling Time:      3.009 s
-Steady-State Error: 0.011490 m
+Overshoot:          0.079932 m
+Settling Time:      4.808 s
+Steady-State Error: 0.018360 m
