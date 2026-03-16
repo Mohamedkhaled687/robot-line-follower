@@ -1,0 +1,4 @@
+KPI Results: E3_HighNoise
+Overshoot:          0.147126 m
+Settling Time:      8.710 s
+Steady-State Error: 0.024676 m

@@ -1,0 +1,4 @@
+KPI Results: E1_C — Critical + Faster + Integral (kp=4.0, ki=0.1, kd=2.8, ζ=0.99)
+Overshoot:          0.004640 m
+Settling Time:      3.460 s
+Steady-State Error: 0.001808 m

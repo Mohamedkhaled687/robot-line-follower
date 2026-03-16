@@ -1,0 +1,4 @@
+KPI Results: E1_A(Underdamped)
+Overshoot:          0.015598 m
+Settling Time:      4.905 s
+Steady-State Error: 0.002086 m

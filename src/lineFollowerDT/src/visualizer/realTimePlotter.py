@@ -49,9 +49,11 @@ def _project_root() -> str:
 
 class RealTimePlotter:
 
-    def __init__(self, buffer_size: int = 2000, update_frequency: int = 5):
+    def __init__(self, buffer_size: int = 2000, update_frequency: int = 5,
+                 output_tag: str = "run_default"):
         self.buffer_size = buffer_size
         self.update_frequency = update_frequency
+        self.output_tag = output_tag
         self._update_counter = 0
 
         self.t_buf:          Deque[float] = deque(maxlen=buffer_size)
@@ -70,7 +72,7 @@ class RealTimePlotter:
 
         self._main_window = QtWidgets.QMainWindow()
         self._main_window.setWindowTitle(
-            "Line-Following Robot — Real-Time Dashboard")
+            f"Line-Following Robot — {self.output_tag}")
         self._main_window.resize(1300, 900)
 
         central = QtWidgets.QWidget()
@@ -87,9 +89,10 @@ class RealTimePlotter:
         lbl.setStyleSheet("font-weight: bold; font-size: 13px;")
         toolbar.addWidget(lbl)
 
-        self._tag_input = QtWidgets.QLineEdit("run_default")
+        self._tag_input = QtWidgets.QLineEdit(self.output_tag)
         self._tag_input.setFixedWidth(200)
         self._tag_input.setStyleSheet("font-size: 13px; padding: 4px;")
+        self._tag_input.textChanged.connect(self._on_tag_changed)
         toolbar.addWidget(self._tag_input)
 
         toolbar.addSpacing(16)
@@ -161,6 +164,14 @@ class RealTimePlotter:
 
         self._main_window.show()
         self._app.processEvents()
+
+    # ------------------------------------------------------------------
+    #  Tag synchronisation — keeps window title and self.output_tag in sync
+    # ------------------------------------------------------------------
+    def _on_tag_changed(self, text: str):
+        self.output_tag = text.strip() or "run_default"
+        self._main_window.setWindowTitle(
+            f"Line-Following Robot — {self.output_tag}")
 
     def update_data(self, t, x_robot, y_robot, theta_robot,
                     x_path, y_path, theta_path,

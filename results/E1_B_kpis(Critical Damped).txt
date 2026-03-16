@@ -1,0 +1,4 @@
+KPI Results: E1_B
+Overshoot:          0.005473 m
+Settling Time:      5.895 s
+Steady-State Error: 0.005012 m

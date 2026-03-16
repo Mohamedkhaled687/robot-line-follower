@@ -1,4 +1,0 @@
-KPI Results: run_default
-Overshoot:          0.237740 m
-Settling Time:      2.629 s
-Steady-State Error: 0.038411 m

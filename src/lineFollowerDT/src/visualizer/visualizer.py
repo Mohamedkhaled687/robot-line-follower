@@ -167,6 +167,9 @@ class Visualizer:
         self.mySignals = MySignals()
         self.kpi_logger = KPILogger()
         self.output_tag = args.output_tag
+        self._step_count = 0
+        self._print_every = 100
+
 
         self.pygame_vis = PygameVisualizer(
             width=800, height=600, update_frequency=10)
@@ -175,7 +178,8 @@ class Visualizer:
         if _HAS_PYQTGRAPH:
             try:
                 self.qt_plotter = RealTimePlotter(
-                    buffer_size=2000, update_frequency=5)
+                    buffer_size=2000, update_frequency=5,
+                    output_tag=self.output_tag)
             except Exception:
                 pass
 
@@ -195,6 +199,8 @@ class Visualizer:
                 self.updateInternalVariables()
                 if vsiCommonPythonApi.isStopRequested():
                     raise Exception("stopRequested")
+
+                self._step_count += 1
 
                 for can_id, attr in [
                     (10, 'v_cmd'), (11, 'omega_cmd'),
@@ -224,7 +230,8 @@ class Visualizer:
                         s.x_path, s.y_path, s.theta_path,
                         s.v_cmd, s.omega_cmd, e_lat)
 
-                print(f"\n+=visualizer+=  t={t_sec:.3f}s  e_lat={e_lat:.6f}")
+                if (self._step_count % self._print_every) == 0:
+                    print(f"\n+=visualizer+= step={self._step_count}  t={t_sec:.3f}s  e_lat={e_lat:.6f}")
 
                 self.updateInternalVariables()
                 if vsiCommonPythonApi.isStopRequested():

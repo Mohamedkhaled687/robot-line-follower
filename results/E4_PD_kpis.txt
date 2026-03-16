@@ -1,0 +1,4 @@
+KPI Results: E4_PD
+Overshoot:          0.037313 m
+Settling Time:      4.153 s
+Steady-State Error: 0.008942 m

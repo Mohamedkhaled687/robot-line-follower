@@ -1,0 +1,4 @@
+KPI Results: E1_D — Slightly Overdamped
+Overshoot:          0.003153 m
+Settling Time:      3.325 s
+Steady-State Error: 0.003153 m

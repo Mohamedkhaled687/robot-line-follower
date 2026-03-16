@@ -1,0 +1,4 @@
+KPI Results: E2_curved
+Overshoot:          0.008932 m
+Settling Time:      2.430 s
+Steady-State Error: 0.008932 m
