@@ -28,7 +28,7 @@ sim:
 
 # End of user custom code region. Please don't edit beyond this point.
 
-	python3 ./$(TB) --domain="AF_UNIX" --server-url="localhost" --path-type="straight" --spawn-offset=0.3 --noise-x=0.001 --noise-y=0.001 --noise-theta=0.005
+	python3 ./$(TB) --domain="AF_UNIX" --server-url="localhost" --path-type="straight" --spawn-offset=0.3 --noise-x=0.0 --noise-y=0.0 --noise-theta=0.
 #-----------------------------------------------------------------------------
 record: 
 	XL_TLM_ENABLE_IPC_RECORD=yes; export XL_TLM_ENABLE_IPC_RECORD;\

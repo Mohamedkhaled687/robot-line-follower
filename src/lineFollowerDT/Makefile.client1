@@ -28,7 +28,7 @@ sim:
 
 # End of user custom code region. Please don't edit beyond this point.
 
-	python3 ./$(TB) --domain="AF_UNIX" --server-url="localhost" --kp=3.0 --ki=0.1 --kd=2.8 --v-const=0.5
+	python3 ./$(TB) --domain="AF_UNIX" --server-url="localhost" --kp=4.0 --ki=0.1 --kd=2.8 --v-const=0.5
 #-----------------------------------------------------------------------------
 record: 
 	XL_TLM_ENABLE_IPC_RECORD=yes; export XL_TLM_ENABLE_IPC_RECORD;\
