@@ -10,6 +10,9 @@ implemented with PyQtGraph.  Shows:
   3) Velocity commands vs time                 — bottom-left
   4) Robot heading animation                   — bottom-right
 
+Includes a "Save Results" button that exports CSV + PNG plots
+to <project_root>/results/ and <project_root>/results/figures/.
+
 Public API:
 
     rtp = RealTimePlotter(buffer_size=2000, update_frequency=5)
@@ -20,6 +23,8 @@ Public API:
 """
 
 from __future__ import annotations
+import csv
+import os
 import sys
 from collections import deque
 from typing import Deque
@@ -27,14 +32,19 @@ from typing import Deque
 import numpy as np
 
 try:
-    from PyQt6 import QtWidgets, QtCore
+    from PyQt6 import QtWidgets, QtCore, QtGui
 except ModuleNotFoundError:
-    from PySide6 import QtWidgets, QtCore          # type: ignore
+    from PySide6 import QtWidgets, QtCore, QtGui          # type: ignore
 
 import pyqtgraph as pg
 
 pg.setConfigOption('background', 'w')
 pg.setConfigOption('foreground', 'k')
+
+
+def _project_root() -> str:
+    here = os.path.dirname(os.path.abspath(__file__))
+    return os.path.abspath(os.path.join(here, '..', '..', '..', '..'))
 
 
 class RealTimePlotter:
@@ -58,9 +68,50 @@ class RealTimePlotter:
                      or QtWidgets.QApplication(sys.argv))
         pg.setConfigOptions(antialias=True)
 
-        self.win = pg.GraphicsLayoutWidget(
-            title="Line-Following Robot — Real-Time Dashboard")
-        self.win.resize(1300, 850)
+        self._main_window = QtWidgets.QMainWindow()
+        self._main_window.setWindowTitle(
+            "Line-Following Robot — Real-Time Dashboard")
+        self._main_window.resize(1300, 900)
+
+        central = QtWidgets.QWidget()
+        layout = QtWidgets.QVBoxLayout(central)
+        layout.setContentsMargins(0, 0, 0, 0)
+
+        self.win = pg.GraphicsLayoutWidget()
+        layout.addWidget(self.win, stretch=1)
+
+        toolbar = QtWidgets.QHBoxLayout()
+        toolbar.setContentsMargins(8, 4, 8, 8)
+
+        lbl = QtWidgets.QLabel("Output tag:")
+        lbl.setStyleSheet("font-weight: bold; font-size: 13px;")
+        toolbar.addWidget(lbl)
+
+        self._tag_input = QtWidgets.QLineEdit("run_default")
+        self._tag_input.setFixedWidth(200)
+        self._tag_input.setStyleSheet("font-size: 13px; padding: 4px;")
+        toolbar.addWidget(self._tag_input)
+
+        toolbar.addSpacing(16)
+
+        self._save_btn = QtWidgets.QPushButton("  Save Results (CSV + Plots)  ")
+        self._save_btn.setStyleSheet(
+            "QPushButton { background-color: #2e7d32; color: white; "
+            "font-weight: bold; font-size: 13px; padding: 8px 16px; "
+            "border-radius: 4px; }"
+            "QPushButton:hover { background-color: #388e3c; }"
+            "QPushButton:pressed { background-color: #1b5e20; }")
+        self._save_btn.clicked.connect(self._on_save_clicked)
+        toolbar.addWidget(self._save_btn)
+
+        toolbar.addStretch()
+
+        self._status_label = QtWidgets.QLabel("")
+        self._status_label.setStyleSheet("font-size: 12px; color: #555;")
+        toolbar.addWidget(self._status_label)
+
+        layout.addLayout(toolbar)
+        self._main_window.setCentralWidget(central)
 
         # ---- 1) Trajectory (top-left) ----
         self.traj_plot = self.win.addPlot(title="Trajectory (XY)")
@@ -108,7 +159,7 @@ class RealTimePlotter:
         self.anim_path_dot = self.anim_plot.plot(
             pen=None, symbol='x', symbolBrush='g', symbolSize=10)
 
-        self.win.show()
+        self._main_window.show()
         self._app.processEvents()
 
     def update_data(self, t, x_robot, y_robot, theta_robot,
@@ -130,7 +181,7 @@ class RealTimePlotter:
             self._redraw()
 
     def close(self):
-        self.win.close()
+        self._main_window.close()
 
     def _to_np(self, dq):
         return np.fromiter(dq, dtype=float, count=len(dq))
@@ -145,20 +196,16 @@ class RealTimePlotter:
         vc  = self._to_np(self.v_cmd_buf)
         wc  = self._to_np(self.omega_cmd_buf)
 
-        # 1) Trajectory
         self.curve_robot.setData(xr, yr)
         self.curve_path.setData(xp, yp)
         if xr.size:
             self.robot_dot.setData([xr[-1]], [yr[-1]])
 
-        # 2) Lateral error
         self.curve_elat.setData(t, el)
 
-        # 3) Commands
         self.curve_v.setData(t, vc)
         self.curve_omega.setData(t, wc)
 
-        # 4) Robot heading animation (zoomed view around current position)
         if xr.size:
             x, y = xr[-1], yr[-1]
             theta = self.theta_robot_buf[-1]
@@ -173,3 +220,108 @@ class RealTimePlotter:
             self.anim_plot.setYRange(y - 1.0, y + 1.0, padding=0)
 
         self._app.processEvents()
+
+    # ------------------------------------------------------------------
+    #  Save Results (button callback)
+    # ------------------------------------------------------------------
+    def _on_save_clicked(self):
+        tag = self._tag_input.text().strip()
+        if not tag:
+            self._status_label.setText("Enter an output tag first!")
+            self._status_label.setStyleSheet("font-size: 12px; color: red;")
+            return
+
+        root = _project_root()
+        results_dir = os.path.join(root, 'results')
+        figures_dir = os.path.join(results_dir, 'figures')
+        os.makedirs(figures_dir, exist_ok=True)
+
+        t  = self._to_np(self.t_buf)
+        xr = self._to_np(self.x_robot_buf)
+        yr = self._to_np(self.y_robot_buf)
+        xp = self._to_np(self.x_path_buf)
+        yp = self._to_np(self.y_path_buf)
+        el = self._to_np(self.e_lat_buf)
+        vc = self._to_np(self.v_cmd_buf)
+        wc = self._to_np(self.omega_cmd_buf)
+
+        if t.size == 0:
+            self._status_label.setText("No data to save yet.")
+            self._status_label.setStyleSheet("font-size: 12px; color: orange;")
+            return
+
+        csv_path = os.path.join(results_dir, f"{tag}.csv")
+        with open(csv_path, 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(['time_s', 'e_lat', 'x_robot', 'y_robot',
+                             'x_path', 'y_path', 'v_cmd', 'omega_cmd'])
+            for i in range(len(t)):
+                writer.writerow([t[i], el[i], xr[i], yr[i],
+                                 xp[i], yp[i], vc[i], wc[i]])
+
+        import matplotlib
+        matplotlib.use('Agg')
+        import matplotlib.pyplot as plt
+
+        prefix = os.path.join(figures_dir, tag)
+
+        fig, ax = plt.subplots(figsize=(10, 6))
+        ax.plot(xr, yr, 'b-', linewidth=1.5, label='Robot')
+        ax.plot(xp, yp, 'g--', linewidth=1.5, label='Path')
+        ax.set_xlabel('X (m)')
+        ax.set_ylabel('Y (m)')
+        ax.set_title(f'Trajectory vs Path — {tag}')
+        ax.legend()
+        ax.set_aspect('equal')
+        ax.grid(True, alpha=0.3)
+        fig.savefig(f"{prefix}_trajectory.png", dpi=150, bbox_inches='tight')
+        plt.close(fig)
+
+        fig, ax = plt.subplots(figsize=(10, 4))
+        ax.plot(t, el, 'r-', linewidth=1)
+        ax.axhline(y=0, color='k', linestyle='--', alpha=0.3)
+        ax.set_xlabel('Time (s)')
+        ax.set_ylabel('Lateral Error (m)')
+        ax.set_title(f'Lateral Error vs Time — {tag}')
+        ax.grid(True, alpha=0.3)
+        fig.savefig(f"{prefix}_error.png", dpi=150, bbox_inches='tight')
+        plt.close(fig)
+
+        fig, ax = plt.subplots(figsize=(10, 4))
+        ax.plot(t, vc, 'm-', linewidth=1, label='v_cmd')
+        ax.plot(t, wc, 'c-', linewidth=1, label='omega_cmd')
+        ax.set_xlabel('Time (s)')
+        ax.set_ylabel('Command Value')
+        ax.set_title(f'Control Commands vs Time — {tag}')
+        ax.legend()
+        ax.grid(True, alpha=0.3)
+        fig.savefig(f"{prefix}_commands.png", dpi=150, bbox_inches='tight')
+        plt.close(fig)
+
+        abs_err = np.abs(el)
+        overshoot = float(np.max(abs_err))
+        threshold = 0.02
+        settling_time = float(t[-1])
+        for i in range(len(abs_err) - 1, -1, -1):
+            if abs_err[i] >= threshold:
+                if i < len(t) - 1:
+                    settling_time = float(t[i + 1])
+                break
+        else:
+            settling_time = float(t[0])
+        n20 = max(1, len(el) // 5)
+        ss_error = float(np.mean(abs_err[-n20:]))
+
+        kpi_path = os.path.join(results_dir, f"{tag}_kpis.txt")
+        with open(kpi_path, 'w') as f:
+            f.write(f"KPI Results: {tag}\n")
+            f.write(f"Overshoot:          {overshoot:.6f} m\n")
+            f.write(f"Settling Time:      {settling_time:.3f} s\n")
+            f.write(f"Steady-State Error: {ss_error:.6f} m\n")
+
+        msg = (f"Saved!  CSV: results/{tag}.csv  |  "
+               f"Plots: results/figures/{tag}_*.png  |  "
+               f"KPIs: results/{tag}_kpis.txt")
+        self._status_label.setText(msg)
+        self._status_label.setStyleSheet("font-size: 12px; color: #2e7d32;")
+        print(f"\n[SAVE] {msg}\n")
