@@ -1,6 +1,6 @@
-Script started on 2026-03-15 21:41:47+00:00 [TERM="xterm" TTY="/dev/pts/6" COLUMNS="80" LINES="24"]
-make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot-line-follower/src/lineFollowerDT'
-python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localhost" --kp=2.0 --ki=0.3 --kd=1.0 --v-const=0.5
+Script started on 2026-03-16 08:41:57+00:00 [TERM="xterm" TTY="/dev/pts/9" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/robot-line-follower/src/lineFollowerDT'
+python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localhost" --kp=2.0 --ki=0.1 --kd=3.0 --v-const=0.5
 +=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
 +=+    Connecting clientId=':remoteSession1' to 'server@localhost' ...
 +=+    Successfully connected 'client :remoteSession1' to 'server@localhost'
@@ -12,9366 +12,1509 @@ python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localho
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:timeServerConduit1
-           localClientConduitHandle=0x63772fcb07c8
-           remoteServerProxyConduitHandle=0x2c9de910
+           localClientConduitHandle=0x60b37f546f68
+           remoteServerProxyConduitHandle=0x138a7910
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:resetServerConduit1
-           localClientConduitHandle=0x63772fd00e38
-           remoteServerProxyConduitHandle=0x2c9dab20
+           localClientConduitHandle=0x60b37f58e3c8
+           remoteServerProxyConduitHandle=0x138a3b20
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:txConfigPort1
-           localClientConduitHandle=0x63772fb675b0
-           remoteServerProxyConduitHandle=0x2c9ed290
+           localClientConduitHandle=0x60b37f63a210
+           remoteServerProxyConduitHandle=0x138b6290
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:rxConfigPort1
-           localClientConduitHandle=0x63772fa03410
-           remoteServerProxyConduitHandle=0x2c9e9690
+           localClientConduitHandle=0x60b37f646a70
+           remoteServerProxyConduitHandle=0x138b2690
 +=+ INFO: ... successfully connected to TLM FabricServer !
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:txCanFrameConduit1
-           localClientConduitHandle=0x63772fc048a0
-           remoteServerProxyConduitHandle=0x2c9e3130
+           localClientConduitHandle=0x60b37f64e3e0
+           remoteServerProxyConduitHandle=0x138ac130
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession1
 +=+        conduitId=:rxCanFrameConduit1
-           localClientConduitHandle=0x63772fadddb0
-           remoteServerProxyConduitHandle=0x2c9e1fc0
+           localClientConduitHandle=0x60b37f6434a0
+           remoteServerProxyConduitHandle=0x138aafc0
 
 +=controller+=
   VSI time: 30100 ns
-  e_lat=0.000000  v=0.500  w=-0.0000
+  e_lat=0.000000  e_head=0.0000  v=0.500  w=-0.0000
 
 
 +=controller+=
   VSI time: 1030100 ns
-  e_lat=0.300000  v=0.500  w=-5.0000
+  e_lat=0.300000  e_head=-0.2853  v=0.500  w=0.2559
 
 
 +=controller+=
   VSI time: 2030100 ns
-  e_lat=0.300000  v=0.500  w=-0.6002
+  e_lat=0.299859  e_head=-0.2853  v=0.500  w=0.2561
 
 
 +=controller+=
   VSI time: 3030100 ns
-  e_lat=0.300000  v=0.500  w=-0.6003
+  e_lat=0.299719  e_head=-0.2850  v=0.500  w=0.2556
 
 
 +=controller+=
   VSI time: 4030100 ns
-  e_lat=0.299998  v=0.500  w=-0.5978
+  e_lat=0.299578  e_head=-0.2848  v=0.500  w=0.2551
 
 
 +=controller+=
   VSI time: 5030100 ns
-  e_lat=0.299995  v=0.500  w=-0.5976
+  e_lat=0.299437  e_head=-0.2845  v=0.500  w=0.2546
 
 
 +=controller+=
   VSI time: 6030100 ns
-  e_lat=0.299992  v=0.500  w=-0.5974
+  e_lat=0.299297  e_head=-0.2843  v=0.500  w=0.2540
 
 
 +=controller+=
   VSI time: 7030100 ns
-  e_lat=0.299989  v=0.500  w=-0.5972
+  e_lat=0.299157  e_head=-0.2840  v=0.500  w=0.2535
 
 
 +=controller+=
   VSI time: 8030100 ns
-  e_lat=0.299985  v=0.500  w=-0.5970
+  e_lat=0.299017  e_head=-0.2838  v=0.500  w=0.2530
 
 
 +=controller+=
   VSI time: 9030100 ns
-  e_lat=0.299981  v=0.500  w=-0.5968
+  e_lat=0.298877  e_head=-0.2835  v=0.500  w=0.2525
 
 
 +=controller+=
   VSI time: 10030100 ns
-  e_lat=0.299977  v=0.500  w=-0.5965
+  e_lat=0.298737  e_head=-0.2833  v=0.500  w=0.2520
 
 
 +=controller+=
   VSI time: 11030100 ns
-  e_lat=0.299972  v=0.500  w=-0.5963
+  e_lat=0.298597  e_head=-0.2830  v=0.500  w=0.2515
 
 
 +=controller+=
   VSI time: 12030100 ns
-  e_lat=0.299968  v=0.500  w=-0.5961
+  e_lat=0.298458  e_head=-0.2828  v=0.500  w=0.2510
 
 
 +=controller+=
   VSI time: 13030100 ns
-  e_lat=0.299962  v=0.500  w=-0.5959
+  e_lat=0.298318  e_head=-0.2825  v=0.500  w=0.2505
 
 
 +=controller+=
   VSI time: 14030100 ns
-  e_lat=0.299957  v=0.500  w=-0.5957
+  e_lat=0.298179  e_head=-0.2823  v=0.500  w=0.2500
 
 
 +=controller+=
   VSI time: 15030100 ns
-  e_lat=0.299951  v=0.500  w=-0.5955
+  e_lat=0.298039  e_head=-0.2820  v=0.500  w=0.2495
 
 
 +=controller+=
   VSI time: 16030100 ns
-  e_lat=0.299945  v=0.500  w=-0.5952
+  e_lat=0.297900  e_head=-0.2818  v=0.500  w=0.2490
 
 
 +=controller+=
   VSI time: 17030100 ns
-  e_lat=0.299939  v=0.500  w=-0.5950
+  e_lat=0.297761  e_head=-0.2815  v=0.500  w=0.2485
 
 
 +=controller+=
   VSI time: 18030100 ns
-  e_lat=0.299932  v=0.500  w=-0.5948
+  e_lat=0.297622  e_head=-0.2813  v=0.500  w=0.2480
 
 
 +=controller+=
   VSI time: 19030100 ns
-  e_lat=0.299926  v=0.500  w=-0.5946
+  e_lat=0.297484  e_head=-0.2810  v=0.500  w=0.2475
 
 
 +=controller+=
   VSI time: 20030100 ns
-  e_lat=0.299918  v=0.500  w=-0.5944
+  e_lat=0.297345  e_head=-0.2808  v=0.500  w=0.2470
 
 
 +=controller+=
   VSI time: 21030100 ns
-  e_lat=0.299911  v=0.500  w=-0.5941
+  e_lat=0.297206  e_head=-0.2805  v=0.500  w=0.2465
 
 
 +=controller+=
   VSI time: 22030100 ns
-  e_lat=0.299903  v=0.500  w=-0.5939
+  e_lat=0.297068  e_head=-0.2803  v=0.500  w=0.2460
 
 
 +=controller+=
   VSI time: 23030100 ns
-  e_lat=0.299895  v=0.500  w=-0.5937
+  e_lat=0.296930  e_head=-0.2800  v=0.500  w=0.2455
 
 
 +=controller+=
   VSI time: 24030100 ns
-  e_lat=0.299887  v=0.500  w=-0.5935
+  e_lat=0.296791  e_head=-0.2798  v=0.500  w=0.2450
 
 
 +=controller+=
   VSI time: 25030100 ns
-  e_lat=0.299878  v=0.500  w=-0.5932
+  e_lat=0.296653  e_head=-0.2795  v=0.500  w=0.2445
 
 
 +=controller+=
   VSI time: 26030100 ns
-  e_lat=0.299869  v=0.500  w=-0.5930
+  e_lat=0.296515  e_head=-0.2793  v=0.500  w=0.2440
 
 
 +=controller+=
   VSI time: 27030100 ns
-  e_lat=0.299860  v=0.500  w=-0.5928
+  e_lat=0.296378  e_head=-0.2790  v=0.500  w=0.2435
 
 
 +=controller+=
   VSI time: 28030100 ns
-  e_lat=0.299850  v=0.500  w=-0.5926
+  e_lat=0.296240  e_head=-0.2788  v=0.500  w=0.2431
 
 
 +=controller+=
   VSI time: 29030100 ns
-  e_lat=0.299840  v=0.500  w=-0.5923
+  e_lat=0.296102  e_head=-0.2785  v=0.500  w=0.2426
 
 
 +=controller+=
   VSI time: 30030100 ns
-  e_lat=0.299830  v=0.500  w=-0.5921
+  e_lat=0.295965  e_head=-0.2783  v=0.500  w=0.2421
 
 
 +=controller+=
   VSI time: 31030100 ns
-  e_lat=0.299820  v=0.500  w=-0.5919
+  e_lat=0.295828  e_head=-0.2781  v=0.500  w=0.2416
 
 
 +=controller+=
   VSI time: 32030100 ns
-  e_lat=0.299809  v=0.500  w=-0.5917
+  e_lat=0.295690  e_head=-0.2778  v=0.500  w=0.2411
 
 
 +=controller+=
   VSI time: 33030100 ns
-  e_lat=0.299798  v=0.500  w=-0.5914
+  e_lat=0.295553  e_head=-0.2776  v=0.500  w=0.2406
 
 
 +=controller+=
   VSI time: 34030100 ns
-  e_lat=0.299786  v=0.500  w=-0.5912
+  e_lat=0.295416  e_head=-0.2773  v=0.500  w=0.2402
 
 
 +=controller+=
   VSI time: 35030100 ns
-  e_lat=0.299775  v=0.500  w=-0.5910
+  e_lat=0.295279  e_head=-0.2771  v=0.500  w=0.2397
 
 
 +=controller+=
   VSI time: 36030100 ns
-  e_lat=0.299763  v=0.500  w=-0.5907
+  e_lat=0.295142  e_head=-0.2769  v=0.500  w=0.2392
 
 
 +=controller+=
   VSI time: 37030100 ns
-  e_lat=0.299751  v=0.500  w=-0.5905
+  e_lat=0.295006  e_head=-0.2766  v=0.500  w=0.2387
 
 
 +=controller+=
   VSI time: 38030100 ns
-  e_lat=0.299738  v=0.500  w=-0.5903
+  e_lat=0.294869  e_head=-0.2764  v=0.500  w=0.2383
 
 
 +=controller+=
   VSI time: 39030100 ns
-  e_lat=0.299725  v=0.500  w=-0.5900
+  e_lat=0.294733  e_head=-0.2761  v=0.500  w=0.2378
 
 
 +=controller+=
   VSI time: 40030100 ns
-  e_lat=0.299712  v=0.500  w=-0.5898
+  e_lat=0.294596  e_head=-0.2759  v=0.500  w=0.2373
 
 
 +=controller+=
   VSI time: 41030100 ns
-  e_lat=0.299699  v=0.500  w=-0.5896
+  e_lat=0.294460  e_head=-0.2757  v=0.500  w=0.2368
 
 
 +=controller+=
   VSI time: 42030100 ns
-  e_lat=0.299685  v=0.500  w=-0.5893
+  e_lat=0.294324  e_head=-0.2754  v=0.500  w=0.2364
 
 
 +=controller+=
   VSI time: 43030100 ns
-  e_lat=0.299671  v=0.500  w=-0.5891
+  e_lat=0.294188  e_head=-0.2752  v=0.500  w=0.2359
 
 
 +=controller+=
   VSI time: 44030100 ns
-  e_lat=0.299657  v=0.500  w=-0.5889
+  e_lat=0.294052  e_head=-0.2750  v=0.500  w=0.2354
 
 
 +=controller+=
   VSI time: 45030100 ns
-  e_lat=0.299642  v=0.500  w=-0.5886
+  e_lat=0.293917  e_head=-0.2747  v=0.500  w=0.2350
 
 
 +=controller+=
   VSI time: 46030100 ns
-  e_lat=0.299627  v=0.500  w=-0.5884
+  e_lat=0.293781  e_head=-0.2745  v=0.500  w=0.2345
 
 
 +=controller+=
   VSI time: 47030100 ns
-  e_lat=0.299612  v=0.500  w=-0.5882
+  e_lat=0.293645  e_head=-0.2742  v=0.500  w=0.2340
 
 
 +=controller+=
   VSI time: 48030100 ns
-  e_lat=0.299597  v=0.500  w=-0.5879
+  e_lat=0.293510  e_head=-0.2740  v=0.500  w=0.2336
 
 
 +=controller+=
   VSI time: 49030100 ns
-  e_lat=0.299581  v=0.500  w=-0.5877
+  e_lat=0.293375  e_head=-0.2738  v=0.500  w=0.2331
 
 
 +=controller+=
   VSI time: 50030100 ns
-  e_lat=0.299565  v=0.500  w=-0.5875
+  e_lat=0.293240  e_head=-0.2735  v=0.500  w=0.2327
 
 
 +=controller+=
   VSI time: 51030100 ns
-  e_lat=0.299548  v=0.500  w=-0.5872
+  e_lat=0.293104  e_head=-0.2733  v=0.500  w=0.2322
 
 
 +=controller+=
   VSI time: 52030100 ns
-  e_lat=0.299532  v=0.500  w=-0.5870
+  e_lat=0.292969  e_head=-0.2731  v=0.500  w=0.2317
 
 
 +=controller+=
   VSI time: 53030100 ns
-  e_lat=0.299515  v=0.500  w=-0.5868
+  e_lat=0.292835  e_head=-0.2728  v=0.500  w=0.2313
 
 
 +=controller+=
   VSI time: 54030100 ns
-  e_lat=0.299498  v=0.500  w=-0.5865
+  e_lat=0.292700  e_head=-0.2726  v=0.500  w=0.2308
 
 
 +=controller+=
   VSI time: 55030100 ns
-  e_lat=0.299480  v=0.500  w=-0.5863
+  e_lat=0.292565  e_head=-0.2724  v=0.500  w=0.2304
 
 
 +=controller+=
   VSI time: 56030100 ns
-  e_lat=0.299462  v=0.500  w=-0.5860
+  e_lat=0.292431  e_head=-0.2722  v=0.500  w=0.2299
 
 
 +=controller+=
   VSI time: 57030100 ns
-  e_lat=0.299444  v=0.500  w=-0.5858
+  e_lat=0.292296  e_head=-0.2719  v=0.500  w=0.2295
 
 
 +=controller+=
   VSI time: 58030100 ns
-  e_lat=0.299426  v=0.500  w=-0.5856
+  e_lat=0.292162  e_head=-0.2717  v=0.500  w=0.2290
 
 
 +=controller+=
   VSI time: 59030100 ns
-  e_lat=0.299407  v=0.500  w=-0.5853
+  e_lat=0.292028  e_head=-0.2715  v=0.500  w=0.2286
 
 
 +=controller+=
   VSI time: 60030100 ns
-  e_lat=0.299388  v=0.500  w=-0.5851
+  e_lat=0.291894  e_head=-0.2712  v=0.500  w=0.2281
 
 
 +=controller+=
   VSI time: 61030100 ns
-  e_lat=0.299369  v=0.500  w=-0.5848
+  e_lat=0.291760  e_head=-0.2710  v=0.500  w=0.2277
 
 
 +=controller+=
   VSI time: 62030100 ns
-  e_lat=0.299349  v=0.500  w=-0.5846
+  e_lat=0.291626  e_head=-0.2708  v=0.500  w=0.2272
 
 
 +=controller+=
   VSI time: 63030100 ns
-  e_lat=0.299329  v=0.500  w=-0.5844
+  e_lat=0.291492  e_head=-0.2705  v=0.500  w=0.2268
 
 
 +=controller+=
   VSI time: 64030100 ns
-  e_lat=0.299309  v=0.500  w=-0.5841
+  e_lat=0.291359  e_head=-0.2703  v=0.500  w=0.2263
 
 
 +=controller+=
   VSI time: 65030100 ns
-  e_lat=0.299289  v=0.500  w=-0.5839
+  e_lat=0.291225  e_head=-0.2701  v=0.500  w=0.2259
 
 
 +=controller+=
   VSI time: 66030100 ns
-  e_lat=0.299268  v=0.500  w=-0.5836
+  e_lat=0.291092  e_head=-0.2699  v=0.500  w=0.2255
 
 
 +=controller+=
   VSI time: 67030100 ns
-  e_lat=0.299247  v=0.500  w=-0.5834
+  e_lat=0.290958  e_head=-0.2696  v=0.500  w=0.2250
 
 
 +=controller+=
   VSI time: 68030100 ns
-  e_lat=0.299225  v=0.500  w=-0.5831
+  e_lat=0.290825  e_head=-0.2694  v=0.500  w=0.2246
 
 
 +=controller+=
   VSI time: 69030100 ns
-  e_lat=0.299204  v=0.500  w=-0.5829
+  e_lat=0.290692  e_head=-0.2692  v=0.500  w=0.2241
 
 
 +=controller+=
   VSI time: 70030100 ns
-  e_lat=0.299182  v=0.500  w=-0.5826
+  e_lat=0.290559  e_head=-0.2690  v=0.500  w=0.2237
 
 
 +=controller+=
   VSI time: 71030100 ns
-  e_lat=0.299160  v=0.500  w=-0.5824
+  e_lat=0.290426  e_head=-0.2687  v=0.500  w=0.2233
 
 
 +=controller+=
   VSI time: 72030100 ns
-  e_lat=0.299137  v=0.500  w=-0.5822
+  e_lat=0.290294  e_head=-0.2685  v=0.500  w=0.2228
 
 
 +=controller+=
   VSI time: 73030100 ns
-  e_lat=0.299114  v=0.500  w=-0.5819
+  e_lat=0.290161  e_head=-0.2683  v=0.500  w=0.2224
 
 
 +=controller+=
   VSI time: 74030100 ns
-  e_lat=0.299091  v=0.500  w=-0.5817
+  e_lat=0.290028  e_head=-0.2681  v=0.500  w=0.2220
 
 
 +=controller+=
   VSI time: 75030100 ns
-  e_lat=0.299068  v=0.500  w=-0.5814
+  e_lat=0.289896  e_head=-0.2678  v=0.500  w=0.2215
 
 
 +=controller+=
   VSI time: 76030100 ns
-  e_lat=0.299044  v=0.500  w=-0.5812
+  e_lat=0.289764  e_head=-0.2676  v=0.500  w=0.2211
 
 
 +=controller+=
   VSI time: 77030100 ns
-  e_lat=0.299020  v=0.500  w=-0.5809
+  e_lat=0.289631  e_head=-0.2674  v=0.500  w=0.2207
 
 
 +=controller+=
   VSI time: 78030100 ns
-  e_lat=0.298996  v=0.500  w=-0.5807
+  e_lat=0.289499  e_head=-0.2672  v=0.500  w=0.2203
 
 
 +=controller+=
   VSI time: 79030100 ns
-  e_lat=0.298971  v=0.500  w=-0.5804
+  e_lat=0.289367  e_head=-0.2670  v=0.500  w=0.2198
 
 
 +=controller+=
   VSI time: 80030100 ns
-  e_lat=0.298947  v=0.500  w=-0.5802
+  e_lat=0.289235  e_head=-0.2667  v=0.500  w=0.2194
 
 
 +=controller+=
   VSI time: 81030100 ns
-  e_lat=0.298922  v=0.500  w=-0.5799
+  e_lat=0.289104  e_head=-0.2665  v=0.500  w=0.2190
 
 
 +=controller+=
   VSI time: 82030100 ns
-  e_lat=0.298896  v=0.500  w=-0.5797
+  e_lat=0.288972  e_head=-0.2663  v=0.500  w=0.2186
 
 
 +=controller+=
   VSI time: 83030100 ns
-  e_lat=0.298870  v=0.500  w=-0.5794
+  e_lat=0.288840  e_head=-0.2661  v=0.500  w=0.2181
 
 
 +=controller+=
   VSI time: 84030100 ns
-  e_lat=0.298844  v=0.500  w=-0.5792
+  e_lat=0.288709  e_head=-0.2659  v=0.500  w=0.2177
 
 
 +=controller+=
   VSI time: 85030100 ns
-  e_lat=0.298818  v=0.500  w=-0.5789
+  e_lat=0.288577  e_head=-0.2656  v=0.500  w=0.2173
 
 
 +=controller+=
   VSI time: 86030100 ns
-  e_lat=0.298792  v=0.500  w=-0.5787
+  e_lat=0.288446  e_head=-0.2654  v=0.500  w=0.2169
 
 
 +=controller+=
   VSI time: 87030100 ns
-  e_lat=0.298765  v=0.500  w=-0.5784
+  e_lat=0.288315  e_head=-0.2652  v=0.500  w=0.2165
 
 
 +=controller+=
   VSI time: 88030100 ns
-  e_lat=0.298738  v=0.500  w=-0.5782
+  e_lat=0.288184  e_head=-0.2650  v=0.500  w=0.2160
 
 
 +=controller+=
   VSI time: 89030100 ns
-  e_lat=0.298710  v=0.500  w=-0.5779
+  e_lat=0.288053  e_head=-0.2648  v=0.500  w=0.2156
 
 
 +=controller+=
   VSI time: 90030100 ns
-  e_lat=0.298682  v=0.500  w=-0.5776
+  e_lat=0.287922  e_head=-0.2646  v=0.500  w=0.2152
 
 
 +=controller+=
   VSI time: 91030100 ns
-  e_lat=0.298654  v=0.500  w=-0.5774
+  e_lat=0.287791  e_head=-0.2643  v=0.500  w=0.2148
 
 
 +=controller+=
   VSI time: 92030100 ns
-  e_lat=0.298626  v=0.500  w=-0.5771
+  e_lat=0.287661  e_head=-0.2641  v=0.500  w=0.2144
 
 
 +=controller+=
   VSI time: 93030100 ns
-  e_lat=0.298598  v=0.500  w=-0.5769
+  e_lat=0.287530  e_head=-0.2639  v=0.500  w=0.2140
 
 
 +=controller+=
   VSI time: 94030100 ns
-  e_lat=0.298569  v=0.500  w=-0.5766
+  e_lat=0.287400  e_head=-0.2637  v=0.500  w=0.2136
 
 
 +=controller+=
   VSI time: 95030100 ns
-  e_lat=0.298540  v=0.500  w=-0.5764
+  e_lat=0.287269  e_head=-0.2635  v=0.500  w=0.2131
 
 
 +=controller+=
   VSI time: 96030100 ns
-  e_lat=0.298510  v=0.500  w=-0.5761
+  e_lat=0.287139  e_head=-0.2633  v=0.500  w=0.2127
 
 
 +=controller+=
   VSI time: 97030100 ns
-  e_lat=0.298480  v=0.500  w=-0.5758
+  e_lat=0.287009  e_head=-0.2631  v=0.500  w=0.2123
 
 
 +=controller+=
   VSI time: 98030100 ns
-  e_lat=0.298450  v=0.500  w=-0.5756
+  e_lat=0.286879  e_head=-0.2629  v=0.500  w=0.2119
 
 
 +=controller+=
   VSI time: 99030100 ns
-  e_lat=0.298420  v=0.500  w=-0.5753
+  e_lat=0.286749  e_head=-0.2626  v=0.500  w=0.2115
 
 
 +=controller+=
   VSI time: 100030100 ns
-  e_lat=0.298389  v=0.500  w=-0.5751
+  e_lat=0.286619  e_head=-0.2624  v=0.500  w=0.2111
 
 
 +=controller+=
   VSI time: 101030100 ns
-  e_lat=0.298359  v=0.500  w=-0.5748
+  e_lat=0.286490  e_head=-0.2622  v=0.500  w=0.2107
 
 
 +=controller+=
   VSI time: 102030100 ns
-  e_lat=0.298327  v=0.500  w=-0.5746
+  e_lat=0.286360  e_head=-0.2620  v=0.500  w=0.2103
 
 
 +=controller+=
   VSI time: 103030100 ns
-  e_lat=0.298296  v=0.500  w=-0.5743
+  e_lat=0.286231  e_head=-0.2618  v=0.500  w=0.2099
 
 
 +=controller+=
   VSI time: 104030100 ns
-  e_lat=0.298264  v=0.500  w=-0.5740
+  e_lat=0.286101  e_head=-0.2616  v=0.500  w=0.2095
 
 
 +=controller+=
   VSI time: 105030100 ns
-  e_lat=0.298232  v=0.500  w=-0.5738
+  e_lat=0.285972  e_head=-0.2614  v=0.500  w=0.2091
 
 
 +=controller+=
   VSI time: 106030100 ns
-  e_lat=0.298200  v=0.500  w=-0.5735
+  e_lat=0.285843  e_head=-0.2612  v=0.500  w=0.2087
 
 
 +=controller+=
   VSI time: 107030100 ns
-  e_lat=0.298167  v=0.500  w=-0.5732
+  e_lat=0.285713  e_head=-0.2610  v=0.500  w=0.2083
 
 
 +=controller+=
   VSI time: 108030100 ns
-  e_lat=0.298134  v=0.500  w=-0.5730
+  e_lat=0.285584  e_head=-0.2607  v=0.500  w=0.2079
 
 
 +=controller+=
   VSI time: 109030100 ns
-  e_lat=0.298101  v=0.500  w=-0.5727
+  e_lat=0.285456  e_head=-0.2605  v=0.500  w=0.2075
 
 
 +=controller+=
   VSI time: 110030100 ns
-  e_lat=0.298068  v=0.500  w=-0.5725
+  e_lat=0.285327  e_head=-0.2603  v=0.500  w=0.2071
 
 
 +=controller+=
   VSI time: 111030100 ns
-  e_lat=0.298034  v=0.500  w=-0.5722
+  e_lat=0.285198  e_head=-0.2601  v=0.500  w=0.2067
 
 
 +=controller+=
   VSI time: 112030100 ns
-  e_lat=0.298000  v=0.500  w=-0.5719
+  e_lat=0.285069  e_head=-0.2599  v=0.500  w=0.2063
 
 
 +=controller+=
   VSI time: 113030100 ns
-  e_lat=0.297966  v=0.500  w=-0.5717
+  e_lat=0.284941  e_head=-0.2597  v=0.500  w=0.2059
 
 
 +=controller+=
   VSI time: 114030100 ns
-  e_lat=0.297931  v=0.500  w=-0.5714
+  e_lat=0.284813  e_head=-0.2595  v=0.500  w=0.2055
 
 
 +=controller+=
   VSI time: 115030100 ns
-  e_lat=0.297896  v=0.500  w=-0.5711
+  e_lat=0.284684  e_head=-0.2593  v=0.500  w=0.2052
 
 
 +=controller+=
   VSI time: 116030100 ns
-  e_lat=0.297861  v=0.500  w=-0.5709
+  e_lat=0.284556  e_head=-0.2591  v=0.500  w=0.2048
 
 
 +=controller+=
   VSI time: 117030100 ns
-  e_lat=0.297825  v=0.500  w=-0.5706
+  e_lat=0.284428  e_head=-0.2589  v=0.500  w=0.2044
 
 
 +=controller+=
   VSI time: 118030100 ns
-  e_lat=0.297790  v=0.500  w=-0.5703
+  e_lat=0.284300  e_head=-0.2587  v=0.500  w=0.2040
 
 
 +=controller+=
   VSI time: 119030100 ns
-  e_lat=0.297754  v=0.500  w=-0.5701
+  e_lat=0.284172  e_head=-0.2585  v=0.500  w=0.2036
 
 
 +=controller+=
   VSI time: 120030100 ns
-  e_lat=0.297717  v=0.500  w=-0.5698
+  e_lat=0.284044  e_head=-0.2583  v=0.500  w=0.2032
 
 
 +=controller+=
   VSI time: 121030100 ns
-  e_lat=0.297681  v=0.500  w=-0.5695
+  e_lat=0.283917  e_head=-0.2581  v=0.500  w=0.2028
 
 
 +=controller+=
   VSI time: 122030100 ns
-  e_lat=0.297644  v=0.500  w=-0.5693
+  e_lat=0.283789  e_head=-0.2579  v=0.500  w=0.2025
 
 
 +=controller+=
   VSI time: 123030100 ns
-  e_lat=0.297607  v=0.500  w=-0.5690
+  e_lat=0.283661  e_head=-0.2577  v=0.500  w=0.2021
 
 
 +=controller+=
   VSI time: 124030100 ns
-  e_lat=0.297569  v=0.500  w=-0.5687
+  e_lat=0.283534  e_head=-0.2575  v=0.500  w=0.2017
 
 
 +=controller+=
   VSI time: 125030100 ns
-  e_lat=0.297531  v=0.500  w=-0.5685
+  e_lat=0.283407  e_head=-0.2573  v=0.500  w=0.2013
 
 
 +=controller+=
   VSI time: 126030100 ns
-  e_lat=0.297493  v=0.500  w=-0.5682
+  e_lat=0.283280  e_head=-0.2571  v=0.500  w=0.2009
 
 
 +=controller+=
   VSI time: 127030100 ns
-  e_lat=0.297455  v=0.500  w=-0.5679
+  e_lat=0.283152  e_head=-0.2569  v=0.500  w=0.2006
 
 
 +=controller+=
   VSI time: 128030100 ns
-  e_lat=0.297417  v=0.500  w=-0.5676
+  e_lat=0.283025  e_head=-0.2567  v=0.500  w=0.2002
 
 
 +=controller+=
   VSI time: 129030100 ns
-  e_lat=0.297378  v=0.500  w=-0.5674
+  e_lat=0.282898  e_head=-0.2565  v=0.500  w=0.1998
 
 
 +=controller+=
   VSI time: 130030100 ns
-  e_lat=0.297339  v=0.500  w=-0.5671
+  e_lat=0.282772  e_head=-0.2563  v=0.500  w=0.1994
 
 
 +=controller+=
   VSI time: 131030100 ns
-  e_lat=0.297299  v=0.500  w=-0.5668
+  e_lat=0.282645  e_head=-0.2561  v=0.500  w=0.1991
 
 
 +=controller+=
   VSI time: 132030100 ns
-  e_lat=0.297259  v=0.500  w=-0.5665
+  e_lat=0.282518  e_head=-0.2559  v=0.500  w=0.1987
 
 
 +=controller+=
   VSI time: 133030100 ns
-  e_lat=0.297219  v=0.500  w=-0.5663
+  e_lat=0.282392  e_head=-0.2557  v=0.500  w=0.1983
 
 
 +=controller+=
   VSI time: 134030100 ns
-  e_lat=0.297179  v=0.500  w=-0.5660
+  e_lat=0.282265  e_head=-0.2555  v=0.500  w=0.1979
 
 
 +=controller+=
   VSI time: 135030100 ns
-  e_lat=0.297138  v=0.500  w=-0.5657
+  e_lat=0.282139  e_head=-0.2553  v=0.500  w=0.1976
 
 
 +=controller+=
   VSI time: 136030100 ns
-  e_lat=0.297098  v=0.500  w=-0.5655
+  e_lat=0.282013  e_head=-0.2551  v=0.500  w=0.1972
 
 
 +=controller+=
   VSI time: 137030100 ns
-  e_lat=0.297057  v=0.500  w=-0.5652
+  e_lat=0.281887  e_head=-0.2549  v=0.500  w=0.1968
 
 
 +=controller+=
   VSI time: 138030100 ns
-  e_lat=0.297015  v=0.500  w=-0.5649
+  e_lat=0.281761  e_head=-0.2547  v=0.500  w=0.1965
 
 
 +=controller+=
   VSI time: 139030100 ns
-  e_lat=0.296973  v=0.500  w=-0.5646
+  e_lat=0.281635  e_head=-0.2545  v=0.500  w=0.1961
 
 
 +=controller+=
   VSI time: 140030100 ns
-  e_lat=0.296931  v=0.500  w=-0.5643
+  e_lat=0.281509  e_head=-0.2543  v=0.500  w=0.1957
 
 
 +=controller+=
   VSI time: 141030100 ns
-  e_lat=0.296889  v=0.500  w=-0.5641
+  e_lat=0.281383  e_head=-0.2541  v=0.500  w=0.1954
 
 
 +=controller+=
   VSI time: 142030100 ns
-  e_lat=0.296847  v=0.500  w=-0.5638
+  e_lat=0.281257  e_head=-0.2539  v=0.500  w=0.1950
 
 
 +=controller+=
   VSI time: 143030100 ns
-  e_lat=0.296804  v=0.500  w=-0.5635
+  e_lat=0.281132  e_head=-0.2537  v=0.500  w=0.1946
 
 
 +=controller+=
   VSI time: 144030100 ns
-  e_lat=0.296761  v=0.500  w=-0.5632
+  e_lat=0.281006  e_head=-0.2535  v=0.500  w=0.1943
 
 
 +=controller+=
   VSI time: 145030100 ns
-  e_lat=0.296717  v=0.500  w=-0.5630
+  e_lat=0.280881  e_head=-0.2533  v=0.500  w=0.1939
 
 
 +=controller+=
   VSI time: 146030100 ns
-  e_lat=0.296674  v=0.500  w=-0.5627
+  e_lat=0.280755  e_head=-0.2531  v=0.500  w=0.1936
 
 
 +=controller+=
   VSI time: 147030100 ns
-  e_lat=0.296630  v=0.500  w=-0.5624
+  e_lat=0.280630  e_head=-0.2529  v=0.500  w=0.1932
 
 
 +=controller+=
   VSI time: 148030100 ns
-  e_lat=0.296585  v=0.500  w=-0.5621
+  e_lat=0.280505  e_head=-0.2527  v=0.500  w=0.1928
 
 
 +=controller+=
   VSI time: 149030100 ns
-  e_lat=0.296541  v=0.500  w=-0.5618
+  e_lat=0.280380  e_head=-0.2525  v=0.500  w=0.1925
 
 
 +=controller+=
   VSI time: 150030100 ns
-  e_lat=0.296496  v=0.500  w=-0.5616
+  e_lat=0.280255  e_head=-0.2523  v=0.500  w=0.1921
 
 
 +=controller+=
   VSI time: 151030100 ns
-  e_lat=0.296451  v=0.500  w=-0.5613
+  e_lat=0.280130  e_head=-0.2521  v=0.500  w=0.1918
 
 
 +=controller+=
   VSI time: 152030100 ns
-  e_lat=0.296406  v=0.500  w=-0.5610
+  e_lat=0.280006  e_head=-0.2519  v=0.500  w=0.1914
 
 
 +=controller+=
   VSI time: 153030100 ns
-  e_lat=0.296360  v=0.500  w=-0.5607
+  e_lat=0.279881  e_head=-0.2518  v=0.500  w=0.1911
 
 
 +=controller+=
   VSI time: 154030100 ns
-  e_lat=0.296314  v=0.500  w=-0.5604
+  e_lat=0.279756  e_head=-0.2516  v=0.500  w=0.1907
 
 
 +=controller+=
   VSI time: 155030100 ns
-  e_lat=0.296268  v=0.500  w=-0.5602
+  e_lat=0.279632  e_head=-0.2514  v=0.500  w=0.1904
 
 
 +=controller+=
   VSI time: 156030100 ns
-  e_lat=0.296222  v=0.500  w=-0.5599
+  e_lat=0.279508  e_head=-0.2512  v=0.500  w=0.1900
 
 
 +=controller+=
   VSI time: 157030100 ns
-  e_lat=0.296175  v=0.500  w=-0.5596
+  e_lat=0.279383  e_head=-0.2510  v=0.500  w=0.1897
 
 
 +=controller+=
   VSI time: 158030100 ns
-  e_lat=0.296128  v=0.500  w=-0.5593
+  e_lat=0.279259  e_head=-0.2508  v=0.500  w=0.1893
 
 
 +=controller+=
   VSI time: 159030100 ns
-  e_lat=0.296081  v=0.500  w=-0.5590
+  e_lat=0.279135  e_head=-0.2506  v=0.500  w=0.1890
 
 
 +=controller+=
   VSI time: 160030100 ns
-  e_lat=0.296033  v=0.500  w=-0.5587
+  e_lat=0.279011  e_head=-0.2504  v=0.500  w=0.1886
 
 
 +=controller+=
   VSI time: 161030100 ns
-  e_lat=0.295985  v=0.500  w=-0.5584
+  e_lat=0.278887  e_head=-0.2502  v=0.500  w=0.1883
 
 
 +=controller+=
   VSI time: 162030100 ns
-  e_lat=0.295937  v=0.500  w=-0.5582
+  e_lat=0.278763  e_head=-0.2500  v=0.500  w=0.1879
 
 
 +=controller+=
   VSI time: 163030100 ns
-  e_lat=0.295889  v=0.500  w=-0.5579
+  e_lat=0.278640  e_head=-0.2499  v=0.500  w=0.1876
 
 
 +=controller+=
   VSI time: 164030100 ns
-  e_lat=0.295840  v=0.500  w=-0.5576
+  e_lat=0.278516  e_head=-0.2497  v=0.500  w=0.1872
 
 
 +=controller+=
   VSI time: 165030100 ns
-  e_lat=0.295791  v=0.500  w=-0.5573
+  e_lat=0.278392  e_head=-0.2495  v=0.500  w=0.1869
 
 
 +=controller+=
   VSI time: 166030100 ns
-  e_lat=0.295742  v=0.500  w=-0.5570
+  e_lat=0.278269  e_head=-0.2493  v=0.500  w=0.1865
 
 
 +=controller+=
   VSI time: 167030100 ns
-  e_lat=0.295692  v=0.500  w=-0.5567
+  e_lat=0.278146  e_head=-0.2491  v=0.500  w=0.1862
 
 
 +=controller+=
   VSI time: 168030100 ns
-  e_lat=0.295642  v=0.500  w=-0.5564
+  e_lat=0.278022  e_head=-0.2489  v=0.500  w=0.1859
 
 
 +=controller+=
   VSI time: 169030100 ns
-  e_lat=0.295592  v=0.500  w=-0.5561
+  e_lat=0.277899  e_head=-0.2487  v=0.500  w=0.1855
 
 
 +=controller+=
   VSI time: 170030100 ns
-  e_lat=0.295542  v=0.500  w=-0.5559
+  e_lat=0.277776  e_head=-0.2485  v=0.500  w=0.1852
 
 
 +=controller+=
   VSI time: 171030100 ns
-  e_lat=0.295491  v=0.500  w=-0.5556
+  e_lat=0.277653  e_head=-0.2484  v=0.500  w=0.1848
 
 
 +=controller+=
   VSI time: 172030100 ns
-  e_lat=0.295440  v=0.500  w=-0.5553
+  e_lat=0.277530  e_head=-0.2482  v=0.500  w=0.1845
 
 
 +=controller+=
   VSI time: 173030100 ns
-  e_lat=0.295389  v=0.500  w=-0.5550
+  e_lat=0.277407  e_head=-0.2480  v=0.500  w=0.1842
 
 
 +=controller+=
   VSI time: 174030100 ns
-  e_lat=0.295338  v=0.500  w=-0.5547
+  e_lat=0.277285  e_head=-0.2478  v=0.500  w=0.1838
 
 
 +=controller+=
   VSI time: 175030100 ns
-  e_lat=0.295286  v=0.500  w=-0.5544
+  e_lat=0.277162  e_head=-0.2476  v=0.500  w=0.1835
 
 
 +=controller+=
   VSI time: 176030100 ns
-  e_lat=0.295234  v=0.500  w=-0.5541
+  e_lat=0.277040  e_head=-0.2474  v=0.500  w=0.1832
 
 
 +=controller+=
   VSI time: 177030100 ns
-  e_lat=0.295182  v=0.500  w=-0.5538
+  e_lat=0.276917  e_head=-0.2473  v=0.500  w=0.1828
 
 
 +=controller+=
   VSI time: 178030100 ns
-  e_lat=0.295129  v=0.500  w=-0.5535
+  e_lat=0.276795  e_head=-0.2471  v=0.500  w=0.1825
 
 
 +=controller+=
   VSI time: 179030100 ns
-  e_lat=0.295076  v=0.500  w=-0.5532
+  e_lat=0.276672  e_head=-0.2469  v=0.500  w=0.1822
 
 
 +=controller+=
   VSI time: 180030100 ns
-  e_lat=0.295023  v=0.500  w=-0.5529
+  e_lat=0.276550  e_head=-0.2467  v=0.500  w=0.1818
 
 
 +=controller+=
   VSI time: 181030100 ns
-  e_lat=0.294970  v=0.500  w=-0.5527
+  e_lat=0.276428  e_head=-0.2465  v=0.500  w=0.1815
 
 
 +=controller+=
   VSI time: 182030100 ns
-  e_lat=0.294916  v=0.500  w=-0.5524
+  e_lat=0.276306  e_head=-0.2463  v=0.500  w=0.1812
 
 
 +=controller+=
   VSI time: 183030100 ns
-  e_lat=0.294862  v=0.500  w=-0.5521
+  e_lat=0.276184  e_head=-0.2462  v=0.500  w=0.1808
 
 
 +=controller+=
   VSI time: 184030100 ns
-  e_lat=0.294808  v=0.500  w=-0.5518
+  e_lat=0.276062  e_head=-0.2460  v=0.500  w=0.1805
 
 
 +=controller+=
   VSI time: 185030100 ns
-  e_lat=0.294753  v=0.500  w=-0.5515
+  e_lat=0.275941  e_head=-0.2458  v=0.500  w=0.1802
 
 
 +=controller+=
   VSI time: 186030100 ns
-  e_lat=0.294699  v=0.500  w=-0.5512
+  e_lat=0.275819  e_head=-0.2456  v=0.500  w=0.1799
 
 
 +=controller+=
   VSI time: 187030100 ns
-  e_lat=0.294644  v=0.500  w=-0.5509
+  e_lat=0.275697  e_head=-0.2454  v=0.500  w=0.1795
 
 
 +=controller+=
   VSI time: 188030100 ns
-  e_lat=0.294588  v=0.500  w=-0.5506
+  e_lat=0.275576  e_head=-0.2453  v=0.500  w=0.1792
 
 
 +=controller+=
   VSI time: 189030100 ns
-  e_lat=0.294533  v=0.500  w=-0.5503
+  e_lat=0.275454  e_head=-0.2451  v=0.500  w=0.1789
 
 
 +=controller+=
   VSI time: 190030100 ns
-  e_lat=0.294477  v=0.500  w=-0.5500
+  e_lat=0.275333  e_head=-0.2449  v=0.500  w=0.1786
 
 
 +=controller+=
   VSI time: 191030100 ns
-  e_lat=0.294421  v=0.500  w=-0.5497
+  e_lat=0.275212  e_head=-0.2447  v=0.500  w=0.1782
 
 
 +=controller+=
   VSI time: 192030100 ns
-  e_lat=0.294364  v=0.500  w=-0.5494
+  e_lat=0.275091  e_head=-0.2445  v=0.500  w=0.1779
 
 
 +=controller+=
   VSI time: 193030100 ns
-  e_lat=0.294308  v=0.500  w=-0.5491
+  e_lat=0.274970  e_head=-0.2444  v=0.500  w=0.1776
 
 
 +=controller+=
   VSI time: 194030100 ns
-  e_lat=0.294251  v=0.500  w=-0.5488
+  e_lat=0.274849  e_head=-0.2442  v=0.500  w=0.1773
 
 
 +=controller+=
   VSI time: 195030100 ns
-  e_lat=0.294193  v=0.500  w=-0.5485
+  e_lat=0.274728  e_head=-0.2440  v=0.500  w=0.1770
 
 
 +=controller+=
   VSI time: 196030100 ns
-  e_lat=0.294136  v=0.500  w=-0.5482
+  e_lat=0.274607  e_head=-0.2438  v=0.500  w=0.1766
 
 
 +=controller+=
   VSI time: 197030100 ns
-  e_lat=0.294078  v=0.500  w=-0.5479
+  e_lat=0.274486  e_head=-0.2437  v=0.500  w=0.1763
 
 
 +=controller+=
   VSI time: 198030100 ns
-  e_lat=0.294020  v=0.500  w=-0.5476
+  e_lat=0.274366  e_head=-0.2435  v=0.500  w=0.1760
 
 
 +=controller+=
   VSI time: 199030100 ns
-  e_lat=0.293962  v=0.500  w=-0.5473
+  e_lat=0.274245  e_head=-0.2433  v=0.500  w=0.1757
 
 
 +=controller+=
   VSI time: 200030100 ns
-  e_lat=0.293903  v=0.500  w=-0.5470
+  e_lat=0.274125  e_head=-0.2431  v=0.500  w=0.1754
 
 
 +=controller+=
   VSI time: 201030100 ns
-  e_lat=0.293844  v=0.500  w=-0.5467
+  e_lat=0.274004  e_head=-0.2429  v=0.500  w=0.1751
 
 
 +=controller+=
   VSI time: 202030100 ns
-  e_lat=0.293785  v=0.500  w=-0.5464
+  e_lat=0.273884  e_head=-0.2428  v=0.500  w=0.1748
 
 
 +=controller+=
   VSI time: 203030100 ns
-  e_lat=0.293726  v=0.500  w=-0.5461
+  e_lat=0.273764  e_head=-0.2426  v=0.500  w=0.1744
 
 
 +=controller+=
   VSI time: 204030100 ns
-  e_lat=0.293666  v=0.500  w=-0.5458
+  e_lat=0.273644  e_head=-0.2424  v=0.500  w=0.1741
 
 
 +=controller+=
   VSI time: 205030100 ns
-  e_lat=0.293606  v=0.500  w=-0.5455
+  e_lat=0.273524  e_head=-0.2422  v=0.500  w=0.1738
 
 
 +=controller+=
   VSI time: 206030100 ns
-  e_lat=0.293546  v=0.500  w=-0.5452
+  e_lat=0.273404  e_head=-0.2421  v=0.500  w=0.1735
 
 
 +=controller+=
   VSI time: 207030100 ns
-  e_lat=0.293486  v=0.500  w=-0.5449
+  e_lat=0.273284  e_head=-0.2419  v=0.500  w=0.1732
 
 
 +=controller+=
   VSI time: 208030100 ns
-  e_lat=0.293425  v=0.500  w=-0.5446
+  e_lat=0.273164  e_head=-0.2417  v=0.500  w=0.1729
 
 
 +=controller+=
   VSI time: 209030100 ns
-  e_lat=0.293364  v=0.500  w=-0.5443
+  e_lat=0.273044  e_head=-0.2416  v=0.500  w=0.1726
 
 
 +=controller+=
   VSI time: 210030100 ns
-  e_lat=0.293302  v=0.500  w=-0.5440
+  e_lat=0.272925  e_head=-0.2414  v=0.500  w=0.1723
 
 
 +=controller+=
   VSI time: 211030100 ns
-  e_lat=0.293241  v=0.500  w=-0.5437
+  e_lat=0.272805  e_head=-0.2412  v=0.500  w=0.1720
 
 
 +=controller+=
   VSI time: 212030100 ns
-  e_lat=0.293179  v=0.500  w=-0.5434
+  e_lat=0.272686  e_head=-0.2410  v=0.500  w=0.1717
 
 
 +=controller+=
   VSI time: 213030100 ns
-  e_lat=0.293117  v=0.500  w=-0.5431
+  e_lat=0.272567  e_head=-0.2409  v=0.500  w=0.1714
 
 
 +=controller+=
   VSI time: 214030100 ns
-  e_lat=0.293055  v=0.500  w=-0.5427
+  e_lat=0.272447  e_head=-0.2407  v=0.500  w=0.1711
 
 
 +=controller+=
   VSI time: 215030100 ns
-  e_lat=0.292992  v=0.500  w=-0.5424
+  e_lat=0.272328  e_head=-0.2405  v=0.500  w=0.1708
 
 
 +=controller+=
   VSI time: 216030100 ns
-  e_lat=0.292929  v=0.500  w=-0.5421
+  e_lat=0.272209  e_head=-0.2403  v=0.500  w=0.1705
 
 
 +=controller+=
   VSI time: 217030100 ns
-  e_lat=0.292866  v=0.500  w=-0.5418
+  e_lat=0.272090  e_head=-0.2402  v=0.500  w=0.1702
 
 
 +=controller+=
   VSI time: 218030100 ns
-  e_lat=0.292802  v=0.500  w=-0.5415
+  e_lat=0.271971  e_head=-0.2400  v=0.500  w=0.1699
 
 
 +=controller+=
   VSI time: 219030100 ns
-  e_lat=0.292739  v=0.500  w=-0.5412
+  e_lat=0.271852  e_head=-0.2398  v=0.500  w=0.1696
 
 
 +=controller+=
   VSI time: 220030100 ns
-  e_lat=0.292675  v=0.500  w=-0.5409
+  e_lat=0.271733  e_head=-0.2397  v=0.500  w=0.1693
 
 
 +=controller+=
   VSI time: 221030100 ns
-  e_lat=0.292610  v=0.500  w=-0.5406
+  e_lat=0.271615  e_head=-0.2395  v=0.500  w=0.1690
 
 
 +=controller+=
   VSI time: 222030100 ns
-  e_lat=0.292546  v=0.500  w=-0.5403
+  e_lat=0.271496  e_head=-0.2393  v=0.500  w=0.1687
 
 
 +=controller+=
   VSI time: 223030100 ns
-  e_lat=0.292481  v=0.500  w=-0.5400
+  e_lat=0.271378  e_head=-0.2392  v=0.500  w=0.1684
 
 
 +=controller+=
   VSI time: 224030100 ns
-  e_lat=0.292416  v=0.500  w=-0.5397
+  e_lat=0.271259  e_head=-0.2390  v=0.500  w=0.1681
 
 
 +=controller+=
   VSI time: 225030100 ns
-  e_lat=0.292351  v=0.500  w=-0.5393
+  e_lat=0.271141  e_head=-0.2388  v=0.500  w=0.1678
 
 
 +=controller+=
   VSI time: 226030100 ns
-  e_lat=0.292285  v=0.500  w=-0.5390
+  e_lat=0.271022  e_head=-0.2387  v=0.500  w=0.1675
 
 
 +=controller+=
   VSI time: 227030100 ns
-  e_lat=0.292219  v=0.500  w=-0.5387
+  e_lat=0.270904  e_head=-0.2385  v=0.500  w=0.1672
 
 
 +=controller+=
   VSI time: 228030100 ns
-  e_lat=0.292153  v=0.500  w=-0.5384
+  e_lat=0.270786  e_head=-0.2383  v=0.500  w=0.1669
 
 
 +=controller+=
   VSI time: 229030100 ns
-  e_lat=0.292087  v=0.500  w=-0.5381
+  e_lat=0.270668  e_head=-0.2382  v=0.500  w=0.1666
 
 
 +=controller+=
   VSI time: 230030100 ns
-  e_lat=0.292020  v=0.500  w=-0.5378
+  e_lat=0.270550  e_head=-0.2380  v=0.500  w=0.1663
 
 
 +=controller+=
   VSI time: 231030100 ns
-  e_lat=0.291953  v=0.500  w=-0.5375
+  e_lat=0.270432  e_head=-0.2378  v=0.500  w=0.1660
 
 
 +=controller+=
   VSI time: 232030100 ns
-  e_lat=0.291886  v=0.500  w=-0.5372
+  e_lat=0.270315  e_head=-0.2377  v=0.500  w=0.1657
 
 
 +=controller+=
   VSI time: 233030100 ns
-  e_lat=0.291818  v=0.500  w=-0.5368
+  e_lat=0.270197  e_head=-0.2375  v=0.500  w=0.1654
 
 
 +=controller+=
   VSI time: 234030100 ns
-  e_lat=0.291751  v=0.500  w=-0.5365
+  e_lat=0.270079  e_head=-0.2373  v=0.500  w=0.1651
 
 
 +=controller+=
   VSI time: 235030100 ns
-  e_lat=0.291683  v=0.500  w=-0.5362
+  e_lat=0.269962  e_head=-0.2372  v=0.500  w=0.1649
 
 
 +=controller+=
   VSI time: 236030100 ns
-  e_lat=0.291614  v=0.500  w=-0.5359
+  e_lat=0.269844  e_head=-0.2370  v=0.500  w=0.1646
 
 
 +=controller+=
   VSI time: 237030100 ns
-  e_lat=0.291546  v=0.500  w=-0.5356
+  e_lat=0.269727  e_head=-0.2368  v=0.500  w=0.1643
 
 
 +=controller+=
   VSI time: 238030100 ns
-  e_lat=0.291477  v=0.500  w=-0.5353
+  e_lat=0.269609  e_head=-0.2367  v=0.500  w=0.1640
 
 
 +=controller+=
   VSI time: 239030100 ns
-  e_lat=0.291408  v=0.500  w=-0.5350
+  e_lat=0.269492  e_head=-0.2365  v=0.500  w=0.1637
 
 
 +=controller+=
   VSI time: 240030100 ns
-  e_lat=0.291339  v=0.500  w=-0.5346
+  e_lat=0.269375  e_head=-0.2363  v=0.500  w=0.1634
 
 
 +=controller+=
   VSI time: 241030100 ns
-  e_lat=0.291269  v=0.500  w=-0.5343
+  e_lat=0.269258  e_head=-0.2362  v=0.500  w=0.1631
 
 
 +=controller+=
   VSI time: 242030100 ns
-  e_lat=0.291199  v=0.500  w=-0.5340
+  e_lat=0.269141  e_head=-0.2360  v=0.500  w=0.1629
 
 
 +=controller+=
   VSI time: 243030100 ns
-  e_lat=0.291129  v=0.500  w=-0.5337
+  e_lat=0.269024  e_head=-0.2358  v=0.500  w=0.1626
 
 
 +=controller+=
   VSI time: 244030100 ns
-  e_lat=0.291059  v=0.500  w=-0.5334
+  e_lat=0.268907  e_head=-0.2357  v=0.500  w=0.1623
 
 
 +=controller+=
   VSI time: 245030100 ns
-  e_lat=0.290988  v=0.500  w=-0.5331
+  e_lat=0.268791  e_head=-0.2355  v=0.500  w=0.1620
 
 
 +=controller+=
   VSI time: 246030100 ns
-  e_lat=0.290917  v=0.500  w=-0.5327
+  e_lat=0.268674  e_head=-0.2354  v=0.500  w=0.1617
 
 
 +=controller+=
   VSI time: 247030100 ns
-  e_lat=0.290846  v=0.500  w=-0.5324
+  e_lat=0.268557  e_head=-0.2352  v=0.500  w=0.1615
 
 
 +=controller+=
   VSI time: 248030100 ns
-  e_lat=0.290774  v=0.500  w=-0.5321
+  e_lat=0.268441  e_head=-0.2350  v=0.500  w=0.1612
 
 
 +=controller+=
   VSI time: 249030100 ns
-  e_lat=0.290703  v=0.500  w=-0.5318
+  e_lat=0.268324  e_head=-0.2349  v=0.500  w=0.1609
 
 
 +=controller+=
   VSI time: 250030100 ns
-  e_lat=0.290631  v=0.500  w=-0.5315
+  e_lat=0.268208  e_head=-0.2347  v=0.500  w=0.1606
 
 
 +=controller+=
   VSI time: 251030100 ns
-  e_lat=0.290558  v=0.500  w=-0.5311
+  e_lat=0.268092  e_head=-0.2345  v=0.500  w=0.1603
 
 
 +=controller+=
   VSI time: 252030100 ns
-  e_lat=0.290486  v=0.500  w=-0.5308
+  e_lat=0.267975  e_head=-0.2344  v=0.500  w=0.1601
 
 
 +=controller+=
   VSI time: 253030100 ns
-  e_lat=0.290413  v=0.500  w=-0.5305
+  e_lat=0.267859  e_head=-0.2342  v=0.500  w=0.1598
 
 
 +=controller+=
   VSI time: 254030100 ns
-  e_lat=0.290340  v=0.500  w=-0.5302
+  e_lat=0.267743  e_head=-0.2341  v=0.500  w=0.1595
 
 
 +=controller+=
   VSI time: 255030100 ns
-  e_lat=0.290267  v=0.500  w=-0.5298
+  e_lat=0.267627  e_head=-0.2339  v=0.500  w=0.1592
 
 
 +=controller+=
   VSI time: 256030100 ns
-  e_lat=0.290193  v=0.500  w=-0.5295
+  e_lat=0.267511  e_head=-0.2337  v=0.500  w=0.1590
 
 
 +=controller+=
   VSI time: 257030100 ns
-  e_lat=0.290120  v=0.500  w=-0.5292
+  e_lat=0.267396  e_head=-0.2336  v=0.500  w=0.1587
 
 
 +=controller+=
   VSI time: 258030100 ns
-  e_lat=0.290045  v=0.500  w=-0.5289
+  e_lat=0.267280  e_head=-0.2334  v=0.500  w=0.1584
 
 
 +=controller+=
   VSI time: 259030100 ns
-  e_lat=0.289971  v=0.500  w=-0.5286
+  e_lat=0.267164  e_head=-0.2333  v=0.500  w=0.1582
 
 
 +=controller+=
   VSI time: 260030100 ns
-  e_lat=0.289897  v=0.500  w=-0.5282
+  e_lat=0.267049  e_head=-0.2331  v=0.500  w=0.1579
 
 
 +=controller+=
   VSI time: 261030100 ns
-  e_lat=0.289822  v=0.500  w=-0.5279
+  e_lat=0.266933  e_head=-0.2330  v=0.500  w=0.1576
 
 
 +=controller+=
   VSI time: 262030100 ns
-  e_lat=0.289747  v=0.500  w=-0.5276
+  e_lat=0.266818  e_head=-0.2328  v=0.500  w=0.1573
 
 
 +=controller+=
   VSI time: 263030100 ns
-  e_lat=0.289671  v=0.500  w=-0.5273
+  e_lat=0.266702  e_head=-0.2326  v=0.500  w=0.1571
 
 
 +=controller+=
   VSI time: 264030100 ns
-  e_lat=0.289596  v=0.500  w=-0.5269
+  e_lat=0.266587  e_head=-0.2325  v=0.500  w=0.1568
 
 
 +=controller+=
   VSI time: 265030100 ns
-  e_lat=0.289520  v=0.500  w=-0.5266
+  e_lat=0.266472  e_head=-0.2323  v=0.500  w=0.1565
 
 
 +=controller+=
   VSI time: 266030100 ns
-  e_lat=0.289443  v=0.500  w=-0.5263
+  e_lat=0.266357  e_head=-0.2322  v=0.500  w=0.1563
 
 
 +=controller+=
   VSI time: 267030100 ns
-  e_lat=0.289367  v=0.500  w=-0.5260
+  e_lat=0.266242  e_head=-0.2320  v=0.500  w=0.1560
 
 
 +=controller+=
   VSI time: 268030100 ns
-  e_lat=0.289290  v=0.500  w=-0.5256
+  e_lat=0.266127  e_head=-0.2319  v=0.500  w=0.1557
 
 
 +=controller+=
   VSI time: 269030100 ns
-  e_lat=0.289213  v=0.500  w=-0.5253
+  e_lat=0.266012  e_head=-0.2317  v=0.500  w=0.1555
 
 
 +=controller+=
   VSI time: 270030100 ns
-  e_lat=0.289136  v=0.500  w=-0.5250
+  e_lat=0.265897  e_head=-0.2315  v=0.500  w=0.1552
 
 
 +=controller+=
   VSI time: 271030100 ns
-  e_lat=0.289059  v=0.500  w=-0.5246
+  e_lat=0.265782  e_head=-0.2314  v=0.500  w=0.1549
 
 
 +=controller+=
   VSI time: 272030100 ns
-  e_lat=0.288981  v=0.500  w=-0.5243
+  e_lat=0.265668  e_head=-0.2312  v=0.500  w=0.1547
 
 
 +=controller+=
   VSI time: 273030100 ns
-  e_lat=0.288903  v=0.500  w=-0.5240
+  e_lat=0.265553  e_head=-0.2311  v=0.500  w=0.1544
 
 
 +=controller+=
   VSI time: 274030100 ns
-  e_lat=0.288825  v=0.500  w=-0.5237
+  e_lat=0.265439  e_head=-0.2309  v=0.500  w=0.1542
 
 
 +=controller+=
   VSI time: 275030100 ns
-  e_lat=0.288746  v=0.500  w=-0.5233
+  e_lat=0.265324  e_head=-0.2308  v=0.500  w=0.1539
 
 
 +=controller+=
   VSI time: 276030100 ns
-  e_lat=0.288668  v=0.500  w=-0.5230
+  e_lat=0.265210  e_head=-0.2306  v=0.500  w=0.1536
 
 
 +=controller+=
   VSI time: 277030100 ns
-  e_lat=0.288588  v=0.500  w=-0.5227
+  e_lat=0.265095  e_head=-0.2305  v=0.500  w=0.1534
 
 
 +=controller+=
   VSI time: 278030100 ns
-  e_lat=0.288509  v=0.500  w=-0.5223
+  e_lat=0.264981  e_head=-0.2303  v=0.500  w=0.1531
 
 
 +=controller+=
   VSI time: 279030100 ns
-  e_lat=0.288430  v=0.500  w=-0.5220
+  e_lat=0.264867  e_head=-0.2302  v=0.500  w=0.1529
 
 
 +=controller+=
   VSI time: 280030100 ns
-  e_lat=0.288350  v=0.500  w=-0.5217
+  e_lat=0.264753  e_head=-0.2300  v=0.500  w=0.1526
 
 
 +=controller+=
   VSI time: 281030100 ns
-  e_lat=0.288270  v=0.500  w=-0.5213
+  e_lat=0.264639  e_head=-0.2298  v=0.500  w=0.1523
 
 
 +=controller+=
   VSI time: 282030100 ns
-  e_lat=0.288190  v=0.500  w=-0.5210
+  e_lat=0.264525  e_head=-0.2297  v=0.500  w=0.1521
 
 
 +=controller+=
   VSI time: 283030100 ns
-  e_lat=0.288109  v=0.500  w=-0.5207
+  e_lat=0.264411  e_head=-0.2295  v=0.500  w=0.1518
 
 
 +=controller+=
   VSI time: 284030100 ns
-  e_lat=0.288028  v=0.500  w=-0.5204
+  e_lat=0.264298  e_head=-0.2294  v=0.500  w=0.1516
 
 
 +=controller+=
   VSI time: 285030100 ns
-  e_lat=0.287947  v=0.500  w=-0.5200
+  e_lat=0.264184  e_head=-0.2292  v=0.500  w=0.1513
 
 
 +=controller+=
   VSI time: 286030100 ns
-  e_lat=0.287866  v=0.500  w=-0.5197
+  e_lat=0.264070  e_head=-0.2291  v=0.500  w=0.1511
 
 
 +=controller+=
   VSI time: 287030100 ns
-  e_lat=0.287784  v=0.500  w=-0.5194
+  e_lat=0.263957  e_head=-0.2289  v=0.500  w=0.1508
 
 
 +=controller+=
   VSI time: 288030100 ns
-  e_lat=0.287702  v=0.500  w=-0.5190
+  e_lat=0.263843  e_head=-0.2288  v=0.500  w=0.1506
 
 
 +=controller+=
   VSI time: 289030100 ns
-  e_lat=0.287620  v=0.500  w=-0.5187
+  e_lat=0.263730  e_head=-0.2286  v=0.500  w=0.1503
 
 
 +=controller+=
   VSI time: 290030100 ns
-  e_lat=0.287538  v=0.500  w=-0.5183
+  e_lat=0.263617  e_head=-0.2285  v=0.500  w=0.1501
 
 
 +=controller+=
   VSI time: 291030100 ns
-  e_lat=0.287455  v=0.500  w=-0.5180
+  e_lat=0.263503  e_head=-0.2283  v=0.500  w=0.1498
 
 
 +=controller+=
   VSI time: 292030100 ns
-  e_lat=0.287372  v=0.500  w=-0.5177
+  e_lat=0.263390  e_head=-0.2282  v=0.500  w=0.1496
 
 
 +=controller+=
   VSI time: 293030100 ns
-  e_lat=0.287289  v=0.500  w=-0.5173
+  e_lat=0.263277  e_head=-0.2280  v=0.500  w=0.1493
 
-
-+=controller+=
-  VSI time: 294030100 ns
-  e_lat=0.287206  v=0.500  w=-0.5170
-
-
-+=controller+=
-  VSI time: 295030100 ns
-  e_lat=0.287122  v=0.500  w=-0.5167
-
-
-+=controller+=
-  VSI time: 296030100 ns
-  e_lat=0.287038  v=0.500  w=-0.5163
-
-
-+=controller+=
-  VSI time: 297030100 ns
-  e_lat=0.286954  v=0.500  w=-0.5160
-
-
-+=controller+=
-  VSI time: 298030100 ns
-  e_lat=0.286870  v=0.500  w=-0.5157
-
-
-+=controller+=
-  VSI time: 299030100 ns
-  e_lat=0.286785  v=0.500  w=-0.5153
-
-
-+=controller+=
-  VSI time: 300030100 ns
-  e_lat=0.286700  v=0.500  w=-0.5150
-
-
-+=controller+=
-  VSI time: 301030100 ns
-  e_lat=0.286615  v=0.500  w=-0.5146
-
-
-+=controller+=
-  VSI time: 302030100 ns
-  e_lat=0.286530  v=0.500  w=-0.5143
-
-
-+=controller+=
-  VSI time: 303030100 ns
-  e_lat=0.286444  v=0.500  w=-0.5140
-
-
-+=controller+=
-  VSI time: 304030100 ns
-  e_lat=0.286358  v=0.500  w=-0.5136
-
-
-+=controller+=
-  VSI time: 305030100 ns
-  e_lat=0.286272  v=0.500  w=-0.5133
-
-
-+=controller+=
-  VSI time: 306030100 ns
-  e_lat=0.286185  v=0.500  w=-0.5129
-
-
-+=controller+=
-  VSI time: 307030100 ns
-  e_lat=0.286099  v=0.500  w=-0.5126
-
-
-+=controller+=
-  VSI time: 308030100 ns
-  e_lat=0.286012  v=0.500  w=-0.5123
-
-
-+=controller+=
-  VSI time: 309030100 ns
-  e_lat=0.285924  v=0.500  w=-0.5119
-
-
-+=controller+=
-  VSI time: 310030100 ns
-  e_lat=0.285837  v=0.500  w=-0.5116
-
-
-+=controller+=
-  VSI time: 311030100 ns
-  e_lat=0.285749  v=0.500  w=-0.5112
-
-
-+=controller+=
-  VSI time: 312030100 ns
-  e_lat=0.285661  v=0.500  w=-0.5109
-
-
-+=controller+=
-  VSI time: 313030100 ns
-  e_lat=0.285573  v=0.500  w=-0.5106
-
-
-+=controller+=
-  VSI time: 314030100 ns
-  e_lat=0.285485  v=0.500  w=-0.5102
-
-
-+=controller+=
-  VSI time: 315030100 ns
-  e_lat=0.285396  v=0.500  w=-0.5099
-
-
-+=controller+=
-  VSI time: 316030100 ns
-  e_lat=0.285307  v=0.500  w=-0.5095
-
-
-+=controller+=
-  VSI time: 317030100 ns
-  e_lat=0.285218  v=0.500  w=-0.5092
-
-
-+=controller+=
-  VSI time: 318030100 ns
-  e_lat=0.285128  v=0.500  w=-0.5088
-
-
-+=controller+=
-  VSI time: 319030100 ns
-  e_lat=0.285039  v=0.500  w=-0.5085
-
-
-+=controller+=
-  VSI time: 320030100 ns
-  e_lat=0.284949  v=0.500  w=-0.5082
-
-
-+=controller+=
-  VSI time: 321030100 ns
-  e_lat=0.284859  v=0.500  w=-0.5078
-
-
-+=controller+=
-  VSI time: 322030100 ns
-  e_lat=0.284768  v=0.500  w=-0.5075
-
-
-+=controller+=
-  VSI time: 323030100 ns
-  e_lat=0.284677  v=0.500  w=-0.5071
-
-
-+=controller+=
-  VSI time: 324030100 ns
-  e_lat=0.284586  v=0.500  w=-0.5068
-
-
-+=controller+=
-  VSI time: 325030100 ns
-  e_lat=0.284495  v=0.500  w=-0.5064
-
-
-+=controller+=
-  VSI time: 326030100 ns
-  e_lat=0.284404  v=0.500  w=-0.5061
-
-
-+=controller+=
-  VSI time: 327030100 ns
-  e_lat=0.284312  v=0.500  w=-0.5057
-
-
-+=controller+=
-  VSI time: 328030100 ns
-  e_lat=0.284220  v=0.500  w=-0.5054
-
-
-+=controller+=
-  VSI time: 329030100 ns
-  e_lat=0.284128  v=0.500  w=-0.5050
-
-
-+=controller+=
-  VSI time: 330030100 ns
-  e_lat=0.284035  v=0.500  w=-0.5047
-
-
-+=controller+=
-  VSI time: 331030100 ns
-  e_lat=0.283943  v=0.500  w=-0.5043
-
-
-+=controller+=
-  VSI time: 332030100 ns
-  e_lat=0.283850  v=0.500  w=-0.5040
-
-
-+=controller+=
-  VSI time: 333030100 ns
-  e_lat=0.283757  v=0.500  w=-0.5036
-
-
-+=controller+=
-  VSI time: 334030100 ns
-  e_lat=0.283663  v=0.500  w=-0.5033
-
-
-+=controller+=
-  VSI time: 335030100 ns
-  e_lat=0.283569  v=0.500  w=-0.5029
-
-
-+=controller+=
-  VSI time: 336030100 ns
-  e_lat=0.283475  v=0.500  w=-0.5026
-
-
-+=controller+=
-  VSI time: 337030100 ns
-  e_lat=0.283381  v=0.500  w=-0.5022
-
-
-+=controller+=
-  VSI time: 338030100 ns
-  e_lat=0.283287  v=0.500  w=-0.5019
-
-
-+=controller+=
-  VSI time: 339030100 ns
-  e_lat=0.283192  v=0.500  w=-0.5015
-
-
-+=controller+=
-  VSI time: 340030100 ns
-  e_lat=0.283097  v=0.500  w=-0.5012
-
-
-+=controller+=
-  VSI time: 341030100 ns
-  e_lat=0.283002  v=0.500  w=-0.5008
-
-
-+=controller+=
-  VSI time: 342030100 ns
-  e_lat=0.282907  v=0.500  w=-0.5005
-
-
-+=controller+=
-  VSI time: 343030100 ns
-  e_lat=0.282811  v=0.500  w=-0.5001
-
-
-+=controller+=
-  VSI time: 344030100 ns
-  e_lat=0.282715  v=0.500  w=-0.4998
-
-
-+=controller+=
-  VSI time: 345030100 ns
-  e_lat=0.282619  v=0.500  w=-0.4994
-
-
-+=controller+=
-  VSI time: 346030100 ns
-  e_lat=0.282522  v=0.500  w=-0.4991
-
-
-+=controller+=
-  VSI time: 347030100 ns
-  e_lat=0.282426  v=0.500  w=-0.4987
-
-
-+=controller+=
-  VSI time: 348030100 ns
-  e_lat=0.282329  v=0.500  w=-0.4984
-
-
-+=controller+=
-  VSI time: 349030100 ns
-  e_lat=0.282232  v=0.500  w=-0.4980
-
-
-+=controller+=
-  VSI time: 350030100 ns
-  e_lat=0.282134  v=0.500  w=-0.4977
-
-
-+=controller+=
-  VSI time: 351030100 ns
-  e_lat=0.282037  v=0.500  w=-0.4973
-
-
-+=controller+=
-  VSI time: 352030100 ns
-  e_lat=0.281939  v=0.500  w=-0.4969
-
-
-+=controller+=
-  VSI time: 353030100 ns
-  e_lat=0.281841  v=0.500  w=-0.4966
-
-
-+=controller+=
-  VSI time: 354030100 ns
-  e_lat=0.281742  v=0.500  w=-0.4962
-
-
-+=controller+=
-  VSI time: 355030100 ns
-  e_lat=0.281644  v=0.500  w=-0.4959
-
-
-+=controller+=
-  VSI time: 356030100 ns
-  e_lat=0.281545  v=0.500  w=-0.4955
-
-
-+=controller+=
-  VSI time: 357030100 ns
-  e_lat=0.281446  v=0.500  w=-0.4952
-
-
-+=controller+=
-  VSI time: 358030100 ns
-  e_lat=0.281347  v=0.500  w=-0.4948
-
-
-+=controller+=
-  VSI time: 359030100 ns
-  e_lat=0.281247  v=0.500  w=-0.4944
-
-
-+=controller+=
-  VSI time: 360030100 ns
-  e_lat=0.281147  v=0.500  w=-0.4941
-
-
-+=controller+=
-  VSI time: 361030100 ns
-  e_lat=0.281047  v=0.500  w=-0.4937
-
-
-+=controller+=
-  VSI time: 362030100 ns
-  e_lat=0.280947  v=0.500  w=-0.4934
-
-
-+=controller+=
-  VSI time: 363030100 ns
-  e_lat=0.280846  v=0.500  w=-0.4930
-
-
-+=controller+=
-  VSI time: 364030100 ns
-  e_lat=0.280745  v=0.500  w=-0.4927
-
-
-+=controller+=
-  VSI time: 365030100 ns
-  e_lat=0.280644  v=0.500  w=-0.4923
-
-
-+=controller+=
-  VSI time: 366030100 ns
-  e_lat=0.280543  v=0.500  w=-0.4919
-
-
-+=controller+=
-  VSI time: 367030100 ns
-  e_lat=0.280442  v=0.500  w=-0.4916
-
-
-+=controller+=
-  VSI time: 368030100 ns
-  e_lat=0.280340  v=0.500  w=-0.4912
-
-
-+=controller+=
-  VSI time: 369030100 ns
-  e_lat=0.280238  v=0.500  w=-0.4909
-
-
-+=controller+=
-  VSI time: 370030100 ns
-  e_lat=0.280136  v=0.500  w=-0.4905
-
-
-+=controller+=
-  VSI time: 371030100 ns
-  e_lat=0.280033  v=0.500  w=-0.4901
-
-
-+=controller+=
-  VSI time: 372030100 ns
-  e_lat=0.279931  v=0.500  w=-0.4898
-
-
-+=controller+=
-  VSI time: 373030100 ns
-  e_lat=0.279828  v=0.500  w=-0.4894
-
-
-+=controller+=
-  VSI time: 374030100 ns
-  e_lat=0.279724  v=0.500  w=-0.4890
-
-
-+=controller+=
-  VSI time: 375030100 ns
-  e_lat=0.279621  v=0.500  w=-0.4887
-
-
-+=controller+=
-  VSI time: 376030100 ns
-  e_lat=0.279517  v=0.500  w=-0.4883
-
-
-+=controller+=
-  VSI time: 377030100 ns
-  e_lat=0.279413  v=0.500  w=-0.4880
-
-
-+=controller+=
-  VSI time: 378030100 ns
-  e_lat=0.279309  v=0.500  w=-0.4876
-
-
-+=controller+=
-  VSI time: 379030100 ns
-  e_lat=0.279205  v=0.500  w=-0.4872
-
-
-+=controller+=
-  VSI time: 380030100 ns
-  e_lat=0.279100  v=0.500  w=-0.4869
-
-
-+=controller+=
-  VSI time: 381030100 ns
-  e_lat=0.278995  v=0.500  w=-0.4865
-
-
-+=controller+=
-  VSI time: 382030100 ns
-  e_lat=0.278890  v=0.500  w=-0.4861
-
-
-+=controller+=
-  VSI time: 383030100 ns
-  e_lat=0.278785  v=0.500  w=-0.4858
-
-
-+=controller+=
-  VSI time: 384030100 ns
-  e_lat=0.278679  v=0.500  w=-0.4854
-
-
-+=controller+=
-  VSI time: 385030100 ns
-  e_lat=0.278573  v=0.500  w=-0.4850
-
-
-+=controller+=
-  VSI time: 386030100 ns
-  e_lat=0.278467  v=0.500  w=-0.4847
-
-
-+=controller+=
-  VSI time: 387030100 ns
-  e_lat=0.278361  v=0.500  w=-0.4843
-
-
-+=controller+=
-  VSI time: 388030100 ns
-  e_lat=0.278255  v=0.500  w=-0.4839
-
-
-+=controller+=
-  VSI time: 389030100 ns
-  e_lat=0.278148  v=0.500  w=-0.4836
-
-
-+=controller+=
-  VSI time: 390030100 ns
-  e_lat=0.278041  v=0.500  w=-0.4832
-
-
-+=controller+=
-  VSI time: 391030100 ns
-  e_lat=0.277934  v=0.500  w=-0.4828
-
-
-+=controller+=
-  VSI time: 392030100 ns
-  e_lat=0.277826  v=0.500  w=-0.4825
-
-
-+=controller+=
-  VSI time: 393030100 ns
-  e_lat=0.277718  v=0.500  w=-0.4821
-
-
-+=controller+=
-  VSI time: 394030100 ns
-  e_lat=0.277610  v=0.500  w=-0.4817
-
-
-+=controller+=
-  VSI time: 395030100 ns
-  e_lat=0.277502  v=0.500  w=-0.4814
-
-
-+=controller+=
-  VSI time: 396030100 ns
-  e_lat=0.277394  v=0.500  w=-0.4810
-
-
-+=controller+=
-  VSI time: 397030100 ns
-  e_lat=0.277285  v=0.500  w=-0.4806
-
-
-+=controller+=
-  VSI time: 398030100 ns
-  e_lat=0.277176  v=0.500  w=-0.4803
-
-
-+=controller+=
-  VSI time: 399030100 ns
-  e_lat=0.277067  v=0.500  w=-0.4799
-
-
-+=controller+=
-  VSI time: 400030100 ns
-  e_lat=0.276958  v=0.500  w=-0.4795
-
-
-+=controller+=
-  VSI time: 401030100 ns
-  e_lat=0.276848  v=0.500  w=-0.4791
-
-
-+=controller+=
-  VSI time: 402030100 ns
-  e_lat=0.276738  v=0.500  w=-0.4788
-
-
-+=controller+=
-  VSI time: 403030100 ns
-  e_lat=0.276628  v=0.500  w=-0.4784
-
-
-+=controller+=
-  VSI time: 404030100 ns
-  e_lat=0.276518  v=0.500  w=-0.4780
-
-
-+=controller+=
-  VSI time: 405030100 ns
-  e_lat=0.276408  v=0.500  w=-0.4777
-
-
-+=controller+=
-  VSI time: 406030100 ns
-  e_lat=0.276297  v=0.500  w=-0.4773
-
-
-+=controller+=
-  VSI time: 407030100 ns
-  e_lat=0.276186  v=0.500  w=-0.4769
-
-
-+=controller+=
-  VSI time: 408030100 ns
-  e_lat=0.276075  v=0.500  w=-0.4765
-
-
-+=controller+=
-  VSI time: 409030100 ns
-  e_lat=0.275963  v=0.500  w=-0.4762
-
-
-+=controller+=
-  VSI time: 410030100 ns
-  e_lat=0.275851  v=0.500  w=-0.4758
-
-
-+=controller+=
-  VSI time: 411030100 ns
-  e_lat=0.275739  v=0.500  w=-0.4754
-
-
-+=controller+=
-  VSI time: 412030100 ns
-  e_lat=0.275627  v=0.500  w=-0.4751
-
-
-+=controller+=
-  VSI time: 413030100 ns
-  e_lat=0.275515  v=0.500  w=-0.4747
-
-
-+=controller+=
-  VSI time: 414030100 ns
-  e_lat=0.275402  v=0.500  w=-0.4743
-
-
-+=controller+=
-  VSI time: 415030100 ns
-  e_lat=0.275289  v=0.500  w=-0.4739
-
-
-+=controller+=
-  VSI time: 416030100 ns
-  e_lat=0.275176  v=0.500  w=-0.4736
-
-
-+=controller+=
-  VSI time: 417030100 ns
-  e_lat=0.275063  v=0.500  w=-0.4732
-
-
-+=controller+=
-  VSI time: 418030100 ns
-  e_lat=0.274950  v=0.500  w=-0.4728
-
-
-+=controller+=
-  VSI time: 419030100 ns
-  e_lat=0.274836  v=0.500  w=-0.4724
-
-
-+=controller+=
-  VSI time: 420030100 ns
-  e_lat=0.274722  v=0.500  w=-0.4721
-
-
-+=controller+=
-  VSI time: 421030100 ns
-  e_lat=0.274608  v=0.500  w=-0.4717
-
-
-+=controller+=
-  VSI time: 422030100 ns
-  e_lat=0.274493  v=0.500  w=-0.4713
-
-
-+=controller+=
-  VSI time: 423030100 ns
-  e_lat=0.274378  v=0.500  w=-0.4709
-
-
-+=controller+=
-  VSI time: 424030100 ns
-  e_lat=0.274263  v=0.500  w=-0.4705
-
-
-+=controller+=
-  VSI time: 425030100 ns
-  e_lat=0.274148  v=0.500  w=-0.4702
-
-
-+=controller+=
-  VSI time: 426030100 ns
-  e_lat=0.274033  v=0.500  w=-0.4698
-
-
-+=controller+=
-  VSI time: 427030100 ns
-  e_lat=0.273917  v=0.500  w=-0.4694
-
-
-+=controller+=
-  VSI time: 428030100 ns
-  e_lat=0.273801  v=0.500  w=-0.4690
-
-
-+=controller+=
-  VSI time: 429030100 ns
-  e_lat=0.273685  v=0.500  w=-0.4687
-
-
-+=controller+=
-  VSI time: 430030100 ns
-  e_lat=0.273569  v=0.500  w=-0.4683
-
-
-+=controller+=
-  VSI time: 431030100 ns
-  e_lat=0.273453  v=0.500  w=-0.4679
-
-
-+=controller+=
-  VSI time: 432030100 ns
-  e_lat=0.273336  v=0.500  w=-0.4675
-
-
-+=controller+=
-  VSI time: 433030100 ns
-  e_lat=0.273219  v=0.500  w=-0.4671
-
-
-+=controller+=
-  VSI time: 434030100 ns
-  e_lat=0.273102  v=0.500  w=-0.4668
-
-
-+=controller+=
-  VSI time: 435030100 ns
-  e_lat=0.272984  v=0.500  w=-0.4664
-
-
-+=controller+=
-  VSI time: 436030100 ns
-  e_lat=0.272867  v=0.500  w=-0.4660
-
-
-+=controller+=
-  VSI time: 437030100 ns
-  e_lat=0.272749  v=0.500  w=-0.4656
-
-
-+=controller+=
-  VSI time: 438030100 ns
-  e_lat=0.272631  v=0.500  w=-0.4652
-
-
-+=controller+=
-  VSI time: 439030100 ns
-  e_lat=0.272512  v=0.500  w=-0.4649
-
-
-+=controller+=
-  VSI time: 440030100 ns
-  e_lat=0.272394  v=0.500  w=-0.4645
-
-
-+=controller+=
-  VSI time: 441030100 ns
-  e_lat=0.272275  v=0.500  w=-0.4641
-
-
-+=controller+=
-  VSI time: 442030100 ns
-  e_lat=0.272156  v=0.500  w=-0.4637
-
-
-+=controller+=
-  VSI time: 443030100 ns
-  e_lat=0.272037  v=0.500  w=-0.4633
-
-
-+=controller+=
-  VSI time: 444030100 ns
-  e_lat=0.271917  v=0.500  w=-0.4629
-
-
-+=controller+=
-  VSI time: 445030100 ns
-  e_lat=0.271797  v=0.500  w=-0.4626
-
-
-+=controller+=
-  VSI time: 446030100 ns
-  e_lat=0.271677  v=0.500  w=-0.4622
-
-
-+=controller+=
-  VSI time: 447030100 ns
-  e_lat=0.271557  v=0.500  w=-0.4618
-
-
-+=controller+=
-  VSI time: 448030100 ns
-  e_lat=0.271437  v=0.500  w=-0.4614
-
-
-+=controller+=
-  VSI time: 449030100 ns
-  e_lat=0.271316  v=0.500  w=-0.4610
-
-
-+=controller+=
-  VSI time: 450030100 ns
-  e_lat=0.271196  v=0.500  w=-0.4606
-
-
-+=controller+=
-  VSI time: 451030100 ns
-  e_lat=0.271075  v=0.500  w=-0.4603
-
-
-+=controller+=
-  VSI time: 452030100 ns
-  e_lat=0.270953  v=0.500  w=-0.4599
-
-
-+=controller+=
-  VSI time: 453030100 ns
-  e_lat=0.270832  v=0.500  w=-0.4595
-
-
-+=controller+=
-  VSI time: 454030100 ns
-  e_lat=0.270710  v=0.500  w=-0.4591
-
-
-+=controller+=
-  VSI time: 455030100 ns
-  e_lat=0.270588  v=0.500  w=-0.4587
-
-
-+=controller+=
-  VSI time: 456030100 ns
-  e_lat=0.270466  v=0.500  w=-0.4583
-
-
-+=controller+=
-  VSI time: 457030100 ns
-  e_lat=0.270344  v=0.500  w=-0.4579
-
-
-+=controller+=
-  VSI time: 458030100 ns
-  e_lat=0.270221  v=0.500  w=-0.4576
-
-
-+=controller+=
-  VSI time: 459030100 ns
-  e_lat=0.270098  v=0.500  w=-0.4572
-
-
-+=controller+=
-  VSI time: 460030100 ns
-  e_lat=0.269975  v=0.500  w=-0.4568
-
-
-+=controller+=
-  VSI time: 461030100 ns
-  e_lat=0.269852  v=0.500  w=-0.4564
-
-
-+=controller+=
-  VSI time: 462030100 ns
-  e_lat=0.269728  v=0.500  w=-0.4560
-
-
-+=controller+=
-  VSI time: 463030100 ns
-  e_lat=0.269605  v=0.500  w=-0.4556
-
-
-+=controller+=
-  VSI time: 464030100 ns
-  e_lat=0.269481  v=0.500  w=-0.4552
-
-
-+=controller+=
-  VSI time: 465030100 ns
-  e_lat=0.269357  v=0.500  w=-0.4548
-
-
-+=controller+=
-  VSI time: 466030100 ns
-  e_lat=0.269232  v=0.500  w=-0.4545
-
-
-+=controller+=
-  VSI time: 467030100 ns
-  e_lat=0.269108  v=0.500  w=-0.4541
-
-
-+=controller+=
-  VSI time: 468030100 ns
-  e_lat=0.268983  v=0.500  w=-0.4537
-
-
-+=controller+=
-  VSI time: 469030100 ns
-  e_lat=0.268858  v=0.500  w=-0.4533
-
-
-+=controller+=
-  VSI time: 470030100 ns
-  e_lat=0.268732  v=0.500  w=-0.4529
-
-
-+=controller+=
-  VSI time: 471030100 ns
-  e_lat=0.268607  v=0.500  w=-0.4525
-
-
-+=controller+=
-  VSI time: 472030100 ns
-  e_lat=0.268481  v=0.500  w=-0.4521
-
-
-+=controller+=
-  VSI time: 473030100 ns
-  e_lat=0.268355  v=0.500  w=-0.4517
-
-
-+=controller+=
-  VSI time: 474030100 ns
-  e_lat=0.268229  v=0.500  w=-0.4513
-
-
-+=controller+=
-  VSI time: 475030100 ns
-  e_lat=0.268103  v=0.500  w=-0.4509
-
-
-+=controller+=
-  VSI time: 476030100 ns
-  e_lat=0.267976  v=0.500  w=-0.4506
-
-
-+=controller+=
-  VSI time: 477030100 ns
-  e_lat=0.267850  v=0.500  w=-0.4502
-
-
-+=controller+=
-  VSI time: 478030100 ns
-  e_lat=0.267723  v=0.500  w=-0.4498
-
-
-+=controller+=
-  VSI time: 479030100 ns
-  e_lat=0.267595  v=0.500  w=-0.4494
-
-
-+=controller+=
-  VSI time: 480030100 ns
-  e_lat=0.267468  v=0.500  w=-0.4490
-
-
-+=controller+=
-  VSI time: 481030100 ns
-  e_lat=0.267340  v=0.500  w=-0.4486
-
-
-+=controller+=
-  VSI time: 482030100 ns
-  e_lat=0.267212  v=0.500  w=-0.4482
-
-
-+=controller+=
-  VSI time: 483030100 ns
-  e_lat=0.267084  v=0.500  w=-0.4478
-
-
-+=controller+=
-  VSI time: 484030100 ns
-  e_lat=0.266956  v=0.500  w=-0.4474
-
-
-+=controller+=
-  VSI time: 485030100 ns
-  e_lat=0.266827  v=0.500  w=-0.4470
-
-
-+=controller+=
-  VSI time: 486030100 ns
-  e_lat=0.266699  v=0.500  w=-0.4466
-
-
-+=controller+=
-  VSI time: 487030100 ns
-  e_lat=0.266570  v=0.500  w=-0.4462
-
-
-+=controller+=
-  VSI time: 488030100 ns
-  e_lat=0.266441  v=0.500  w=-0.4458
-
-
-+=controller+=
-  VSI time: 489030100 ns
-  e_lat=0.266311  v=0.500  w=-0.4454
-
-
-+=controller+=
-  VSI time: 490030100 ns
-  e_lat=0.266182  v=0.500  w=-0.4451
-
-
-+=controller+=
-  VSI time: 491030100 ns
-  e_lat=0.266052  v=0.500  w=-0.4447
-
-
-+=controller+=
-  VSI time: 492030100 ns
-  e_lat=0.265922  v=0.500  w=-0.4443
-
-
-+=controller+=
-  VSI time: 493030100 ns
-  e_lat=0.265791  v=0.500  w=-0.4439
-
-
-+=controller+=
-  VSI time: 494030100 ns
-  e_lat=0.265661  v=0.500  w=-0.4435
-
-
-+=controller+=
-  VSI time: 495030100 ns
-  e_lat=0.265530  v=0.500  w=-0.4431
-
-
-+=controller+=
-  VSI time: 496030100 ns
-  e_lat=0.265399  v=0.500  w=-0.4427
-
-
-+=controller+=
-  VSI time: 497030100 ns
-  e_lat=0.265268  v=0.500  w=-0.4423
-
-
-+=controller+=
-  VSI time: 498030100 ns
-  e_lat=0.265137  v=0.500  w=-0.4419
-
-
-+=controller+=
-  VSI time: 499030100 ns
-  e_lat=0.265005  v=0.500  w=-0.4415
-
-
-+=controller+=
-  VSI time: 500030100 ns
-  e_lat=0.264874  v=0.500  w=-0.4411
-
-
-+=controller+=
-  VSI time: 501030100 ns
-  e_lat=0.264742  v=0.500  w=-0.4407
-
-
-+=controller+=
-  VSI time: 502030100 ns
-  e_lat=0.264610  v=0.500  w=-0.4403
-
-
-+=controller+=
-  VSI time: 503030100 ns
-  e_lat=0.264477  v=0.500  w=-0.4399
-
-
-+=controller+=
-  VSI time: 504030100 ns
-  e_lat=0.264345  v=0.500  w=-0.4395
-
-
-+=controller+=
-  VSI time: 505030100 ns
-  e_lat=0.264212  v=0.500  w=-0.4391
-
-
-+=controller+=
-  VSI time: 506030100 ns
-  e_lat=0.264079  v=0.500  w=-0.4387
-
-
-+=controller+=
-  VSI time: 507030100 ns
-  e_lat=0.263946  v=0.500  w=-0.4383
-
-
-+=controller+=
-  VSI time: 508030100 ns
-  e_lat=0.263812  v=0.500  w=-0.4379
-
-
-+=controller+=
-  VSI time: 509030100 ns
-  e_lat=0.263678  v=0.500  w=-0.4375
-
-
-+=controller+=
-  VSI time: 510030100 ns
-  e_lat=0.263545  v=0.500  w=-0.4371
-
-
-+=controller+=
-  VSI time: 511030100 ns
-  e_lat=0.263410  v=0.500  w=-0.4367
-
-
-+=controller+=
-  VSI time: 512030100 ns
-  e_lat=0.263276  v=0.500  w=-0.4363
-
-
-+=controller+=
-  VSI time: 513030100 ns
-  e_lat=0.263142  v=0.500  w=-0.4359
-
-
-+=controller+=
-  VSI time: 514030100 ns
-  e_lat=0.263007  v=0.500  w=-0.4355
-
-
-+=controller+=
-  VSI time: 515030100 ns
-  e_lat=0.262872  v=0.500  w=-0.4351
-
-
-+=controller+=
-  VSI time: 516030100 ns
-  e_lat=0.262737  v=0.500  w=-0.4347
-
-
-+=controller+=
-  VSI time: 517030100 ns
-  e_lat=0.262602  v=0.500  w=-0.4343
-
-
-+=controller+=
-  VSI time: 518030100 ns
-  e_lat=0.262466  v=0.500  w=-0.4339
-
-
-+=controller+=
-  VSI time: 519030100 ns
-  e_lat=0.262330  v=0.500  w=-0.4335
-
-
-+=controller+=
-  VSI time: 520030100 ns
-  e_lat=0.262194  v=0.500  w=-0.4331
-
-
-+=controller+=
-  VSI time: 521030100 ns
-  e_lat=0.262058  v=0.500  w=-0.4327
-
-
-+=controller+=
-  VSI time: 522030100 ns
-  e_lat=0.261922  v=0.500  w=-0.4323
-
-
-+=controller+=
-  VSI time: 523030100 ns
-  e_lat=0.261785  v=0.500  w=-0.4319
-
-
-+=controller+=
-  VSI time: 524030100 ns
-  e_lat=0.261648  v=0.500  w=-0.4315
-
-
-+=controller+=
-  VSI time: 525030100 ns
-  e_lat=0.261511  v=0.500  w=-0.4311
-
-
-+=controller+=
-  VSI time: 526030100 ns
-  e_lat=0.261374  v=0.500  w=-0.4307
-
-
-+=controller+=
-  VSI time: 527030100 ns
-  e_lat=0.261237  v=0.500  w=-0.4303
-
-
-+=controller+=
-  VSI time: 528030100 ns
-  e_lat=0.261099  v=0.500  w=-0.4299
-
-
-+=controller+=
-  VSI time: 529030100 ns
-  e_lat=0.260961  v=0.500  w=-0.4295
-
-
-+=controller+=
-  VSI time: 530030100 ns
-  e_lat=0.260823  v=0.500  w=-0.4291
-
-
-+=controller+=
-  VSI time: 531030100 ns
-  e_lat=0.260685  v=0.500  w=-0.4286
-
-
-+=controller+=
-  VSI time: 532030100 ns
-  e_lat=0.260546  v=0.500  w=-0.4282
-
-
-+=controller+=
-  VSI time: 533030100 ns
-  e_lat=0.260408  v=0.500  w=-0.4278
-
-
-+=controller+=
-  VSI time: 534030100 ns
-  e_lat=0.260269  v=0.500  w=-0.4274
-
-
-+=controller+=
-  VSI time: 535030100 ns
-  e_lat=0.260130  v=0.500  w=-0.4270
-
-
-+=controller+=
-  VSI time: 536030100 ns
-  e_lat=0.259991  v=0.500  w=-0.4266
-
-
-+=controller+=
-  VSI time: 537030100 ns
-  e_lat=0.259851  v=0.500  w=-0.4262
-
-
-+=controller+=
-  VSI time: 538030100 ns
-  e_lat=0.259711  v=0.500  w=-0.4258
-
-
-+=controller+=
-  VSI time: 539030100 ns
-  e_lat=0.259571  v=0.500  w=-0.4254
-
-
-+=controller+=
-  VSI time: 540030100 ns
-  e_lat=0.259431  v=0.500  w=-0.4250
-
-
-+=controller+=
-  VSI time: 541030100 ns
-  e_lat=0.259291  v=0.500  w=-0.4246
-
-
-+=controller+=
-  VSI time: 542030100 ns
-  e_lat=0.259151  v=0.500  w=-0.4242
-
-
-+=controller+=
-  VSI time: 543030100 ns
-  e_lat=0.259010  v=0.500  w=-0.4238
-
-
-+=controller+=
-  VSI time: 544030100 ns
-  e_lat=0.258869  v=0.500  w=-0.4234
-
-
-+=controller+=
-  VSI time: 545030100 ns
-  e_lat=0.258728  v=0.500  w=-0.4230
-
-
-+=controller+=
-  VSI time: 546030100 ns
-  e_lat=0.258586  v=0.500  w=-0.4225
-
-
-+=controller+=
-  VSI time: 547030100 ns
-  e_lat=0.258445  v=0.500  w=-0.4221
-
-
-+=controller+=
-  VSI time: 548030100 ns
-  e_lat=0.258303  v=0.500  w=-0.4217
-
-
-+=controller+=
-  VSI time: 549030100 ns
-  e_lat=0.258161  v=0.500  w=-0.4213
-
-
-+=controller+=
-  VSI time: 550030100 ns
-  e_lat=0.258019  v=0.500  w=-0.4209
-
-
-+=controller+=
-  VSI time: 551030100 ns
-  e_lat=0.257877  v=0.500  w=-0.4205
-
-
-+=controller+=
-  VSI time: 552030100 ns
-  e_lat=0.257734  v=0.500  w=-0.4201
-
-
-+=controller+=
-  VSI time: 553030100 ns
-  e_lat=0.257591  v=0.500  w=-0.4197
-
-
-+=controller+=
-  VSI time: 554030100 ns
-  e_lat=0.257449  v=0.500  w=-0.4193
-
-
-+=controller+=
-  VSI time: 555030100 ns
-  e_lat=0.257305  v=0.500  w=-0.4189
-
-
-+=controller+=
-  VSI time: 556030100 ns
-  e_lat=0.257162  v=0.500  w=-0.4185
-
-
-+=controller+=
-  VSI time: 557030100 ns
-  e_lat=0.257018  v=0.500  w=-0.4180
-
-
-+=controller+=
-  VSI time: 558030100 ns
-  e_lat=0.256875  v=0.500  w=-0.4176
-
-
-+=controller+=
-  VSI time: 559030100 ns
-  e_lat=0.256731  v=0.500  w=-0.4172
-
-
-+=controller+=
-  VSI time: 560030100 ns
-  e_lat=0.256587  v=0.500  w=-0.4168
-
-
-+=controller+=
-  VSI time: 561030100 ns
-  e_lat=0.256442  v=0.500  w=-0.4164
-
-
-+=controller+=
-  VSI time: 562030100 ns
-  e_lat=0.256298  v=0.500  w=-0.4160
-
-
-+=controller+=
-  VSI time: 563030100 ns
-  e_lat=0.256153  v=0.500  w=-0.4156
-
-
-+=controller+=
-  VSI time: 564030100 ns
-  e_lat=0.256008  v=0.500  w=-0.4152
-
-
-+=controller+=
-  VSI time: 565030100 ns
-  e_lat=0.255863  v=0.500  w=-0.4147
-
-
-+=controller+=
-  VSI time: 566030100 ns
-  e_lat=0.255718  v=0.500  w=-0.4143
-
-
-+=controller+=
-  VSI time: 567030100 ns
-  e_lat=0.255572  v=0.500  w=-0.4139
-
-
-+=controller+=
-  VSI time: 568030100 ns
-  e_lat=0.255426  v=0.500  w=-0.4135
-
-
-+=controller+=
-  VSI time: 569030100 ns
-  e_lat=0.255280  v=0.500  w=-0.4131
-
-
-+=controller+=
-  VSI time: 570030100 ns
-  e_lat=0.255134  v=0.500  w=-0.4127
-
-
-+=controller+=
-  VSI time: 571030100 ns
-  e_lat=0.254988  v=0.500  w=-0.4123
-
-
-+=controller+=
-  VSI time: 572030100 ns
-  e_lat=0.254841  v=0.500  w=-0.4119
-
-
-+=controller+=
-  VSI time: 573030100 ns
-  e_lat=0.254695  v=0.500  w=-0.4114
-
-
-+=controller+=
-  VSI time: 574030100 ns
-  e_lat=0.254548  v=0.500  w=-0.4110
-
-
-+=controller+=
-  VSI time: 575030100 ns
-  e_lat=0.254401  v=0.500  w=-0.4106
-
-
-+=controller+=
-  VSI time: 576030100 ns
-  e_lat=0.254253  v=0.500  w=-0.4102
-
-
-+=controller+=
-  VSI time: 577030100 ns
-  e_lat=0.254106  v=0.500  w=-0.4098
-
-
-+=controller+=
-  VSI time: 578030100 ns
-  e_lat=0.253958  v=0.500  w=-0.4094
-
-
-+=controller+=
-  VSI time: 579030100 ns
-  e_lat=0.253810  v=0.500  w=-0.4089
-
-
-+=controller+=
-  VSI time: 580030100 ns
-  e_lat=0.253662  v=0.500  w=-0.4085
-
-
-+=controller+=
-  VSI time: 581030100 ns
-  e_lat=0.253514  v=0.500  w=-0.4081
-
-
-+=controller+=
-  VSI time: 582030100 ns
-  e_lat=0.253365  v=0.500  w=-0.4077
-
-
-+=controller+=
-  VSI time: 583030100 ns
-  e_lat=0.253217  v=0.500  w=-0.4073
-
-
-+=controller+=
-  VSI time: 584030100 ns
-  e_lat=0.253068  v=0.500  w=-0.4069
-
-
-+=controller+=
-  VSI time: 585030100 ns
-  e_lat=0.252919  v=0.500  w=-0.4064
-
-
-+=controller+=
-  VSI time: 586030100 ns
-  e_lat=0.252769  v=0.500  w=-0.4060
-
-
-+=controller+=
-  VSI time: 587030100 ns
-  e_lat=0.252620  v=0.500  w=-0.4056
-
-
-+=controller+=
-  VSI time: 588030100 ns
-  e_lat=0.252470  v=0.500  w=-0.4052
-
-
-+=controller+=
-  VSI time: 589030100 ns
-  e_lat=0.252320  v=0.500  w=-0.4048
-
-
-+=controller+=
-  VSI time: 590030100 ns
-  e_lat=0.252170  v=0.500  w=-0.4044
-
-
-+=controller+=
-  VSI time: 591030100 ns
-  e_lat=0.252020  v=0.500  w=-0.4039
-
-
-+=controller+=
-  VSI time: 592030100 ns
-  e_lat=0.251870  v=0.500  w=-0.4035
-
-
-+=controller+=
-  VSI time: 593030100 ns
-  e_lat=0.251719  v=0.500  w=-0.4031
-
-
-+=controller+=
-  VSI time: 594030100 ns
-  e_lat=0.251568  v=0.500  w=-0.4027
-
-
-+=controller+=
-  VSI time: 595030100 ns
-  e_lat=0.251417  v=0.500  w=-0.4023
-
-
-+=controller+=
-  VSI time: 596030100 ns
-  e_lat=0.251266  v=0.500  w=-0.4019
-
-
-+=controller+=
-  VSI time: 597030100 ns
-  e_lat=0.251114  v=0.500  w=-0.4014
-
-
-+=controller+=
-  VSI time: 598030100 ns
-  e_lat=0.250963  v=0.500  w=-0.4010
-
-
-+=controller+=
-  VSI time: 599030100 ns
-  e_lat=0.250811  v=0.500  w=-0.4006
-
-
-+=controller+=
-  VSI time: 600030100 ns
-  e_lat=0.250659  v=0.500  w=-0.4002
-
-
-+=controller+=
-  VSI time: 601030100 ns
-  e_lat=0.250507  v=0.500  w=-0.3998
-
-
-+=controller+=
-  VSI time: 602030100 ns
-  e_lat=0.250355  v=0.500  w=-0.3993
-
-
-+=controller+=
-  VSI time: 603030100 ns
-  e_lat=0.250202  v=0.500  w=-0.3989
-
-
-+=controller+=
-  VSI time: 604030100 ns
-  e_lat=0.250049  v=0.500  w=-0.3985
-
-
-+=controller+=
-  VSI time: 605030100 ns
-  e_lat=0.249896  v=0.500  w=-0.3981
-
-
-+=controller+=
-  VSI time: 606030100 ns
-  e_lat=0.249743  v=0.500  w=-0.3976
-
-
-+=controller+=
-  VSI time: 607030100 ns
-  e_lat=0.249590  v=0.500  w=-0.3972
-
-
-+=controller+=
-  VSI time: 608030100 ns
-  e_lat=0.249437  v=0.500  w=-0.3968
-
-
-+=controller+=
-  VSI time: 609030100 ns
-  e_lat=0.249283  v=0.500  w=-0.3964
-
-
-+=controller+=
-  VSI time: 610030100 ns
-  e_lat=0.249129  v=0.500  w=-0.3960
-
-
-+=controller+=
-  VSI time: 611030100 ns
-  e_lat=0.248975  v=0.500  w=-0.3955
-
-
-+=controller+=
-  VSI time: 612030100 ns
-  e_lat=0.248821  v=0.500  w=-0.3951
-
-
-+=controller+=
-  VSI time: 613030100 ns
-  e_lat=0.248666  v=0.500  w=-0.3947
-
-
-+=controller+=
-  VSI time: 614030100 ns
-  e_lat=0.248512  v=0.500  w=-0.3943
-
-
-+=controller+=
-  VSI time: 615030100 ns
-  e_lat=0.248357  v=0.500  w=-0.3938
-
-
-+=controller+=
-  VSI time: 616030100 ns
-  e_lat=0.248202  v=0.500  w=-0.3934
-
-
-+=controller+=
-  VSI time: 617030100 ns
-  e_lat=0.248047  v=0.500  w=-0.3930
-
-
-+=controller+=
-  VSI time: 618030100 ns
-  e_lat=0.247891  v=0.500  w=-0.3926
-
-
-+=controller+=
-  VSI time: 619030100 ns
-  e_lat=0.247736  v=0.500  w=-0.3922
-
-
-+=controller+=
-  VSI time: 620030100 ns
-  e_lat=0.247580  v=0.500  w=-0.3917
-
-
-+=controller+=
-  VSI time: 621030100 ns
-  e_lat=0.247424  v=0.500  w=-0.3913
-
-
-+=controller+=
-  VSI time: 622030100 ns
-  e_lat=0.247268  v=0.500  w=-0.3909
-
-
-+=controller+=
-  VSI time: 623030100 ns
-  e_lat=0.247112  v=0.500  w=-0.3905
-
-
-+=controller+=
-  VSI time: 624030100 ns
-  e_lat=0.246955  v=0.500  w=-0.3900
-
-
-+=controller+=
-  VSI time: 625030100 ns
-  e_lat=0.246798  v=0.500  w=-0.3896
-
-
-+=controller+=
-  VSI time: 626030100 ns
-  e_lat=0.246641  v=0.500  w=-0.3892
-
-
-+=controller+=
-  VSI time: 627030100 ns
-  e_lat=0.246484  v=0.500  w=-0.3888
-
-
-+=controller+=
-  VSI time: 628030100 ns
-  e_lat=0.246327  v=0.500  w=-0.3883
-
-
-+=controller+=
-  VSI time: 629030100 ns
-  e_lat=0.246170  v=0.500  w=-0.3879
-
-
-+=controller+=
-  VSI time: 630030100 ns
-  e_lat=0.246012  v=0.500  w=-0.3875
-
-
-+=controller+=
-  VSI time: 631030100 ns
-  e_lat=0.245854  v=0.500  w=-0.3871
-
-
-+=controller+=
-  VSI time: 632030100 ns
-  e_lat=0.245696  v=0.500  w=-0.3866
-
-
-+=controller+=
-  VSI time: 633030100 ns
-  e_lat=0.245538  v=0.500  w=-0.3862
-
-
-+=controller+=
-  VSI time: 634030100 ns
-  e_lat=0.245380  v=0.500  w=-0.3858
-
-
-+=controller+=
-  VSI time: 635030100 ns
-  e_lat=0.245221  v=0.500  w=-0.3853
-
-
-+=controller+=
-  VSI time: 636030100 ns
-  e_lat=0.245063  v=0.500  w=-0.3849
-
-
-+=controller+=
-  VSI time: 637030100 ns
-  e_lat=0.244904  v=0.500  w=-0.3845
-
-
-+=controller+=
-  VSI time: 638030100 ns
-  e_lat=0.244745  v=0.500  w=-0.3841
-
-
-+=controller+=
-  VSI time: 639030100 ns
-  e_lat=0.244585  v=0.500  w=-0.3836
-
-
-+=controller+=
-  VSI time: 640030100 ns
-  e_lat=0.244426  v=0.500  w=-0.3832
-
-
-+=controller+=
-  VSI time: 641030100 ns
-  e_lat=0.244266  v=0.500  w=-0.3828
-
-
-+=controller+=
-  VSI time: 642030100 ns
-  e_lat=0.244107  v=0.500  w=-0.3824
-
-
-+=controller+=
-  VSI time: 643030100 ns
-  e_lat=0.243947  v=0.500  w=-0.3819
-
-
-+=controller+=
-  VSI time: 644030100 ns
-  e_lat=0.243786  v=0.500  w=-0.3815
-
-
-+=controller+=
-  VSI time: 645030100 ns
-  e_lat=0.243626  v=0.500  w=-0.3811
-
-
-+=controller+=
-  VSI time: 646030100 ns
-  e_lat=0.243466  v=0.500  w=-0.3806
-
-
-+=controller+=
-  VSI time: 647030100 ns
-  e_lat=0.243305  v=0.500  w=-0.3802
-
-
-+=controller+=
-  VSI time: 648030100 ns
-  e_lat=0.243144  v=0.500  w=-0.3798
-
-
-+=controller+=
-  VSI time: 649030100 ns
-  e_lat=0.242983  v=0.500  w=-0.3794
-
-
-+=controller+=
-  VSI time: 650030100 ns
-  e_lat=0.242822  v=0.500  w=-0.3789
-
-
-+=controller+=
-  VSI time: 651030100 ns
-  e_lat=0.242660  v=0.500  w=-0.3785
-
-
-+=controller+=
-  VSI time: 652030100 ns
-  e_lat=0.242499  v=0.500  w=-0.3781
-
-
-+=controller+=
-  VSI time: 653030100 ns
-  e_lat=0.242337  v=0.500  w=-0.3776
-
-
-+=controller+=
-  VSI time: 654030100 ns
-  e_lat=0.242175  v=0.500  w=-0.3772
-
-
-+=controller+=
-  VSI time: 655030100 ns
-  e_lat=0.242013  v=0.500  w=-0.3768
-
-
-+=controller+=
-  VSI time: 656030100 ns
-  e_lat=0.241850  v=0.500  w=-0.3763
-
-
-+=controller+=
-  VSI time: 657030100 ns
-  e_lat=0.241688  v=0.500  w=-0.3759
-
-
-+=controller+=
-  VSI time: 658030100 ns
-  e_lat=0.241525  v=0.500  w=-0.3755
-
-
-+=controller+=
-  VSI time: 659030100 ns
-  e_lat=0.241362  v=0.500  w=-0.3750
-
-
-+=controller+=
-  VSI time: 660030100 ns
-  e_lat=0.241199  v=0.500  w=-0.3746
-
-
-+=controller+=
-  VSI time: 661030100 ns
-  e_lat=0.241036  v=0.500  w=-0.3742
-
-
-+=controller+=
-  VSI time: 662030100 ns
-  e_lat=0.240873  v=0.500  w=-0.3738
-
-
-+=controller+=
-  VSI time: 663030100 ns
-  e_lat=0.240709  v=0.500  w=-0.3733
-
-
-+=controller+=
-  VSI time: 664030100 ns
-  e_lat=0.240545  v=0.500  w=-0.3729
-
-
-+=controller+=
-  VSI time: 665030100 ns
-  e_lat=0.240382  v=0.500  w=-0.3725
-
-
-+=controller+=
-  VSI time: 666030100 ns
-  e_lat=0.240217  v=0.500  w=-0.3720
-
-
-+=controller+=
-  VSI time: 667030100 ns
-  e_lat=0.240053  v=0.500  w=-0.3716
-
-
-+=controller+=
-  VSI time: 668030100 ns
-  e_lat=0.239889  v=0.500  w=-0.3712
-
-
-+=controller+=
-  VSI time: 669030100 ns
-  e_lat=0.239724  v=0.500  w=-0.3707
-
-
-+=controller+=
-  VSI time: 670030100 ns
-  e_lat=0.239559  v=0.500  w=-0.3703
-
-
-+=controller+=
-  VSI time: 671030100 ns
-  e_lat=0.239394  v=0.500  w=-0.3699
-
-
-+=controller+=
-  VSI time: 672030100 ns
-  e_lat=0.239229  v=0.500  w=-0.3694
-
-
-+=controller+=
-  VSI time: 673030100 ns
-  e_lat=0.239064  v=0.500  w=-0.3690
-
-
-+=controller+=
-  VSI time: 674030100 ns
-  e_lat=0.238898  v=0.500  w=-0.3686
-
-
-+=controller+=
-  VSI time: 675030100 ns
-  e_lat=0.238733  v=0.500  w=-0.3681
-
-
-+=controller+=
-  VSI time: 676030100 ns
-  e_lat=0.238567  v=0.500  w=-0.3677
-
-
-+=controller+=
-  VSI time: 677030100 ns
-  e_lat=0.238401  v=0.500  w=-0.3673
-
-
-+=controller+=
-  VSI time: 678030100 ns
-  e_lat=0.238235  v=0.500  w=-0.3668
-
-
-+=controller+=
-  VSI time: 679030100 ns
-  e_lat=0.238068  v=0.500  w=-0.3664
-
-
-+=controller+=
-  VSI time: 680030100 ns
-  e_lat=0.237902  v=0.500  w=-0.3660
-
-
-+=controller+=
-  VSI time: 681030100 ns
-  e_lat=0.237735  v=0.500  w=-0.3655
-
-
-+=controller+=
-  VSI time: 682030100 ns
-  e_lat=0.237568  v=0.500  w=-0.3651
-
-
-+=controller+=
-  VSI time: 683030100 ns
-  e_lat=0.237401  v=0.500  w=-0.3646
-
-
-+=controller+=
-  VSI time: 684030100 ns
-  e_lat=0.237234  v=0.500  w=-0.3642
-
-
-+=controller+=
-  VSI time: 685030100 ns
-  e_lat=0.237066  v=0.500  w=-0.3638
-
-
-+=controller+=
-  VSI time: 686030100 ns
-  e_lat=0.236899  v=0.500  w=-0.3633
-
-
-+=controller+=
-  VSI time: 687030100 ns
-  e_lat=0.236731  v=0.500  w=-0.3629
-
-
-+=controller+=
-  VSI time: 688030100 ns
-  e_lat=0.236563  v=0.500  w=-0.3625
-
-
-+=controller+=
-  VSI time: 689030100 ns
-  e_lat=0.236395  v=0.500  w=-0.3620
-
-
-+=controller+=
-  VSI time: 690030100 ns
-  e_lat=0.236227  v=0.500  w=-0.3616
-
-
-+=controller+=
-  VSI time: 691030100 ns
-  e_lat=0.236058  v=0.500  w=-0.3612
-
-
-+=controller+=
-  VSI time: 692030100 ns
-  e_lat=0.235890  v=0.500  w=-0.3607
-
-
-+=controller+=
-  VSI time: 693030100 ns
-  e_lat=0.235721  v=0.500  w=-0.3603
-
-
-+=controller+=
-  VSI time: 694030100 ns
-  e_lat=0.235552  v=0.500  w=-0.3598
-
-
-+=controller+=
-  VSI time: 695030100 ns
-  e_lat=0.235383  v=0.500  w=-0.3594
-
-
-+=controller+=
-  VSI time: 696030100 ns
-  e_lat=0.235214  v=0.500  w=-0.3590
-
-
-+=controller+=
-  VSI time: 697030100 ns
-  e_lat=0.235044  v=0.500  w=-0.3585
-
-
-+=controller+=
-  VSI time: 698030100 ns
-  e_lat=0.234875  v=0.500  w=-0.3581
-
-
-+=controller+=
-  VSI time: 699030100 ns
-  e_lat=0.234705  v=0.500  w=-0.3577
-
-
-+=controller+=
-  VSI time: 700030100 ns
-  e_lat=0.234535  v=0.500  w=-0.3572
-
-
-+=controller+=
-  VSI time: 701030100 ns
-  e_lat=0.234365  v=0.500  w=-0.3568
-
-
-+=controller+=
-  VSI time: 702030100 ns
-  e_lat=0.234195  v=0.500  w=-0.3563
-
-
-+=controller+=
-  VSI time: 703030100 ns
-  e_lat=0.234024  v=0.500  w=-0.3559
-
-
-+=controller+=
-  VSI time: 704030100 ns
-  e_lat=0.233853  v=0.500  w=-0.3555
-
-
-+=controller+=
-  VSI time: 705030100 ns
-  e_lat=0.233683  v=0.500  w=-0.3550
-
-
-+=controller+=
-  VSI time: 706030100 ns
-  e_lat=0.233512  v=0.500  w=-0.3546
-
-
-+=controller+=
-  VSI time: 707030100 ns
-  e_lat=0.233341  v=0.500  w=-0.3541
-
-
-+=controller+=
-  VSI time: 708030100 ns
-  e_lat=0.233169  v=0.500  w=-0.3537
-
-
-+=controller+=
-  VSI time: 709030100 ns
-  e_lat=0.232998  v=0.500  w=-0.3533
-
-
-+=controller+=
-  VSI time: 710030100 ns
-  e_lat=0.232826  v=0.500  w=-0.3528
-
-
-+=controller+=
-  VSI time: 711030100 ns
-  e_lat=0.232654  v=0.500  w=-0.3524
-
-
-+=controller+=
-  VSI time: 712030100 ns
-  e_lat=0.232482  v=0.500  w=-0.3519
-
-
-+=controller+=
-  VSI time: 713030100 ns
-  e_lat=0.232310  v=0.500  w=-0.3515
-
-
-+=controller+=
-  VSI time: 714030100 ns
-  e_lat=0.232138  v=0.500  w=-0.3511
-
-
-+=controller+=
-  VSI time: 715030100 ns
-  e_lat=0.231966  v=0.500  w=-0.3506
-
-
-+=controller+=
-  VSI time: 716030100 ns
-  e_lat=0.231793  v=0.500  w=-0.3502
-
-
-+=controller+=
-  VSI time: 717030100 ns
-  e_lat=0.231620  v=0.500  w=-0.3497
-
-
-+=controller+=
-  VSI time: 718030100 ns
-  e_lat=0.231447  v=0.500  w=-0.3493
-
-
-+=controller+=
-  VSI time: 719030100 ns
-  e_lat=0.231274  v=0.500  w=-0.3489
-
-
-+=controller+=
-  VSI time: 720030100 ns
-  e_lat=0.231101  v=0.500  w=-0.3484
-
-
-+=controller+=
-  VSI time: 721030100 ns
-  e_lat=0.230927  v=0.500  w=-0.3480
-
-
-+=controller+=
-  VSI time: 722030100 ns
-  e_lat=0.230754  v=0.500  w=-0.3475
-
-
-+=controller+=
-  VSI time: 723030100 ns
-  e_lat=0.230580  v=0.500  w=-0.3471
-
-
-+=controller+=
-  VSI time: 724030100 ns
-  e_lat=0.230406  v=0.500  w=-0.3467
-
-
-+=controller+=
-  VSI time: 725030100 ns
-  e_lat=0.230232  v=0.500  w=-0.3462
-
-
-+=controller+=
-  VSI time: 726030100 ns
-  e_lat=0.230058  v=0.500  w=-0.3458
-
-
-+=controller+=
-  VSI time: 727030100 ns
-  e_lat=0.229883  v=0.500  w=-0.3453
-
-
-+=controller+=
-  VSI time: 728030100 ns
-  e_lat=0.229709  v=0.500  w=-0.3449
-
-
-+=controller+=
-  VSI time: 729030100 ns
-  e_lat=0.229534  v=0.500  w=-0.3444
-
-
-+=controller+=
-  VSI time: 730030100 ns
-  e_lat=0.229359  v=0.500  w=-0.3440
-
-
-+=controller+=
-  VSI time: 731030100 ns
-  e_lat=0.229184  v=0.500  w=-0.3436
-
-
-+=controller+=
-  VSI time: 732030100 ns
-  e_lat=0.229009  v=0.500  w=-0.3431
-
-
-+=controller+=
-  VSI time: 733030100 ns
-  e_lat=0.228833  v=0.500  w=-0.3427
-
-
-+=controller+=
-  VSI time: 734030100 ns
-  e_lat=0.228658  v=0.500  w=-0.3422
-
-
-+=controller+=
-  VSI time: 735030100 ns
-  e_lat=0.228482  v=0.500  w=-0.3418
-
-
-+=controller+=
-  VSI time: 736030100 ns
-  e_lat=0.228306  v=0.500  w=-0.3413
-
-
-+=controller+=
-  VSI time: 737030100 ns
-  e_lat=0.228130  v=0.500  w=-0.3409
-
-
-+=controller+=
-  VSI time: 738030100 ns
-  e_lat=0.227954  v=0.500  w=-0.3405
-
-
-+=controller+=
-  VSI time: 739030100 ns
-  e_lat=0.227778  v=0.500  w=-0.3400
-
-
-+=controller+=
-  VSI time: 740030100 ns
-  e_lat=0.227601  v=0.500  w=-0.3396
-
-
-+=controller+=
-  VSI time: 741030100 ns
-  e_lat=0.227424  v=0.500  w=-0.3391
-
-
-+=controller+=
-  VSI time: 742030100 ns
-  e_lat=0.227248  v=0.500  w=-0.3387
-
-
-+=controller+=
-  VSI time: 743030100 ns
-  e_lat=0.227071  v=0.500  w=-0.3382
-
-
-+=controller+=
-  VSI time: 744030100 ns
-  e_lat=0.226893  v=0.500  w=-0.3378
-
-
-+=controller+=
-  VSI time: 745030100 ns
-  e_lat=0.226716  v=0.500  w=-0.3373
-
-
-+=controller+=
-  VSI time: 746030100 ns
-  e_lat=0.226539  v=0.500  w=-0.3369
-
-
-+=controller+=
-  VSI time: 747030100 ns
-  e_lat=0.226361  v=0.500  w=-0.3365
-
-
-+=controller+=
-  VSI time: 748030100 ns
-  e_lat=0.226183  v=0.500  w=-0.3360
-
-
-+=controller+=
-  VSI time: 749030100 ns
-  e_lat=0.226005  v=0.500  w=-0.3356
-
-
-+=controller+=
-  VSI time: 750030100 ns
-  e_lat=0.225827  v=0.500  w=-0.3351
-
-
-+=controller+=
-  VSI time: 751030100 ns
-  e_lat=0.225649  v=0.500  w=-0.3347
-
-
-+=controller+=
-  VSI time: 752030100 ns
-  e_lat=0.225471  v=0.500  w=-0.3342
-
-
-+=controller+=
-  VSI time: 753030100 ns
-  e_lat=0.225292  v=0.500  w=-0.3338
-
-
-+=controller+=
-  VSI time: 754030100 ns
-  e_lat=0.225113  v=0.500  w=-0.3333
-
-
-+=controller+=
-  VSI time: 755030100 ns
-  e_lat=0.224934  v=0.500  w=-0.3329
-
-
-+=controller+=
-  VSI time: 756030100 ns
-  e_lat=0.224755  v=0.500  w=-0.3324
-
-
-+=controller+=
-  VSI time: 757030100 ns
-  e_lat=0.224576  v=0.500  w=-0.3320
-
-
-+=controller+=
-  VSI time: 758030100 ns
-  e_lat=0.224397  v=0.500  w=-0.3315
-
-
-+=controller+=
-  VSI time: 759030100 ns
-  e_lat=0.224217  v=0.500  w=-0.3311
-
-
-+=controller+=
-  VSI time: 760030100 ns
-  e_lat=0.224038  v=0.500  w=-0.3307
-
-
-+=controller+=
-  VSI time: 761030100 ns
-  e_lat=0.223858  v=0.500  w=-0.3302
-
-
-+=controller+=
-  VSI time: 762030100 ns
-  e_lat=0.223678  v=0.500  w=-0.3298
-
-
-+=controller+=
-  VSI time: 763030100 ns
-  e_lat=0.223498  v=0.500  w=-0.3293
-
-
-+=controller+=
-  VSI time: 764030100 ns
-  e_lat=0.223318  v=0.500  w=-0.3289
-
-
-+=controller+=
-  VSI time: 765030100 ns
-  e_lat=0.223137  v=0.500  w=-0.3284
-
-
-+=controller+=
-  VSI time: 766030100 ns
-  e_lat=0.222957  v=0.500  w=-0.3280
-
-
-+=controller+=
-  VSI time: 767030100 ns
-  e_lat=0.222776  v=0.500  w=-0.3275
-
-
-+=controller+=
-  VSI time: 768030100 ns
-  e_lat=0.222595  v=0.500  w=-0.3271
-
-
-+=controller+=
-  VSI time: 769030100 ns
-  e_lat=0.222414  v=0.500  w=-0.3266
-
-
-+=controller+=
-  VSI time: 770030100 ns
-  e_lat=0.222233  v=0.500  w=-0.3262
-
-
-+=controller+=
-  VSI time: 771030100 ns
-  e_lat=0.222051  v=0.500  w=-0.3257
-
-
-+=controller+=
-  VSI time: 772030100 ns
-  e_lat=0.221870  v=0.500  w=-0.3253
-
-
-+=controller+=
-  VSI time: 773030100 ns
-  e_lat=0.221688  v=0.500  w=-0.3248
-
-
-+=controller+=
-  VSI time: 774030100 ns
-  e_lat=0.221506  v=0.500  w=-0.3244
-
-
-+=controller+=
-  VSI time: 775030100 ns
-  e_lat=0.221324  v=0.500  w=-0.3239
-
-
-+=controller+=
-  VSI time: 776030100 ns
-  e_lat=0.221142  v=0.500  w=-0.3235
-
-
-+=controller+=
-  VSI time: 777030100 ns
-  e_lat=0.220960  v=0.500  w=-0.3230
-
-
-+=controller+=
-  VSI time: 778030100 ns
-  e_lat=0.220778  v=0.500  w=-0.3226
-
-
-+=controller+=
-  VSI time: 779030100 ns
-  e_lat=0.220595  v=0.500  w=-0.3221
-
-
-+=controller+=
-  VSI time: 780030100 ns
-  e_lat=0.220412  v=0.500  w=-0.3217
-
-
-+=controller+=
-  VSI time: 781030100 ns
-  e_lat=0.220230  v=0.500  w=-0.3212
-
-
-+=controller+=
-  VSI time: 782030100 ns
-  e_lat=0.220047  v=0.500  w=-0.3208
-
-
-+=controller+=
-  VSI time: 783030100 ns
-  e_lat=0.219863  v=0.500  w=-0.3203
-
-
-+=controller+=
-  VSI time: 784030100 ns
-  e_lat=0.219680  v=0.500  w=-0.3199
-
-
-+=controller+=
-  VSI time: 785030100 ns
-  e_lat=0.219497  v=0.500  w=-0.3194
-
-
-+=controller+=
-  VSI time: 786030100 ns
-  e_lat=0.219313  v=0.500  w=-0.3190
-
-
-+=controller+=
-  VSI time: 787030100 ns
-  e_lat=0.219129  v=0.500  w=-0.3185
-
-
-+=controller+=
-  VSI time: 788030100 ns
-  e_lat=0.218945  v=0.500  w=-0.3181
-
-
-+=controller+=
-  VSI time: 789030100 ns
-  e_lat=0.218761  v=0.500  w=-0.3176
-
-
-+=controller+=
-  VSI time: 790030100 ns
-  e_lat=0.218577  v=0.500  w=-0.3172
-
-
-+=controller+=
-  VSI time: 791030100 ns
-  e_lat=0.218393  v=0.500  w=-0.3167
-
-
-+=controller+=
-  VSI time: 792030100 ns
-  e_lat=0.218208  v=0.500  w=-0.3163
-
-
-+=controller+=
-  VSI time: 793030100 ns
-  e_lat=0.218024  v=0.500  w=-0.3158
-
-
-+=controller+=
-  VSI time: 794030100 ns
-  e_lat=0.217839  v=0.500  w=-0.3154
-
-
-+=controller+=
-  VSI time: 795030100 ns
-  e_lat=0.217654  v=0.500  w=-0.3149
-
-
-+=controller+=
-  VSI time: 796030100 ns
-  e_lat=0.217469  v=0.500  w=-0.3145
-
-
-+=controller+=
-  VSI time: 797030100 ns
-  e_lat=0.217284  v=0.500  w=-0.3140
-
-
-+=controller+=
-  VSI time: 798030100 ns
-  e_lat=0.217098  v=0.500  w=-0.3136
-
-
-+=controller+=
-  VSI time: 799030100 ns
-  e_lat=0.216913  v=0.500  w=-0.3131
-
-
-+=controller+=
-  VSI time: 800030100 ns
-  e_lat=0.216727  v=0.500  w=-0.3127
-
-
-+=controller+=
-  VSI time: 801030100 ns
-  e_lat=0.216541  v=0.500  w=-0.3122
-
-
-+=controller+=
-  VSI time: 802030100 ns
-  e_lat=0.216355  v=0.500  w=-0.3118
-
-
-+=controller+=
-  VSI time: 803030100 ns
-  e_lat=0.216169  v=0.500  w=-0.3113
-
-
-+=controller+=
-  VSI time: 804030100 ns
-  e_lat=0.215983  v=0.500  w=-0.3109
-
-
-+=controller+=
-  VSI time: 805030100 ns
-  e_lat=0.215797  v=0.500  w=-0.3104
-
-
-+=controller+=
-  VSI time: 806030100 ns
-  e_lat=0.215610  v=0.500  w=-0.3100
-
-
-+=controller+=
-  VSI time: 807030100 ns
-  e_lat=0.215423  v=0.500  w=-0.3095
-
-
-+=controller+=
-  VSI time: 808030100 ns
-  e_lat=0.215237  v=0.500  w=-0.3090
-
-
-+=controller+=
-  VSI time: 809030100 ns
-  e_lat=0.215050  v=0.500  w=-0.3086
-
-
-+=controller+=
-  VSI time: 810030100 ns
-  e_lat=0.214863  v=0.500  w=-0.3081
-
-
-+=controller+=
-  VSI time: 811030100 ns
-  e_lat=0.214675  v=0.500  w=-0.3077
-
-
-+=controller+=
-  VSI time: 812030100 ns
-  e_lat=0.214488  v=0.500  w=-0.3072
-
-
-+=controller+=
-  VSI time: 813030100 ns
-  e_lat=0.214300  v=0.500  w=-0.3068
-
-
-+=controller+=
-  VSI time: 814030100 ns
-  e_lat=0.214113  v=0.500  w=-0.3063
-
-
-+=controller+=
-  VSI time: 815030100 ns
-  e_lat=0.213925  v=0.500  w=-0.3059
-
-
-+=controller+=
-  VSI time: 816030100 ns
-  e_lat=0.213737  v=0.500  w=-0.3054
-
-
-+=controller+=
-  VSI time: 817030100 ns
-  e_lat=0.213549  v=0.500  w=-0.3050
-
-
-+=controller+=
-  VSI time: 818030100 ns
-  e_lat=0.213361  v=0.500  w=-0.3045
-
-
-+=controller+=
-  VSI time: 819030100 ns
-  e_lat=0.213172  v=0.500  w=-0.3041
-
-
-+=controller+=
-  VSI time: 820030100 ns
-  e_lat=0.212984  v=0.500  w=-0.3036
-
-
-+=controller+=
-  VSI time: 821030100 ns
-  e_lat=0.212795  v=0.500  w=-0.3031
-
-
-+=controller+=
-  VSI time: 822030100 ns
-  e_lat=0.212606  v=0.500  w=-0.3027
-
-
-+=controller+=
-  VSI time: 823030100 ns
-  e_lat=0.212417  v=0.500  w=-0.3022
-
-
-+=controller+=
-  VSI time: 824030100 ns
-  e_lat=0.212228  v=0.500  w=-0.3018
-
-
-+=controller+=
-  VSI time: 825030100 ns
-  e_lat=0.212039  v=0.500  w=-0.3013
-
-
-+=controller+=
-  VSI time: 826030100 ns
-  e_lat=0.211849  v=0.500  w=-0.3009
-
-
-+=controller+=
-  VSI time: 827030100 ns
-  e_lat=0.211660  v=0.500  w=-0.3004
-
-
-+=controller+=
-  VSI time: 828030100 ns
-  e_lat=0.211470  v=0.500  w=-0.3000
-
-
-+=controller+=
-  VSI time: 829030100 ns
-  e_lat=0.211280  v=0.500  w=-0.2995
-
-
-+=controller+=
-  VSI time: 830030100 ns
-  e_lat=0.211091  v=0.500  w=-0.2990
-
-
-+=controller+=
-  VSI time: 831030100 ns
-  e_lat=0.210900  v=0.500  w=-0.2986
-
-
-+=controller+=
-  VSI time: 832030100 ns
-  e_lat=0.210710  v=0.500  w=-0.2981
-
-
-+=controller+=
-  VSI time: 833030100 ns
-  e_lat=0.210520  v=0.500  w=-0.2977
-
-
-+=controller+=
-  VSI time: 834030100 ns
-  e_lat=0.210329  v=0.500  w=-0.2972
-
-
-+=controller+=
-  VSI time: 835030100 ns
-  e_lat=0.210139  v=0.500  w=-0.2968
-
-
-+=controller+=
-  VSI time: 836030100 ns
-  e_lat=0.209948  v=0.500  w=-0.2963
-
-
-+=controller+=
-  VSI time: 837030100 ns
-  e_lat=0.209757  v=0.500  w=-0.2959
-
-
-+=controller+=
-  VSI time: 838030100 ns
-  e_lat=0.209566  v=0.500  w=-0.2954
-
-
-+=controller+=
-  VSI time: 839030100 ns
-  e_lat=0.209375  v=0.500  w=-0.2949
-
-
-+=controller+=
-  VSI time: 840030100 ns
-  e_lat=0.209184  v=0.500  w=-0.2945
-
-
-+=controller+=
-  VSI time: 841030100 ns
-  e_lat=0.208992  v=0.500  w=-0.2940
-
-
-+=controller+=
-  VSI time: 842030100 ns
-  e_lat=0.208801  v=0.500  w=-0.2936
-
-
-+=controller+=
-  VSI time: 843030100 ns
-  e_lat=0.208609  v=0.500  w=-0.2931
-
-
-+=controller+=
-  VSI time: 844030100 ns
-  e_lat=0.208417  v=0.500  w=-0.2927
-
-
-+=controller+=
-  VSI time: 845030100 ns
-  e_lat=0.208225  v=0.500  w=-0.2922
-
-
-+=controller+=
-  VSI time: 846030100 ns
-  e_lat=0.208033  v=0.500  w=-0.2917
-
-
-+=controller+=
-  VSI time: 847030100 ns
-  e_lat=0.207841  v=0.500  w=-0.2913
-
-
-+=controller+=
-  VSI time: 848030100 ns
-  e_lat=0.207648  v=0.500  w=-0.2908
-
-
-+=controller+=
-  VSI time: 849030100 ns
-  e_lat=0.207456  v=0.500  w=-0.2904
-
-
-+=controller+=
-  VSI time: 850030100 ns
-  e_lat=0.207263  v=0.500  w=-0.2899
-
-
-+=controller+=
-  VSI time: 851030100 ns
-  e_lat=0.207070  v=0.500  w=-0.2895
-
-
-+=controller+=
-  VSI time: 852030100 ns
-  e_lat=0.206877  v=0.500  w=-0.2890
-
-
-+=controller+=
-  VSI time: 853030100 ns
-  e_lat=0.206684  v=0.500  w=-0.2885
-
-
-+=controller+=
-  VSI time: 854030100 ns
-  e_lat=0.206491  v=0.500  w=-0.2881
-
-
-+=controller+=
-  VSI time: 855030100 ns
-  e_lat=0.206298  v=0.500  w=-0.2876
-
-
-+=controller+=
-  VSI time: 856030100 ns
-  e_lat=0.206104  v=0.500  w=-0.2872
-
-
-+=controller+=
-  VSI time: 857030100 ns
-  e_lat=0.205911  v=0.500  w=-0.2867
-
-
-+=controller+=
-  VSI time: 858030100 ns
-  e_lat=0.205717  v=0.500  w=-0.2863
-
-
-+=controller+=
-  VSI time: 859030100 ns
-  e_lat=0.205523  v=0.500  w=-0.2858
-
-
-+=controller+=
-  VSI time: 860030100 ns
-  e_lat=0.205329  v=0.500  w=-0.2853
-
-
-+=controller+=
-  VSI time: 861030100 ns
-  e_lat=0.205135  v=0.500  w=-0.2849
-
-
-+=controller+=
-  VSI time: 862030100 ns
-  e_lat=0.204941  v=0.500  w=-0.2844
-
-
-+=controller+=
-  VSI time: 863030100 ns
-  e_lat=0.204746  v=0.500  w=-0.2840
-
-
-+=controller+=
-  VSI time: 864030100 ns
-  e_lat=0.204552  v=0.500  w=-0.2835
-
-
-+=controller+=
-  VSI time: 865030100 ns
-  e_lat=0.204357  v=0.500  w=-0.2830
-
-
-+=controller+=
-  VSI time: 866030100 ns
-  e_lat=0.204162  v=0.500  w=-0.2826
-
-
-+=controller+=
-  VSI time: 867030100 ns
-  e_lat=0.203967  v=0.500  w=-0.2821
-
-
-+=controller+=
-  VSI time: 868030100 ns
-  e_lat=0.203772  v=0.500  w=-0.2817
-
-
-+=controller+=
-  VSI time: 869030100 ns
-  e_lat=0.203577  v=0.500  w=-0.2812
-
-
-+=controller+=
-  VSI time: 870030100 ns
-  e_lat=0.203382  v=0.500  w=-0.2807
-
-
-+=controller+=
-  VSI time: 871030100 ns
-  e_lat=0.203187  v=0.500  w=-0.2803
-
-
-+=controller+=
-  VSI time: 872030100 ns
-  e_lat=0.202991  v=0.500  w=-0.2798
-
-
-+=controller+=
-  VSI time: 873030100 ns
-  e_lat=0.202795  v=0.500  w=-0.2794
-
-
-+=controller+=
-  VSI time: 874030100 ns
-  e_lat=0.202599  v=0.500  w=-0.2789
-
-
-+=controller+=
-  VSI time: 875030100 ns
-  e_lat=0.202403  v=0.500  w=-0.2784
-
-
-+=controller+=
-  VSI time: 876030100 ns
-  e_lat=0.202207  v=0.500  w=-0.2780
-
-
-+=controller+=
-  VSI time: 877030100 ns
-  e_lat=0.202011  v=0.500  w=-0.2775
-
-
-+=controller+=
-  VSI time: 878030100 ns
-  e_lat=0.201815  v=0.500  w=-0.2771
-
-
-+=controller+=
-  VSI time: 879030100 ns
-  e_lat=0.201618  v=0.500  w=-0.2766
-
-
-+=controller+=
-  VSI time: 880030100 ns
-  e_lat=0.201422  v=0.500  w=-0.2761
-
-
-+=controller+=
-  VSI time: 881030100 ns
-  e_lat=0.201225  v=0.500  w=-0.2757
-
-
-+=controller+=
-  VSI time: 882030100 ns
-  e_lat=0.201028  v=0.500  w=-0.2752
-
-
-+=controller+=
-  VSI time: 883030100 ns
-  e_lat=0.200831  v=0.500  w=-0.2748
-
-
-+=controller+=
-  VSI time: 884030100 ns
-  e_lat=0.200634  v=0.500  w=-0.2743
-
-
-+=controller+=
-  VSI time: 885030100 ns
-  e_lat=0.200437  v=0.500  w=-0.2738
-
-
-+=controller+=
-  VSI time: 886030100 ns
-  e_lat=0.200240  v=0.500  w=-0.2734
-
-
-+=controller+=
-  VSI time: 887030100 ns
-  e_lat=0.200042  v=0.500  w=-0.2729
-
-
-+=controller+=
-  VSI time: 888030100 ns
-  e_lat=0.199845  v=0.500  w=-0.2725
-
-
-+=controller+=
-  VSI time: 889030100 ns
-  e_lat=0.199647  v=0.500  w=-0.2720
-
-
-+=controller+=
-  VSI time: 890030100 ns
-  e_lat=0.199449  v=0.500  w=-0.2715
-
-
-+=controller+=
-  VSI time: 891030100 ns
-  e_lat=0.199251  v=0.500  w=-0.2711
-
-
-+=controller+=
-  VSI time: 892030100 ns
-  e_lat=0.199053  v=0.500  w=-0.2706
-
-
-+=controller+=
-  VSI time: 893030100 ns
-  e_lat=0.198855  v=0.500  w=-0.2702
-
-
-+=controller+=
-  VSI time: 894030100 ns
-  e_lat=0.198656  v=0.500  w=-0.2697
-
-
-+=controller+=
-  VSI time: 895030100 ns
-  e_lat=0.198458  v=0.500  w=-0.2692
-
-
-+=controller+=
-  VSI time: 896030100 ns
-  e_lat=0.198259  v=0.500  w=-0.2688
-
-
-+=controller+=
-  VSI time: 897030100 ns
-  e_lat=0.198060  v=0.500  w=-0.2683
-
-
-+=controller+=
-  VSI time: 898030100 ns
-  e_lat=0.197862  v=0.500  w=-0.2678
-
-
-+=controller+=
-  VSI time: 899030100 ns
-  e_lat=0.197663  v=0.500  w=-0.2674
-
-
-+=controller+=
-  VSI time: 900030100 ns
-  e_lat=0.197464  v=0.500  w=-0.2669
-
-
-+=controller+=
-  VSI time: 901030100 ns
-  e_lat=0.197264  v=0.500  w=-0.2665
-
-
-+=controller+=
-  VSI time: 902030100 ns
-  e_lat=0.197065  v=0.500  w=-0.2660
-
-
-+=controller+=
-  VSI time: 903030100 ns
-  e_lat=0.196866  v=0.500  w=-0.2655
-
-
-+=controller+=
-  VSI time: 904030100 ns
-  e_lat=0.196666  v=0.500  w=-0.2651
-
-
-+=controller+=
-  VSI time: 905030100 ns
-  e_lat=0.196466  v=0.500  w=-0.2646
-
-
-+=controller+=
-  VSI time: 906030100 ns
-  e_lat=0.196266  v=0.500  w=-0.2641
-
-
-+=controller+=
-  VSI time: 907030100 ns
-  e_lat=0.196066  v=0.500  w=-0.2637
-
-
-+=controller+=
-  VSI time: 908030100 ns
-  e_lat=0.195866  v=0.500  w=-0.2632
-
-
-+=controller+=
-  VSI time: 909030100 ns
-  e_lat=0.195666  v=0.500  w=-0.2628
-
-
-+=controller+=
-  VSI time: 910030100 ns
-  e_lat=0.195466  v=0.500  w=-0.2623
-
-
-+=controller+=
-  VSI time: 911030100 ns
-  e_lat=0.195265  v=0.500  w=-0.2618
-
-
-+=controller+=
-  VSI time: 912030100 ns
-  e_lat=0.195065  v=0.500  w=-0.2614
-
-
-+=controller+=
-  VSI time: 913030100 ns
-  e_lat=0.194864  v=0.500  w=-0.2609
-
-
-+=controller+=
-  VSI time: 914030100 ns
-  e_lat=0.194663  v=0.500  w=-0.2604
-
-
-+=controller+=
-  VSI time: 915030100 ns
-  e_lat=0.194463  v=0.500  w=-0.2600
-
-
-+=controller+=
-  VSI time: 916030100 ns
-  e_lat=0.194262  v=0.500  w=-0.2595
-
-
-+=controller+=
-  VSI time: 917030100 ns
-  e_lat=0.194060  v=0.500  w=-0.2591
-
-
-+=controller+=
-  VSI time: 918030100 ns
-  e_lat=0.193859  v=0.500  w=-0.2586
-
-
-+=controller+=
-  VSI time: 919030100 ns
-  e_lat=0.193658  v=0.500  w=-0.2581
-
-
-+=controller+=
-  VSI time: 920030100 ns
-  e_lat=0.193456  v=0.500  w=-0.2577
-
-
-+=controller+=
-  VSI time: 921030100 ns
-  e_lat=0.193255  v=0.500  w=-0.2572
-
-
-+=controller+=
-  VSI time: 922030100 ns
-  e_lat=0.193053  v=0.500  w=-0.2567
-
-
-+=controller+=
-  VSI time: 923030100 ns
-  e_lat=0.192851  v=0.500  w=-0.2563
-
-
-+=controller+=
-  VSI time: 924030100 ns
-  e_lat=0.192649  v=0.500  w=-0.2558
-
-
-+=controller+=
-  VSI time: 925030100 ns
-  e_lat=0.192447  v=0.500  w=-0.2553
-
-
-+=controller+=
-  VSI time: 926030100 ns
-  e_lat=0.192245  v=0.500  w=-0.2549
-
-
-+=controller+=
-  VSI time: 927030100 ns
-  e_lat=0.192042  v=0.500  w=-0.2544
-
-
-+=controller+=
-  VSI time: 928030100 ns
-  e_lat=0.191840  v=0.500  w=-0.2540
-
-
-+=controller+=
-  VSI time: 929030100 ns
-  e_lat=0.191637  v=0.500  w=-0.2535
-
-
-+=controller+=
-  VSI time: 930030100 ns
-  e_lat=0.191435  v=0.500  w=-0.2530
-
-
-+=controller+=
-  VSI time: 931030100 ns
-  e_lat=0.191232  v=0.500  w=-0.2526
-
-
-+=controller+=
-  VSI time: 932030100 ns
-  e_lat=0.191029  v=0.500  w=-0.2521
-
-
-+=controller+=
-  VSI time: 933030100 ns
-  e_lat=0.190826  v=0.500  w=-0.2516
-
-
-+=controller+=
-  VSI time: 934030100 ns
-  e_lat=0.190623  v=0.500  w=-0.2512
-
-
-+=controller+=
-  VSI time: 935030100 ns
-  e_lat=0.190420  v=0.500  w=-0.2507
-
-
-+=controller+=
-  VSI time: 936030100 ns
-  e_lat=0.190216  v=0.500  w=-0.2502
-
-
-+=controller+=
-  VSI time: 937030100 ns
-  e_lat=0.190013  v=0.500  w=-0.2498
-
-
-+=controller+=
-  VSI time: 938030100 ns
-  e_lat=0.189809  v=0.500  w=-0.2493
-
-
-+=controller+=
-  VSI time: 939030100 ns
-  e_lat=0.189605  v=0.500  w=-0.2488
-
-
-+=controller+=
-  VSI time: 940030100 ns
-  e_lat=0.189401  v=0.500  w=-0.2484
-
-
-+=controller+=
-  VSI time: 941030100 ns
-  e_lat=0.189198  v=0.500  w=-0.2479
-
-
-+=controller+=
-  VSI time: 942030100 ns
-  e_lat=0.188993  v=0.500  w=-0.2475
-
-
-+=controller+=
-  VSI time: 943030100 ns
-  e_lat=0.188789  v=0.500  w=-0.2470
-
-
-+=controller+=
-  VSI time: 944030100 ns
-  e_lat=0.188585  v=0.500  w=-0.2465
-
-
-+=controller+=
-  VSI time: 945030100 ns
-  e_lat=0.188381  v=0.500  w=-0.2461
-
-
-+=controller+=
-  VSI time: 946030100 ns
-  e_lat=0.188176  v=0.500  w=-0.2456
-
-
-+=controller+=
-  VSI time: 947030100 ns
-  e_lat=0.187972  v=0.500  w=-0.2451
-
-
-+=controller+=
-  VSI time: 948030100 ns
-  e_lat=0.187767  v=0.500  w=-0.2447
-
-
-+=controller+=
-  VSI time: 949030100 ns
-  e_lat=0.187562  v=0.500  w=-0.2442
-
-
-+=controller+=
-  VSI time: 950030100 ns
-  e_lat=0.187357  v=0.500  w=-0.2437
-
-
-+=controller+=
-  VSI time: 951030100 ns
-  e_lat=0.187152  v=0.500  w=-0.2433
-
-
-+=controller+=
-  VSI time: 952030100 ns
-  e_lat=0.186947  v=0.500  w=-0.2428
-
-
-+=controller+=
-  VSI time: 953030100 ns
-  e_lat=0.186741  v=0.500  w=-0.2423
-
-
-+=controller+=
-  VSI time: 954030100 ns
-  e_lat=0.186536  v=0.500  w=-0.2419
-
-
-+=controller+=
-  VSI time: 955030100 ns
-  e_lat=0.186330  v=0.500  w=-0.2414
-
-
-+=controller+=
-  VSI time: 956030100 ns
-  e_lat=0.186125  v=0.500  w=-0.2409
-
-
-+=controller+=
-  VSI time: 957030100 ns
-  e_lat=0.185919  v=0.500  w=-0.2405
-
-
-+=controller+=
-  VSI time: 958030100 ns
-  e_lat=0.185713  v=0.500  w=-0.2400
-
-
-+=controller+=
-  VSI time: 959030100 ns
-  e_lat=0.185507  v=0.500  w=-0.2395
-
-
-+=controller+=
-  VSI time: 960030100 ns
-  e_lat=0.185301  v=0.500  w=-0.2391
-
-
-+=controller+=
-  VSI time: 961030100 ns
-  e_lat=0.185095  v=0.500  w=-0.2386
-
-
-+=controller+=
-  VSI time: 962030100 ns
-  e_lat=0.184889  v=0.500  w=-0.2381
-
-
-+=controller+=
-  VSI time: 963030100 ns
-  e_lat=0.184682  v=0.500  w=-0.2377
-
-
-+=controller+=
-  VSI time: 964030100 ns
-  e_lat=0.184476  v=0.500  w=-0.2372
-
-
-+=controller+=
-  VSI time: 965030100 ns
-  e_lat=0.184269  v=0.500  w=-0.2367
-
-
-+=controller+=
-  VSI time: 966030100 ns
-  e_lat=0.184063  v=0.500  w=-0.2363
-
-
-+=controller+=
-  VSI time: 967030100 ns
-  e_lat=0.183856  v=0.500  w=-0.2358
-
-
-+=controller+=
-  VSI time: 968030100 ns
-  e_lat=0.183649  v=0.500  w=-0.2353
-
-
-+=controller+=
-  VSI time: 969030100 ns
-  e_lat=0.183442  v=0.500  w=-0.2349
-
-
-+=controller+=
-  VSI time: 970030100 ns
-  e_lat=0.183235  v=0.500  w=-0.2344
-
-
-+=controller+=
-  VSI time: 971030100 ns
-  e_lat=0.183027  v=0.500  w=-0.2339
-
-
-+=controller+=
-  VSI time: 972030100 ns
-  e_lat=0.182820  v=0.500  w=-0.2335
-
-
-+=controller+=
-  VSI time: 973030100 ns
-  e_lat=0.182613  v=0.500  w=-0.2330
-
-
-+=controller+=
-  VSI time: 974030100 ns
-  e_lat=0.182405  v=0.500  w=-0.2325
-
-
-+=controller+=
-  VSI time: 975030100 ns
-  e_lat=0.182197  v=0.500  w=-0.2321
-
-
-+=controller+=
-  VSI time: 976030100 ns
-  e_lat=0.181990  v=0.500  w=-0.2316
-
-
-+=controller+=
-  VSI time: 977030100 ns
-  e_lat=0.181782  v=0.500  w=-0.2311
-
-
-+=controller+=
-  VSI time: 978030100 ns
-  e_lat=0.181574  v=0.500  w=-0.2307
-
-
-+=controller+=
-  VSI time: 979030100 ns
-  e_lat=0.181366  v=0.500  w=-0.2302
-
-
-+=controller+=
-  VSI time: 980030100 ns
-  e_lat=0.181157  v=0.500  w=-0.2297
-
-
-+=controller+=
-  VSI time: 981030100 ns
-  e_lat=0.180949  v=0.500  w=-0.2293
-
-
-+=controller+=
-  VSI time: 982030100 ns
-  e_lat=0.180741  v=0.500  w=-0.2288
-
-
-+=controller+=
-  VSI time: 983030100 ns
-  e_lat=0.180532  v=0.500  w=-0.2283
-
-
-+=controller+=
-  VSI time: 984030100 ns
-  e_lat=0.180323  v=0.500  w=-0.2279
-
-
-+=controller+=
-  VSI time: 985030100 ns
-  e_lat=0.180115  v=0.500  w=-0.2274
-
-
-+=controller+=
-  VSI time: 986030100 ns
-  e_lat=0.179906  v=0.500  w=-0.2269
-
-
-+=controller+=
-  VSI time: 987030100 ns
-  e_lat=0.179697  v=0.500  w=-0.2265
-
-
-+=controller+=
-  VSI time: 988030100 ns
-  e_lat=0.179488  v=0.500  w=-0.2260
-
-
-+=controller+=
-  VSI time: 989030100 ns
-  e_lat=0.179279  v=0.500  w=-0.2255
-
-
-+=controller+=
-  VSI time: 990030100 ns
-  e_lat=0.179069  v=0.500  w=-0.2251
-
-
-+=controller+=
-  VSI time: 991030100 ns
-  e_lat=0.178860  v=0.500  w=-0.2246
-
-
-+=controller+=
-  VSI time: 992030100 ns
-  e_lat=0.178651  v=0.500  w=-0.2241
-
-
-+=controller+=
-  VSI time: 993030100 ns
-  e_lat=0.178441  v=0.500  w=-0.2237
-
-
-+=controller+=
-  VSI time: 994030100 ns
-  e_lat=0.178231  v=0.500  w=-0.2232
-
-
-+=controller+=
-  VSI time: 995030100 ns
-  e_lat=0.178022  v=0.500  w=-0.2227
-
-
-+=controller+=
-  VSI time: 996030100 ns
-  e_lat=0.177812  v=0.500  w=-0.2223
-
-
-+=controller+=
-  VSI time: 997030100 ns
-  e_lat=0.177602  v=0.500  w=-0.2218
-
-
-+=controller+=
-  VSI time: 998030100 ns
-  e_lat=0.177392  v=0.500  w=-0.2213
-
-
-+=controller+=
-  VSI time: 999030100 ns
-  e_lat=0.177182  v=0.500  w=-0.2209
-
-
-+=controller+=
-  VSI time: 1000030100 ns
-  e_lat=0.176971  v=0.500  w=-0.2204
-
-
-+=controller+=
-  VSI time: 1001030100 ns
-  e_lat=0.176761  v=0.500  w=-0.2199
-
-
-+=controller+=
-  VSI time: 1002030100 ns
-  e_lat=0.176551  v=0.500  w=-0.2194
-
-
-+=controller+=
-  VSI time: 1003030100 ns
-  e_lat=0.176340  v=0.500  w=-0.2190
-
-
-+=controller+=
-  VSI time: 1004030100 ns
-  e_lat=0.176129  v=0.500  w=-0.2185
-
-
-+=controller+=
-  VSI time: 1005030100 ns
-  e_lat=0.175919  v=0.500  w=-0.2180
-
-
-+=controller+=
-  VSI time: 1006030100 ns
-  e_lat=0.175708  v=0.500  w=-0.2176
-
-
-+=controller+=
-  VSI time: 1007030100 ns
-  e_lat=0.175497  v=0.500  w=-0.2171
-
-
-+=controller+=
-  VSI time: 1008030100 ns
-  e_lat=0.175286  v=0.500  w=-0.2166
-
-
-+=controller+=
-  VSI time: 1009030100 ns
-  e_lat=0.175075  v=0.500  w=-0.2162
-
-
-+=controller+=
-  VSI time: 1010030100 ns
-  e_lat=0.174863  v=0.500  w=-0.2157
-
-
-+=controller+=
-  VSI time: 1011030100 ns
-  e_lat=0.174652  v=0.500  w=-0.2152
-
-
-+=controller+=
-  VSI time: 1012030100 ns
-  e_lat=0.174440  v=0.500  w=-0.2148
-
-
-+=controller+=
-  VSI time: 1013030100 ns
-  e_lat=0.174229  v=0.500  w=-0.2143
-
-
-+=controller+=
-  VSI time: 1014030100 ns
-  e_lat=0.174017  v=0.500  w=-0.2138
-
-
-+=controller+=
-  VSI time: 1015030100 ns
-  e_lat=0.173806  v=0.500  w=-0.2134
-
-
-+=controller+=
-  VSI time: 1016030100 ns
-  e_lat=0.173594  v=0.500  w=-0.2129
-
-
-+=controller+=
-  VSI time: 1017030100 ns
-  e_lat=0.173382  v=0.500  w=-0.2124
-
-
-+=controller+=
-  VSI time: 1018030100 ns
-  e_lat=0.173170  v=0.500  w=-0.2120
-
-
-+=controller+=
-  VSI time: 1019030100 ns
-  e_lat=0.172958  v=0.500  w=-0.2115
-
-
-+=controller+=
-  VSI time: 1020030100 ns
-  e_lat=0.172745  v=0.500  w=-0.2110
-
-
-+=controller+=
-  VSI time: 1021030100 ns
-  e_lat=0.172533  v=0.500  w=-0.2105
-
-
-+=controller+=
-  VSI time: 1022030100 ns
-  e_lat=0.172321  v=0.500  w=-0.2101
-
-
-+=controller+=
-  VSI time: 1023030100 ns
-  e_lat=0.172108  v=0.500  w=-0.2096
-
-
-+=controller+=
-  VSI time: 1024030100 ns
-  e_lat=0.171895  v=0.500  w=-0.2091
-
-
-+=controller+=
-  VSI time: 1025030100 ns
-  e_lat=0.171683  v=0.500  w=-0.2087
-
-
-+=controller+=
-  VSI time: 1026030100 ns
-  e_lat=0.171470  v=0.500  w=-0.2082
-
-
-+=controller+=
-  VSI time: 1027030100 ns
-  e_lat=0.171257  v=0.500  w=-0.2077
-
-
-+=controller+=
-  VSI time: 1028030100 ns
-  e_lat=0.171044  v=0.500  w=-0.2073
-
-
-+=controller+=
-  VSI time: 1029030100 ns
-  e_lat=0.170831  v=0.500  w=-0.2068
-
-
-+=controller+=
-  VSI time: 1030030100 ns
-  e_lat=0.170618  v=0.500  w=-0.2063
-
-
-+=controller+=
-  VSI time: 1031030100 ns
-  e_lat=0.170405  v=0.500  w=-0.2059
-
-
-+=controller+=
-  VSI time: 1032030100 ns
-  e_lat=0.170191  v=0.500  w=-0.2054
-
-
-+=controller+=
-  VSI time: 1033030100 ns
-  e_lat=0.169978  v=0.500  w=-0.2049
-
-
-+=controller+=
-  VSI time: 1034030100 ns
-  e_lat=0.169764  v=0.500  w=-0.2044
-
-
-+=controller+=
-  VSI time: 1035030100 ns
-  e_lat=0.169550  v=0.500  w=-0.2040
-
-
-+=controller+=
-  VSI time: 1036030100 ns
-  e_lat=0.169337  v=0.500  w=-0.2035
-
-
-+=controller+=
-  VSI time: 1037030100 ns
-  e_lat=0.169123  v=0.500  w=-0.2030
-
-
-+=controller+=
-  VSI time: 1038030100 ns
-  e_lat=0.168909  v=0.500  w=-0.2026
-
-
-+=controller+=
-  VSI time: 1039030100 ns
-  e_lat=0.168695  v=0.500  w=-0.2021
-
-
-+=controller+=
-  VSI time: 1040030100 ns
-  e_lat=0.168481  v=0.500  w=-0.2016
-
-
-+=controller+=
-  VSI time: 1041030100 ns
-  e_lat=0.168267  v=0.500  w=-0.2012
-
-
-+=controller+=
-  VSI time: 1042030100 ns
-  e_lat=0.168052  v=0.500  w=-0.2007
-
-
-+=controller+=
-  VSI time: 1043030100 ns
-  e_lat=0.167838  v=0.500  w=-0.2002
-
-
-+=controller+=
-  VSI time: 1044030100 ns
-  e_lat=0.167624  v=0.500  w=-0.1998
-
-
-+=controller+=
-  VSI time: 1045030100 ns
-  e_lat=0.167409  v=0.500  w=-0.1993
-
-
-+=controller+=
-  VSI time: 1046030100 ns
-  e_lat=0.167194  v=0.500  w=-0.1988
-
-
-+=controller+=
-  VSI time: 1047030100 ns
-  e_lat=0.166980  v=0.500  w=-0.1983
-
-
-+=controller+=
-  VSI time: 1048030100 ns
-  e_lat=0.166765  v=0.500  w=-0.1979
-
-
-+=controller+=
-  VSI time: 1049030100 ns
-  e_lat=0.166550  v=0.500  w=-0.1974
-
-
-+=controller+=
-  VSI time: 1050030100 ns
-  e_lat=0.166335  v=0.500  w=-0.1969
-
-
-+=controller+=
-  VSI time: 1051030100 ns
-  e_lat=0.166120  v=0.500  w=-0.1965
-
-
-+=controller+=
-  VSI time: 1052030100 ns
-  e_lat=0.165905  v=0.500  w=-0.1960
-
-
-+=controller+=
-  VSI time: 1053030100 ns
-  e_lat=0.165689  v=0.500  w=-0.1955
-
-
-+=controller+=
-  VSI time: 1054030100 ns
-  e_lat=0.165474  v=0.500  w=-0.1951
-
-
-+=controller+=
-  VSI time: 1055030100 ns
-  e_lat=0.165258  v=0.500  w=-0.1946
-
-
-+=controller+=
-  VSI time: 1056030100 ns
-  e_lat=0.165043  v=0.500  w=-0.1941
-
-
-+=controller+=
-  VSI time: 1057030100 ns
-  e_lat=0.164827  v=0.500  w=-0.1936
-
-
-+=controller+=
-  VSI time: 1058030100 ns
-  e_lat=0.164612  v=0.500  w=-0.1932
-
-
-+=controller+=
-  VSI time: 1059030100 ns
-  e_lat=0.164396  v=0.500  w=-0.1927
-
-
-+=controller+=
-  VSI time: 1060030100 ns
-  e_lat=0.164180  v=0.500  w=-0.1922
-
-
-+=controller+=
-  VSI time: 1061030100 ns
-  e_lat=0.163964  v=0.500  w=-0.1918
-
-
-+=controller+=
-  VSI time: 1062030100 ns
-  e_lat=0.163748  v=0.500  w=-0.1913
-
-
-+=controller+=
-  VSI time: 1063030100 ns
-  e_lat=0.163532  v=0.500  w=-0.1908
-
-
-+=controller+=
-  VSI time: 1064030100 ns
-  e_lat=0.163315  v=0.500  w=-0.1904
-
-
-+=controller+=
-  VSI time: 1065030100 ns
-  e_lat=0.163099  v=0.500  w=-0.1899
-
-
-+=controller+=
-  VSI time: 1066030100 ns
-  e_lat=0.162883  v=0.500  w=-0.1894
-
-
-+=controller+=
-  VSI time: 1067030100 ns
-  e_lat=0.162666  v=0.500  w=-0.1889
-
-
-+=controller+=
-  VSI time: 1068030100 ns
-  e_lat=0.162450  v=0.500  w=-0.1885
-
-
-+=controller+=
-  VSI time: 1069030100 ns
-  e_lat=0.162233  v=0.500  w=-0.1880
-
-
-+=controller+=
-  VSI time: 1070030100 ns
-  e_lat=0.162016  v=0.500  w=-0.1875
-
-
-+=controller+=
-  VSI time: 1071030100 ns
-  e_lat=0.161799  v=0.500  w=-0.1871
-
-
-+=controller+=
-  VSI time: 1072030100 ns
-  e_lat=0.161582  v=0.500  w=-0.1866
-
-
-+=controller+=
-  VSI time: 1073030100 ns
-  e_lat=0.161365  v=0.500  w=-0.1861
-
-
-+=controller+=
-  VSI time: 1074030100 ns
-  e_lat=0.161148  v=0.500  w=-0.1857
-
-
-+=controller+=
-  VSI time: 1075030100 ns
-  e_lat=0.160931  v=0.500  w=-0.1852
-
-
-+=controller+=
-  VSI time: 1076030100 ns
-  e_lat=0.160714  v=0.500  w=-0.1847
-
-
-+=controller+=
-  VSI time: 1077030100 ns
-  e_lat=0.160496  v=0.500  w=-0.1842
-
-
-+=controller+=
-  VSI time: 1078030100 ns
-  e_lat=0.160279  v=0.500  w=-0.1838
-
-
-+=controller+=
-  VSI time: 1079030100 ns
-  e_lat=0.160062  v=0.500  w=-0.1833
-
-
-+=controller+=
-  VSI time: 1080030100 ns
-  e_lat=0.159844  v=0.500  w=-0.1828
-
-
-+=controller+=
-  VSI time: 1081030100 ns
-  e_lat=0.159626  v=0.500  w=-0.1824
-
-
-+=controller+=
-  VSI time: 1082030100 ns
-  e_lat=0.159408  v=0.500  w=-0.1819
-
-
-+=controller+=
-  VSI time: 1083030100 ns
-  e_lat=0.159191  v=0.500  w=-0.1814
-
-
-+=controller+=
-  VSI time: 1084030100 ns
-  e_lat=0.158973  v=0.500  w=-0.1810
-
-
-+=controller+=
-  VSI time: 1085030100 ns
-  e_lat=0.158755  v=0.500  w=-0.1805
-
-
-+=controller+=
-  VSI time: 1086030100 ns
-  e_lat=0.158537  v=0.500  w=-0.1800
-
-
-+=controller+=
-  VSI time: 1087030100 ns
-  e_lat=0.158318  v=0.500  w=-0.1795
-
-
-+=controller+=
-  VSI time: 1088030100 ns
-  e_lat=0.158100  v=0.500  w=-0.1791
-
-
-+=controller+=
-  VSI time: 1089030100 ns
-  e_lat=0.157882  v=0.500  w=-0.1786
-
-
-+=controller+=
-  VSI time: 1090030100 ns
-  e_lat=0.157663  v=0.500  w=-0.1781
-
-
-+=controller+=
-  VSI time: 1091030100 ns
-  e_lat=0.157445  v=0.500  w=-0.1777
-
-
-+=controller+=
-  VSI time: 1092030100 ns
-  e_lat=0.157226  v=0.500  w=-0.1772
-
-
-+=controller+=
-  VSI time: 1093030100 ns
-  e_lat=0.157008  v=0.500  w=-0.1767
-
-
-+=controller+=
-  VSI time: 1094030100 ns
-  e_lat=0.156789  v=0.500  w=-0.1763
-
-
-+=controller+=
-  VSI time: 1095030100 ns
-  e_lat=0.156570  v=0.500  w=-0.1758
-
-
-+=controller+=
-  VSI time: 1096030100 ns
-  e_lat=0.156351  v=0.500  w=-0.1753
-
-
-+=controller+=
-  VSI time: 1097030100 ns
-  e_lat=0.156132  v=0.500  w=-0.1748
-
-
-+=controller+=
-  VSI time: 1098030100 ns
-  e_lat=0.155913  v=0.500  w=-0.1744
-
-
-+=controller+=
-  VSI time: 1099030100 ns
-  e_lat=0.155694  v=0.500  w=-0.1739
-
-
-+=controller+=
-  VSI time: 1100030100 ns
-  e_lat=0.155475  v=0.500  w=-0.1734
-
-
-+=controller+=
-  VSI time: 1101030100 ns
-  e_lat=0.155256  v=0.500  w=-0.1730
-
-
-+=controller+=
-  VSI time: 1102030100 ns
-  e_lat=0.155036  v=0.500  w=-0.1725
-
-
-+=controller+=
-  VSI time: 1103030100 ns
-  e_lat=0.154817  v=0.500  w=-0.1720
-
-
-+=controller+=
-  VSI time: 1104030100 ns
-  e_lat=0.154597  v=0.500  w=-0.1716
-
-
-+=controller+=
-  VSI time: 1105030100 ns
-  e_lat=0.154378  v=0.500  w=-0.1711
-
-
-+=controller+=
-  VSI time: 1106030100 ns
-  e_lat=0.154158  v=0.500  w=-0.1706
-
-
-+=controller+=
-  VSI time: 1107030100 ns
-  e_lat=0.153938  v=0.500  w=-0.1701
-
-
-+=controller+=
-  VSI time: 1108030100 ns
-  e_lat=0.153718  v=0.500  w=-0.1697
-
-
-+=controller+=
-  VSI time: 1109030100 ns
-  e_lat=0.153499  v=0.500  w=-0.1692
-
-
-+=controller+=
-  VSI time: 1110030100 ns
-  e_lat=0.153279  v=0.500  w=-0.1687
-
-
-+=controller+=
-  VSI time: 1111030100 ns
-  e_lat=0.153058  v=0.500  w=-0.1683
-
-
-+=controller+=
-  VSI time: 1112030100 ns
-  e_lat=0.152838  v=0.500  w=-0.1678
-
-
-+=controller+=
-  VSI time: 1113030100 ns
-  e_lat=0.152618  v=0.500  w=-0.1673
-
-
-+=controller+=
-  VSI time: 1114030100 ns
-  e_lat=0.152398  v=0.500  w=-0.1668
-
-
-+=controller+=
-  VSI time: 1115030100 ns
-  e_lat=0.152177  v=0.500  w=-0.1664
-
-
-+=controller+=
-  VSI time: 1116030100 ns
-  e_lat=0.151957  v=0.500  w=-0.1659
-
-
-+=controller+=
-  VSI time: 1117030100 ns
-  e_lat=0.151737  v=0.500  w=-0.1654
-
-
-+=controller+=
-  VSI time: 1118030100 ns
-  e_lat=0.151516  v=0.500  w=-0.1650
-
-
-+=controller+=
-  VSI time: 1119030100 ns
-  e_lat=0.151295  v=0.500  w=-0.1645
-
-
-+=controller+=
-  VSI time: 1120030100 ns
-  e_lat=0.151075  v=0.500  w=-0.1640
-
-
-+=controller+=
-  VSI time: 1121030100 ns
-  e_lat=0.150854  v=0.500  w=-0.1636
-
-
-+=controller+=
-  VSI time: 1122030100 ns
-  e_lat=0.150633  v=0.500  w=-0.1631
-
-
-+=controller+=
-  VSI time: 1123030100 ns
-  e_lat=0.150412  v=0.500  w=-0.1626
-
-
-+=controller+=
-  VSI time: 1124030100 ns
-  e_lat=0.150191  v=0.500  w=-0.1621
-
-
-+=controller+=
-  VSI time: 1125030100 ns
-  e_lat=0.149970  v=0.500  w=-0.1617
-
-
-+=controller+=
-  VSI time: 1126030100 ns
-  e_lat=0.149749  v=0.500  w=-0.1612
-
-
-+=controller+=
-  VSI time: 1127030100 ns
-  e_lat=0.149527  v=0.500  w=-0.1607
-
-
-+=controller+=
-  VSI time: 1128030100 ns
-  e_lat=0.149306  v=0.500  w=-0.1603
-
-
-+=controller+=
-  VSI time: 1129030100 ns
-  e_lat=0.149085  v=0.500  w=-0.1598
-
-
-+=controller+=
-  VSI time: 1130030100 ns
-  e_lat=0.148863  v=0.500  w=-0.1593
-
-
-+=controller+=
-  VSI time: 1131030100 ns
-  e_lat=0.148642  v=0.500  w=-0.1589
-
-
-+=controller+=
-  VSI time: 1132030100 ns
-  e_lat=0.148420  v=0.500  w=-0.1584
-
-
-+=controller+=
-  VSI time: 1133030100 ns
-  e_lat=0.148198  v=0.500  w=-0.1579
-
-
-+=controller+=
-  VSI time: 1134030100 ns
-  e_lat=0.147977  v=0.500  w=-0.1574
-
-
-+=controller+=
-  VSI time: 1135030100 ns
-  e_lat=0.147755  v=0.500  w=-0.1570
-
-
-+=controller+=
-  VSI time: 1136030100 ns
-  e_lat=0.147533  v=0.500  w=-0.1565
-
-
-+=controller+=
-  VSI time: 1137030100 ns
-  e_lat=0.147311  v=0.500  w=-0.1560
-
-
-+=controller+=
-  VSI time: 1138030100 ns
-  e_lat=0.147089  v=0.500  w=-0.1556
-
-
-+=controller+=
-  VSI time: 1139030100 ns
-  e_lat=0.146867  v=0.500  w=-0.1551
-
-
-+=controller+=
-  VSI time: 1140030100 ns
-  e_lat=0.146645  v=0.500  w=-0.1546
-
-
-+=controller+=
-  VSI time: 1141030100 ns
-  e_lat=0.146422  v=0.500  w=-0.1541
-
-
-+=controller+=
-  VSI time: 1142030100 ns
-  e_lat=0.146200  v=0.500  w=-0.1537
-
-
-+=controller+=
-  VSI time: 1143030100 ns
-  e_lat=0.145978  v=0.500  w=-0.1532
-
-
-+=controller+=
-  VSI time: 1144030100 ns
-  e_lat=0.145755  v=0.500  w=-0.1527
-
-
-+=controller+=
-  VSI time: 1145030100 ns
-  e_lat=0.145533  v=0.500  w=-0.1523
-
-
-+=controller+=
-  VSI time: 1146030100 ns
-  e_lat=0.145310  v=0.500  w=-0.1518
-
-
-+=controller+=
-  VSI time: 1147030100 ns
-  e_lat=0.145087  v=0.500  w=-0.1513
-
-
-+=controller+=
-  VSI time: 1148030100 ns
-  e_lat=0.144865  v=0.500  w=-0.1509
-
-
-+=controller+=
-  VSI time: 1149030100 ns
-  e_lat=0.144642  v=0.500  w=-0.1504
-
-
-+=controller+=
-  VSI time: 1150030100 ns
-  e_lat=0.144419  v=0.500  w=-0.1499
-
-
-+=controller+=
-  VSI time: 1151030100 ns
-  e_lat=0.144196  v=0.500  w=-0.1494
-
-
-+=controller+=
-  VSI time: 1152030100 ns
-  e_lat=0.143973  v=0.500  w=-0.1490
-
-
-+=controller+=
-  VSI time: 1153030100 ns
-  e_lat=0.143750  v=0.500  w=-0.1485
-
-
-+=controller+=
-  VSI time: 1154030100 ns
-  e_lat=0.143527  v=0.500  w=-0.1480
-
-
-+=controller+=
-  VSI time: 1155030100 ns
-  e_lat=0.143304  v=0.500  w=-0.1476
-
-
-+=controller+=
-  VSI time: 1156030100 ns
-  e_lat=0.143081  v=0.500  w=-0.1471
-
-
-+=controller+=
-  VSI time: 1157030100 ns
-  e_lat=0.142857  v=0.500  w=-0.1466
-
-
-+=controller+=
-  VSI time: 1158030100 ns
-  e_lat=0.142634  v=0.500  w=-0.1462
-
-
-+=controller+=
-  VSI time: 1159030100 ns
-  e_lat=0.142410  v=0.500  w=-0.1457
-
-
-+=controller+=
-  VSI time: 1160030100 ns
-  e_lat=0.142187  v=0.500  w=-0.1452
-
-
-+=controller+=
-  VSI time: 1161030100 ns
-  e_lat=0.141963  v=0.500  w=-0.1447
-
-
-+=controller+=
-  VSI time: 1162030100 ns
-  e_lat=0.141740  v=0.500  w=-0.1443
-
-
-+=controller+=
-  VSI time: 1163030100 ns
-  e_lat=0.141516  v=0.500  w=-0.1438
-
-
-+=controller+=
-  VSI time: 1164030100 ns
-  e_lat=0.141292  v=0.500  w=-0.1433
-
-
-+=controller+=
-  VSI time: 1165030100 ns
-  e_lat=0.141068  v=0.500  w=-0.1429
-
-
-+=controller+=
-  VSI time: 1166030100 ns
-  e_lat=0.140844  v=0.500  w=-0.1424
-
-
-+=controller+=
-  VSI time: 1167030100 ns
-  e_lat=0.140620  v=0.500  w=-0.1419
-
-
-+=controller+=
-  VSI time: 1168030100 ns
-  e_lat=0.140396  v=0.500  w=-0.1415
-
-
-+=controller+=
-  VSI time: 1169030100 ns
-  e_lat=0.140172  v=0.500  w=-0.1410
-
-
-+=controller+=
-  VSI time: 1170030100 ns
-  e_lat=0.139948  v=0.500  w=-0.1405
-
-
-+=controller+=
-  VSI time: 1171030100 ns
-  e_lat=0.139724  v=0.500  w=-0.1400
-
-
-+=controller+=
-  VSI time: 1172030100 ns
-  e_lat=0.139499  v=0.500  w=-0.1396
-
-
-+=controller+=
-  VSI time: 1173030100 ns
-  e_lat=0.139275  v=0.500  w=-0.1391
-
-
-+=controller+=
-  VSI time: 1174030100 ns
-  e_lat=0.139051  v=0.500  w=-0.1386
-
-
-+=controller+=
-  VSI time: 1175030100 ns
-  e_lat=0.138826  v=0.500  w=-0.1382
-
-
-+=controller+=
-  VSI time: 1176030100 ns
-  e_lat=0.138602  v=0.500  w=-0.1377
-
-
-+=controller+=
-  VSI time: 1177030100 ns
-  e_lat=0.138377  v=0.500  w=-0.1372
-
-
-+=controller+=
-  VSI time: 1178030100 ns
-  e_lat=0.138152  v=0.500  w=-0.1368
-
-
-+=controller+=
-  VSI time: 1179030100 ns
-  e_lat=0.137928  v=0.500  w=-0.1363
-
-
-+=controller+=
-  VSI time: 1180030100 ns
-  e_lat=0.137703  v=0.500  w=-0.1358
-
-
-+=controller+=
-  VSI time: 1181030100 ns
-  e_lat=0.137478  v=0.500  w=-0.1354
-
-
-+=controller+=
-  VSI time: 1182030100 ns
-  e_lat=0.137253  v=0.500  w=-0.1349
-
-
-+=controller+=
-  VSI time: 1183030100 ns
-  e_lat=0.137028  v=0.500  w=-0.1344
-
-
-+=controller+=
-  VSI time: 1184030100 ns
-  e_lat=0.136803  v=0.500  w=-0.1339
-
-
-+=controller+=
-  VSI time: 1185030100 ns
-  e_lat=0.136578  v=0.500  w=-0.1335
-
-
-+=controller+=
-  VSI time: 1186030100 ns
-  e_lat=0.136353  v=0.500  w=-0.1330
-
-
-+=controller+=
-  VSI time: 1187030100 ns
-  e_lat=0.136128  v=0.500  w=-0.1325
-
-
-+=controller+=
-  VSI time: 1188030100 ns
-  e_lat=0.135902  v=0.500  w=-0.1321
-
-
-+=controller+=
-  VSI time: 1189030100 ns
-  e_lat=0.135677  v=0.500  w=-0.1316
-
-
-+=controller+=
-  VSI time: 1190030100 ns
-  e_lat=0.135452  v=0.500  w=-0.1311
-
-
-+=controller+=
-  VSI time: 1191030100 ns
-  e_lat=0.135226  v=0.500  w=-0.1307
-
-
-+=controller+=
-  VSI time: 1192030100 ns
-  e_lat=0.135001  v=0.500  w=-0.1302
-
-
-+=controller+=
-  VSI time: 1193030100 ns
-  e_lat=0.134775  v=0.500  w=-0.1297
-
-
-+=controller+=
-  VSI time: 1194030100 ns
-  e_lat=0.134549  v=0.500  w=-0.1292
-
-
-+=controller+=
-  VSI time: 1195030100 ns
-  e_lat=0.134324  v=0.500  w=-0.1288
-
-
-+=controller+=
-  VSI time: 1196030100 ns
-  e_lat=0.134098  v=0.500  w=-0.1283
-
-
-+=controller+=
-  VSI time: 1197030100 ns
-  e_lat=0.133872  v=0.500  w=-0.1278
-
-
-+=controller+=
-  VSI time: 1198030100 ns
-  e_lat=0.133646  v=0.500  w=-0.1274
-
-
-+=controller+=
-  VSI time: 1199030100 ns
-  e_lat=0.133420  v=0.500  w=-0.1269
-
-
-+=controller+=
-  VSI time: 1200030100 ns
-  e_lat=0.133194  v=0.500  w=-0.1264
-
-
-+=controller+=
-  VSI time: 1201030100 ns
-  e_lat=0.132968  v=0.500  w=-0.1260
-
-
-+=controller+=
-  VSI time: 1202030100 ns
-  e_lat=0.132742  v=0.500  w=-0.1255
-
-
-+=controller+=
-  VSI time: 1203030100 ns
-  e_lat=0.132516  v=0.500  w=-0.1250
-
-
-+=controller+=
-  VSI time: 1204030100 ns
-  e_lat=0.132290  v=0.500  w=-0.1246
-
-
-+=controller+=
-  VSI time: 1205030100 ns
-  e_lat=0.132064  v=0.500  w=-0.1241
-
-
-+=controller+=
-  VSI time: 1206030100 ns
-  e_lat=0.131837  v=0.500  w=-0.1236
-
-
-+=controller+=
-  VSI time: 1207030100 ns
-  e_lat=0.131611  v=0.500  w=-0.1232
-
-
-+=controller+=
-  VSI time: 1208030100 ns
-  e_lat=0.131385  v=0.500  w=-0.1227
-
-
-+=controller+=
-  VSI time: 1209030100 ns
-  e_lat=0.131158  v=0.500  w=-0.1222
-
-
-+=controller+=
-  VSI time: 1210030100 ns
-  e_lat=0.130932  v=0.500  w=-0.1217
-
-
-+=controller+=
-  VSI time: 1211030100 ns
-  e_lat=0.130705  v=0.500  w=-0.1213
-
-
-+=controller+=
-  VSI time: 1212030100 ns
-  e_lat=0.130478  v=0.500  w=-0.1208
-
-
-+=controller+=
-  VSI time: 1213030100 ns
-  e_lat=0.130252  v=0.500  w=-0.1203
-
-
-+=controller+=
-  VSI time: 1214030100 ns
-  e_lat=0.130025  v=0.500  w=-0.1199
-
-
-+=controller+=
-  VSI time: 1215030100 ns
-  e_lat=0.129798  v=0.500  w=-0.1194
-
-
-+=controller+=
-  VSI time: 1216030100 ns
-  e_lat=0.129571  v=0.500  w=-0.1189
-
-
-+=controller+=
-  VSI time: 1217030100 ns
-  e_lat=0.129344  v=0.500  w=-0.1185
-
-
-+=controller+=
-  VSI time: 1218030100 ns
-  e_lat=0.129117  v=0.500  w=-0.1180
-
-
-+=controller+=
-  VSI time: 1219030100 ns
-  e_lat=0.128890  v=0.500  w=-0.1175
-
-
-+=controller+=
-  VSI time: 1220030100 ns
-  e_lat=0.128663  v=0.500  w=-0.1171
-
-
-+=controller+=
-  VSI time: 1221030100 ns
-  e_lat=0.128436  v=0.500  w=-0.1166
-
-
-+=controller+=
-  VSI time: 1222030100 ns
-  e_lat=0.128209  v=0.500  w=-0.1161
-
-
-+=controller+=
-  VSI time: 1223030100 ns
-  e_lat=0.127982  v=0.500  w=-0.1157
-
-
-+=controller+=
-  VSI time: 1224030100 ns
-  e_lat=0.127755  v=0.500  w=-0.1152
-
-
-+=controller+=
-  VSI time: 1225030100 ns
-  e_lat=0.127527  v=0.500  w=-0.1147
-
-
-+=controller+=
-  VSI time: 1226030100 ns
-  e_lat=0.127300  v=0.500  w=-0.1143
-
-
-+=controller+=
-  VSI time: 1227030100 ns
-  e_lat=0.127072  v=0.500  w=-0.1138
-
-
-+=controller+=
-  VSI time: 1228030100 ns
-  e_lat=0.126845  v=0.500  w=-0.1133
-
-
-+=controller+=
-  VSI time: 1229030100 ns
-  e_lat=0.126617  v=0.500  w=-0.1128
-
-
-+=controller+=
-  VSI time: 1230030100 ns
-  e_lat=0.126390  v=0.500  w=-0.1124
-
-
-+=controller+=
-  VSI time: 1231030100 ns
-  e_lat=0.126162  v=0.500  w=-0.1119
-
-
-+=controller+=
-  VSI time: 1232030100 ns
-  e_lat=0.125934  v=0.500  w=-0.1114
-
-
-+=controller+=
-  VSI time: 1233030100 ns
-  e_lat=0.125707  v=0.500  w=-0.1110
-
-
-+=controller+=
-  VSI time: 1234030100 ns
-  e_lat=0.125479  v=0.500  w=-0.1105
-
-
-+=controller+=
-  VSI time: 1235030100 ns
-  e_lat=0.125251  v=0.500  w=-0.1100
-
-
-+=controller+=
-  VSI time: 1236030100 ns
-  e_lat=0.125023  v=0.500  w=-0.1096
-
-
-+=controller+=
-  VSI time: 1237030100 ns
-  e_lat=0.124795  v=0.500  w=-0.1091
-
-
-+=controller+=
-  VSI time: 1238030100 ns
-  e_lat=0.124567  v=0.500  w=-0.1086
-
-
-+=controller+=
-  VSI time: 1239030100 ns
-  e_lat=0.124339  v=0.500  w=-0.1082
-
-
-+=controller+=
-  VSI time: 1240030100 ns
-  e_lat=0.124111  v=0.500  w=-0.1077
-
-
-+=controller+=
-  VSI time: 1241030100 ns
-  e_lat=0.123883  v=0.500  w=-0.1072
-
-
-+=controller+=
-  VSI time: 1242030100 ns
-  e_lat=0.123655  v=0.500  w=-0.1068
-
-
-+=controller+=
-  VSI time: 1243030100 ns
-  e_lat=0.123427  v=0.500  w=-0.1063
-
-
-+=controller+=
-  VSI time: 1244030100 ns
-  e_lat=0.123198  v=0.500  w=-0.1058
-
-
-+=controller+=
-  VSI time: 1245030100 ns
-  e_lat=0.122970  v=0.500  w=-0.1054
-
-
-+=controller+=
-  VSI time: 1246030100 ns
-  e_lat=0.122742  v=0.500  w=-0.1049
-
-
-+=controller+=
-  VSI time: 1247030100 ns
-  e_lat=0.122513  v=0.500  w=-0.1044
-
-
-+=controller+=
-  VSI time: 1248030100 ns
-  e_lat=0.122285  v=0.500  w=-0.1040
-
-
-+=controller+=
-  VSI time: 1249030100 ns
-  e_lat=0.122056  v=0.500  w=-0.1035
-
-
-+=controller+=
-  VSI time: 1250030100 ns
-  e_lat=0.121828  v=0.500  w=-0.1030
-
-
-+=controller+=
-  VSI time: 1251030100 ns
-  e_lat=0.121599  v=0.500  w=-0.1026
-
-
-+=controller+=
-  VSI time: 1252030100 ns
-  e_lat=0.121371  v=0.500  w=-0.1021
-
-
-+=controller+=
-  VSI time: 1253030100 ns
-  e_lat=0.121142  v=0.500  w=-0.1016
-
-
-+=controller+=
-  VSI time: 1254030100 ns
-  e_lat=0.120913  v=0.500  w=-0.1012
-
-
-+=controller+=
-  VSI time: 1255030100 ns
-  e_lat=0.120684  v=0.500  w=-0.1007
-
-
-+=controller+=
-  VSI time: 1256030100 ns
-  e_lat=0.120455  v=0.500  w=-0.1002
-
-
-+=controller+=
-  VSI time: 1257030100 ns
-  e_lat=0.120227  v=0.500  w=-0.0998
-
-
-+=controller+=
-  VSI time: 1258030100 ns
-  e_lat=0.119998  v=0.500  w=-0.0993
-
-
-+=controller+=
-  VSI time: 1259030100 ns
-  e_lat=0.119769  v=0.500  w=-0.0988
-
-
-+=controller+=
-  VSI time: 1260030100 ns
-  e_lat=0.119540  v=0.500  w=-0.0984
-
-
-+=controller+=
-  VSI time: 1261030100 ns
-  e_lat=0.119311  v=0.500  w=-0.0979
-
-
-+=controller+=
-  VSI time: 1262030100 ns
-  e_lat=0.119082  v=0.500  w=-0.0974
-
-
-+=controller+=
-  VSI time: 1263030100 ns
-  e_lat=0.118852  v=0.500  w=-0.0970
-
-
-+=controller+=
-  VSI time: 1264030100 ns
-  e_lat=0.118623  v=0.500  w=-0.0965
-
-
-+=controller+=
-  VSI time: 1265030100 ns
-  e_lat=0.118394  v=0.500  w=-0.0960
-
-
-+=controller+=
-  VSI time: 1266030100 ns
-  e_lat=0.118165  v=0.500  w=-0.0956
-
-
-+=controller+=
-  VSI time: 1267030100 ns
-  e_lat=0.117935  v=0.500  w=-0.0951
-
-
-+=controller+=
-  VSI time: 1268030100 ns
-  e_lat=0.117706  v=0.500  w=-0.0946
-
-
-+=controller+=
-  VSI time: 1269030100 ns
-  e_lat=0.117477  v=0.500  w=-0.0942
-
-
-+=controller+=
-  VSI time: 1270030100 ns
-  e_lat=0.117247  v=0.500  w=-0.0937
-
-
-+=controller+=
-  VSI time: 1271030100 ns
-  e_lat=0.117018  v=0.500  w=-0.0932
-
-
-+=controller+=
-  VSI time: 1272030100 ns
-  e_lat=0.116788  v=0.500  w=-0.0928
-
-
-+=controller+=
-  VSI time: 1273030100 ns
-  e_lat=0.116559  v=0.500  w=-0.0923
-
-
-+=controller+=
-  VSI time: 1274030100 ns
-  e_lat=0.116329  v=0.500  w=-0.0918
-
-
-+=controller+=
-  VSI time: 1275030100 ns
-  e_lat=0.116099  v=0.500  w=-0.0914
-
-
-+=controller+=
-  VSI time: 1276030100 ns
-  e_lat=0.115870  v=0.500  w=-0.0909
-
-
-+=controller+=
-  VSI time: 1277030100 ns
-  e_lat=0.115640  v=0.500  w=-0.0904
-
-
-+=controller+=
-  VSI time: 1278030100 ns
-  e_lat=0.115410  v=0.500  w=-0.0900
-
-
-+=controller+=
-  VSI time: 1279030100 ns
-  e_lat=0.115180  v=0.500  w=-0.0895
-
-
-+=controller+=
-  VSI time: 1280030100 ns
-  e_lat=0.114951  v=0.500  w=-0.0890
-
-
-+=controller+=
-  VSI time: 1281030100 ns
-  e_lat=0.114721  v=0.500  w=-0.0886
-
-
-+=controller+=
-  VSI time: 1282030100 ns
-  e_lat=0.114491  v=0.500  w=-0.0881
-
-
-+=controller+=
-  VSI time: 1283030100 ns
-  e_lat=0.114261  v=0.500  w=-0.0876
-
-
-+=controller+=
-  VSI time: 1284030100 ns
-  e_lat=0.114031  v=0.500  w=-0.0872
-
-
-+=controller+=
-  VSI time: 1285030100 ns
-  e_lat=0.113801  v=0.500  w=-0.0867
-
-
-+=controller+=
-  VSI time: 1286030100 ns
-  e_lat=0.113571  v=0.500  w=-0.0863
-
-
-+=controller+=
-  VSI time: 1287030100 ns
-  e_lat=0.113341  v=0.500  w=-0.0858
-
-
-+=controller+=
-  VSI time: 1288030100 ns
-  e_lat=0.113110  v=0.500  w=-0.0853
-
-
-+=controller+=
-  VSI time: 1289030100 ns
-  e_lat=0.112880  v=0.500  w=-0.0849
-
-
-+=controller+=
-  VSI time: 1290030100 ns
-  e_lat=0.112650  v=0.500  w=-0.0844
-
-
-+=controller+=
-  VSI time: 1291030100 ns
-  e_lat=0.112420  v=0.500  w=-0.0839
-
-
-+=controller+=
-  VSI time: 1292030100 ns
-  e_lat=0.112189  v=0.500  w=-0.0835
-
-
-+=controller+=
-  VSI time: 1293030100 ns
-  e_lat=0.111959  v=0.500  w=-0.0830
-
-
-+=controller+=
-  VSI time: 1294030100 ns
-  e_lat=0.111729  v=0.500  w=-0.0825
-
-
-+=controller+=
-  VSI time: 1295030100 ns
-  e_lat=0.111498  v=0.500  w=-0.0821
-
-
-+=controller+=
-  VSI time: 1296030100 ns
-  e_lat=0.111268  v=0.500  w=-0.0816
-
-
-+=controller+=
-  VSI time: 1297030100 ns
-  e_lat=0.111037  v=0.500  w=-0.0811
-
-
-+=controller+=
-  VSI time: 1298030100 ns
-  e_lat=0.110807  v=0.500  w=-0.0807
-
-
-+=controller+=
-  VSI time: 1299030100 ns
-  e_lat=0.110576  v=0.500  w=-0.0802
-
-
-+=controller+=
-  VSI time: 1300030100 ns
-  e_lat=0.110345  v=0.500  w=-0.0798
-
-
-+=controller+=
-  VSI time: 1301030100 ns
-  e_lat=0.110115  v=0.500  w=-0.0793
-
-
-+=controller+=
-  VSI time: 1302030100 ns
-  e_lat=0.109884  v=0.500  w=-0.0788
-
-
-+=controller+=
-  VSI time: 1303030100 ns
-  e_lat=0.109653  v=0.500  w=-0.0784
-
-
-+=controller+=
-  VSI time: 1304030100 ns
-  e_lat=0.109423  v=0.500  w=-0.0779
-
-
-+=controller+=
-  VSI time: 1305030100 ns
-  e_lat=0.109192  v=0.500  w=-0.0774
-
-
-+=controller+=
-  VSI time: 1306030100 ns
-  e_lat=0.108961  v=0.500  w=-0.0770
-
-
-+=controller+=
-  VSI time: 1307030100 ns
-  e_lat=0.108730  v=0.500  w=-0.0765
-
-
-+=controller+=
-  VSI time: 1308030100 ns
-  e_lat=0.108499  v=0.500  w=-0.0760
-
-
-+=controller+=
-  VSI time: 1309030100 ns
-  e_lat=0.108268  v=0.500  w=-0.0756
-
-
-+=controller+=
-  VSI time: 1310030100 ns
-  e_lat=0.108037  v=0.500  w=-0.0751
-
-
-+=controller+=
-  VSI time: 1311030100 ns
-  e_lat=0.107806  v=0.500  w=-0.0747
-
-
-+=controller+=
-  VSI time: 1312030100 ns
-  e_lat=0.107575  v=0.500  w=-0.0742
-
-
-+=controller+=
-  VSI time: 1313030100 ns
-  e_lat=0.107344  v=0.500  w=-0.0737
-
-
-+=controller+=
-  VSI time: 1314030100 ns
-  e_lat=0.107113  v=0.500  w=-0.0733
-
-
-+=controller+=
-  VSI time: 1315030100 ns
-  e_lat=0.106882  v=0.500  w=-0.0728
-
-
-+=controller+=
-  VSI time: 1316030100 ns
-  e_lat=0.106651  v=0.500  w=-0.0723
-
-
-+=controller+=
-  VSI time: 1317030100 ns
-  e_lat=0.106420  v=0.500  w=-0.0719
-
-
-+=controller+=
-  VSI time: 1318030100 ns
-  e_lat=0.106189  v=0.500  w=-0.0714
-
-
-+=controller+=
-  VSI time: 1319030100 ns
-  e_lat=0.105957  v=0.500  w=-0.0709
-
-
-+=controller+=
-  VSI time: 1320030100 ns
-  e_lat=0.105726  v=0.500  w=-0.0705
-
-
-+=controller+=
-  VSI time: 1321030100 ns
-  e_lat=0.105495  v=0.500  w=-0.0700
-
-
-+=controller+=
-  VSI time: 1322030100 ns
-  e_lat=0.105263  v=0.500  w=-0.0696
-
-
-+=controller+=
-  VSI time: 1323030100 ns
-  e_lat=0.105032  v=0.500  w=-0.0691
-
-
-+=controller+=
-  VSI time: 1324030100 ns
-  e_lat=0.104801  v=0.500  w=-0.0686
-
-
-+=controller+=
-  VSI time: 1325030100 ns
-  e_lat=0.104569  v=0.500  w=-0.0682
-
-
-+=controller+=
-  VSI time: 1326030100 ns
-  e_lat=0.104338  v=0.500  w=-0.0677
-
-
-+=controller+=
-  VSI time: 1327030100 ns
-  e_lat=0.104106  v=0.500  w=-0.0672
-
-
-+=controller+=
-  VSI time: 1328030100 ns
-  e_lat=0.103875  v=0.500  w=-0.0668
-
-
-+=controller+=
-  VSI time: 1329030100 ns
-  e_lat=0.103643  v=0.500  w=-0.0663
-
-
-+=controller+=
-  VSI time: 1330030100 ns
-  e_lat=0.103411  v=0.500  w=-0.0659
-
-
-+=controller+=
-  VSI time: 1331030100 ns
-  e_lat=0.103180  v=0.500  w=-0.0654
-
-
-+=controller+=
-  VSI time: 1332030100 ns
-  e_lat=0.102948  v=0.500  w=-0.0649
-
-
-+=controller+=
-  VSI time: 1333030100 ns
-  e_lat=0.102717  v=0.500  w=-0.0645
-
-
-+=controller+=
-  VSI time: 1334030100 ns
-  e_lat=0.102485  v=0.500  w=-0.0640
-
-
-+=controller+=
-  VSI time: 1335030100 ns
-  e_lat=0.102253  v=0.500  w=-0.0636
-
-
-+=controller+=
-  VSI time: 1336030100 ns
-  e_lat=0.102021  v=0.500  w=-0.0631
-
-
-+=controller+=
-  VSI time: 1337030100 ns
-  e_lat=0.101789  v=0.500  w=-0.0626
-
-
-+=controller+=
-  VSI time: 1338030100 ns
-  e_lat=0.101558  v=0.500  w=-0.0622
-
-
-+=controller+=
-  VSI time: 1339030100 ns
-  e_lat=0.101326  v=0.500  w=-0.0617
-
-
-+=controller+=
-  VSI time: 1340030100 ns
-  e_lat=0.101094  v=0.500  w=-0.0612
-
-
-+=controller+=
-  VSI time: 1341030100 ns
-  e_lat=0.100862  v=0.500  w=-0.0608
-
-
-+=controller+=
-  VSI time: 1342030100 ns
-  e_lat=0.100630  v=0.500  w=-0.0603
-
-
-+=controller+=
-  VSI time: 1343030100 ns
-  e_lat=0.100398  v=0.500  w=-0.0599
-
-
-+=controller+=
-  VSI time: 1344030100 ns
-  e_lat=0.100166  v=0.500  w=-0.0594
-
-
-+=controller+=
-  VSI time: 1345030100 ns
-  e_lat=0.099934  v=0.500  w=-0.0589
-
-
-+=controller+=
-  VSI time: 1346030100 ns
-  e_lat=0.099702  v=0.500  w=-0.0585
-
-
-+=controller+=
-  VSI time: 1347030100 ns
-  e_lat=0.099470  v=0.500  w=-0.0580
-
-
-+=controller+=
-  VSI time: 1348030100 ns
-  e_lat=0.099238  v=0.500  w=-0.0576
-
-
-+=controller+=
-  VSI time: 1349030100 ns
-  e_lat=0.099006  v=0.500  w=-0.0571
-
-
-+=controller+=
-  VSI time: 1350030100 ns
-  e_lat=0.098774  v=0.500  w=-0.0566
-
-
-+=controller+=
-  VSI time: 1351030100 ns
-  e_lat=0.098541  v=0.500  w=-0.0562
-
-
-+=controller+=
-  VSI time: 1352030100 ns
-  e_lat=0.098309  v=0.500  w=-0.0557
-
-
-+=controller+=
-  VSI time: 1353030100 ns
-  e_lat=0.098077  v=0.500  w=-0.0553
-
-
-+=controller+=
-  VSI time: 1354030100 ns
-  e_lat=0.097845  v=0.500  w=-0.0548
-
-
-+=controller+=
-  VSI time: 1355030100 ns
-  e_lat=0.097613  v=0.500  w=-0.0543
-
-
-+=controller+=
-  VSI time: 1356030100 ns
-  e_lat=0.097380  v=0.500  w=-0.0539
-
-
-+=controller+=
-  VSI time: 1357030100 ns
-  e_lat=0.097148  v=0.500  w=-0.0534
-
-
-+=controller+=
-  VSI time: 1358030100 ns
-  e_lat=0.096916  v=0.500  w=-0.0530
-
-
-+=controller+=
-  VSI time: 1359030100 ns
-  e_lat=0.096683  v=0.500  w=-0.0525
-
-
-+=controller+=
-  VSI time: 1360030100 ns
-  e_lat=0.096451  v=0.500  w=-0.0520
-
-
-+=controller+=
-  VSI time: 1361030100 ns
-  e_lat=0.096218  v=0.500  w=-0.0516
-
-
-+=controller+=
-  VSI time: 1362030100 ns
-  e_lat=0.095986  v=0.500  w=-0.0511
-
-
-+=controller+=
-  VSI time: 1363030100 ns
-  e_lat=0.095754  v=0.500  w=-0.0507
-
-
-+=controller+=
-  VSI time: 1364030100 ns
-  e_lat=0.095521  v=0.500  w=-0.0502
-
-
-+=controller+=
-  VSI time: 1365030100 ns
-  e_lat=0.095289  v=0.500  w=-0.0497
-
-
-+=controller+=
-  VSI time: 1366030100 ns
-  e_lat=0.095056  v=0.500  w=-0.0493
-
-
-+=controller+=
-  VSI time: 1367030100 ns
-  e_lat=0.094823  v=0.500  w=-0.0488
-
-
-+=controller+=
-  VSI time: 1368030100 ns
-  e_lat=0.094591  v=0.500  w=-0.0484
-
-
-+=controller+=
-  VSI time: 1369030100 ns
-  e_lat=0.094358  v=0.500  w=-0.0479
-
-
-+=controller+=
-  VSI time: 1370030100 ns
-  e_lat=0.094126  v=0.500  w=-0.0474
-
-
-+=controller+=
-  VSI time: 1371030100 ns
-  e_lat=0.093893  v=0.500  w=-0.0470
-
-
-+=controller+=
-  VSI time: 1372030100 ns
-  e_lat=0.093660  v=0.500  w=-0.0465
-
-
-+=controller+=
-  VSI time: 1373030100 ns
-  e_lat=0.093428  v=0.500  w=-0.0461
-
-
-+=controller+=
-  VSI time: 1374030100 ns
-  e_lat=0.093195  v=0.500  w=-0.0456
-
-
-+=controller+=
-  VSI time: 1375030100 ns
-  e_lat=0.092962  v=0.500  w=-0.0452
-
-
-+=controller+=
-  VSI time: 1376030100 ns
-  e_lat=0.092730  v=0.500  w=-0.0447
-
-
-+=controller+=
-  VSI time: 1377030100 ns
-  e_lat=0.092497  v=0.500  w=-0.0442
-
-
-+=controller+=
-  VSI time: 1378030100 ns
-  e_lat=0.092264  v=0.500  w=-0.0438
-
-
-+=controller+=
-  VSI time: 1379030100 ns
-  e_lat=0.092031  v=0.500  w=-0.0433
-
-
-+=controller+=
-  VSI time: 1380030100 ns
-  e_lat=0.091798  v=0.500  w=-0.0429
-
-
-+=controller+=
-  VSI time: 1381030100 ns
-  e_lat=0.091565  v=0.500  w=-0.0424
-
-
-+=controller+=
-  VSI time: 1382030100 ns
-  e_lat=0.091333  v=0.500  w=-0.0420
-
-
-+=controller+=
-  VSI time: 1383030100 ns
-  e_lat=0.091100  v=0.500  w=-0.0415
-
-
-+=controller+=
-  VSI time: 1384030100 ns
-  e_lat=0.090867  v=0.500  w=-0.0410
-
-
-+=controller+=
-  VSI time: 1385030100 ns
-  e_lat=0.090634  v=0.500  w=-0.0406
-
-
-+=controller+=
-  VSI time: 1386030100 ns
-  e_lat=0.090401  v=0.500  w=-0.0401
-
-
-+=controller+=
-  VSI time: 1387030100 ns
-  e_lat=0.090168  v=0.500  w=-0.0397
-
-
-+=controller+=
-  VSI time: 1388030100 ns
-  e_lat=0.089935  v=0.500  w=-0.0392
-
-
-+=controller+=
-  VSI time: 1389030100 ns
-  e_lat=0.089702  v=0.500  w=-0.0388
-
-
-+=controller+=
-  VSI time: 1390030100 ns
-  e_lat=0.089469  v=0.500  w=-0.0383
-
-
-+=controller+=
-  VSI time: 1391030100 ns
-  e_lat=0.089236  v=0.500  w=-0.0378
-
-
-+=controller+=
-  VSI time: 1392030100 ns
-  e_lat=0.089003  v=0.500  w=-0.0374
-
-
-+=controller+=
-  VSI time: 1393030100 ns
-  e_lat=0.088770  v=0.500  w=-0.0369
-
-
-+=controller+=
-  VSI time: 1394030100 ns
-  e_lat=0.088537  v=0.500  w=-0.0365
-
-
-+=controller+=
-  VSI time: 1395030100 ns
-  e_lat=0.088304  v=0.500  w=-0.0360
-
-
-+=controller+=
-  VSI time: 1396030100 ns
-  e_lat=0.088071  v=0.500  w=-0.0356
-
-
-+=controller+=
-  VSI time: 1397030100 ns
-  e_lat=0.087838  v=0.500  w=-0.0351
-
-
-+=controller+=
-  VSI time: 1398030100 ns
-  e_lat=0.087604  v=0.500  w=-0.0346
-
-
-+=controller+=
-  VSI time: 1399030100 ns
-  e_lat=0.087371  v=0.500  w=-0.0342
-
-
-+=controller+=
-  VSI time: 1400030100 ns
-  e_lat=0.087138  v=0.500  w=-0.0337
-
-
-+=controller+=
-  VSI time: 1401030100 ns
-  e_lat=0.086905  v=0.500  w=-0.0333
-
-
-+=controller+=
-  VSI time: 1402030100 ns
-  e_lat=0.086672  v=0.500  w=-0.0328
-
-
-+=controller+=
-  VSI time: 1403030100 ns
-  e_lat=0.086438  v=0.500  w=-0.0324
-
-
-+=controller+=
-  VSI time: 1404030100 ns
-  e_lat=0.086205  v=0.500  w=-0.0319
-
-
-+=controller+=
-  VSI time: 1405030100 ns
-  e_lat=0.085972  v=0.500  w=-0.0315
-
-
-+=controller+=
-  VSI time: 1406030100 ns
-  e_lat=0.085739  v=0.500  w=-0.0310
-
-
-+=controller+=
-  VSI time: 1407030100 ns
-  e_lat=0.085505  v=0.500  w=-0.0305
-
-
-+=controller+=
-  VSI time: 1408030100 ns
-  e_lat=0.085272  v=0.500  w=-0.0301
-
-
-+=controller+=
-  VSI time: 1409030100 ns
-  e_lat=0.085039  v=0.500  w=-0.0296
-
-
-+=controller+=
-  VSI time: 1410030100 ns
-  e_lat=0.084806  v=0.500  w=-0.0292
-
-
-+=controller+=
-  VSI time: 1411030100 ns
-  e_lat=0.084572  v=0.500  w=-0.0287
-
-
-+=controller+=
-  VSI time: 1412030100 ns
-  e_lat=0.084339  v=0.500  w=-0.0283
-
-
-+=controller+=
-  VSI time: 1413030100 ns
-  e_lat=0.084106  v=0.500  w=-0.0278
-
-
-+=controller+=
-  VSI time: 1414030100 ns
-  e_lat=0.083872  v=0.500  w=-0.0274
-
-
-+=controller+=
-  VSI time: 1415030100 ns
-  e_lat=0.083639  v=0.500  w=-0.0269
-
-
-+=controller+=
-  VSI time: 1416030100 ns
-  e_lat=0.083405  v=0.500  w=-0.0265
-
-
-+=controller+=
-  VSI time: 1417030100 ns
-  e_lat=0.083172  v=0.500  w=-0.0260
-
-
-+=controller+=
-  VSI time: 1418030100 ns
-  e_lat=0.082939  v=0.500  w=-0.0255
-
-
-+=controller+=
-  VSI time: 1419030100 ns
-  e_lat=0.082705  v=0.500  w=-0.0251
-
-
-+=controller+=
-  VSI time: 1420030100 ns
-  e_lat=0.082472  v=0.500  w=-0.0246
-
-
-+=controller+=
-  VSI time: 1421030100 ns
-  e_lat=0.082238  v=0.500  w=-0.0242
-
-
-+=controller+=
-  VSI time: 1422030100 ns
-  e_lat=0.082005  v=0.500  w=-0.0237
-
-
-+=controller+=
-  VSI time: 1423030100 ns
-  e_lat=0.081771  v=0.500  w=-0.0233
-
-
-+=controller+=
-  VSI time: 1424030100 ns
-  e_lat=0.081538  v=0.500  w=-0.0228
-
-
-+=controller+=
-  VSI time: 1425030100 ns
-  e_lat=0.081304  v=0.500  w=-0.0224
-
-
-+=controller+=
-  VSI time: 1426030100 ns
-  e_lat=0.081071  v=0.500  w=-0.0219
-
-
-+=controller+=
-  VSI time: 1427030100 ns
-  e_lat=0.080837  v=0.500  w=-0.0215
-
-
-+=controller+=
-  VSI time: 1428030100 ns
-  e_lat=0.080604  v=0.500  w=-0.0210
-
-
-+=controller+=
-  VSI time: 1429030100 ns
-  e_lat=0.080370  v=0.500  w=-0.0206
-
-
-+=controller+=
-  VSI time: 1430030100 ns
-  e_lat=0.080137  v=0.500  w=-0.0201
-
-
-+=controller+=
-  VSI time: 1431030100 ns
-  e_lat=0.079903  v=0.500  w=-0.0197
-
-
-+=controller+=
-  VSI time: 1432030100 ns
-  e_lat=0.079670  v=0.500  w=-0.0192
-
-
-+=controller+=
-  VSI time: 1433030100 ns
-  e_lat=0.079436  v=0.500  w=-0.0188
-
-
-+=controller+=
-  VSI time: 1434030100 ns
-  e_lat=0.079202  v=0.500  w=-0.0183
-
-
-+=controller+=
-  VSI time: 1435030100 ns
-  e_lat=0.078969  v=0.500  w=-0.0179
-
-
-+=controller+=
-  VSI time: 1436030100 ns
-  e_lat=0.078735  v=0.500  w=-0.0174
-
-
-+=controller+=
-  VSI time: 1437030100 ns
-  e_lat=0.078502  v=0.500  w=-0.0169
-
-
-+=controller+=
-  VSI time: 1438030100 ns
-  e_lat=0.078268  v=0.500  w=-0.0165
-
-
-+=controller+=
-  VSI time: 1439030100 ns
-  e_lat=0.078034  v=0.500  w=-0.0160
-
-
-+=controller+=
-  VSI time: 1440030100 ns
-  e_lat=0.077801  v=0.500  w=-0.0156
-
-
-+=controller+=
-  VSI time: 1441030100 ns
-  e_lat=0.077567  v=0.500  w=-0.0151
-
-
-+=controller+=
-  VSI time: 1442030100 ns
-  e_lat=0.077334  v=0.500  w=-0.0147
-
-
-+=controller+=
-  VSI time: 1443030100 ns
-  e_lat=0.077100  v=0.500  w=-0.0142
-
-
-+=controller+=
-  VSI time: 1444030100 ns
-  e_lat=0.076866  v=0.500  w=-0.0138
-
-
-+=controller+=
-  VSI time: 1445030100 ns
-  e_lat=0.076633  v=0.500  w=-0.0133
-
-
-+=controller+=
-  VSI time: 1446030100 ns
-  e_lat=0.076399  v=0.500  w=-0.0129
-
-
-+=controller+=
-  VSI time: 1447030100 ns
-  e_lat=0.076165  v=0.500  w=-0.0124
-
-
-+=controller+=
-  VSI time: 1448030100 ns
-  e_lat=0.075932  v=0.500  w=-0.0120
-
-
-+=controller+=
-  VSI time: 1449030100 ns
-  e_lat=0.075698  v=0.500  w=-0.0115
-
-
-+=controller+=
-  VSI time: 1450030100 ns
-  e_lat=0.075464  v=0.500  w=-0.0111
-
-
-+=controller+=
-  VSI time: 1451030100 ns
-  e_lat=0.075231  v=0.500  w=-0.0106
-
-
-+=controller+=
-  VSI time: 1452030100 ns
-  e_lat=0.074997  v=0.500  w=-0.0102
-
-
-+=controller+=
-  VSI time: 1453030100 ns
-  e_lat=0.074763  v=0.500  w=-0.0097
-
-
-+=controller+=
-  VSI time: 1454030100 ns
-  e_lat=0.074529  v=0.500  w=-0.0093
-
-
-+=controller+=
-  VSI time: 1455030100 ns
-  e_lat=0.074296  v=0.500  w=-0.0088
-
-
-+=controller+=
-  VSI time: 1456030100 ns
-  e_lat=0.074062  v=0.500  w=-0.0084
-
-
-+=controller+=
-  VSI time: 1457030100 ns
-  e_lat=0.073828  v=0.500  w=-0.0079
-
-
-+=controller+=
-  VSI time: 1458030100 ns
-  e_lat=0.073594  v=0.500  w=-0.0075
-
-
-+=controller+=
-  VSI time: 1459030100 ns
-  e_lat=0.073361  v=0.500  w=-0.0070
-
-
-+=controller+=
-  VSI time: 1460030100 ns
-  e_lat=0.073127  v=0.500  w=-0.0066
-
-
-+=controller+=
-  VSI time: 1461030100 ns
-  e_lat=0.072893  v=0.500  w=-0.0061
-
-
-+=controller+=
-  VSI time: 1462030100 ns
-  e_lat=0.072660  v=0.500  w=-0.0057
-
-
-+=controller+=
-  VSI time: 1463030100 ns
-  e_lat=0.072426  v=0.500  w=-0.0052
-
-
-+=controller+=
-  VSI time: 1464030100 ns
-  e_lat=0.072192  v=0.500  w=-0.0048
-
-
-+=controller+=
-  VSI time: 1465030100 ns
-  e_lat=0.071958  v=0.500  w=-0.0043
-
-
-+=controller+=
-  VSI time: 1466030100 ns
-  e_lat=0.071725  v=0.500  w=-0.0039
-
-
-+=controller+=
-  VSI time: 1467030100 ns
-  e_lat=0.071491  v=0.500  w=-0.0034
-
-
-+=controller+=
-  VSI time: 1468030100 ns
-  e_lat=0.071257  v=0.500  w=-0.0030
-
-
-+=controller+=
-  VSI time: 1469030100 ns
-  e_lat=0.071023  v=0.500  w=-0.0026
-
-
-+=controller+=
-  VSI time: 1470030100 ns
-  e_lat=0.070790  v=0.500  w=-0.0021
-
-
-+=controller+=
-  VSI time: 1471030100 ns
-  e_lat=0.070556  v=0.500  w=-0.0017
-
-
-+=controller+=
-  VSI time: 1472030100 ns
-  e_lat=0.070322  v=0.500  w=-0.0012
-
-
-+=controller+=
-  VSI time: 1473030100 ns
-  e_lat=0.070088  v=0.500  w=-0.0008
-
-
-+=controller+=
-  VSI time: 1474030100 ns
-  e_lat=0.069854  v=0.500  w=-0.0003
-
-
-+=controller+=
-  VSI time: 1475030100 ns
-  e_lat=0.069621  v=0.500  w=0.0001
-
-
-+=controller+=
-  VSI time: 1476030100 ns
-  e_lat=0.069387  v=0.500  w=0.0006
-
-
-+=controller+=
-  VSI time: 1477030100 ns
-  e_lat=0.069153  v=0.500  w=0.0010
-
-
-+=controller+=
-  VSI time: 1478030100 ns
-  e_lat=0.068919  v=0.500  w=0.0015
-
-
-+=controller+=
-  VSI time: 1479030100 ns
-  e_lat=0.068686  v=0.500  w=0.0019
-
-
-+=controller+=
-  VSI time: 1480030100 ns
-  e_lat=0.068452  v=0.500  w=0.0024
-
-
-+=controller+=
-  VSI time: 1481030100 ns
-  e_lat=0.068218  v=0.500  w=0.0028
-
-
-+=controller+=
-  VSI time: 1482030100 ns
-  e_lat=0.067984  v=0.500  w=0.0033
-
-
-+=controller+=
-  VSI time: 1483030100 ns
-  e_lat=0.067751  v=0.500  w=0.0037
-
-
-+=controller+=
-  VSI time: 1484030100 ns
-  e_lat=0.067517  v=0.500  w=0.0042
-
-
-+=controller+=
-  VSI time: 1485030100 ns
-  e_lat=0.067283  v=0.500  w=0.0046
-
-
-+=controller+=
-  VSI time: 1486030100 ns
-  e_lat=0.067049  v=0.500  w=0.0050
-
-
-+=controller+=
-  VSI time: 1487030100 ns
-  e_lat=0.066816  v=0.500  w=0.0055
-
-
-+=controller+=
-  VSI time: 1488030100 ns
-  e_lat=0.066582  v=0.500  w=0.0059
-
-
-+=controller+=
-  VSI time: 1489030100 ns
-  e_lat=0.066348  v=0.500  w=0.0064
-
-
-+=controller+=
-  VSI time: 1490030100 ns
-  e_lat=0.066114  v=0.500  w=0.0068
-
-
-+=controller+=
-  VSI time: 1491030100 ns
-  e_lat=0.065881  v=0.500  w=0.0073
-
-
-+=controller+=
-  VSI time: 1492030100 ns
-  e_lat=0.065647  v=0.500  w=0.0077
-
-
-+=controller+=
-  VSI time: 1493030100 ns
-  e_lat=0.065413  v=0.500  w=0.0082
-
-
-+=controller+=
-  VSI time: 1494030100 ns
-  e_lat=0.065179  v=0.500  w=0.0086
-
-
-+=controller+=
-  VSI time: 1495030100 ns
-  e_lat=0.064946  v=0.500  w=0.0090
-
-
-+=controller+=
-  VSI time: 1496030100 ns
-  e_lat=0.064712  v=0.500  w=0.0095
-
-
-+=controller+=
-  VSI time: 1497030100 ns
-  e_lat=0.064478  v=0.500  w=0.0099
-
-
-+=controller+=
-  VSI time: 1498030100 ns
-  e_lat=0.064244  v=0.500  w=0.0104
-
-
-+=controller+=
-  VSI time: 1499030100 ns
-  e_lat=0.064011  v=0.500  w=0.0108
-
-
-+=controller+=
-  VSI time: 1500030100 ns
-  e_lat=0.063777  v=0.500  w=0.0113
-
-
-+=controller+=
-  VSI time: 1501030100 ns
-  e_lat=0.063543  v=0.500  w=0.0117
-
-
-+=controller+=
-  VSI time: 1502030100 ns
-  e_lat=0.063310  v=0.500  w=0.0122
-
-
-+=controller+=
-  VSI time: 1503030100 ns
-  e_lat=0.063076  v=0.500  w=0.0126
-
-
-+=controller+=
-  VSI time: 1504030100 ns
-  e_lat=0.062842  v=0.500  w=0.0130
-
-
-+=controller+=
-  VSI time: 1505030100 ns
-  e_lat=0.062609  v=0.500  w=0.0135
-
-
-+=controller+=
-  VSI time: 1506030100 ns
-  e_lat=0.062375  v=0.500  w=0.0139
-
-
-+=controller+=
-  VSI time: 1507030100 ns
-  e_lat=0.062141  v=0.500  w=0.0144
-
-
-+=controller+=
-  VSI time: 1508030100 ns
-  e_lat=0.061908  v=0.500  w=0.0148
-
-
-+=controller+=
-  VSI time: 1509030100 ns
-  e_lat=0.061674  v=0.500  w=0.0153
-
-
-+=controller+=
-  VSI time: 1510030100 ns
-  e_lat=0.061440  v=0.500  w=0.0157
-
-
-+=controller+=
-  VSI time: 1511030100 ns
-  e_lat=0.061207  v=0.500  w=0.0161
-
-
-+=controller+=
-  VSI time: 1512030100 ns
-  e_lat=0.060973  v=0.500  w=0.0166
-
-
-+=controller+=
-  VSI time: 1513030100 ns
-  e_lat=0.060739  v=0.500  w=0.0170
-
-
-+=controller+=
-  VSI time: 1514030100 ns
-  e_lat=0.060506  v=0.500  w=0.0175
-
-
-+=controller+=
-  VSI time: 1515030100 ns
-  e_lat=0.060272  v=0.500  w=0.0179
-
-
-+=controller+=
-  VSI time: 1516030100 ns
-  e_lat=0.060038  v=0.500  w=0.0184
-
-
-+=controller+=
-  VSI time: 1517030100 ns
-  e_lat=0.059805  v=0.500  w=0.0188
-
-
-+=controller+=
-  VSI time: 1518030100 ns
-  e_lat=0.059571  v=0.500  w=0.0192
-
-
-+=controller+=
-  VSI time: 1519030100 ns
-  e_lat=0.059338  v=0.500  w=0.0197
-
-
-+=controller+=
-  VSI time: 1520030100 ns
-  e_lat=0.059104  v=0.500  w=0.0201
-
-
-+=controller+=
-  VSI time: 1521030100 ns
-  e_lat=0.058870  v=0.500  w=0.0206
-
-
-+=controller+=
-  VSI time: 1522030100 ns
-  e_lat=0.058637  v=0.500  w=0.0210
-
-
-+=controller+=
-  VSI time: 1523030100 ns
-  e_lat=0.058403  v=0.500  w=0.0214
-
-
-+=controller+=
-  VSI time: 1524030100 ns
-  e_lat=0.058170  v=0.500  w=0.0219
-
-
-+=controller+=
-  VSI time: 1525030100 ns
-  e_lat=0.057936  v=0.500  w=0.0223
-
-
-+=controller+=
-  VSI time: 1526030100 ns
-  e_lat=0.057703  v=0.500  w=0.0228
-
-
-+=controller+=
-  VSI time: 1527030100 ns
-  e_lat=0.057469  v=0.500  w=0.0232
-
-
-+=controller+=
-  VSI time: 1528030100 ns
-  e_lat=0.057236  v=0.500  w=0.0236
-
-
-+=controller+=
-  VSI time: 1529030100 ns
-  e_lat=0.057002  v=0.500  w=0.0241
-
-
-+=controller+=
-  VSI time: 1530030100 ns
-  e_lat=0.056769  v=0.500  w=0.0245
-
-
-+=controller+=
-  VSI time: 1531030100 ns
-  e_lat=0.056535  v=0.500  w=0.0250
-
-
-+=controller+=
-  VSI time: 1532030100 ns
-  e_lat=0.056302  v=0.500  w=0.0254
-
-
-+=controller+=
-  VSI time: 1533030100 ns
-  e_lat=0.056068  v=0.500  w=0.0258
-
-
-+=controller+=
-  VSI time: 1534030100 ns
-  e_lat=0.055835  v=0.500  w=0.0263
-
-
-+=controller+=
-  VSI time: 1535030100 ns
-  e_lat=0.055601  v=0.500  w=0.0267
-
-
-+=controller+=
-  VSI time: 1536030100 ns
-  e_lat=0.055368  v=0.500  w=0.0272
-
-
-+=controller+=
-  VSI time: 1537030100 ns
-  e_lat=0.055135  v=0.500  w=0.0276
-
-
-+=controller+=
-  VSI time: 1538030100 ns
-  e_lat=0.054901  v=0.500  w=0.0280
-
-
-+=controller+=
-  VSI time: 1539030100 ns
-  e_lat=0.054668  v=0.500  w=0.0285
-
-
-+=controller+=
-  VSI time: 1540030100 ns
-  e_lat=0.054434  v=0.500  w=0.0289
-
-
-+=controller+=
-  VSI time: 1541030100 ns
-  e_lat=0.054201  v=0.500  w=0.0293
-
-
-+=controller+=
-  VSI time: 1542030100 ns
-  e_lat=0.053968  v=0.500  w=0.0298
-
-
-+=controller+=
-  VSI time: 1543030100 ns
-  e_lat=0.053734  v=0.500  w=0.0302
-
-
-+=controller+=
-  VSI time: 1544030100 ns
-  e_lat=0.053501  v=0.500  w=0.0307
-
-
-+=controller+=
-  VSI time: 1545030100 ns
-  e_lat=0.053268  v=0.500  w=0.0311
-
-
-+=controller+=
-  VSI time: 1546030100 ns
-  e_lat=0.053034  v=0.500  w=0.0315
-
-
-+=controller+=
-  VSI time: 1547030100 ns
-  e_lat=0.052801  v=0.500  w=0.0320
-
-
-+=controller+=
-  VSI time: 1548030100 ns
-  e_lat=0.052568  v=0.500  w=0.0324
-
-
-+=controller+=
-  VSI time: 1549030100 ns
-  e_lat=0.052335  v=0.500  w=0.0328
-
-
-+=controller+=
-  VSI time: 1550030100 ns
-  e_lat=0.052101  v=0.500  w=0.0333
-
-
-+=controller+=
-  VSI time: 1551030100 ns
-  e_lat=0.051868  v=0.500  w=0.0337
-
-
-+=controller+=
-  VSI time: 1552030100 ns
-  e_lat=0.051635  v=0.500  w=0.0342
-
-
-+=controller+=
-  VSI time: 1553030100 ns
-  e_lat=0.051402  v=0.500  w=0.0346
-
-
-+=controller+=
-  VSI time: 1554030100 ns
-  e_lat=0.051168  v=0.500  w=0.0350
-
-
-+=controller+=
-  VSI time: 1555030100 ns
-  e_lat=0.050935  v=0.500  w=0.0355
-
-
-+=controller+=
-  VSI time: 1556030100 ns
-  e_lat=0.050702  v=0.500  w=0.0359
-
-
-+=controller+=
-  VSI time: 1557030100 ns
-  e_lat=0.050469  v=0.500  w=0.0363
-
-
-+=controller+=
-  VSI time: 1558030100 ns
-  e_lat=0.050236  v=0.500  w=0.0368
-
-
-+=controller+=
-  VSI time: 1559030100 ns
-  e_lat=0.050003  v=0.500  w=0.0372
-
-
-+=controller+=
-  VSI time: 1560030100 ns
-  e_lat=0.049770  v=0.500  w=0.0376
-
-
-+=controller+=
-  VSI time: 1561030100 ns
-  e_lat=0.049537  v=0.500  w=0.0381
-
-
-+=controller+=
-  VSI time: 1562030100 ns
-  e_lat=0.049304  v=0.500  w=0.0385
-
-
-+=controller+=
-  VSI time: 1563030100 ns
-  e_lat=0.049070  v=0.500  w=0.0389
-
-
-+=controller+=
-  VSI time: 1564030100 ns
-  e_lat=0.048837  v=0.500  w=0.0394
-
-
-+=controller+=
-  VSI time: 1565030100 ns
-  e_lat=0.048604  v=0.500  w=0.0398
-
-
-+=controller+=
-  VSI time: 1566030100 ns
-  e_lat=0.048371  v=0.500  w=0.0403
-
-
-+=controller+=
-  VSI time: 1567030100 ns
-  e_lat=0.048138  v=0.500  w=0.0407
-
-
-+=controller+=
-  VSI time: 1568030100 ns
-  e_lat=0.047906  v=0.500  w=0.0411
-
-
-+=controller+=
-  VSI time: 1569030100 ns
-  e_lat=0.047673  v=0.500  w=0.0416
-
-
-+=controller+=
-  VSI time: 1570030100 ns
-  e_lat=0.047440  v=0.500  w=0.0420
-
-
-+=controller+=
-  VSI time: 1571030100 ns
-  e_lat=0.047207  v=0.500  w=0.0424
-
-
-+=controller+=
-  VSI time: 1572030100 ns
-  e_lat=0.046974  v=0.500  w=0.0429
-
-
-+=controller+=
-  VSI time: 1573030100 ns
-  e_lat=0.046741  v=0.500  w=0.0433
-
-
-+=controller+=
-  VSI time: 1574030100 ns
-  e_lat=0.046508  v=0.500  w=0.0437
-
-
-+=controller+=
-  VSI time: 1575030100 ns
-  e_lat=0.046275  v=0.500  w=0.0442
-
-
-+=controller+=
-  VSI time: 1576030100 ns
-  e_lat=0.046043  v=0.500  w=0.0446
-
-
-+=controller+=
-  VSI time: 1577030100 ns
-  e_lat=0.045810  v=0.500  w=0.0450
-
-
-+=controller+=
-  VSI time: 1578030100 ns
-  e_lat=0.045577  v=0.500  w=0.0455
-
-
-+=controller+=
-  VSI time: 1579030100 ns
-  e_lat=0.045344  v=0.500  w=0.0459
-
-
-+=controller+=
-  VSI time: 1580030100 ns
-  e_lat=0.045112  v=0.500  w=0.0463
-
-
-+=controller+=
-  VSI time: 1581030100 ns
-  e_lat=0.044879  v=0.500  w=0.0467
-
-
-+=controller+=
-  VSI time: 1582030100 ns
-  e_lat=0.044646  v=0.500  w=0.0472
-
-
-+=controller+=
-  VSI time: 1583030100 ns
-  e_lat=0.044413  v=0.500  w=0.0476
-
-
-+=controller+=
-  VSI time: 1584030100 ns
-  e_lat=0.044181  v=0.500  w=0.0480
-
-
-+=controller+=
-  VSI time: 1585030100 ns
-  e_lat=0.043948  v=0.500  w=0.0485
-
-
-+=controller+=
-  VSI time: 1586030100 ns
-  e_lat=0.043716  v=0.500  w=0.0489
-
-
-+=controller+=
-  VSI time: 1587030100 ns
-  e_lat=0.043483  v=0.500  w=0.0493
-
-
-+=controller+=
-  VSI time: 1588030100 ns
-  e_lat=0.043250  v=0.500  w=0.0498
-
-
-+=controller+=
-  VSI time: 1589030100 ns
-  e_lat=0.043018  v=0.500  w=0.0502
-
-
-+=controller+=
-  VSI time: 1590030100 ns
-  e_lat=0.042785  v=0.500  w=0.0506
-
-
-+=controller+=
-  VSI time: 1591030100 ns
-  e_lat=0.042553  v=0.500  w=0.0511
-
-
-+=controller+=
-  VSI time: 1592030100 ns
-  e_lat=0.042320  v=0.500  w=0.0515
-
-
-+=controller+=
-  VSI time: 1593030100 ns
-  e_lat=0.042088  v=0.500  w=0.0519
-
-
-+=controller+=
-  VSI time: 1594030100 ns
-  e_lat=0.041855  v=0.500  w=0.0523
-
-
-+=controller+=
-  VSI time: 1595030100 ns
-  e_lat=0.041623  v=0.500  w=0.0528
-
-
-+=controller+=
-  VSI time: 1596030100 ns
-  e_lat=0.041391  v=0.500  w=0.0532
-
-
-+=controller+=
-  VSI time: 1597030100 ns
-  e_lat=0.041158  v=0.500  w=0.0536
-
-
-+=controller+=
-  VSI time: 1598030100 ns
-  e_lat=0.040926  v=0.500  w=0.0541
-
-
-+=controller+=
-  VSI time: 1599030100 ns
-  e_lat=0.040694  v=0.500  w=0.0545
-
-
-+=controller+=
-  VSI time: 1600030100 ns
-  e_lat=0.040461  v=0.500  w=0.0549
-
-
-+=controller+=
-  VSI time: 1601030100 ns
-  e_lat=0.040229  v=0.500  w=0.0553
-
-
-+=controller+=
-  VSI time: 1602030100 ns
-  e_lat=0.039997  v=0.500  w=0.0558
-
-
-+=controller+=
-  VSI time: 1603030100 ns
-  e_lat=0.039765  v=0.500  w=0.0562
-
-
-+=controller+=
-  VSI time: 1604030100 ns
-  e_lat=0.039532  v=0.500  w=0.0566
-
-
-+=controller+=
-  VSI time: 1605030100 ns
-  e_lat=0.039300  v=0.500  w=0.0571
-
-
-+=controller+=
-  VSI time: 1606030100 ns
-  e_lat=0.039068  v=0.500  w=0.0575
-
-
-+=controller+=
-  VSI time: 1607030100 ns
-  e_lat=0.038836  v=0.500  w=0.0579
-
-
-+=controller+=
-  VSI time: 1608030100 ns
-  e_lat=0.038604  v=0.500  w=0.0583
-
-
-+=controller+=
-  VSI time: 1609030100 ns
-  e_lat=0.038372  v=0.500  w=0.0588
-
-
-+=controller+=
-  VSI time: 1610030100 ns
-  e_lat=0.038140  v=0.500  w=0.0592
-
-
-+=controller+=
-  VSI time: 1611030100 ns
-  e_lat=0.037908  v=0.500  w=0.0596
-
-
-+=controller+=
-  VSI time: 1612030100 ns
-  e_lat=0.037676  v=0.500  w=0.0601
-
-
-+=controller+=
-  VSI time: 1613030100 ns
-  e_lat=0.037444  v=0.500  w=0.0605
-
-
-+=controller+=
-  VSI time: 1614030100 ns
-  e_lat=0.037212  v=0.500  w=0.0609
-
-
-+=controller+=
-  VSI time: 1615030100 ns
-  e_lat=0.036980  v=0.500  w=0.0613
-
-
-+=controller+=
-  VSI time: 1616030100 ns
-  e_lat=0.036748  v=0.500  w=0.0618
-
-
-+=controller+=
-  VSI time: 1617030100 ns
-  e_lat=0.036516  v=0.500  w=0.0622
-
-
-+=controller+=
-  VSI time: 1618030100 ns
-  e_lat=0.036284  v=0.500  w=0.0626
-
-
-+=controller+=
-  VSI time: 1619030100 ns
-  e_lat=0.036053  v=0.500  w=0.0630
-
-
-+=controller+=
-  VSI time: 1620030100 ns
-  e_lat=0.035821  v=0.500  w=0.0635
-
-
-+=controller+=
-  VSI time: 1621030100 ns
-  e_lat=0.035589  v=0.500  w=0.0639
-
-
-+=controller+=
-  VSI time: 1622030100 ns
-  e_lat=0.035357  v=0.500  w=0.0643
-
-
-+=controller+=
-  VSI time: 1623030100 ns
-  e_lat=0.035126  v=0.500  w=0.0647
-
-
-+=controller+=
-  VSI time: 1624030100 ns
-  e_lat=0.034894  v=0.500  w=0.0652
-
-
-+=controller+=
-  VSI time: 1625030100 ns
-  e_lat=0.034662  v=0.500  w=0.0656
-
-
-+=controller+=
-  VSI time: 1626030100 ns
-  e_lat=0.034431  v=0.500  w=0.0660
-
-
-+=controller+=
-  VSI time: 1627030100 ns
-  e_lat=0.034199  v=0.500  w=0.0664
-
-
-+=controller+=
-  VSI time: 1628030100 ns
-  e_lat=0.033968  v=0.500  w=0.0669
-
-
-+=controller+=
-  VSI time: 1629030100 ns
-  e_lat=0.033736  v=0.500  w=0.0673
-
-
-+=controller+=
-  VSI time: 1630030100 ns
-  e_lat=0.033505  v=0.500  w=0.0677
-
-
-+=controller+=
-  VSI time: 1631030100 ns
-  e_lat=0.033273  v=0.500  w=0.0681
-
-
-+=controller+=
-  VSI time: 1632030100 ns
-  e_lat=0.033042  v=0.500  w=0.0685
-
-
-+=controller+=
-  VSI time: 1633030100 ns
-  e_lat=0.032810  v=0.500  w=0.0690
-
-
-+=controller+=
-  VSI time: 1634030100 ns
-  e_lat=0.032579  v=0.500  w=0.0694
-
-
-+=controller+=
-  VSI time: 1635030100 ns
-  e_lat=0.032348  v=0.500  w=0.0698
-
-
-+=controller+=
-  VSI time: 1636030100 ns
-  e_lat=0.032116  v=0.500  w=0.0702
-
-
-+=controller+=
-  VSI time: 1637030100 ns
-  e_lat=0.031885  v=0.500  w=0.0707
-
-
-+=controller+=
-  VSI time: 1638030100 ns
-  e_lat=0.031654  v=0.500  w=0.0711
-
-
-+=controller+=
-  VSI time: 1639030100 ns
-  e_lat=0.031423  v=0.500  w=0.0715
-
-
-+=controller+=
-  VSI time: 1640030100 ns
-  e_lat=0.031191  v=0.500  w=0.0719
-
-
-+=controller+=
-  VSI time: 1641030100 ns
-  e_lat=0.030960  v=0.500  w=0.0723
-
-
-+=controller+=
-  VSI time: 1642030100 ns
-  e_lat=0.030729  v=0.500  w=0.0728
-
-
-+=controller+=
-  VSI time: 1643030100 ns
-  e_lat=0.030498  v=0.500  w=0.0732
-
-
-+=controller+=
-  VSI time: 1644030100 ns
-  e_lat=0.030267  v=0.500  w=0.0736
-
-
-+=controller+=
-  VSI time: 1645030100 ns
-  e_lat=0.030036  v=0.500  w=0.0740
-
-
-+=controller+=
-  VSI time: 1646030100 ns
-  e_lat=0.029805  v=0.500  w=0.0745
-
-
-+=controller+=
-  VSI time: 1647030100 ns
-  e_lat=0.029574  v=0.500  w=0.0749
-
-
-+=controller+=
-  VSI time: 1648030100 ns
-  e_lat=0.029343  v=0.500  w=0.0753
-
-
-+=controller+=
-  VSI time: 1649030100 ns
-  e_lat=0.029112  v=0.500  w=0.0757
-
-
-+=controller+=
-  VSI time: 1650030100 ns
-  e_lat=0.028881  v=0.500  w=0.0761
-
-
-+=controller+=
-  VSI time: 1651030100 ns
-  e_lat=0.028650  v=0.500  w=0.0766
-
-
-+=controller+=
-  VSI time: 1652030100 ns
-  e_lat=0.028420  v=0.500  w=0.0770
-
-
-+=controller+=
-  VSI time: 1653030100 ns
-  e_lat=0.028189  v=0.500  w=0.0774
-
-
-+=controller+=
-  VSI time: 1654030100 ns
-  e_lat=0.027958  v=0.500  w=0.0778
-
-
-+=controller+=
-  VSI time: 1655030100 ns
-  e_lat=0.027727  v=0.500  w=0.0782
-
-
-+=controller+=
-  VSI time: 1656030100 ns
-  e_lat=0.027497  v=0.500  w=0.0786
-
-
-+=controller+=
-  VSI time: 1657030100 ns
-  e_lat=0.027266  v=0.500  w=0.0791
-
-
-+=controller+=
-  VSI time: 1658030100 ns
-  e_lat=0.027036  v=0.500  w=0.0795
-
-
-+=controller+=
-  VSI time: 1659030100 ns
-  e_lat=0.026805  v=0.500  w=0.0799
-
-
-+=controller+=
-  VSI time: 1660030100 ns
-  e_lat=0.026575  v=0.500  w=0.0803
-
-
-+=controller+=
-  VSI time: 1661030100 ns
-  e_lat=0.026344  v=0.500  w=0.0807
-
-
-+=controller+=
-  VSI time: 1662030100 ns
-  e_lat=0.026114  v=0.500  w=0.0812
-
-
-+=controller+=
-  VSI time: 1663030100 ns
-  e_lat=0.025883  v=0.500  w=0.0816
-
-
-+=controller+=
-  VSI time: 1664030100 ns
-  e_lat=0.025653  v=0.500  w=0.0820
-
-
-+=controller+=
-  VSI time: 1665030100 ns
-  e_lat=0.025422  v=0.500  w=0.0824
-
-
-+=controller+=
-  VSI time: 1666030100 ns
-  e_lat=0.025192  v=0.500  w=0.0828
-
-
-+=controller+=
-  VSI time: 1667030100 ns
-  e_lat=0.024962  v=0.500  w=0.0832
-
-
-+=controller+=
-  VSI time: 1668030100 ns
-  e_lat=0.024732  v=0.500  w=0.0837
-
-
-+=controller+=
-  VSI time: 1669030100 ns
-  e_lat=0.024501  v=0.500  w=0.0841
-
-
-+=controller+=
-  VSI time: 1670030100 ns
-  e_lat=0.024271  v=0.500  w=0.0845
-
-
-+=controller+=
-  VSI time: 1671030100 ns
-  e_lat=0.024041  v=0.500  w=0.0849
-
-
-+=controller+=
-  VSI time: 1672030100 ns
-  e_lat=0.023811  v=0.500  w=0.0853
-
-
-+=controller+=
-  VSI time: 1673030100 ns
-  e_lat=0.023581  v=0.500  w=0.0857
-
-
-+=controller+=
-  VSI time: 1674030100 ns
-  e_lat=0.023351  v=0.500  w=0.0862
-
-
-+=controller+=
-  VSI time: 1675030100 ns
-  e_lat=0.023121  v=0.500  w=0.0866
-
-
-+=controller+=
-  VSI time: 1676030100 ns
-  e_lat=0.022891  v=0.500  w=0.0870
-
-
-+=controller+=
-  VSI time: 1677030100 ns
-  e_lat=0.022661  v=0.500  w=0.0874
-
-
-+=controller+=
-  VSI time: 1678030100 ns
-  e_lat=0.022431  v=0.500  w=0.0878
-
-
-+=controller+=
-  VSI time: 1679030100 ns
-  e_lat=0.022202  v=0.500  w=0.0882
-
-
-+=controller+=
-  VSI time: 1680030100 ns
-  e_lat=0.021972  v=0.500  w=0.0886
-
-
-+=controller+=
-  VSI time: 1681030100 ns
-  e_lat=0.021742  v=0.500  w=0.0891
-
-
-+=controller+=
-  VSI time: 1682030100 ns
-  e_lat=0.021512  v=0.500  w=0.0895
-
-
-+=controller+=
-  VSI time: 1683030100 ns
-  e_lat=0.021283  v=0.500  w=0.0899
-
-
-+=controller+=
-  VSI time: 1684030100 ns
-  e_lat=0.021053  v=0.500  w=0.0903
-
-
-+=controller+=
-  VSI time: 1685030100 ns
-  e_lat=0.020823  v=0.500  w=0.0907
-
-
-+=controller+=
-  VSI time: 1686030100 ns
-  e_lat=0.020594  v=0.500  w=0.0911
-
-
-+=controller+=
-  VSI time: 1687030100 ns
-  e_lat=0.020364  v=0.500  w=0.0915
-
-
-+=controller+=
-  VSI time: 1688030100 ns
-  e_lat=0.020135  v=0.500  w=0.0919
-
-
-+=controller+=
-  VSI time: 1689030100 ns
-  e_lat=0.019906  v=0.500  w=0.0924
-
-
-+=controller+=
-  VSI time: 1690030100 ns
-  e_lat=0.019676  v=0.500  w=0.0928
-
-
-+=controller+=
-  VSI time: 1691030100 ns
-  e_lat=0.019447  v=0.500  w=0.0932
-
-
-+=controller+=
-  VSI time: 1692030100 ns
-  e_lat=0.019218  v=0.500  w=0.0936
-
-
-+=controller+=
-  VSI time: 1693030100 ns
-  e_lat=0.018988  v=0.500  w=0.0940
-
-
-+=controller+=
-  VSI time: 1694030100 ns
-  e_lat=0.018759  v=0.500  w=0.0944
-
-
-+=controller+=
-  VSI time: 1695030100 ns
-  e_lat=0.018530  v=0.500  w=0.0948
-
-
-+=controller+=
-  VSI time: 1696030100 ns
-  e_lat=0.018301  v=0.500  w=0.0952
-
-
-+=controller+=
-  VSI time: 1697030100 ns
-  e_lat=0.018072  v=0.500  w=0.0957
-
-
-+=controller+=
-  VSI time: 1698030100 ns
-  e_lat=0.017843  v=0.500  w=0.0961
-
-
-+=controller+=
-  VSI time: 1699030100 ns
-  e_lat=0.017614  v=0.500  w=0.0965
-
-
-+=controller+=
-  VSI time: 1700030100 ns
-  e_lat=0.017385  v=0.500  w=0.0969
-
-
-+=controller+=
-  VSI time: 1701030100 ns
-  e_lat=0.017156  v=0.500  w=0.0973
-
-
-+=controller+=
-  VSI time: 1702030100 ns
-  e_lat=0.016927  v=0.500  w=0.0977
-
-
-+=controller+=
-  VSI time: 1703030100 ns
-  e_lat=0.016698  v=0.500  w=0.0981
-
-
-+=controller+=
-  VSI time: 1704030100 ns
-  e_lat=0.016469  v=0.500  w=0.0985
-
-
-+=controller+=
-  VSI time: 1705030100 ns
-  e_lat=0.016240  v=0.500  w=0.0989
-
-
-+=controller+=
-  VSI time: 1706030100 ns
-  e_lat=0.016012  v=0.500  w=0.0993
-
-
-+=controller+=
-  VSI time: 1707030100 ns
-  e_lat=0.015783  v=0.500  w=0.0997
-
-
-+=controller+=
-  VSI time: 1708030100 ns
-  e_lat=0.015554  v=0.500  w=0.1002
-
-
-+=controller+=
-  VSI time: 1709030100 ns
-  e_lat=0.015326  v=0.500  w=0.1006
-
-
-+=controller+=
-  VSI time: 1710030100 ns
-  e_lat=0.015097  v=0.500  w=0.1010
-
-
-+=controller+=
-  VSI time: 1711030100 ns
-  e_lat=0.014869  v=0.500  w=0.1014
-
-
-+=controller+=
-  VSI time: 1712030100 ns
-  e_lat=0.014640  v=0.500  w=0.1018
-
-
-+=controller+=
-  VSI time: 1713030100 ns
-  e_lat=0.014412  v=0.500  w=0.1022
-
-
-+=controller+=
-  VSI time: 1714030100 ns
-  e_lat=0.014184  v=0.500  w=0.1026
-
-
-+=controller+=
-  VSI time: 1715030100 ns
-  e_lat=0.013955  v=0.500  w=0.1030
-
-
-+=controller+=
-  VSI time: 1716030100 ns
-  e_lat=0.013727  v=0.500  w=0.1034
-
-
-+=controller+=
-  VSI time: 1717030100 ns
-  e_lat=0.013499  v=0.500  w=0.1038
-
-
-+=controller+=
-  VSI time: 1718030100 ns
-  e_lat=0.013271  v=0.500  w=0.1042
-
-
-+=controller+=
-  VSI time: 1719030100 ns
-  e_lat=0.013043  v=0.500  w=0.1046
-
-
-+=controller+=
-  VSI time: 1720030100 ns
-  e_lat=0.012815  v=0.500  w=0.1050
-
-
-+=controller+=
-  VSI time: 1721030100 ns
-  e_lat=0.012587  v=0.500  w=0.1054
-
-
-+=controller+=
-  VSI time: 1722030100 ns
-  e_lat=0.012359  v=0.500  w=0.1059
-
-
-+=controller+=
-  VSI time: 1723030100 ns
-  e_lat=0.012131  v=0.500  w=0.1063
-
-
-+=controller+=
-  VSI time: 1724030100 ns
-  e_lat=0.011903  v=0.500  w=0.1067
-
-
-+=controller+=
-  VSI time: 1725030100 ns
-  e_lat=0.011675  v=0.500  w=0.1071
-
-
-+=controller+=
-  VSI time: 1726030100 ns
-  e_lat=0.011447  v=0.500  w=0.1075
-
-
-+=controller+=
-  VSI time: 1727030100 ns
-  e_lat=0.011219  v=0.500  w=0.1079
-
-
-+=controller+=
-  VSI time: 1728030100 ns
-  e_lat=0.010992  v=0.500  w=0.1083
-
-
-+=controller+=
-  VSI time: 1729030100 ns
-  e_lat=0.010764  v=0.500  w=0.1087
-
-
-+=controller+=
-  VSI time: 1730030100 ns
-  e_lat=0.010536  v=0.500  w=0.1091
-
-
-+=controller+=
-  VSI time: 1731030100 ns
-  e_lat=0.010309  v=0.500  w=0.1095
-
-
-+=controller+=
-  VSI time: 1732030100 ns
-  e_lat=0.010081  v=0.500  w=0.1099
-
-
-+=controller+=
-  VSI time: 1733030100 ns
-  e_lat=0.009854  v=0.500  w=0.1103
-
-
-+=controller+=
-  VSI time: 1734030100 ns
-  e_lat=0.009626  v=0.500  w=0.1107
-
-
-+=controller+=
-  VSI time: 1735030100 ns
-  e_lat=0.009399  v=0.500  w=0.1111
-
-
-+=controller+=
-  VSI time: 1736030100 ns
-  e_lat=0.009172  v=0.500  w=0.1115
-
-
-+=controller+=
-  VSI time: 1737030100 ns
-  e_lat=0.008945  v=0.500  w=0.1119
-
-
-+=controller+=
-  VSI time: 1738030100 ns
-  e_lat=0.008717  v=0.500  w=0.1123
-
-
-+=controller+=
-  VSI time: 1739030100 ns
-  e_lat=0.008490  v=0.500  w=0.1127
-
-
-+=controller+=
-  VSI time: 1740030100 ns
-  e_lat=0.008263  v=0.500  w=0.1131
-
-
-+=controller+=
-  VSI time: 1741030100 ns
-  e_lat=0.008036  v=0.500  w=0.1135
-
-
-+=controller+=
-  VSI time: 1742030100 ns
-  e_lat=0.007809  v=0.500  w=0.1139
-
-
-+=controller+=
-  VSI time: 1743030100 ns
-  e_lat=0.007582  v=0.500  w=0.1143
-
-
-+=controller+=
-  VSI time: 1744030100 ns
-  e_lat=0.007355  v=0.500  w=0.1147
-
-
-+=controller+=
-  VSI time: 1745030100 ns
-  e_lat=0.007128  v=0.500  w=0.1151
-
-
-+=controller+=
-  VSI time: 1746030100 ns
-  e_lat=0.006901  v=0.500  w=0.1155
-
-
-+=controller+=
-  VSI time: 1747030100 ns
-  e_lat=0.006675  v=0.500  w=0.1159
-
-
-+=controller+=
-  VSI time: 1748030100 ns
-  e_lat=0.006448  v=0.500  w=0.1163
-
-
-+=controller+=
-  VSI time: 1749030100 ns
-  e_lat=0.006221  v=0.500  w=0.1167
-
-
-+=controller+=
-  VSI time: 1750030100 ns
-  e_lat=0.005995  v=0.500  w=0.1171
-
-
-+=controller+=
-  VSI time: 1751030100 ns
-  e_lat=0.005768  v=0.500  w=0.1175
-
-
-+=controller+=
-  VSI time: 1752030100 ns
-  e_lat=0.005542  v=0.500  w=0.1179
-
-
-+=controller+=
-  VSI time: 1753030100 ns
-  e_lat=0.005315  v=0.500  w=0.1183
-
-
-+=controller+=
-  VSI time: 1754030100 ns
-  e_lat=0.005089  v=0.500  w=0.1187
-
-
-+=controller+=
-  VSI time: 1755030100 ns
-  e_lat=0.004862  v=0.500  w=0.1191
-
-
-+=controller+=
-  VSI time: 1756030100 ns
-  e_lat=0.004636  v=0.500  w=0.1195
-
-
-+=controller+=
-  VSI time: 1757030100 ns
-  e_lat=0.004410  v=0.500  w=0.1199
-
-
-+=controller+=
-  VSI time: 1758030100 ns
-  e_lat=0.004184  v=0.500  w=0.1203
-
-
-+=controller+=
-  VSI time: 1759030100 ns
-  e_lat=0.003958  v=0.500  w=0.1207
-
-
-+=controller+=
-  VSI time: 1760030100 ns
-  e_lat=0.003732  v=0.500  w=0.1211
-
-
-+=controller+=
-  VSI time: 1761030100 ns
-  e_lat=0.003505  v=0.500  w=0.1215
-
-
-+=controller+=
-  VSI time: 1762030100 ns
-  e_lat=0.003280  v=0.500  w=0.1219
-
-
-+=controller+=
-  VSI time: 1763030100 ns
-  e_lat=0.003054  v=0.500  w=0.1223
-
-
-+=controller+=
-  VSI time: 1764030100 ns
-  e_lat=0.002828  v=0.500  w=0.1227
-
-
-+=controller+=
-  VSI time: 1765030100 ns
-  e_lat=0.002602  v=0.500  w=0.1231
-
-
-+=controller+=
-  VSI time: 1766030100 ns
-  e_lat=0.002376  v=0.500  w=0.1235
-
-
-+=controller+=
-  VSI time: 1767030100 ns
-  e_lat=0.002150  v=0.500  w=0.1239
-
-
-+=controller+=
-  VSI time: 1768030100 ns
-  e_lat=0.001925  v=0.500  w=0.1243
-
-
-+=controller+=
-  VSI time: 1769030100 ns
-  e_lat=0.001699  v=0.500  w=0.1247
-
-
-+=controller+=
-  VSI time: 1770030100 ns
-  e_lat=0.001474  v=0.500  w=0.1251
-
-
-+=controller+=
-  VSI time: 1771030100 ns
-  e_lat=0.001248  v=0.500  w=0.1255
-
-
-+=controller+=
-  VSI time: 1772030100 ns
-  e_lat=0.001023  v=0.500  w=0.1259
-
-
-+=controller+=
-  VSI time: 1773030100 ns
-  e_lat=0.000797  v=0.500  w=0.1263
-
-
-+=controller+=
-  VSI time: 1774030100 ns
-  e_lat=0.000572  v=0.500  w=0.1267
-
-
-+=controller+=
-  VSI time: 1775030100 ns
-  e_lat=0.000347  v=0.500  w=0.1271
-
-
-+=controller+=
-  VSI time: 1776030100 ns
-  e_lat=0.000122  v=0.500  w=0.1274
-
-
-+=controller+=
-  VSI time: 1777030100 ns
-  e_lat=-0.000103  v=0.500  w=0.1278
-
-
-+=controller+=
-  VSI time: 1778030100 ns
-  e_lat=-0.000329  v=0.500  w=0.1282
-
-
-+=controller+=
-  VSI time: 1779030100 ns
-  e_lat=-0.000554  v=0.500  w=0.1286
-
-
-+=controller+=
-  VSI time: 1780030100 ns
-  e_lat=-0.000779  v=0.500  w=0.1290
-
-
-+=controller+=
-  VSI time: 1781030100 ns
-  e_lat=-0.001003  v=0.500  w=0.1294
-
-
-+=controller+=
-  VSI time: 1782030100 ns
-  e_lat=-0.001228  v=0.500  w=0.1298
-
-
-+=controller+=
-  VSI time: 1783030100 ns
-  e_lat=-0.001453  v=0.500  w=0.1302
-
-
-+=controller+=
-  VSI time: 1784030100 ns
-  e_lat=-0.001678  v=0.500  w=0.1306
-
-
-+=controller+=
-  VSI time: 1785030100 ns
-  e_lat=-0.001903  v=0.500  w=0.1310
-
-
-+=controller+=
-  VSI time: 1786030100 ns
-  e_lat=-0.002127  v=0.500  w=0.1314
-
-
-+=controller+=
-  VSI time: 1787030100 ns
-  e_lat=-0.002352  v=0.500  w=0.1318
-
-
-+=controller+=
-  VSI time: 1788030100 ns
-  e_lat=-0.002576  v=0.500  w=0.1322
-
-
-+=controller+=
-  VSI time: 1789030100 ns
-  e_lat=-0.002801  v=0.500  w=0.1325
-
-
-+=controller+=
-  VSI time: 1790030100 ns
-  e_lat=-0.003025  v=0.500  w=0.1329
-
-
-+=controller+=
-  VSI time: 1791030100 ns
-  e_lat=-0.003249  v=0.500  w=0.1333
-
-
-+=controller+=
-  VSI time: 1792030100 ns
-  e_lat=-0.003474  v=0.500  w=0.1337
-
-
-+=controller+=
-  VSI time: 1793030100 ns
-  e_lat=-0.003698  v=0.500  w=0.1341
-
-
-+=controller+=
-  VSI time: 1794030100 ns
-  e_lat=-0.003922  v=0.500  w=0.1345
-
-
-+=controller+=
-  VSI time: 1795030100 ns
-  e_lat=-0.004146  v=0.500  w=0.1349
-
-
-+=controller+=
-  VSI time: 1796030100 ns
-  e_lat=-0.004370  v=0.500  w=0.1353
-
-
-+=controller+=
-  VSI time: 1797030100 ns
-  e_lat=-0.004594  v=0.500  w=0.1357
-
-
-+=controller+=
-  VSI time: 1798030100 ns
-  e_lat=-0.004818  v=0.500  w=0.1361
-
-
-+=controller+=
-  VSI time: 1799030100 ns
-  e_lat=-0.005042  v=0.500  w=0.1364
-
-
-+=controller+=
-  VSI time: 1800030100 ns
-  e_lat=-0.005266  v=0.500  w=0.1368
-
-
-+=controller+=
-  VSI time: 1801030100 ns
-  e_lat=-0.005489  v=0.500  w=0.1372
-
-
-+=controller+=
-  VSI time: 1802030100 ns
-  e_lat=-0.005713  v=0.500  w=0.1376
-
-
-+=controller+=
-  VSI time: 1803030100 ns
-  e_lat=-0.005937  v=0.500  w=0.1380
-
-
-+=controller+=
-  VSI time: 1804030100 ns
-  e_lat=-0.006160  v=0.500  w=0.1384
-
-
-+=controller+=
-  VSI time: 1805030100 ns
-  e_lat=-0.006384  v=0.500  w=0.1388
-
-
-+=controller+=
-  VSI time: 1806030100 ns
-  e_lat=-0.006607  v=0.500  w=0.1392
-
-
-+=controller+=
-  VSI time: 1807030100 ns
-  e_lat=-0.006830  v=0.500  w=0.1395
-
-
-+=controller+=
-  VSI time: 1808030100 ns
-  e_lat=-0.007054  v=0.500  w=0.1399
-
-
-+=controller+=
-  VSI time: 1809030100 ns
-  e_lat=-0.007277  v=0.500  w=0.1403
-
-
-+=controller+=
-  VSI time: 1810030100 ns
-  e_lat=-0.007500  v=0.500  w=0.1407
-
-
-+=controller+=
-  VSI time: 1811030100 ns
-  e_lat=-0.007723  v=0.500  w=0.1411
-
-
-+=controller+=
-  VSI time: 1812030100 ns
-  e_lat=-0.007946  v=0.500  w=0.1415
-
-
-+=controller+=
-  VSI time: 1813030100 ns
-  e_lat=-0.008169  v=0.500  w=0.1419
-
-
-+=controller+=
-  VSI time: 1814030100 ns
-  e_lat=-0.008392  v=0.500  w=0.1422
-
-
-+=controller+=
-  VSI time: 1815030100 ns
-  e_lat=-0.008615  v=0.500  w=0.1426
-
-
-+=controller+=
-  VSI time: 1816030100 ns
-  e_lat=-0.008838  v=0.500  w=0.1430
-
-
-+=controller+=
-  VSI time: 1817030100 ns
-  e_lat=-0.009061  v=0.500  w=0.1434
-
-
-+=controller+=
-  VSI time: 1818030100 ns
-  e_lat=-0.009283  v=0.500  w=0.1438
-
-
-+=controller+=
-  VSI time: 1819030100 ns
-  e_lat=-0.009506  v=0.500  w=0.1442
-
-
-+=controller+=
-  VSI time: 1820030100 ns
-  e_lat=-0.009728  v=0.500  w=0.1446
-
-
-+=controller+=
-  VSI time: 1821030100 ns
-  e_lat=-0.009951  v=0.500  w=0.1449
-
-
-+=controller+=
-  VSI time: 1822030100 ns
-  e_lat=-0.010173  v=0.500  w=0.1453
-
-
-+=controller+=
-  VSI time: 1823030100 ns
-  e_lat=-0.010396  v=0.500  w=0.1457
-
-
-+=controller+=
-  VSI time: 1824030100 ns
-  e_lat=-0.010618  v=0.500  w=0.1461
-
-
-+=controller+=
-  VSI time: 1825030100 ns
-  e_lat=-0.010840  v=0.500  w=0.1465
-
-
-+=controller+=
-  VSI time: 1826030100 ns
-  e_lat=-0.011062  v=0.500  w=0.1469
-
-
-+=controller+=
-  VSI time: 1827030100 ns
-  e_lat=-0.011284  v=0.500  w=0.1472
-
-
-+=controller+=
-  VSI time: 1828030100 ns
-  e_lat=-0.011506  v=0.500  w=0.1476
-
-
-+=controller+=
-  VSI time: 1829030100 ns
-  e_lat=-0.011728  v=0.500  w=0.1480
-
-
-+=controller+=
-  VSI time: 1830030100 ns
-  e_lat=-0.011950  v=0.500  w=0.1484
-
-
-+=controller+=
-  VSI time: 1831030100 ns
-  e_lat=-0.012172  v=0.500  w=0.1488
-
-
-+=controller+=
-  VSI time: 1832030100 ns
-  e_lat=-0.012394  v=0.500  w=0.1491
-
-
-+=controller+=
-  VSI time: 1833030100 ns
-  e_lat=-0.012616  v=0.500  w=0.1495
-
-
-+=controller+=
-  VSI time: 1834030100 ns
-  e_lat=-0.012837  v=0.500  w=0.1499
-
-
-+=controller+=
-  VSI time: 1835030100 ns
-  e_lat=-0.013059  v=0.500  w=0.1503
-
-
-+=controller+=
-  VSI time: 1836030100 ns
-  e_lat=-0.013280  v=0.500  w=0.1507
-
-
-+=controller+=
-  VSI time: 1837030100 ns
-  e_lat=-0.013502  v=0.500  w=0.1510
-
-
-+=controller+=
-  VSI time: 1838030100 ns
-  e_lat=-0.013723  v=0.500  w=0.1514
-
-
-+=controller+=
-  VSI time: 1839030100 ns
-  e_lat=-0.013944  v=0.500  w=0.1518
-
-
-+=controller+=
-  VSI time: 1840030100 ns
-  e_lat=-0.014166  v=0.500  w=0.1522
-
-
-+=controller+=
-  VSI time: 1841030100 ns
-  e_lat=-0.014387  v=0.500  w=0.1526
-
-
-+=controller+=
-  VSI time: 1842030100 ns
-  e_lat=-0.014608  v=0.500  w=0.1529
-
-
-+=controller+=
-  VSI time: 1843030100 ns
-  e_lat=-0.014829  v=0.500  w=0.1533
-
-
-+=controller+=
-  VSI time: 1844030100 ns
-  e_lat=-0.015050  v=0.500  w=0.1537
-
-
-+=controller+=
-  VSI time: 1845030100 ns
-  e_lat=-0.015271  v=0.500  w=0.1541
-
-
-+=controller+=
-  VSI time: 1846030100 ns
-  e_lat=-0.015491  v=0.500  w=0.1544
-
-
-+=controller+=
-  VSI time: 1847030100 ns
-  e_lat=-0.015712  v=0.500  w=0.1548
-
-
-+=controller+=
-  VSI time: 1848030100 ns
-  e_lat=-0.015933  v=0.500  w=0.1552
-
-
-+=controller+=
-  VSI time: 1849030100 ns
-  e_lat=-0.016153  v=0.500  w=0.1556
-
-
-+=controller+=
-  VSI time: 1850030100 ns
-  e_lat=-0.016374  v=0.500  w=0.1560
-
-
-+=controller+=
-  VSI time: 1851030100 ns
-  e_lat=-0.016594  v=0.500  w=0.1563
-
-
-+=controller+=
-  VSI time: 1852030100 ns
-  e_lat=-0.016815  v=0.500  w=0.1567
-
-
-+=controller+=
-  VSI time: 1853030100 ns
-  e_lat=-0.017035  v=0.500  w=0.1571
-
-
-+=controller+=
-  VSI time: 1854030100 ns
-  e_lat=-0.017255  v=0.500  w=0.1575
-
-
-+=controller+=
-  VSI time: 1855030100 ns
-  e_lat=-0.017476  v=0.500  w=0.1578
-
-
-+=controller+=
-  VSI time: 1856030100 ns
-  e_lat=-0.017696  v=0.500  w=0.1582
-
-
-+=controller+=
-  VSI time: 1857030100 ns
-  e_lat=-0.017916  v=0.500  w=0.1586
-
-
-+=controller+=
-  VSI time: 1858030100 ns
-  e_lat=-0.018136  v=0.500  w=0.1590
-
-
-+=controller+=
-  VSI time: 1859030100 ns
-  e_lat=-0.018356  v=0.500  w=0.1593
-
-
-+=controller+=
-  VSI time: 1860030100 ns
-  e_lat=-0.018575  v=0.500  w=0.1597
-
-
-+=controller+=
-  VSI time: 1861030100 ns
-  e_lat=-0.018795  v=0.500  w=0.1601
-
-
-+=controller+=
-  VSI time: 1862030100 ns
-  e_lat=-0.019015  v=0.500  w=0.1605
-
-
-+=controller+=
-  VSI time: 1863030100 ns
-  e_lat=-0.019234  v=0.500  w=0.1608
-
-
-+=controller+=
-  VSI time: 1864030100 ns
-  e_lat=-0.019454  v=0.500  w=0.1612
-
-error(104): DCBlockingRecv(): Error calling recv(): Connection reset by peer
-terminate called after throwing an instance of 'std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >'
 Killed
 make[1]: *** [Makefile.client1:31: sim] Error 137
-make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot-line-follower/src/lineFollowerDT'
+make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/robot-line-follower/src/lineFollowerDT'

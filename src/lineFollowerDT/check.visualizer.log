@@ -1,6 +1,8 @@
-Script started on 2026-03-15 21:41:47+00:00 [TERM="xterm" TTY="/dev/pts/8" COLUMNS="80" LINES="24"]
-make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot-line-follower/src/lineFollowerDT'
+Script started on 2026-03-16 08:41:58+00:00 [TERM="xterm" TTY="/dev/pts/11" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/robot-line-follower/src/lineFollowerDT'
 python3 .//src/visualizer/visualizer.py --domain="AF_UNIX" --server-url="localhost" --output-tag="run_default"
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.12)
+Hello from the pygame community. https://www.pygame.org/contribute.html
 +=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
 +=+    Connecting clientId=':remoteSession2' to 'server@localhost' ...
 +=+    Successfully connected 'client :remoteSession2' to 'server@localhost'
@@ -12,3769 +14,629 @@ python3 .//src/visualizer/visualizer.py --domain="AF_UNIX" --server-url="localho
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:timeServerConduit2
-           localClientConduitHandle=0x6495b9b7d4a8
-           remoteServerProxyConduitHandle=0x2c9f46d0
+           localClientConduitHandle=0x5765cc895b48
+           remoteServerProxyConduitHandle=0x138bd6d0
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:resetServerConduit2
-           localClientConduitHandle=0x6495b9cc7578
-           remoteServerProxyConduitHandle=0x2c9f0d00
+           localClientConduitHandle=0x5765cc9e0408
+           remoteServerProxyConduitHandle=0x138b9d00
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:txConfigPort2
-           localClientConduitHandle=0x6495b9cb5a80
-           remoteServerProxyConduitHandle=0x2ca03420
+           localClientConduitHandle=0x5765cc9ceb10
+           remoteServerProxyConduitHandle=0x138cc420
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:rxConfigPort2
-           localClientConduitHandle=0x6495b9b7d0c0
-           remoteServerProxyConduitHandle=0x2c9ff820
+           localClientConduitHandle=0x5765cc895760
+           remoteServerProxyConduitHandle=0x138c8820
 +=+ INFO: ... successfully connected to TLM FabricServer !
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:txCanFrameConduit2
-           localClientConduitHandle=0x6495b9cc9ba0
-           remoteServerProxyConduitHandle=0x2c9f9710
+           localClientConduitHandle=0x5765cc9e2a80
+           remoteServerProxyConduitHandle=0x138c2710
 +=+ XLVIP-INFO: XlTlmMessageLayer::connect():
 +=+    Successfully connected this remote client conduit into the TLM fabric server:
 +=+        clientId=:remoteSession2
 +=+        conduitId=:rxCanFrameConduit2
-           localClientConduitHandle=0x6495b9a0e690
-           remoteServerProxyConduitHandle=0x2c9f85a0
+           localClientConduitHandle=0x5765cc751970
+           remoteServerProxyConduitHandle=0x138c15a0
 
 +=visualizer+=  t=0.000s  e_lat=0.000000
 
 +=visualizer+=  t=0.001s  e_lat=0.300000
 
-+=visualizer+=  t=0.002s  e_lat=0.300000
++=visualizer+=  t=0.002s  e_lat=0.299859
 
-+=visualizer+=  t=0.003s  e_lat=0.300000
++=visualizer+=  t=0.003s  e_lat=0.299719
 
-+=visualizer+=  t=0.004s  e_lat=0.299998
++=visualizer+=  t=0.004s  e_lat=0.299578
 
-+=visualizer+=  t=0.005s  e_lat=0.299995
++=visualizer+=  t=0.005s  e_lat=0.299437
 
-+=visualizer+=  t=0.006s  e_lat=0.299992
++=visualizer+=  t=0.006s  e_lat=0.299297
 
-+=visualizer+=  t=0.007s  e_lat=0.299989
++=visualizer+=  t=0.007s  e_lat=0.299157
 
-+=visualizer+=  t=0.008s  e_lat=0.299985
++=visualizer+=  t=0.008s  e_lat=0.299017
 
-+=visualizer+=  t=0.009s  e_lat=0.299981
++=visualizer+=  t=0.009s  e_lat=0.298877
 
-+=visualizer+=  t=0.010s  e_lat=0.299977
++=visualizer+=  t=0.010s  e_lat=0.298737
 
-+=visualizer+=  t=0.011s  e_lat=0.299972
++=visualizer+=  t=0.011s  e_lat=0.298597
 
-+=visualizer+=  t=0.012s  e_lat=0.299968
++=visualizer+=  t=0.012s  e_lat=0.298458
 
-+=visualizer+=  t=0.013s  e_lat=0.299962
++=visualizer+=  t=0.013s  e_lat=0.298318
 
-+=visualizer+=  t=0.014s  e_lat=0.299957
++=visualizer+=  t=0.014s  e_lat=0.298179
 
-+=visualizer+=  t=0.015s  e_lat=0.299951
++=visualizer+=  t=0.015s  e_lat=0.298039
 
-+=visualizer+=  t=0.016s  e_lat=0.299945
++=visualizer+=  t=0.016s  e_lat=0.297900
 
-+=visualizer+=  t=0.017s  e_lat=0.299939
++=visualizer+=  t=0.017s  e_lat=0.297761
 
-+=visualizer+=  t=0.018s  e_lat=0.299932
++=visualizer+=  t=0.018s  e_lat=0.297622
 
-+=visualizer+=  t=0.019s  e_lat=0.299926
++=visualizer+=  t=0.019s  e_lat=0.297484
 
-+=visualizer+=  t=0.020s  e_lat=0.299918
++=visualizer+=  t=0.020s  e_lat=0.297345
 
-+=visualizer+=  t=0.021s  e_lat=0.299911
++=visualizer+=  t=0.021s  e_lat=0.297206
 
-+=visualizer+=  t=0.022s  e_lat=0.299903
++=visualizer+=  t=0.022s  e_lat=0.297068
 
-+=visualizer+=  t=0.023s  e_lat=0.299895
++=visualizer+=  t=0.023s  e_lat=0.296930
 
-+=visualizer+=  t=0.024s  e_lat=0.299887
++=visualizer+=  t=0.024s  e_lat=0.296791
 
-+=visualizer+=  t=0.025s  e_lat=0.299878
++=visualizer+=  t=0.025s  e_lat=0.296653
 
-+=visualizer+=  t=0.026s  e_lat=0.299869
++=visualizer+=  t=0.026s  e_lat=0.296515
 
-+=visualizer+=  t=0.027s  e_lat=0.299860
++=visualizer+=  t=0.027s  e_lat=0.296378
 
-+=visualizer+=  t=0.028s  e_lat=0.299850
++=visualizer+=  t=0.028s  e_lat=0.296240
 
-+=visualizer+=  t=0.029s  e_lat=0.299840
++=visualizer+=  t=0.029s  e_lat=0.296102
 
-+=visualizer+=  t=0.030s  e_lat=0.299830
++=visualizer+=  t=0.030s  e_lat=0.295965
 
-+=visualizer+=  t=0.031s  e_lat=0.299820
++=visualizer+=  t=0.031s  e_lat=0.295828
 
-+=visualizer+=  t=0.032s  e_lat=0.299809
++=visualizer+=  t=0.032s  e_lat=0.295690
 
-+=visualizer+=  t=0.033s  e_lat=0.299798
++=visualizer+=  t=0.033s  e_lat=0.295553
 
-+=visualizer+=  t=0.034s  e_lat=0.299786
++=visualizer+=  t=0.034s  e_lat=0.295416
 
-+=visualizer+=  t=0.035s  e_lat=0.299775
++=visualizer+=  t=0.035s  e_lat=0.295279
 
-+=visualizer+=  t=0.036s  e_lat=0.299763
++=visualizer+=  t=0.036s  e_lat=0.295142
 
-+=visualizer+=  t=0.037s  e_lat=0.299751
++=visualizer+=  t=0.037s  e_lat=0.295006
 
-+=visualizer+=  t=0.038s  e_lat=0.299738
++=visualizer+=  t=0.038s  e_lat=0.294869
 
-+=visualizer+=  t=0.039s  e_lat=0.299725
++=visualizer+=  t=0.039s  e_lat=0.294733
 
-+=visualizer+=  t=0.040s  e_lat=0.299712
++=visualizer+=  t=0.040s  e_lat=0.294596
 
-+=visualizer+=  t=0.041s  e_lat=0.299699
++=visualizer+=  t=0.041s  e_lat=0.294460
 
-+=visualizer+=  t=0.042s  e_lat=0.299685
++=visualizer+=  t=0.042s  e_lat=0.294324
 
-+=visualizer+=  t=0.043s  e_lat=0.299671
++=visualizer+=  t=0.043s  e_lat=0.294188
 
-+=visualizer+=  t=0.044s  e_lat=0.299657
++=visualizer+=  t=0.044s  e_lat=0.294052
 
-+=visualizer+=  t=0.045s  e_lat=0.299642
++=visualizer+=  t=0.045s  e_lat=0.293917
 
-+=visualizer+=  t=0.046s  e_lat=0.299627
++=visualizer+=  t=0.046s  e_lat=0.293781
 
-+=visualizer+=  t=0.047s  e_lat=0.299612
++=visualizer+=  t=0.047s  e_lat=0.293645
 
-+=visualizer+=  t=0.048s  e_lat=0.299597
++=visualizer+=  t=0.048s  e_lat=0.293510
 
-+=visualizer+=  t=0.049s  e_lat=0.299581
++=visualizer+=  t=0.049s  e_lat=0.293375
 
-+=visualizer+=  t=0.050s  e_lat=0.299565
++=visualizer+=  t=0.050s  e_lat=0.293240
 
-+=visualizer+=  t=0.051s  e_lat=0.299548
++=visualizer+=  t=0.051s  e_lat=0.293104
 
-+=visualizer+=  t=0.052s  e_lat=0.299532
++=visualizer+=  t=0.052s  e_lat=0.292969
 
-+=visualizer+=  t=0.053s  e_lat=0.299515
++=visualizer+=  t=0.053s  e_lat=0.292835
 
-+=visualizer+=  t=0.054s  e_lat=0.299498
++=visualizer+=  t=0.054s  e_lat=0.292700
 
-+=visualizer+=  t=0.055s  e_lat=0.299480
++=visualizer+=  t=0.055s  e_lat=0.292565
 
-+=visualizer+=  t=0.056s  e_lat=0.299462
++=visualizer+=  t=0.056s  e_lat=0.292431
 
-+=visualizer+=  t=0.057s  e_lat=0.299444
++=visualizer+=  t=0.057s  e_lat=0.292296
 
-+=visualizer+=  t=0.058s  e_lat=0.299426
++=visualizer+=  t=0.058s  e_lat=0.292162
 
-+=visualizer+=  t=0.059s  e_lat=0.299407
++=visualizer+=  t=0.059s  e_lat=0.292028
 
-+=visualizer+=  t=0.060s  e_lat=0.299388
++=visualizer+=  t=0.060s  e_lat=0.291894
 
-+=visualizer+=  t=0.061s  e_lat=0.299369
++=visualizer+=  t=0.061s  e_lat=0.291760
 
-+=visualizer+=  t=0.062s  e_lat=0.299349
++=visualizer+=  t=0.062s  e_lat=0.291626
 
-+=visualizer+=  t=0.063s  e_lat=0.299329
++=visualizer+=  t=0.063s  e_lat=0.291492
 
-+=visualizer+=  t=0.064s  e_lat=0.299309
++=visualizer+=  t=0.064s  e_lat=0.291359
 
-+=visualizer+=  t=0.065s  e_lat=0.299289
++=visualizer+=  t=0.065s  e_lat=0.291225
 
-+=visualizer+=  t=0.066s  e_lat=0.299268
++=visualizer+=  t=0.066s  e_lat=0.291092
 
-+=visualizer+=  t=0.067s  e_lat=0.299247
++=visualizer+=  t=0.067s  e_lat=0.290958
 
-+=visualizer+=  t=0.068s  e_lat=0.299225
++=visualizer+=  t=0.068s  e_lat=0.290825
 
-+=visualizer+=  t=0.069s  e_lat=0.299204
++=visualizer+=  t=0.069s  e_lat=0.290692
 
-+=visualizer+=  t=0.070s  e_lat=0.299182
++=visualizer+=  t=0.070s  e_lat=0.290559
 
-+=visualizer+=  t=0.071s  e_lat=0.299160
++=visualizer+=  t=0.071s  e_lat=0.290426
 
-+=visualizer+=  t=0.072s  e_lat=0.299137
++=visualizer+=  t=0.072s  e_lat=0.290294
 
-+=visualizer+=  t=0.073s  e_lat=0.299114
++=visualizer+=  t=0.073s  e_lat=0.290161
 
-+=visualizer+=  t=0.074s  e_lat=0.299091
++=visualizer+=  t=0.074s  e_lat=0.290028
 
-+=visualizer+=  t=0.075s  e_lat=0.299068
++=visualizer+=  t=0.075s  e_lat=0.289896
 
-+=visualizer+=  t=0.076s  e_lat=0.299044
++=visualizer+=  t=0.076s  e_lat=0.289764
 
-+=visualizer+=  t=0.077s  e_lat=0.299020
++=visualizer+=  t=0.077s  e_lat=0.289631
 
-+=visualizer+=  t=0.078s  e_lat=0.298996
++=visualizer+=  t=0.078s  e_lat=0.289499
 
-+=visualizer+=  t=0.079s  e_lat=0.298971
++=visualizer+=  t=0.079s  e_lat=0.289367
 
-+=visualizer+=  t=0.080s  e_lat=0.298947
++=visualizer+=  t=0.080s  e_lat=0.289235
 
-+=visualizer+=  t=0.081s  e_lat=0.298922
++=visualizer+=  t=0.081s  e_lat=0.289104
 
-+=visualizer+=  t=0.082s  e_lat=0.298896
++=visualizer+=  t=0.082s  e_lat=0.288972
 
-+=visualizer+=  t=0.083s  e_lat=0.298870
++=visualizer+=  t=0.083s  e_lat=0.288840
 
-+=visualizer+=  t=0.084s  e_lat=0.298844
++=visualizer+=  t=0.084s  e_lat=0.288709
 
-+=visualizer+=  t=0.085s  e_lat=0.298818
++=visualizer+=  t=0.085s  e_lat=0.288577
 
-+=visualizer+=  t=0.086s  e_lat=0.298792
++=visualizer+=  t=0.086s  e_lat=0.288446
 
-+=visualizer+=  t=0.087s  e_lat=0.298765
++=visualizer+=  t=0.087s  e_lat=0.288315
 
-+=visualizer+=  t=0.088s  e_lat=0.298738
++=visualizer+=  t=0.088s  e_lat=0.288184
 
-+=visualizer+=  t=0.089s  e_lat=0.298710
++=visualizer+=  t=0.089s  e_lat=0.288053
 
-+=visualizer+=  t=0.090s  e_lat=0.298682
++=visualizer+=  t=0.090s  e_lat=0.287922
 
-+=visualizer+=  t=0.091s  e_lat=0.298654
++=visualizer+=  t=0.091s  e_lat=0.287791
 
-+=visualizer+=  t=0.092s  e_lat=0.298626
++=visualizer+=  t=0.092s  e_lat=0.287661
 
-+=visualizer+=  t=0.093s  e_lat=0.298598
++=visualizer+=  t=0.093s  e_lat=0.287530
 
-+=visualizer+=  t=0.094s  e_lat=0.298569
++=visualizer+=  t=0.094s  e_lat=0.287400
 
-+=visualizer+=  t=0.095s  e_lat=0.298540
++=visualizer+=  t=0.095s  e_lat=0.287269
 
-+=visualizer+=  t=0.096s  e_lat=0.298510
++=visualizer+=  t=0.096s  e_lat=0.287139
 
-+=visualizer+=  t=0.097s  e_lat=0.298480
++=visualizer+=  t=0.097s  e_lat=0.287009
 
-+=visualizer+=  t=0.098s  e_lat=0.298450
++=visualizer+=  t=0.098s  e_lat=0.286879
 
-+=visualizer+=  t=0.099s  e_lat=0.298420
++=visualizer+=  t=0.099s  e_lat=0.286749
 
-+=visualizer+=  t=0.100s  e_lat=0.298389
++=visualizer+=  t=0.100s  e_lat=0.286619
 
-+=visualizer+=  t=0.101s  e_lat=0.298359
++=visualizer+=  t=0.101s  e_lat=0.286490
 
-+=visualizer+=  t=0.102s  e_lat=0.298327
++=visualizer+=  t=0.102s  e_lat=0.286360
 
-+=visualizer+=  t=0.103s  e_lat=0.298296
++=visualizer+=  t=0.103s  e_lat=0.286231
 
-+=visualizer+=  t=0.104s  e_lat=0.298264
++=visualizer+=  t=0.104s  e_lat=0.286101
 
-+=visualizer+=  t=0.105s  e_lat=0.298232
++=visualizer+=  t=0.105s  e_lat=0.285972
 
-+=visualizer+=  t=0.106s  e_lat=0.298200
++=visualizer+=  t=0.106s  e_lat=0.285843
 
-+=visualizer+=  t=0.107s  e_lat=0.298167
++=visualizer+=  t=0.107s  e_lat=0.285713
 
-+=visualizer+=  t=0.108s  e_lat=0.298134
++=visualizer+=  t=0.108s  e_lat=0.285584
 
-+=visualizer+=  t=0.109s  e_lat=0.298101
++=visualizer+=  t=0.109s  e_lat=0.285456
 
-+=visualizer+=  t=0.110s  e_lat=0.298068
++=visualizer+=  t=0.110s  e_lat=0.285327
 
-+=visualizer+=  t=0.111s  e_lat=0.298034
++=visualizer+=  t=0.111s  e_lat=0.285198
 
-+=visualizer+=  t=0.112s  e_lat=0.298000
++=visualizer+=  t=0.112s  e_lat=0.285069
 
-+=visualizer+=  t=0.113s  e_lat=0.297966
++=visualizer+=  t=0.113s  e_lat=0.284941
 
-+=visualizer+=  t=0.114s  e_lat=0.297931
++=visualizer+=  t=0.114s  e_lat=0.284813
 
-+=visualizer+=  t=0.115s  e_lat=0.297896
++=visualizer+=  t=0.115s  e_lat=0.284684
 
-+=visualizer+=  t=0.116s  e_lat=0.297861
++=visualizer+=  t=0.116s  e_lat=0.284556
 
-+=visualizer+=  t=0.117s  e_lat=0.297825
++=visualizer+=  t=0.117s  e_lat=0.284428
 
-+=visualizer+=  t=0.118s  e_lat=0.297790
++=visualizer+=  t=0.118s  e_lat=0.284300
 
-+=visualizer+=  t=0.119s  e_lat=0.297754
++=visualizer+=  t=0.119s  e_lat=0.284172
 
-+=visualizer+=  t=0.120s  e_lat=0.297717
++=visualizer+=  t=0.120s  e_lat=0.284044
 
-+=visualizer+=  t=0.121s  e_lat=0.297681
++=visualizer+=  t=0.121s  e_lat=0.283917
 
-+=visualizer+=  t=0.122s  e_lat=0.297644
++=visualizer+=  t=0.122s  e_lat=0.283789
 
-+=visualizer+=  t=0.123s  e_lat=0.297607
++=visualizer+=  t=0.123s  e_lat=0.283661
 
-+=visualizer+=  t=0.124s  e_lat=0.297569
++=visualizer+=  t=0.124s  e_lat=0.283534
 
-+=visualizer+=  t=0.125s  e_lat=0.297531
++=visualizer+=  t=0.125s  e_lat=0.283407
 
-+=visualizer+=  t=0.126s  e_lat=0.297493
++=visualizer+=  t=0.126s  e_lat=0.283280
 
-+=visualizer+=  t=0.127s  e_lat=0.297455
++=visualizer+=  t=0.127s  e_lat=0.283152
 
-+=visualizer+=  t=0.128s  e_lat=0.297417
++=visualizer+=  t=0.128s  e_lat=0.283025
 
-+=visualizer+=  t=0.129s  e_lat=0.297378
++=visualizer+=  t=0.129s  e_lat=0.282898
 
-+=visualizer+=  t=0.130s  e_lat=0.297339
++=visualizer+=  t=0.130s  e_lat=0.282772
 
-+=visualizer+=  t=0.131s  e_lat=0.297299
++=visualizer+=  t=0.131s  e_lat=0.282645
 
-+=visualizer+=  t=0.132s  e_lat=0.297259
++=visualizer+=  t=0.132s  e_lat=0.282518
 
-+=visualizer+=  t=0.133s  e_lat=0.297219
++=visualizer+=  t=0.133s  e_lat=0.282392
 
-+=visualizer+=  t=0.134s  e_lat=0.297179
++=visualizer+=  t=0.134s  e_lat=0.282265
 
-+=visualizer+=  t=0.135s  e_lat=0.297138
++=visualizer+=  t=0.135s  e_lat=0.282139
 
-+=visualizer+=  t=0.136s  e_lat=0.297098
++=visualizer+=  t=0.136s  e_lat=0.282013
 
-+=visualizer+=  t=0.137s  e_lat=0.297057
++=visualizer+=  t=0.137s  e_lat=0.281887
 
-+=visualizer+=  t=0.138s  e_lat=0.297015
++=visualizer+=  t=0.138s  e_lat=0.281761
 
-+=visualizer+=  t=0.139s  e_lat=0.296973
++=visualizer+=  t=0.139s  e_lat=0.281635
 
-+=visualizer+=  t=0.140s  e_lat=0.296931
++=visualizer+=  t=0.140s  e_lat=0.281509
 
-+=visualizer+=  t=0.141s  e_lat=0.296889
++=visualizer+=  t=0.141s  e_lat=0.281383
 
-+=visualizer+=  t=0.142s  e_lat=0.296847
++=visualizer+=  t=0.142s  e_lat=0.281257
 
-+=visualizer+=  t=0.143s  e_lat=0.296804
++=visualizer+=  t=0.143s  e_lat=0.281132
 
-+=visualizer+=  t=0.144s  e_lat=0.296761
++=visualizer+=  t=0.144s  e_lat=0.281006
 
-+=visualizer+=  t=0.145s  e_lat=0.296717
++=visualizer+=  t=0.145s  e_lat=0.280881
 
-+=visualizer+=  t=0.146s  e_lat=0.296674
++=visualizer+=  t=0.146s  e_lat=0.280755
 
-+=visualizer+=  t=0.147s  e_lat=0.296630
++=visualizer+=  t=0.147s  e_lat=0.280630
 
-+=visualizer+=  t=0.148s  e_lat=0.296585
++=visualizer+=  t=0.148s  e_lat=0.280505
 
-+=visualizer+=  t=0.149s  e_lat=0.296541
++=visualizer+=  t=0.149s  e_lat=0.280380
 
-+=visualizer+=  t=0.150s  e_lat=0.296496
++=visualizer+=  t=0.150s  e_lat=0.280255
 
-+=visualizer+=  t=0.151s  e_lat=0.296451
++=visualizer+=  t=0.151s  e_lat=0.280130
 
-+=visualizer+=  t=0.152s  e_lat=0.296406
++=visualizer+=  t=0.152s  e_lat=0.280006
 
-+=visualizer+=  t=0.153s  e_lat=0.296360
++=visualizer+=  t=0.153s  e_lat=0.279881
 
-+=visualizer+=  t=0.154s  e_lat=0.296314
++=visualizer+=  t=0.154s  e_lat=0.279756
 
-+=visualizer+=  t=0.155s  e_lat=0.296268
++=visualizer+=  t=0.155s  e_lat=0.279632
 
-+=visualizer+=  t=0.156s  e_lat=0.296222
++=visualizer+=  t=0.156s  e_lat=0.279508
 
-+=visualizer+=  t=0.157s  e_lat=0.296175
++=visualizer+=  t=0.157s  e_lat=0.279383
 
-+=visualizer+=  t=0.158s  e_lat=0.296128
++=visualizer+=  t=0.158s  e_lat=0.279259
 
-+=visualizer+=  t=0.159s  e_lat=0.296081
++=visualizer+=  t=0.159s  e_lat=0.279135
 
-+=visualizer+=  t=0.160s  e_lat=0.296033
++=visualizer+=  t=0.160s  e_lat=0.279011
 
-+=visualizer+=  t=0.161s  e_lat=0.295985
++=visualizer+=  t=0.161s  e_lat=0.278887
 
-+=visualizer+=  t=0.162s  e_lat=0.295937
++=visualizer+=  t=0.162s  e_lat=0.278763
 
-+=visualizer+=  t=0.163s  e_lat=0.295889
++=visualizer+=  t=0.163s  e_lat=0.278640
 
-+=visualizer+=  t=0.164s  e_lat=0.295840
++=visualizer+=  t=0.164s  e_lat=0.278516
 
-+=visualizer+=  t=0.165s  e_lat=0.295791
++=visualizer+=  t=0.165s  e_lat=0.278392
 
-+=visualizer+=  t=0.166s  e_lat=0.295742
++=visualizer+=  t=0.166s  e_lat=0.278269
 
-+=visualizer+=  t=0.167s  e_lat=0.295692
++=visualizer+=  t=0.167s  e_lat=0.278146
 
-+=visualizer+=  t=0.168s  e_lat=0.295642
++=visualizer+=  t=0.168s  e_lat=0.278022
 
-+=visualizer+=  t=0.169s  e_lat=0.295592
++=visualizer+=  t=0.169s  e_lat=0.277899
 
-+=visualizer+=  t=0.170s  e_lat=0.295542
++=visualizer+=  t=0.170s  e_lat=0.277776
 
-+=visualizer+=  t=0.171s  e_lat=0.295491
++=visualizer+=  t=0.171s  e_lat=0.277653
 
-+=visualizer+=  t=0.172s  e_lat=0.295440
++=visualizer+=  t=0.172s  e_lat=0.277530
 
-+=visualizer+=  t=0.173s  e_lat=0.295389
++=visualizer+=  t=0.173s  e_lat=0.277407
 
-+=visualizer+=  t=0.174s  e_lat=0.295338
++=visualizer+=  t=0.174s  e_lat=0.277285
 
-+=visualizer+=  t=0.175s  e_lat=0.295286
++=visualizer+=  t=0.175s  e_lat=0.277162
 
-+=visualizer+=  t=0.176s  e_lat=0.295234
++=visualizer+=  t=0.176s  e_lat=0.277040
 
-+=visualizer+=  t=0.177s  e_lat=0.295182
++=visualizer+=  t=0.177s  e_lat=0.276917
 
-+=visualizer+=  t=0.178s  e_lat=0.295129
++=visualizer+=  t=0.178s  e_lat=0.276795
 
-+=visualizer+=  t=0.179s  e_lat=0.295076
++=visualizer+=  t=0.179s  e_lat=0.276672
 
-+=visualizer+=  t=0.180s  e_lat=0.295023
++=visualizer+=  t=0.180s  e_lat=0.276550
 
-+=visualizer+=  t=0.181s  e_lat=0.294970
++=visualizer+=  t=0.181s  e_lat=0.276428
 
-+=visualizer+=  t=0.182s  e_lat=0.294916
++=visualizer+=  t=0.182s  e_lat=0.276306
 
-+=visualizer+=  t=0.183s  e_lat=0.294862
++=visualizer+=  t=0.183s  e_lat=0.276184
 
-+=visualizer+=  t=0.184s  e_lat=0.294808
++=visualizer+=  t=0.184s  e_lat=0.276062
 
-+=visualizer+=  t=0.185s  e_lat=0.294753
++=visualizer+=  t=0.185s  e_lat=0.275941
 
-+=visualizer+=  t=0.186s  e_lat=0.294699
++=visualizer+=  t=0.186s  e_lat=0.275819
 
-+=visualizer+=  t=0.187s  e_lat=0.294644
++=visualizer+=  t=0.187s  e_lat=0.275697
 
-+=visualizer+=  t=0.188s  e_lat=0.294588
++=visualizer+=  t=0.188s  e_lat=0.275576
 
-+=visualizer+=  t=0.189s  e_lat=0.294533
++=visualizer+=  t=0.189s  e_lat=0.275454
 
-+=visualizer+=  t=0.190s  e_lat=0.294477
++=visualizer+=  t=0.190s  e_lat=0.275333
 
-+=visualizer+=  t=0.191s  e_lat=0.294421
++=visualizer+=  t=0.191s  e_lat=0.275212
 
-+=visualizer+=  t=0.192s  e_lat=0.294364
++=visualizer+=  t=0.192s  e_lat=0.275091
 
-+=visualizer+=  t=0.193s  e_lat=0.294308
++=visualizer+=  t=0.193s  e_lat=0.274970
 
-+=visualizer+=  t=0.194s  e_lat=0.294251
++=visualizer+=  t=0.194s  e_lat=0.274849
 
-+=visualizer+=  t=0.195s  e_lat=0.294193
++=visualizer+=  t=0.195s  e_lat=0.274728
 
-+=visualizer+=  t=0.196s  e_lat=0.294136
++=visualizer+=  t=0.196s  e_lat=0.274607
 
-+=visualizer+=  t=0.197s  e_lat=0.294078
++=visualizer+=  t=0.197s  e_lat=0.274486
 
-+=visualizer+=  t=0.198s  e_lat=0.294020
++=visualizer+=  t=0.198s  e_lat=0.274366
 
-+=visualizer+=  t=0.199s  e_lat=0.293962
++=visualizer+=  t=0.199s  e_lat=0.274245
 
-+=visualizer+=  t=0.200s  e_lat=0.293903
++=visualizer+=  t=0.200s  e_lat=0.274125
 
-+=visualizer+=  t=0.201s  e_lat=0.293844
++=visualizer+=  t=0.201s  e_lat=0.274004
 
-+=visualizer+=  t=0.202s  e_lat=0.293785
++=visualizer+=  t=0.202s  e_lat=0.273884
 
-+=visualizer+=  t=0.203s  e_lat=0.293726
++=visualizer+=  t=0.203s  e_lat=0.273764
 
-+=visualizer+=  t=0.204s  e_lat=0.293666
++=visualizer+=  t=0.204s  e_lat=0.273644
 
-+=visualizer+=  t=0.205s  e_lat=0.293606
++=visualizer+=  t=0.205s  e_lat=0.273524
 
-+=visualizer+=  t=0.206s  e_lat=0.293546
++=visualizer+=  t=0.206s  e_lat=0.273404
 
-+=visualizer+=  t=0.207s  e_lat=0.293486
++=visualizer+=  t=0.207s  e_lat=0.273284
 
-+=visualizer+=  t=0.208s  e_lat=0.293425
++=visualizer+=  t=0.208s  e_lat=0.273164
 
-+=visualizer+=  t=0.209s  e_lat=0.293364
++=visualizer+=  t=0.209s  e_lat=0.273044
 
-+=visualizer+=  t=0.210s  e_lat=0.293302
++=visualizer+=  t=0.210s  e_lat=0.272925
 
-+=visualizer+=  t=0.211s  e_lat=0.293241
++=visualizer+=  t=0.211s  e_lat=0.272805
 
-+=visualizer+=  t=0.212s  e_lat=0.293179
++=visualizer+=  t=0.212s  e_lat=0.272686
 
-+=visualizer+=  t=0.213s  e_lat=0.293117
++=visualizer+=  t=0.213s  e_lat=0.272567
 
-+=visualizer+=  t=0.214s  e_lat=0.293055
++=visualizer+=  t=0.214s  e_lat=0.272447
 
-+=visualizer+=  t=0.215s  e_lat=0.292992
++=visualizer+=  t=0.215s  e_lat=0.272328
 
-+=visualizer+=  t=0.216s  e_lat=0.292929
++=visualizer+=  t=0.216s  e_lat=0.272209
 
-+=visualizer+=  t=0.217s  e_lat=0.292866
++=visualizer+=  t=0.217s  e_lat=0.272090
 
-+=visualizer+=  t=0.218s  e_lat=0.292802
++=visualizer+=  t=0.218s  e_lat=0.271971
 
-+=visualizer+=  t=0.219s  e_lat=0.292739
++=visualizer+=  t=0.219s  e_lat=0.271852
 
-+=visualizer+=  t=0.220s  e_lat=0.292675
++=visualizer+=  t=0.220s  e_lat=0.271733
 
-+=visualizer+=  t=0.221s  e_lat=0.292610
++=visualizer+=  t=0.221s  e_lat=0.271615
 
-+=visualizer+=  t=0.222s  e_lat=0.292546
++=visualizer+=  t=0.222s  e_lat=0.271496
 
-+=visualizer+=  t=0.223s  e_lat=0.292481
++=visualizer+=  t=0.223s  e_lat=0.271378
 
-+=visualizer+=  t=0.224s  e_lat=0.292416
++=visualizer+=  t=0.224s  e_lat=0.271259
 
-+=visualizer+=  t=0.225s  e_lat=0.292351
++=visualizer+=  t=0.225s  e_lat=0.271141
 
-+=visualizer+=  t=0.226s  e_lat=0.292285
++=visualizer+=  t=0.226s  e_lat=0.271022
 
-+=visualizer+=  t=0.227s  e_lat=0.292219
++=visualizer+=  t=0.227s  e_lat=0.270904
 
-+=visualizer+=  t=0.228s  e_lat=0.292153
++=visualizer+=  t=0.228s  e_lat=0.270786
 
-+=visualizer+=  t=0.229s  e_lat=0.292087
++=visualizer+=  t=0.229s  e_lat=0.270668
 
-+=visualizer+=  t=0.230s  e_lat=0.292020
++=visualizer+=  t=0.230s  e_lat=0.270550
 
-+=visualizer+=  t=0.231s  e_lat=0.291953
++=visualizer+=  t=0.231s  e_lat=0.270432
 
-+=visualizer+=  t=0.232s  e_lat=0.291886
++=visualizer+=  t=0.232s  e_lat=0.270315
 
-+=visualizer+=  t=0.233s  e_lat=0.291818
++=visualizer+=  t=0.233s  e_lat=0.270197
 
-+=visualizer+=  t=0.234s  e_lat=0.291751
++=visualizer+=  t=0.234s  e_lat=0.270079
 
-+=visualizer+=  t=0.235s  e_lat=0.291683
++=visualizer+=  t=0.235s  e_lat=0.269962
 
-+=visualizer+=  t=0.236s  e_lat=0.291614
++=visualizer+=  t=0.236s  e_lat=0.269844
 
-+=visualizer+=  t=0.237s  e_lat=0.291546
++=visualizer+=  t=0.237s  e_lat=0.269727
 
-+=visualizer+=  t=0.238s  e_lat=0.291477
++=visualizer+=  t=0.238s  e_lat=0.269609
 
-+=visualizer+=  t=0.239s  e_lat=0.291408
++=visualizer+=  t=0.239s  e_lat=0.269492
 
-+=visualizer+=  t=0.240s  e_lat=0.291339
++=visualizer+=  t=0.240s  e_lat=0.269375
 
-+=visualizer+=  t=0.241s  e_lat=0.291269
++=visualizer+=  t=0.241s  e_lat=0.269258
 
-+=visualizer+=  t=0.242s  e_lat=0.291199
++=visualizer+=  t=0.242s  e_lat=0.269141
 
-+=visualizer+=  t=0.243s  e_lat=0.291129
++=visualizer+=  t=0.243s  e_lat=0.269024
 
-+=visualizer+=  t=0.244s  e_lat=0.291059
++=visualizer+=  t=0.244s  e_lat=0.268907
 
-+=visualizer+=  t=0.245s  e_lat=0.290988
++=visualizer+=  t=0.245s  e_lat=0.268791
 
-+=visualizer+=  t=0.246s  e_lat=0.290917
++=visualizer+=  t=0.246s  e_lat=0.268674
 
-+=visualizer+=  t=0.247s  e_lat=0.290846
++=visualizer+=  t=0.247s  e_lat=0.268557
 
-+=visualizer+=  t=0.248s  e_lat=0.290774
++=visualizer+=  t=0.248s  e_lat=0.268441
 
-+=visualizer+=  t=0.249s  e_lat=0.290703
++=visualizer+=  t=0.249s  e_lat=0.268324
 
-+=visualizer+=  t=0.250s  e_lat=0.290631
++=visualizer+=  t=0.250s  e_lat=0.268208
 
-+=visualizer+=  t=0.251s  e_lat=0.290558
++=visualizer+=  t=0.251s  e_lat=0.268092
 
-+=visualizer+=  t=0.252s  e_lat=0.290486
++=visualizer+=  t=0.252s  e_lat=0.267975
 
-+=visualizer+=  t=0.253s  e_lat=0.290413
++=visualizer+=  t=0.253s  e_lat=0.267859
 
-+=visualizer+=  t=0.254s  e_lat=0.290340
++=visualizer+=  t=0.254s  e_lat=0.267743
 
-+=visualizer+=  t=0.255s  e_lat=0.290267
++=visualizer+=  t=0.255s  e_lat=0.267627
 
-+=visualizer+=  t=0.256s  e_lat=0.290193
++=visualizer+=  t=0.256s  e_lat=0.267511
 
-+=visualizer+=  t=0.257s  e_lat=0.290120
++=visualizer+=  t=0.257s  e_lat=0.267396
 
-+=visualizer+=  t=0.258s  e_lat=0.290045
++=visualizer+=  t=0.258s  e_lat=0.267280
 
-+=visualizer+=  t=0.259s  e_lat=0.289971
++=visualizer+=  t=0.259s  e_lat=0.267164
 
-+=visualizer+=  t=0.260s  e_lat=0.289897
++=visualizer+=  t=0.260s  e_lat=0.267049
 
-+=visualizer+=  t=0.261s  e_lat=0.289822
++=visualizer+=  t=0.261s  e_lat=0.266933
 
-+=visualizer+=  t=0.262s  e_lat=0.289747
++=visualizer+=  t=0.262s  e_lat=0.266818
 
-+=visualizer+=  t=0.263s  e_lat=0.289671
++=visualizer+=  t=0.263s  e_lat=0.266702
 
-+=visualizer+=  t=0.264s  e_lat=0.289596
++=visualizer+=  t=0.264s  e_lat=0.266587
 
-+=visualizer+=  t=0.265s  e_lat=0.289520
++=visualizer+=  t=0.265s  e_lat=0.266472
 
-+=visualizer+=  t=0.266s  e_lat=0.289443
++=visualizer+=  t=0.266s  e_lat=0.266357
 
-+=visualizer+=  t=0.267s  e_lat=0.289367
++=visualizer+=  t=0.267s  e_lat=0.266242
 
-+=visualizer+=  t=0.268s  e_lat=0.289290
++=visualizer+=  t=0.268s  e_lat=0.266127
 
-+=visualizer+=  t=0.269s  e_lat=0.289213
++=visualizer+=  t=0.269s  e_lat=0.266012
 
-+=visualizer+=  t=0.270s  e_lat=0.289136
++=visualizer+=  t=0.270s  e_lat=0.265897
 
-+=visualizer+=  t=0.271s  e_lat=0.289059
++=visualizer+=  t=0.271s  e_lat=0.265782
 
-+=visualizer+=  t=0.272s  e_lat=0.288981
++=visualizer+=  t=0.272s  e_lat=0.265668
 
-+=visualizer+=  t=0.273s  e_lat=0.288903
++=visualizer+=  t=0.273s  e_lat=0.265553
 
-+=visualizer+=  t=0.274s  e_lat=0.288825
++=visualizer+=  t=0.274s  e_lat=0.265439
 
-+=visualizer+=  t=0.275s  e_lat=0.288746
++=visualizer+=  t=0.275s  e_lat=0.265324
 
-+=visualizer+=  t=0.276s  e_lat=0.288668
++=visualizer+=  t=0.276s  e_lat=0.265210
 
-+=visualizer+=  t=0.277s  e_lat=0.288588
++=visualizer+=  t=0.277s  e_lat=0.265095
 
-+=visualizer+=  t=0.278s  e_lat=0.288509
++=visualizer+=  t=0.278s  e_lat=0.264981
 
-+=visualizer+=  t=0.279s  e_lat=0.288430
++=visualizer+=  t=0.279s  e_lat=0.264867
 
-+=visualizer+=  t=0.280s  e_lat=0.288350
++=visualizer+=  t=0.280s  e_lat=0.264753
 
-+=visualizer+=  t=0.281s  e_lat=0.288270
++=visualizer+=  t=0.281s  e_lat=0.264639
 
-+=visualizer+=  t=0.282s  e_lat=0.288190
++=visualizer+=  t=0.282s  e_lat=0.264525
 
-+=visualizer+=  t=0.283s  e_lat=0.288109
++=visualizer+=  t=0.283s  e_lat=0.264411
 
-+=visualizer+=  t=0.284s  e_lat=0.288028
++=visualizer+=  t=0.284s  e_lat=0.264298
 
-+=visualizer+=  t=0.285s  e_lat=0.287947
++=visualizer+=  t=0.285s  e_lat=0.264184
 
-+=visualizer+=  t=0.286s  e_lat=0.287866
++=visualizer+=  t=0.286s  e_lat=0.264070
 
-+=visualizer+=  t=0.287s  e_lat=0.287784
++=visualizer+=  t=0.287s  e_lat=0.263957
 
-+=visualizer+=  t=0.288s  e_lat=0.287702
++=visualizer+=  t=0.288s  e_lat=0.263843
 
-+=visualizer+=  t=0.289s  e_lat=0.287620
++=visualizer+=  t=0.289s  e_lat=0.263730
 
-+=visualizer+=  t=0.290s  e_lat=0.287538
++=visualizer+=  t=0.290s  e_lat=0.263617
 
-+=visualizer+=  t=0.291s  e_lat=0.287455
++=visualizer+=  t=0.291s  e_lat=0.263503
 
-+=visualizer+=  t=0.292s  e_lat=0.287372
++=visualizer+=  t=0.292s  e_lat=0.263390
 
-+=visualizer+=  t=0.293s  e_lat=0.287289
++=visualizer+=  t=0.293s  e_lat=0.263277
 
-+=visualizer+=  t=0.294s  e_lat=0.287206
++=visualizer+=  t=0.294s  e_lat=0.263164
+error(32): DCBlockingSend(): Error calling send(): Broken pipe
 
-+=visualizer+=  t=0.295s  e_lat=0.287122
-
-+=visualizer+=  t=0.296s  e_lat=0.287038
-
-+=visualizer+=  t=0.297s  e_lat=0.286954
-
-+=visualizer+=  t=0.298s  e_lat=0.286870
-
-+=visualizer+=  t=0.299s  e_lat=0.286785
-
-+=visualizer+=  t=0.300s  e_lat=0.286700
-
-+=visualizer+=  t=0.301s  e_lat=0.286615
-
-+=visualizer+=  t=0.302s  e_lat=0.286530
-
-+=visualizer+=  t=0.303s  e_lat=0.286444
-
-+=visualizer+=  t=0.304s  e_lat=0.286358
-
-+=visualizer+=  t=0.305s  e_lat=0.286272
-
-+=visualizer+=  t=0.306s  e_lat=0.286185
-
-+=visualizer+=  t=0.307s  e_lat=0.286099
-
-+=visualizer+=  t=0.308s  e_lat=0.286012
-
-+=visualizer+=  t=0.309s  e_lat=0.285924
-
-+=visualizer+=  t=0.310s  e_lat=0.285837
-
-+=visualizer+=  t=0.311s  e_lat=0.285749
-
-+=visualizer+=  t=0.312s  e_lat=0.285661
-
-+=visualizer+=  t=0.313s  e_lat=0.285573
-
-+=visualizer+=  t=0.314s  e_lat=0.285485
-
-+=visualizer+=  t=0.315s  e_lat=0.285396
-
-+=visualizer+=  t=0.316s  e_lat=0.285307
-
-+=visualizer+=  t=0.317s  e_lat=0.285218
-
-+=visualizer+=  t=0.318s  e_lat=0.285128
-
-+=visualizer+=  t=0.319s  e_lat=0.285039
-
-+=visualizer+=  t=0.320s  e_lat=0.284949
-
-+=visualizer+=  t=0.321s  e_lat=0.284859
-
-+=visualizer+=  t=0.322s  e_lat=0.284768
-
-+=visualizer+=  t=0.323s  e_lat=0.284677
-
-+=visualizer+=  t=0.324s  e_lat=0.284586
-
-+=visualizer+=  t=0.325s  e_lat=0.284495
-
-+=visualizer+=  t=0.326s  e_lat=0.284404
-
-+=visualizer+=  t=0.327s  e_lat=0.284312
-
-+=visualizer+=  t=0.328s  e_lat=0.284220
-
-+=visualizer+=  t=0.329s  e_lat=0.284128
-
-+=visualizer+=  t=0.330s  e_lat=0.284035
-
-+=visualizer+=  t=0.331s  e_lat=0.283943
-
-+=visualizer+=  t=0.332s  e_lat=0.283850
-
-+=visualizer+=  t=0.333s  e_lat=0.283757
-
-+=visualizer+=  t=0.334s  e_lat=0.283663
-
-+=visualizer+=  t=0.335s  e_lat=0.283569
-
-+=visualizer+=  t=0.336s  e_lat=0.283475
-
-+=visualizer+=  t=0.337s  e_lat=0.283381
-
-+=visualizer+=  t=0.338s  e_lat=0.283287
-
-+=visualizer+=  t=0.339s  e_lat=0.283192
-
-+=visualizer+=  t=0.340s  e_lat=0.283097
-
-+=visualizer+=  t=0.341s  e_lat=0.283002
-
-+=visualizer+=  t=0.342s  e_lat=0.282907
-
-+=visualizer+=  t=0.343s  e_lat=0.282811
-
-+=visualizer+=  t=0.344s  e_lat=0.282715
-
-+=visualizer+=  t=0.345s  e_lat=0.282619
-
-+=visualizer+=  t=0.346s  e_lat=0.282522
-
-+=visualizer+=  t=0.347s  e_lat=0.282426
-
-+=visualizer+=  t=0.348s  e_lat=0.282329
-
-+=visualizer+=  t=0.349s  e_lat=0.282232
-
-+=visualizer+=  t=0.350s  e_lat=0.282134
-
-+=visualizer+=  t=0.351s  e_lat=0.282037
-
-+=visualizer+=  t=0.352s  e_lat=0.281939
-
-+=visualizer+=  t=0.353s  e_lat=0.281841
-
-+=visualizer+=  t=0.354s  e_lat=0.281742
-
-+=visualizer+=  t=0.355s  e_lat=0.281644
-
-+=visualizer+=  t=0.356s  e_lat=0.281545
-
-+=visualizer+=  t=0.357s  e_lat=0.281446
-
-+=visualizer+=  t=0.358s  e_lat=0.281347
-
-+=visualizer+=  t=0.359s  e_lat=0.281247
-
-+=visualizer+=  t=0.360s  e_lat=0.281147
-
-+=visualizer+=  t=0.361s  e_lat=0.281047
-
-+=visualizer+=  t=0.362s  e_lat=0.280947
-
-+=visualizer+=  t=0.363s  e_lat=0.280846
-
-+=visualizer+=  t=0.364s  e_lat=0.280745
-
-+=visualizer+=  t=0.365s  e_lat=0.280644
-
-+=visualizer+=  t=0.366s  e_lat=0.280543
-
-+=visualizer+=  t=0.367s  e_lat=0.280442
-
-+=visualizer+=  t=0.368s  e_lat=0.280340
-
-+=visualizer+=  t=0.369s  e_lat=0.280238
-
-+=visualizer+=  t=0.370s  e_lat=0.280136
-
-+=visualizer+=  t=0.371s  e_lat=0.280033
-
-+=visualizer+=  t=0.372s  e_lat=0.279931
-
-+=visualizer+=  t=0.373s  e_lat=0.279828
-
-+=visualizer+=  t=0.374s  e_lat=0.279724
-
-+=visualizer+=  t=0.375s  e_lat=0.279621
-
-+=visualizer+=  t=0.376s  e_lat=0.279517
-
-+=visualizer+=  t=0.377s  e_lat=0.279413
-
-+=visualizer+=  t=0.378s  e_lat=0.279309
-
-+=visualizer+=  t=0.379s  e_lat=0.279205
-
-+=visualizer+=  t=0.380s  e_lat=0.279100
-
-+=visualizer+=  t=0.381s  e_lat=0.278995
-
-+=visualizer+=  t=0.382s  e_lat=0.278890
-
-+=visualizer+=  t=0.383s  e_lat=0.278785
-
-+=visualizer+=  t=0.384s  e_lat=0.278679
-
-+=visualizer+=  t=0.385s  e_lat=0.278573
-
-+=visualizer+=  t=0.386s  e_lat=0.278467
-
-+=visualizer+=  t=0.387s  e_lat=0.278361
-
-+=visualizer+=  t=0.388s  e_lat=0.278255
-
-+=visualizer+=  t=0.389s  e_lat=0.278148
-
-+=visualizer+=  t=0.390s  e_lat=0.278041
-
-+=visualizer+=  t=0.391s  e_lat=0.277934
-
-+=visualizer+=  t=0.392s  e_lat=0.277826
-
-+=visualizer+=  t=0.393s  e_lat=0.277718
-
-+=visualizer+=  t=0.394s  e_lat=0.277610
-
-+=visualizer+=  t=0.395s  e_lat=0.277502
-
-+=visualizer+=  t=0.396s  e_lat=0.277394
-
-+=visualizer+=  t=0.397s  e_lat=0.277285
-
-+=visualizer+=  t=0.398s  e_lat=0.277176
-
-+=visualizer+=  t=0.399s  e_lat=0.277067
-
-+=visualizer+=  t=0.400s  e_lat=0.276958
-
-+=visualizer+=  t=0.401s  e_lat=0.276848
-
-+=visualizer+=  t=0.402s  e_lat=0.276738
-
-+=visualizer+=  t=0.403s  e_lat=0.276628
-
-+=visualizer+=  t=0.404s  e_lat=0.276518
-
-+=visualizer+=  t=0.405s  e_lat=0.276408
-
-+=visualizer+=  t=0.406s  e_lat=0.276297
-
-+=visualizer+=  t=0.407s  e_lat=0.276186
-
-+=visualizer+=  t=0.408s  e_lat=0.276075
-
-+=visualizer+=  t=0.409s  e_lat=0.275963
-
-+=visualizer+=  t=0.410s  e_lat=0.275851
-
-+=visualizer+=  t=0.411s  e_lat=0.275739
-
-+=visualizer+=  t=0.412s  e_lat=0.275627
-
-+=visualizer+=  t=0.413s  e_lat=0.275515
-
-+=visualizer+=  t=0.414s  e_lat=0.275402
-
-+=visualizer+=  t=0.415s  e_lat=0.275289
-
-+=visualizer+=  t=0.416s  e_lat=0.275176
-
-+=visualizer+=  t=0.417s  e_lat=0.275063
-
-+=visualizer+=  t=0.418s  e_lat=0.274950
-
-+=visualizer+=  t=0.419s  e_lat=0.274836
-
-+=visualizer+=  t=0.420s  e_lat=0.274722
-
-+=visualizer+=  t=0.421s  e_lat=0.274608
-
-+=visualizer+=  t=0.422s  e_lat=0.274493
-
-+=visualizer+=  t=0.423s  e_lat=0.274378
-
-+=visualizer+=  t=0.424s  e_lat=0.274263
-
-+=visualizer+=  t=0.425s  e_lat=0.274148
-
-+=visualizer+=  t=0.426s  e_lat=0.274033
-
-+=visualizer+=  t=0.427s  e_lat=0.273917
-
-+=visualizer+=  t=0.428s  e_lat=0.273801
-
-+=visualizer+=  t=0.429s  e_lat=0.273685
-
-+=visualizer+=  t=0.430s  e_lat=0.273569
-
-+=visualizer+=  t=0.431s  e_lat=0.273453
-
-+=visualizer+=  t=0.432s  e_lat=0.273336
-
-+=visualizer+=  t=0.433s  e_lat=0.273219
-
-+=visualizer+=  t=0.434s  e_lat=0.273102
-
-+=visualizer+=  t=0.435s  e_lat=0.272984
-
-+=visualizer+=  t=0.436s  e_lat=0.272867
-
-+=visualizer+=  t=0.437s  e_lat=0.272749
-
-+=visualizer+=  t=0.438s  e_lat=0.272631
-
-+=visualizer+=  t=0.439s  e_lat=0.272512
-
-+=visualizer+=  t=0.440s  e_lat=0.272394
-
-+=visualizer+=  t=0.441s  e_lat=0.272275
-
-+=visualizer+=  t=0.442s  e_lat=0.272156
-
-+=visualizer+=  t=0.443s  e_lat=0.272037
-
-+=visualizer+=  t=0.444s  e_lat=0.271917
-
-+=visualizer+=  t=0.445s  e_lat=0.271797
-
-+=visualizer+=  t=0.446s  e_lat=0.271677
-
-+=visualizer+=  t=0.447s  e_lat=0.271557
-
-+=visualizer+=  t=0.448s  e_lat=0.271437
-
-+=visualizer+=  t=0.449s  e_lat=0.271316
-
-+=visualizer+=  t=0.450s  e_lat=0.271196
-
-+=visualizer+=  t=0.451s  e_lat=0.271075
-
-+=visualizer+=  t=0.452s  e_lat=0.270953
-
-+=visualizer+=  t=0.453s  e_lat=0.270832
-
-+=visualizer+=  t=0.454s  e_lat=0.270710
-
-+=visualizer+=  t=0.455s  e_lat=0.270588
-
-+=visualizer+=  t=0.456s  e_lat=0.270466
-
-+=visualizer+=  t=0.457s  e_lat=0.270344
-
-+=visualizer+=  t=0.458s  e_lat=0.270221
-
-+=visualizer+=  t=0.459s  e_lat=0.270098
-
-+=visualizer+=  t=0.460s  e_lat=0.269975
-
-+=visualizer+=  t=0.461s  e_lat=0.269852
-
-+=visualizer+=  t=0.462s  e_lat=0.269728
-
-+=visualizer+=  t=0.463s  e_lat=0.269605
-
-+=visualizer+=  t=0.464s  e_lat=0.269481
-
-+=visualizer+=  t=0.465s  e_lat=0.269357
-
-+=visualizer+=  t=0.466s  e_lat=0.269232
-
-+=visualizer+=  t=0.467s  e_lat=0.269108
-
-+=visualizer+=  t=0.468s  e_lat=0.268983
-
-+=visualizer+=  t=0.469s  e_lat=0.268858
-
-+=visualizer+=  t=0.470s  e_lat=0.268732
-
-+=visualizer+=  t=0.471s  e_lat=0.268607
-
-+=visualizer+=  t=0.472s  e_lat=0.268481
-
-+=visualizer+=  t=0.473s  e_lat=0.268355
-
-+=visualizer+=  t=0.474s  e_lat=0.268229
-
-+=visualizer+=  t=0.475s  e_lat=0.268103
-
-+=visualizer+=  t=0.476s  e_lat=0.267976
-
-+=visualizer+=  t=0.477s  e_lat=0.267850
-
-+=visualizer+=  t=0.478s  e_lat=0.267723
-
-+=visualizer+=  t=0.479s  e_lat=0.267595
-
-+=visualizer+=  t=0.480s  e_lat=0.267468
-
-+=visualizer+=  t=0.481s  e_lat=0.267340
-
-+=visualizer+=  t=0.482s  e_lat=0.267212
-
-+=visualizer+=  t=0.483s  e_lat=0.267084
-
-+=visualizer+=  t=0.484s  e_lat=0.266956
-
-+=visualizer+=  t=0.485s  e_lat=0.266827
-
-+=visualizer+=  t=0.486s  e_lat=0.266699
-
-+=visualizer+=  t=0.487s  e_lat=0.266570
-
-+=visualizer+=  t=0.488s  e_lat=0.266441
-
-+=visualizer+=  t=0.489s  e_lat=0.266311
-
-+=visualizer+=  t=0.490s  e_lat=0.266182
-
-+=visualizer+=  t=0.491s  e_lat=0.266052
-
-+=visualizer+=  t=0.492s  e_lat=0.265922
-
-+=visualizer+=  t=0.493s  e_lat=0.265791
-
-+=visualizer+=  t=0.494s  e_lat=0.265661
-
-+=visualizer+=  t=0.495s  e_lat=0.265530
-
-+=visualizer+=  t=0.496s  e_lat=0.265399
-
-+=visualizer+=  t=0.497s  e_lat=0.265268
-
-+=visualizer+=  t=0.498s  e_lat=0.265137
-
-+=visualizer+=  t=0.499s  e_lat=0.265005
-
-+=visualizer+=  t=0.500s  e_lat=0.264874
-
-+=visualizer+=  t=0.501s  e_lat=0.264742
-
-+=visualizer+=  t=0.502s  e_lat=0.264610
-
-+=visualizer+=  t=0.503s  e_lat=0.264477
-
-+=visualizer+=  t=0.504s  e_lat=0.264345
-
-+=visualizer+=  t=0.505s  e_lat=0.264212
-
-+=visualizer+=  t=0.506s  e_lat=0.264079
-
-+=visualizer+=  t=0.507s  e_lat=0.263946
-
-+=visualizer+=  t=0.508s  e_lat=0.263812
-
-+=visualizer+=  t=0.509s  e_lat=0.263678
-
-+=visualizer+=  t=0.510s  e_lat=0.263545
-
-+=visualizer+=  t=0.511s  e_lat=0.263410
-
-+=visualizer+=  t=0.512s  e_lat=0.263276
-
-+=visualizer+=  t=0.513s  e_lat=0.263142
-
-+=visualizer+=  t=0.514s  e_lat=0.263007
-
-+=visualizer+=  t=0.515s  e_lat=0.262872
-
-+=visualizer+=  t=0.516s  e_lat=0.262737
-
-+=visualizer+=  t=0.517s  e_lat=0.262602
-
-+=visualizer+=  t=0.518s  e_lat=0.262466
-
-+=visualizer+=  t=0.519s  e_lat=0.262330
-
-+=visualizer+=  t=0.520s  e_lat=0.262194
-
-+=visualizer+=  t=0.521s  e_lat=0.262058
-
-+=visualizer+=  t=0.522s  e_lat=0.261922
-
-+=visualizer+=  t=0.523s  e_lat=0.261785
-
-+=visualizer+=  t=0.524s  e_lat=0.261648
-
-+=visualizer+=  t=0.525s  e_lat=0.261511
-
-+=visualizer+=  t=0.526s  e_lat=0.261374
-
-+=visualizer+=  t=0.527s  e_lat=0.261237
-
-+=visualizer+=  t=0.528s  e_lat=0.261099
-
-+=visualizer+=  t=0.529s  e_lat=0.260961
-
-+=visualizer+=  t=0.530s  e_lat=0.260823
-
-+=visualizer+=  t=0.531s  e_lat=0.260685
-
-+=visualizer+=  t=0.532s  e_lat=0.260546
-
-+=visualizer+=  t=0.533s  e_lat=0.260408
-
-+=visualizer+=  t=0.534s  e_lat=0.260269
-
-+=visualizer+=  t=0.535s  e_lat=0.260130
-
-+=visualizer+=  t=0.536s  e_lat=0.259991
-
-+=visualizer+=  t=0.537s  e_lat=0.259851
-
-+=visualizer+=  t=0.538s  e_lat=0.259711
-
-+=visualizer+=  t=0.539s  e_lat=0.259571
-
-+=visualizer+=  t=0.540s  e_lat=0.259431
-
-+=visualizer+=  t=0.541s  e_lat=0.259291
-
-+=visualizer+=  t=0.542s  e_lat=0.259151
-
-+=visualizer+=  t=0.543s  e_lat=0.259010
-
-+=visualizer+=  t=0.544s  e_lat=0.258869
-
-+=visualizer+=  t=0.545s  e_lat=0.258728
-
-+=visualizer+=  t=0.546s  e_lat=0.258586
-
-+=visualizer+=  t=0.547s  e_lat=0.258445
-
-+=visualizer+=  t=0.548s  e_lat=0.258303
-
-+=visualizer+=  t=0.549s  e_lat=0.258161
-
-+=visualizer+=  t=0.550s  e_lat=0.258019
-
-+=visualizer+=  t=0.551s  e_lat=0.257877
-
-+=visualizer+=  t=0.552s  e_lat=0.257734
-
-+=visualizer+=  t=0.553s  e_lat=0.257591
-
-+=visualizer+=  t=0.554s  e_lat=0.257449
-
-+=visualizer+=  t=0.555s  e_lat=0.257305
-
-+=visualizer+=  t=0.556s  e_lat=0.257162
-
-+=visualizer+=  t=0.557s  e_lat=0.257018
-
-+=visualizer+=  t=0.558s  e_lat=0.256875
-
-+=visualizer+=  t=0.559s  e_lat=0.256731
-
-+=visualizer+=  t=0.560s  e_lat=0.256587
-
-+=visualizer+=  t=0.561s  e_lat=0.256442
-
-+=visualizer+=  t=0.562s  e_lat=0.256298
-
-+=visualizer+=  t=0.563s  e_lat=0.256153
-
-+=visualizer+=  t=0.564s  e_lat=0.256008
-
-+=visualizer+=  t=0.565s  e_lat=0.255863
-
-+=visualizer+=  t=0.566s  e_lat=0.255718
-
-+=visualizer+=  t=0.567s  e_lat=0.255572
-
-+=visualizer+=  t=0.568s  e_lat=0.255426
-
-+=visualizer+=  t=0.569s  e_lat=0.255280
-
-+=visualizer+=  t=0.570s  e_lat=0.255134
-
-+=visualizer+=  t=0.571s  e_lat=0.254988
-
-+=visualizer+=  t=0.572s  e_lat=0.254841
-
-+=visualizer+=  t=0.573s  e_lat=0.254695
-
-+=visualizer+=  t=0.574s  e_lat=0.254548
-
-+=visualizer+=  t=0.575s  e_lat=0.254401
-
-+=visualizer+=  t=0.576s  e_lat=0.254253
-
-+=visualizer+=  t=0.577s  e_lat=0.254106
-
-+=visualizer+=  t=0.578s  e_lat=0.253958
-
-+=visualizer+=  t=0.579s  e_lat=0.253810
-
-+=visualizer+=  t=0.580s  e_lat=0.253662
-
-+=visualizer+=  t=0.581s  e_lat=0.253514
-
-+=visualizer+=  t=0.582s  e_lat=0.253365
-
-+=visualizer+=  t=0.583s  e_lat=0.253217
-
-+=visualizer+=  t=0.584s  e_lat=0.253068
-
-+=visualizer+=  t=0.585s  e_lat=0.252919
-
-+=visualizer+=  t=0.586s  e_lat=0.252769
-
-+=visualizer+=  t=0.587s  e_lat=0.252620
-
-+=visualizer+=  t=0.588s  e_lat=0.252470
-
-+=visualizer+=  t=0.589s  e_lat=0.252320
-
-+=visualizer+=  t=0.590s  e_lat=0.252170
-
-+=visualizer+=  t=0.591s  e_lat=0.252020
-
-+=visualizer+=  t=0.592s  e_lat=0.251870
-
-+=visualizer+=  t=0.593s  e_lat=0.251719
-
-+=visualizer+=  t=0.594s  e_lat=0.251568
-
-+=visualizer+=  t=0.595s  e_lat=0.251417
-
-+=visualizer+=  t=0.596s  e_lat=0.251266
-
-+=visualizer+=  t=0.597s  e_lat=0.251114
-
-+=visualizer+=  t=0.598s  e_lat=0.250963
-
-+=visualizer+=  t=0.599s  e_lat=0.250811
-
-+=visualizer+=  t=0.600s  e_lat=0.250659
-
-+=visualizer+=  t=0.601s  e_lat=0.250507
-
-+=visualizer+=  t=0.602s  e_lat=0.250355
-
-+=visualizer+=  t=0.603s  e_lat=0.250202
-
-+=visualizer+=  t=0.604s  e_lat=0.250049
-
-+=visualizer+=  t=0.605s  e_lat=0.249896
-
-+=visualizer+=  t=0.606s  e_lat=0.249743
-
-+=visualizer+=  t=0.607s  e_lat=0.249590
-
-+=visualizer+=  t=0.608s  e_lat=0.249437
-
-+=visualizer+=  t=0.609s  e_lat=0.249283
-
-+=visualizer+=  t=0.610s  e_lat=0.249129
-
-+=visualizer+=  t=0.611s  e_lat=0.248975
-
-+=visualizer+=  t=0.612s  e_lat=0.248821
-
-+=visualizer+=  t=0.613s  e_lat=0.248666
-
-+=visualizer+=  t=0.614s  e_lat=0.248512
-
-+=visualizer+=  t=0.615s  e_lat=0.248357
-
-+=visualizer+=  t=0.616s  e_lat=0.248202
-
-+=visualizer+=  t=0.617s  e_lat=0.248047
-
-+=visualizer+=  t=0.618s  e_lat=0.247891
-
-+=visualizer+=  t=0.619s  e_lat=0.247736
-
-+=visualizer+=  t=0.620s  e_lat=0.247580
-
-+=visualizer+=  t=0.621s  e_lat=0.247424
-
-+=visualizer+=  t=0.622s  e_lat=0.247268
-
-+=visualizer+=  t=0.623s  e_lat=0.247112
-
-+=visualizer+=  t=0.624s  e_lat=0.246955
-
-+=visualizer+=  t=0.625s  e_lat=0.246798
-
-+=visualizer+=  t=0.626s  e_lat=0.246641
-
-+=visualizer+=  t=0.627s  e_lat=0.246484
-
-+=visualizer+=  t=0.628s  e_lat=0.246327
-
-+=visualizer+=  t=0.629s  e_lat=0.246170
-
-+=visualizer+=  t=0.630s  e_lat=0.246012
-
-+=visualizer+=  t=0.631s  e_lat=0.245854
-
-+=visualizer+=  t=0.632s  e_lat=0.245696
-
-+=visualizer+=  t=0.633s  e_lat=0.245538
-
-+=visualizer+=  t=0.634s  e_lat=0.245380
-
-+=visualizer+=  t=0.635s  e_lat=0.245221
-
-+=visualizer+=  t=0.636s  e_lat=0.245063
-
-+=visualizer+=  t=0.637s  e_lat=0.244904
-
-+=visualizer+=  t=0.638s  e_lat=0.244745
-
-+=visualizer+=  t=0.639s  e_lat=0.244585
-
-+=visualizer+=  t=0.640s  e_lat=0.244426
-
-+=visualizer+=  t=0.641s  e_lat=0.244266
-
-+=visualizer+=  t=0.642s  e_lat=0.244107
-
-+=visualizer+=  t=0.643s  e_lat=0.243947
-
-+=visualizer+=  t=0.644s  e_lat=0.243786
-
-+=visualizer+=  t=0.645s  e_lat=0.243626
-
-+=visualizer+=  t=0.646s  e_lat=0.243466
-
-+=visualizer+=  t=0.647s  e_lat=0.243305
-
-+=visualizer+=  t=0.648s  e_lat=0.243144
-
-+=visualizer+=  t=0.649s  e_lat=0.242983
-
-+=visualizer+=  t=0.650s  e_lat=0.242822
-
-+=visualizer+=  t=0.651s  e_lat=0.242660
-
-+=visualizer+=  t=0.652s  e_lat=0.242499
-
-+=visualizer+=  t=0.653s  e_lat=0.242337
-
-+=visualizer+=  t=0.654s  e_lat=0.242175
-
-+=visualizer+=  t=0.655s  e_lat=0.242013
-
-+=visualizer+=  t=0.656s  e_lat=0.241850
-
-+=visualizer+=  t=0.657s  e_lat=0.241688
-
-+=visualizer+=  t=0.658s  e_lat=0.241525
-
-+=visualizer+=  t=0.659s  e_lat=0.241362
-
-+=visualizer+=  t=0.660s  e_lat=0.241199
-
-+=visualizer+=  t=0.661s  e_lat=0.241036
-
-+=visualizer+=  t=0.662s  e_lat=0.240873
-
-+=visualizer+=  t=0.663s  e_lat=0.240709
-
-+=visualizer+=  t=0.664s  e_lat=0.240545
-
-+=visualizer+=  t=0.665s  e_lat=0.240382
-
-+=visualizer+=  t=0.666s  e_lat=0.240217
-
-+=visualizer+=  t=0.667s  e_lat=0.240053
-
-+=visualizer+=  t=0.668s  e_lat=0.239889
-
-+=visualizer+=  t=0.669s  e_lat=0.239724
-
-+=visualizer+=  t=0.670s  e_lat=0.239559
-
-+=visualizer+=  t=0.671s  e_lat=0.239394
-
-+=visualizer+=  t=0.672s  e_lat=0.239229
-
-+=visualizer+=  t=0.673s  e_lat=0.239064
-
-+=visualizer+=  t=0.674s  e_lat=0.238898
-
-+=visualizer+=  t=0.675s  e_lat=0.238733
-
-+=visualizer+=  t=0.676s  e_lat=0.238567
-
-+=visualizer+=  t=0.677s  e_lat=0.238401
-
-+=visualizer+=  t=0.678s  e_lat=0.238235
-
-+=visualizer+=  t=0.679s  e_lat=0.238068
-
-+=visualizer+=  t=0.680s  e_lat=0.237902
-
-+=visualizer+=  t=0.681s  e_lat=0.237735
-
-+=visualizer+=  t=0.682s  e_lat=0.237568
-
-+=visualizer+=  t=0.683s  e_lat=0.237401
-
-+=visualizer+=  t=0.684s  e_lat=0.237234
-
-+=visualizer+=  t=0.685s  e_lat=0.237066
-
-+=visualizer+=  t=0.686s  e_lat=0.236899
-
-+=visualizer+=  t=0.687s  e_lat=0.236731
-
-+=visualizer+=  t=0.688s  e_lat=0.236563
-
-+=visualizer+=  t=0.689s  e_lat=0.236395
-
-+=visualizer+=  t=0.690s  e_lat=0.236227
-
-+=visualizer+=  t=0.691s  e_lat=0.236058
-
-+=visualizer+=  t=0.692s  e_lat=0.235890
-
-+=visualizer+=  t=0.693s  e_lat=0.235721
-
-+=visualizer+=  t=0.694s  e_lat=0.235552
-
-+=visualizer+=  t=0.695s  e_lat=0.235383
-
-+=visualizer+=  t=0.696s  e_lat=0.235214
-
-+=visualizer+=  t=0.697s  e_lat=0.235044
-
-+=visualizer+=  t=0.698s  e_lat=0.234875
-
-+=visualizer+=  t=0.699s  e_lat=0.234705
-
-+=visualizer+=  t=0.700s  e_lat=0.234535
-
-+=visualizer+=  t=0.701s  e_lat=0.234365
-
-+=visualizer+=  t=0.702s  e_lat=0.234195
-
-+=visualizer+=  t=0.703s  e_lat=0.234024
-
-+=visualizer+=  t=0.704s  e_lat=0.233853
-
-+=visualizer+=  t=0.705s  e_lat=0.233683
-
-+=visualizer+=  t=0.706s  e_lat=0.233512
-
-+=visualizer+=  t=0.707s  e_lat=0.233341
-
-+=visualizer+=  t=0.708s  e_lat=0.233169
-
-+=visualizer+=  t=0.709s  e_lat=0.232998
-
-+=visualizer+=  t=0.710s  e_lat=0.232826
-
-+=visualizer+=  t=0.711s  e_lat=0.232654
-
-+=visualizer+=  t=0.712s  e_lat=0.232482
-
-+=visualizer+=  t=0.713s  e_lat=0.232310
-
-+=visualizer+=  t=0.714s  e_lat=0.232138
-
-+=visualizer+=  t=0.715s  e_lat=0.231966
-
-+=visualizer+=  t=0.716s  e_lat=0.231793
-
-+=visualizer+=  t=0.717s  e_lat=0.231620
-
-+=visualizer+=  t=0.718s  e_lat=0.231447
-
-+=visualizer+=  t=0.719s  e_lat=0.231274
-
-+=visualizer+=  t=0.720s  e_lat=0.231101
-
-+=visualizer+=  t=0.721s  e_lat=0.230927
-
-+=visualizer+=  t=0.722s  e_lat=0.230754
-
-+=visualizer+=  t=0.723s  e_lat=0.230580
-
-+=visualizer+=  t=0.724s  e_lat=0.230406
-
-+=visualizer+=  t=0.725s  e_lat=0.230232
-
-+=visualizer+=  t=0.726s  e_lat=0.230058
-
-+=visualizer+=  t=0.727s  e_lat=0.229883
-
-+=visualizer+=  t=0.728s  e_lat=0.229709
-
-+=visualizer+=  t=0.729s  e_lat=0.229534
-
-+=visualizer+=  t=0.730s  e_lat=0.229359
-
-+=visualizer+=  t=0.731s  e_lat=0.229184
-
-+=visualizer+=  t=0.732s  e_lat=0.229009
-
-+=visualizer+=  t=0.733s  e_lat=0.228833
-
-+=visualizer+=  t=0.734s  e_lat=0.228658
-
-+=visualizer+=  t=0.735s  e_lat=0.228482
-
-+=visualizer+=  t=0.736s  e_lat=0.228306
-
-+=visualizer+=  t=0.737s  e_lat=0.228130
-
-+=visualizer+=  t=0.738s  e_lat=0.227954
-
-+=visualizer+=  t=0.739s  e_lat=0.227778
-
-+=visualizer+=  t=0.740s  e_lat=0.227601
-
-+=visualizer+=  t=0.741s  e_lat=0.227424
-
-+=visualizer+=  t=0.742s  e_lat=0.227248
-
-+=visualizer+=  t=0.743s  e_lat=0.227071
-
-+=visualizer+=  t=0.744s  e_lat=0.226893
-
-+=visualizer+=  t=0.745s  e_lat=0.226716
-
-+=visualizer+=  t=0.746s  e_lat=0.226539
-
-+=visualizer+=  t=0.747s  e_lat=0.226361
-
-+=visualizer+=  t=0.748s  e_lat=0.226183
-
-+=visualizer+=  t=0.749s  e_lat=0.226005
-
-+=visualizer+=  t=0.750s  e_lat=0.225827
-
-+=visualizer+=  t=0.751s  e_lat=0.225649
-
-+=visualizer+=  t=0.752s  e_lat=0.225471
-
-+=visualizer+=  t=0.753s  e_lat=0.225292
-
-+=visualizer+=  t=0.754s  e_lat=0.225113
-
-+=visualizer+=  t=0.755s  e_lat=0.224934
-
-+=visualizer+=  t=0.756s  e_lat=0.224755
-
-+=visualizer+=  t=0.757s  e_lat=0.224576
-
-+=visualizer+=  t=0.758s  e_lat=0.224397
-
-+=visualizer+=  t=0.759s  e_lat=0.224217
-
-+=visualizer+=  t=0.760s  e_lat=0.224038
-
-+=visualizer+=  t=0.761s  e_lat=0.223858
-
-+=visualizer+=  t=0.762s  e_lat=0.223678
-
-+=visualizer+=  t=0.763s  e_lat=0.223498
-
-+=visualizer+=  t=0.764s  e_lat=0.223318
-
-+=visualizer+=  t=0.765s  e_lat=0.223137
-
-+=visualizer+=  t=0.766s  e_lat=0.222957
-
-+=visualizer+=  t=0.767s  e_lat=0.222776
-
-+=visualizer+=  t=0.768s  e_lat=0.222595
-
-+=visualizer+=  t=0.769s  e_lat=0.222414
-
-+=visualizer+=  t=0.770s  e_lat=0.222233
-
-+=visualizer+=  t=0.771s  e_lat=0.222051
-
-+=visualizer+=  t=0.772s  e_lat=0.221870
-
-+=visualizer+=  t=0.773s  e_lat=0.221688
-
-+=visualizer+=  t=0.774s  e_lat=0.221506
-
-+=visualizer+=  t=0.775s  e_lat=0.221324
-
-+=visualizer+=  t=0.776s  e_lat=0.221142
-
-+=visualizer+=  t=0.777s  e_lat=0.220960
-
-+=visualizer+=  t=0.778s  e_lat=0.220778
-
-+=visualizer+=  t=0.779s  e_lat=0.220595
-
-+=visualizer+=  t=0.780s  e_lat=0.220412
-
-+=visualizer+=  t=0.781s  e_lat=0.220230
-
-+=visualizer+=  t=0.782s  e_lat=0.220047
-
-+=visualizer+=  t=0.783s  e_lat=0.219863
-
-+=visualizer+=  t=0.784s  e_lat=0.219680
-
-+=visualizer+=  t=0.785s  e_lat=0.219497
-
-+=visualizer+=  t=0.786s  e_lat=0.219313
-
-+=visualizer+=  t=0.787s  e_lat=0.219129
-
-+=visualizer+=  t=0.788s  e_lat=0.218945
-
-+=visualizer+=  t=0.789s  e_lat=0.218761
-
-+=visualizer+=  t=0.790s  e_lat=0.218577
-
-+=visualizer+=  t=0.791s  e_lat=0.218393
-
-+=visualizer+=  t=0.792s  e_lat=0.218208
-
-+=visualizer+=  t=0.793s  e_lat=0.218024
-
-+=visualizer+=  t=0.794s  e_lat=0.217839
-
-+=visualizer+=  t=0.795s  e_lat=0.217654
-
-+=visualizer+=  t=0.796s  e_lat=0.217469
-
-+=visualizer+=  t=0.797s  e_lat=0.217284
-
-+=visualizer+=  t=0.798s  e_lat=0.217098
-
-+=visualizer+=  t=0.799s  e_lat=0.216913
-
-+=visualizer+=  t=0.800s  e_lat=0.216727
-
-+=visualizer+=  t=0.801s  e_lat=0.216541
-
-+=visualizer+=  t=0.802s  e_lat=0.216355
-
-+=visualizer+=  t=0.803s  e_lat=0.216169
-
-+=visualizer+=  t=0.804s  e_lat=0.215983
-
-+=visualizer+=  t=0.805s  e_lat=0.215797
-
-+=visualizer+=  t=0.806s  e_lat=0.215610
-
-+=visualizer+=  t=0.807s  e_lat=0.215423
-
-+=visualizer+=  t=0.808s  e_lat=0.215237
-
-+=visualizer+=  t=0.809s  e_lat=0.215050
-
-+=visualizer+=  t=0.810s  e_lat=0.214863
-
-+=visualizer+=  t=0.811s  e_lat=0.214675
-
-+=visualizer+=  t=0.812s  e_lat=0.214488
-
-+=visualizer+=  t=0.813s  e_lat=0.214300
-
-+=visualizer+=  t=0.814s  e_lat=0.214113
-
-+=visualizer+=  t=0.815s  e_lat=0.213925
-
-+=visualizer+=  t=0.816s  e_lat=0.213737
-
-+=visualizer+=  t=0.817s  e_lat=0.213549
-
-+=visualizer+=  t=0.818s  e_lat=0.213361
-
-+=visualizer+=  t=0.819s  e_lat=0.213172
-
-+=visualizer+=  t=0.820s  e_lat=0.212984
-
-+=visualizer+=  t=0.821s  e_lat=0.212795
-
-+=visualizer+=  t=0.822s  e_lat=0.212606
-
-+=visualizer+=  t=0.823s  e_lat=0.212417
-
-+=visualizer+=  t=0.824s  e_lat=0.212228
-
-+=visualizer+=  t=0.825s  e_lat=0.212039
-
-+=visualizer+=  t=0.826s  e_lat=0.211849
-
-+=visualizer+=  t=0.827s  e_lat=0.211660
-
-+=visualizer+=  t=0.828s  e_lat=0.211470
-
-+=visualizer+=  t=0.829s  e_lat=0.211280
-
-+=visualizer+=  t=0.830s  e_lat=0.211091
-
-+=visualizer+=  t=0.831s  e_lat=0.210900
-
-+=visualizer+=  t=0.832s  e_lat=0.210710
-
-+=visualizer+=  t=0.833s  e_lat=0.210520
-
-+=visualizer+=  t=0.834s  e_lat=0.210329
-
-+=visualizer+=  t=0.835s  e_lat=0.210139
-
-+=visualizer+=  t=0.836s  e_lat=0.209948
-
-+=visualizer+=  t=0.837s  e_lat=0.209757
-
-+=visualizer+=  t=0.838s  e_lat=0.209566
-
-+=visualizer+=  t=0.839s  e_lat=0.209375
-
-+=visualizer+=  t=0.840s  e_lat=0.209184
-
-+=visualizer+=  t=0.841s  e_lat=0.208992
-
-+=visualizer+=  t=0.842s  e_lat=0.208801
-
-+=visualizer+=  t=0.843s  e_lat=0.208609
-
-+=visualizer+=  t=0.844s  e_lat=0.208417
-
-+=visualizer+=  t=0.845s  e_lat=0.208225
-
-+=visualizer+=  t=0.846s  e_lat=0.208033
-
-+=visualizer+=  t=0.847s  e_lat=0.207841
-
-+=visualizer+=  t=0.848s  e_lat=0.207648
-
-+=visualizer+=  t=0.849s  e_lat=0.207456
-
-+=visualizer+=  t=0.850s  e_lat=0.207263
-
-+=visualizer+=  t=0.851s  e_lat=0.207070
-
-+=visualizer+=  t=0.852s  e_lat=0.206877
-
-+=visualizer+=  t=0.853s  e_lat=0.206684
-
-+=visualizer+=  t=0.854s  e_lat=0.206491
-
-+=visualizer+=  t=0.855s  e_lat=0.206298
-
-+=visualizer+=  t=0.856s  e_lat=0.206104
-
-+=visualizer+=  t=0.857s  e_lat=0.205911
-
-+=visualizer+=  t=0.858s  e_lat=0.205717
-
-+=visualizer+=  t=0.859s  e_lat=0.205523
-
-+=visualizer+=  t=0.860s  e_lat=0.205329
-
-+=visualizer+=  t=0.861s  e_lat=0.205135
-
-+=visualizer+=  t=0.862s  e_lat=0.204941
-
-+=visualizer+=  t=0.863s  e_lat=0.204746
-
-+=visualizer+=  t=0.864s  e_lat=0.204552
-
-+=visualizer+=  t=0.865s  e_lat=0.204357
-
-+=visualizer+=  t=0.866s  e_lat=0.204162
-
-+=visualizer+=  t=0.867s  e_lat=0.203967
-
-+=visualizer+=  t=0.868s  e_lat=0.203772
-
-+=visualizer+=  t=0.869s  e_lat=0.203577
-
-+=visualizer+=  t=0.870s  e_lat=0.203382
-
-+=visualizer+=  t=0.871s  e_lat=0.203187
-
-+=visualizer+=  t=0.872s  e_lat=0.202991
-
-+=visualizer+=  t=0.873s  e_lat=0.202795
-
-+=visualizer+=  t=0.874s  e_lat=0.202599
-
-+=visualizer+=  t=0.875s  e_lat=0.202403
-
-+=visualizer+=  t=0.876s  e_lat=0.202207
-
-+=visualizer+=  t=0.877s  e_lat=0.202011
-
-+=visualizer+=  t=0.878s  e_lat=0.201815
-
-+=visualizer+=  t=0.879s  e_lat=0.201618
-
-+=visualizer+=  t=0.880s  e_lat=0.201422
-
-+=visualizer+=  t=0.881s  e_lat=0.201225
-
-+=visualizer+=  t=0.882s  e_lat=0.201028
-
-+=visualizer+=  t=0.883s  e_lat=0.200831
-
-+=visualizer+=  t=0.884s  e_lat=0.200634
-
-+=visualizer+=  t=0.885s  e_lat=0.200437
-
-+=visualizer+=  t=0.886s  e_lat=0.200240
-
-+=visualizer+=  t=0.887s  e_lat=0.200042
-
-+=visualizer+=  t=0.888s  e_lat=0.199845
-
-+=visualizer+=  t=0.889s  e_lat=0.199647
-
-+=visualizer+=  t=0.890s  e_lat=0.199449
-
-+=visualizer+=  t=0.891s  e_lat=0.199251
-
-+=visualizer+=  t=0.892s  e_lat=0.199053
-
-+=visualizer+=  t=0.893s  e_lat=0.198855
-
-+=visualizer+=  t=0.894s  e_lat=0.198656
-
-+=visualizer+=  t=0.895s  e_lat=0.198458
-
-+=visualizer+=  t=0.896s  e_lat=0.198259
-
-+=visualizer+=  t=0.897s  e_lat=0.198060
-
-+=visualizer+=  t=0.898s  e_lat=0.197862
-
-+=visualizer+=  t=0.899s  e_lat=0.197663
-
-+=visualizer+=  t=0.900s  e_lat=0.197464
-
-+=visualizer+=  t=0.901s  e_lat=0.197264
-
-+=visualizer+=  t=0.902s  e_lat=0.197065
-
-+=visualizer+=  t=0.903s  e_lat=0.196866
-
-+=visualizer+=  t=0.904s  e_lat=0.196666
-
-+=visualizer+=  t=0.905s  e_lat=0.196466
-
-+=visualizer+=  t=0.906s  e_lat=0.196266
-
-+=visualizer+=  t=0.907s  e_lat=0.196066
-
-+=visualizer+=  t=0.908s  e_lat=0.195866
-
-+=visualizer+=  t=0.909s  e_lat=0.195666
-
-+=visualizer+=  t=0.910s  e_lat=0.195466
-
-+=visualizer+=  t=0.911s  e_lat=0.195265
-
-+=visualizer+=  t=0.912s  e_lat=0.195065
-
-+=visualizer+=  t=0.913s  e_lat=0.194864
-
-+=visualizer+=  t=0.914s  e_lat=0.194663
-
-+=visualizer+=  t=0.915s  e_lat=0.194463
-
-+=visualizer+=  t=0.916s  e_lat=0.194262
-
-+=visualizer+=  t=0.917s  e_lat=0.194060
-
-+=visualizer+=  t=0.918s  e_lat=0.193859
-
-+=visualizer+=  t=0.919s  e_lat=0.193658
-
-+=visualizer+=  t=0.920s  e_lat=0.193456
-
-+=visualizer+=  t=0.921s  e_lat=0.193255
-
-+=visualizer+=  t=0.922s  e_lat=0.193053
-
-+=visualizer+=  t=0.923s  e_lat=0.192851
-
-+=visualizer+=  t=0.924s  e_lat=0.192649
-
-+=visualizer+=  t=0.925s  e_lat=0.192447
-
-+=visualizer+=  t=0.926s  e_lat=0.192245
-
-+=visualizer+=  t=0.927s  e_lat=0.192042
-
-+=visualizer+=  t=0.928s  e_lat=0.191840
-
-+=visualizer+=  t=0.929s  e_lat=0.191637
-
-+=visualizer+=  t=0.930s  e_lat=0.191435
-
-+=visualizer+=  t=0.931s  e_lat=0.191232
-
-+=visualizer+=  t=0.932s  e_lat=0.191029
-
-+=visualizer+=  t=0.933s  e_lat=0.190826
-
-+=visualizer+=  t=0.934s  e_lat=0.190623
-
-+=visualizer+=  t=0.935s  e_lat=0.190420
-
-+=visualizer+=  t=0.936s  e_lat=0.190216
-
-+=visualizer+=  t=0.937s  e_lat=0.190013
-
-+=visualizer+=  t=0.938s  e_lat=0.189809
-
-+=visualizer+=  t=0.939s  e_lat=0.189605
-
-+=visualizer+=  t=0.940s  e_lat=0.189401
-
-+=visualizer+=  t=0.941s  e_lat=0.189198
-
-+=visualizer+=  t=0.942s  e_lat=0.188993
-
-+=visualizer+=  t=0.943s  e_lat=0.188789
-
-+=visualizer+=  t=0.944s  e_lat=0.188585
-
-+=visualizer+=  t=0.945s  e_lat=0.188381
-
-+=visualizer+=  t=0.946s  e_lat=0.188176
-
-+=visualizer+=  t=0.947s  e_lat=0.187972
-
-+=visualizer+=  t=0.948s  e_lat=0.187767
-
-+=visualizer+=  t=0.949s  e_lat=0.187562
-
-+=visualizer+=  t=0.950s  e_lat=0.187357
-
-+=visualizer+=  t=0.951s  e_lat=0.187152
-
-+=visualizer+=  t=0.952s  e_lat=0.186947
-
-+=visualizer+=  t=0.953s  e_lat=0.186741
-
-+=visualizer+=  t=0.954s  e_lat=0.186536
-
-+=visualizer+=  t=0.955s  e_lat=0.186330
-
-+=visualizer+=  t=0.956s  e_lat=0.186125
-
-+=visualizer+=  t=0.957s  e_lat=0.185919
-
-+=visualizer+=  t=0.958s  e_lat=0.185713
-
-+=visualizer+=  t=0.959s  e_lat=0.185507
-
-+=visualizer+=  t=0.960s  e_lat=0.185301
-
-+=visualizer+=  t=0.961s  e_lat=0.185095
-
-+=visualizer+=  t=0.962s  e_lat=0.184889
-
-+=visualizer+=  t=0.963s  e_lat=0.184682
-
-+=visualizer+=  t=0.964s  e_lat=0.184476
-
-+=visualizer+=  t=0.965s  e_lat=0.184269
-
-+=visualizer+=  t=0.966s  e_lat=0.184063
-
-+=visualizer+=  t=0.967s  e_lat=0.183856
-
-+=visualizer+=  t=0.968s  e_lat=0.183649
-
-+=visualizer+=  t=0.969s  e_lat=0.183442
-
-+=visualizer+=  t=0.970s  e_lat=0.183235
-
-+=visualizer+=  t=0.971s  e_lat=0.183027
-
-+=visualizer+=  t=0.972s  e_lat=0.182820
-
-+=visualizer+=  t=0.973s  e_lat=0.182613
-
-+=visualizer+=  t=0.974s  e_lat=0.182405
-
-+=visualizer+=  t=0.975s  e_lat=0.182197
-
-+=visualizer+=  t=0.976s  e_lat=0.181990
-
-+=visualizer+=  t=0.977s  e_lat=0.181782
-
-+=visualizer+=  t=0.978s  e_lat=0.181574
-
-+=visualizer+=  t=0.979s  e_lat=0.181366
-
-+=visualizer+=  t=0.980s  e_lat=0.181157
-
-+=visualizer+=  t=0.981s  e_lat=0.180949
-
-+=visualizer+=  t=0.982s  e_lat=0.180741
-
-+=visualizer+=  t=0.983s  e_lat=0.180532
-
-+=visualizer+=  t=0.984s  e_lat=0.180323
-
-+=visualizer+=  t=0.985s  e_lat=0.180115
-
-+=visualizer+=  t=0.986s  e_lat=0.179906
-
-+=visualizer+=  t=0.987s  e_lat=0.179697
-
-+=visualizer+=  t=0.988s  e_lat=0.179488
-
-+=visualizer+=  t=0.989s  e_lat=0.179279
-
-+=visualizer+=  t=0.990s  e_lat=0.179069
-
-+=visualizer+=  t=0.991s  e_lat=0.178860
-
-+=visualizer+=  t=0.992s  e_lat=0.178651
-
-+=visualizer+=  t=0.993s  e_lat=0.178441
-
-+=visualizer+=  t=0.994s  e_lat=0.178231
-
-+=visualizer+=  t=0.995s  e_lat=0.178022
-
-+=visualizer+=  t=0.996s  e_lat=0.177812
-
-+=visualizer+=  t=0.997s  e_lat=0.177602
-
-+=visualizer+=  t=0.998s  e_lat=0.177392
-
-+=visualizer+=  t=0.999s  e_lat=0.177182
-
-+=visualizer+=  t=1.000s  e_lat=0.176971
-
-+=visualizer+=  t=1.001s  e_lat=0.176761
-
-+=visualizer+=  t=1.002s  e_lat=0.176551
-
-+=visualizer+=  t=1.003s  e_lat=0.176340
-
-+=visualizer+=  t=1.004s  e_lat=0.176129
-
-+=visualizer+=  t=1.005s  e_lat=0.175919
-
-+=visualizer+=  t=1.006s  e_lat=0.175708
-
-+=visualizer+=  t=1.007s  e_lat=0.175497
-
-+=visualizer+=  t=1.008s  e_lat=0.175286
-
-+=visualizer+=  t=1.009s  e_lat=0.175075
-
-+=visualizer+=  t=1.010s  e_lat=0.174863
-
-+=visualizer+=  t=1.011s  e_lat=0.174652
-
-+=visualizer+=  t=1.012s  e_lat=0.174440
-
-+=visualizer+=  t=1.013s  e_lat=0.174229
-
-+=visualizer+=  t=1.014s  e_lat=0.174017
-
-+=visualizer+=  t=1.015s  e_lat=0.173806
-
-+=visualizer+=  t=1.016s  e_lat=0.173594
-
-+=visualizer+=  t=1.017s  e_lat=0.173382
-
-+=visualizer+=  t=1.018s  e_lat=0.173170
-
-+=visualizer+=  t=1.019s  e_lat=0.172958
-
-+=visualizer+=  t=1.020s  e_lat=0.172745
-
-+=visualizer+=  t=1.021s  e_lat=0.172533
-
-+=visualizer+=  t=1.022s  e_lat=0.172321
-
-+=visualizer+=  t=1.023s  e_lat=0.172108
-
-+=visualizer+=  t=1.024s  e_lat=0.171895
-
-+=visualizer+=  t=1.025s  e_lat=0.171683
-
-+=visualizer+=  t=1.026s  e_lat=0.171470
-
-+=visualizer+=  t=1.027s  e_lat=0.171257
-
-+=visualizer+=  t=1.028s  e_lat=0.171044
-
-+=visualizer+=  t=1.029s  e_lat=0.170831
-
-+=visualizer+=  t=1.030s  e_lat=0.170618
-
-+=visualizer+=  t=1.031s  e_lat=0.170405
-
-+=visualizer+=  t=1.032s  e_lat=0.170191
-
-+=visualizer+=  t=1.033s  e_lat=0.169978
-
-+=visualizer+=  t=1.034s  e_lat=0.169764
-
-+=visualizer+=  t=1.035s  e_lat=0.169550
-
-+=visualizer+=  t=1.036s  e_lat=0.169337
-
-+=visualizer+=  t=1.037s  e_lat=0.169123
-
-+=visualizer+=  t=1.038s  e_lat=0.168909
-
-+=visualizer+=  t=1.039s  e_lat=0.168695
-
-+=visualizer+=  t=1.040s  e_lat=0.168481
-
-+=visualizer+=  t=1.041s  e_lat=0.168267
-
-+=visualizer+=  t=1.042s  e_lat=0.168052
-
-+=visualizer+=  t=1.043s  e_lat=0.167838
-
-+=visualizer+=  t=1.044s  e_lat=0.167624
-
-+=visualizer+=  t=1.045s  e_lat=0.167409
-
-+=visualizer+=  t=1.046s  e_lat=0.167194
-
-+=visualizer+=  t=1.047s  e_lat=0.166980
-
-+=visualizer+=  t=1.048s  e_lat=0.166765
-
-+=visualizer+=  t=1.049s  e_lat=0.166550
-
-+=visualizer+=  t=1.050s  e_lat=0.166335
-
-+=visualizer+=  t=1.051s  e_lat=0.166120
-
-+=visualizer+=  t=1.052s  e_lat=0.165905
-
-+=visualizer+=  t=1.053s  e_lat=0.165689
-
-+=visualizer+=  t=1.054s  e_lat=0.165474
-
-+=visualizer+=  t=1.055s  e_lat=0.165258
-
-+=visualizer+=  t=1.056s  e_lat=0.165043
-
-+=visualizer+=  t=1.057s  e_lat=0.164827
-
-+=visualizer+=  t=1.058s  e_lat=0.164612
-
-+=visualizer+=  t=1.059s  e_lat=0.164396
-
-+=visualizer+=  t=1.060s  e_lat=0.164180
-
-+=visualizer+=  t=1.061s  e_lat=0.163964
-
-+=visualizer+=  t=1.062s  e_lat=0.163748
-
-+=visualizer+=  t=1.063s  e_lat=0.163532
-
-+=visualizer+=  t=1.064s  e_lat=0.163315
-
-+=visualizer+=  t=1.065s  e_lat=0.163099
-
-+=visualizer+=  t=1.066s  e_lat=0.162883
-
-+=visualizer+=  t=1.067s  e_lat=0.162666
-
-+=visualizer+=  t=1.068s  e_lat=0.162450
-
-+=visualizer+=  t=1.069s  e_lat=0.162233
-
-+=visualizer+=  t=1.070s  e_lat=0.162016
-
-+=visualizer+=  t=1.071s  e_lat=0.161799
-
-+=visualizer+=  t=1.072s  e_lat=0.161582
-
-+=visualizer+=  t=1.073s  e_lat=0.161365
-
-+=visualizer+=  t=1.074s  e_lat=0.161148
-
-+=visualizer+=  t=1.075s  e_lat=0.160931
-
-+=visualizer+=  t=1.076s  e_lat=0.160714
-
-+=visualizer+=  t=1.077s  e_lat=0.160496
-
-+=visualizer+=  t=1.078s  e_lat=0.160279
-
-+=visualizer+=  t=1.079s  e_lat=0.160062
-
-+=visualizer+=  t=1.080s  e_lat=0.159844
-
-+=visualizer+=  t=1.081s  e_lat=0.159626
-
-+=visualizer+=  t=1.082s  e_lat=0.159408
-
-+=visualizer+=  t=1.083s  e_lat=0.159191
-
-+=visualizer+=  t=1.084s  e_lat=0.158973
-
-+=visualizer+=  t=1.085s  e_lat=0.158755
-
-+=visualizer+=  t=1.086s  e_lat=0.158537
-
-+=visualizer+=  t=1.087s  e_lat=0.158318
-
-+=visualizer+=  t=1.088s  e_lat=0.158100
-
-+=visualizer+=  t=1.089s  e_lat=0.157882
-
-+=visualizer+=  t=1.090s  e_lat=0.157663
-
-+=visualizer+=  t=1.091s  e_lat=0.157445
-
-+=visualizer+=  t=1.092s  e_lat=0.157226
-
-+=visualizer+=  t=1.093s  e_lat=0.157008
-
-+=visualizer+=  t=1.094s  e_lat=0.156789
-
-+=visualizer+=  t=1.095s  e_lat=0.156570
-
-+=visualizer+=  t=1.096s  e_lat=0.156351
-
-+=visualizer+=  t=1.097s  e_lat=0.156132
-
-+=visualizer+=  t=1.098s  e_lat=0.155913
-
-+=visualizer+=  t=1.099s  e_lat=0.155694
-
-+=visualizer+=  t=1.100s  e_lat=0.155475
-
-+=visualizer+=  t=1.101s  e_lat=0.155256
-
-+=visualizer+=  t=1.102s  e_lat=0.155036
-
-+=visualizer+=  t=1.103s  e_lat=0.154817
-
-+=visualizer+=  t=1.104s  e_lat=0.154597
-
-+=visualizer+=  t=1.105s  e_lat=0.154378
-
-+=visualizer+=  t=1.106s  e_lat=0.154158
-
-+=visualizer+=  t=1.107s  e_lat=0.153938
-
-+=visualizer+=  t=1.108s  e_lat=0.153718
-
-+=visualizer+=  t=1.109s  e_lat=0.153499
-
-+=visualizer+=  t=1.110s  e_lat=0.153279
-
-+=visualizer+=  t=1.111s  e_lat=0.153058
-
-+=visualizer+=  t=1.112s  e_lat=0.152838
-
-+=visualizer+=  t=1.113s  e_lat=0.152618
-
-+=visualizer+=  t=1.114s  e_lat=0.152398
-
-+=visualizer+=  t=1.115s  e_lat=0.152177
-
-+=visualizer+=  t=1.116s  e_lat=0.151957
-
-+=visualizer+=  t=1.117s  e_lat=0.151737
-
-+=visualizer+=  t=1.118s  e_lat=0.151516
-
-+=visualizer+=  t=1.119s  e_lat=0.151295
-
-+=visualizer+=  t=1.120s  e_lat=0.151075
-
-+=visualizer+=  t=1.121s  e_lat=0.150854
-
-+=visualizer+=  t=1.122s  e_lat=0.150633
-
-+=visualizer+=  t=1.123s  e_lat=0.150412
-
-+=visualizer+=  t=1.124s  e_lat=0.150191
-
-+=visualizer+=  t=1.125s  e_lat=0.149970
-
-+=visualizer+=  t=1.126s  e_lat=0.149749
-
-+=visualizer+=  t=1.127s  e_lat=0.149527
-
-+=visualizer+=  t=1.128s  e_lat=0.149306
-
-+=visualizer+=  t=1.129s  e_lat=0.149085
-
-+=visualizer+=  t=1.130s  e_lat=0.148863
-
-+=visualizer+=  t=1.131s  e_lat=0.148642
-
-+=visualizer+=  t=1.132s  e_lat=0.148420
-
-+=visualizer+=  t=1.133s  e_lat=0.148198
-
-+=visualizer+=  t=1.134s  e_lat=0.147977
-
-+=visualizer+=  t=1.135s  e_lat=0.147755
-
-+=visualizer+=  t=1.136s  e_lat=0.147533
-
-+=visualizer+=  t=1.137s  e_lat=0.147311
-
-+=visualizer+=  t=1.138s  e_lat=0.147089
-
-+=visualizer+=  t=1.139s  e_lat=0.146867
-
-+=visualizer+=  t=1.140s  e_lat=0.146645
-
-+=visualizer+=  t=1.141s  e_lat=0.146422
-
-+=visualizer+=  t=1.142s  e_lat=0.146200
-
-+=visualizer+=  t=1.143s  e_lat=0.145978
-
-+=visualizer+=  t=1.144s  e_lat=0.145755
-
-+=visualizer+=  t=1.145s  e_lat=0.145533
-
-+=visualizer+=  t=1.146s  e_lat=0.145310
-
-+=visualizer+=  t=1.147s  e_lat=0.145087
-
-+=visualizer+=  t=1.148s  e_lat=0.144865
-
-+=visualizer+=  t=1.149s  e_lat=0.144642
-
-+=visualizer+=  t=1.150s  e_lat=0.144419
-
-+=visualizer+=  t=1.151s  e_lat=0.144196
-
-+=visualizer+=  t=1.152s  e_lat=0.143973
-
-+=visualizer+=  t=1.153s  e_lat=0.143750
-
-+=visualizer+=  t=1.154s  e_lat=0.143527
-
-+=visualizer+=  t=1.155s  e_lat=0.143304
-
-+=visualizer+=  t=1.156s  e_lat=0.143081
-
-+=visualizer+=  t=1.157s  e_lat=0.142857
-
-+=visualizer+=  t=1.158s  e_lat=0.142634
-
-+=visualizer+=  t=1.159s  e_lat=0.142410
-
-+=visualizer+=  t=1.160s  e_lat=0.142187
-
-+=visualizer+=  t=1.161s  e_lat=0.141963
-
-+=visualizer+=  t=1.162s  e_lat=0.141740
-
-+=visualizer+=  t=1.163s  e_lat=0.141516
-
-+=visualizer+=  t=1.164s  e_lat=0.141292
-
-+=visualizer+=  t=1.165s  e_lat=0.141068
-
-+=visualizer+=  t=1.166s  e_lat=0.140844
-
-+=visualizer+=  t=1.167s  e_lat=0.140620
-
-+=visualizer+=  t=1.168s  e_lat=0.140396
-
-+=visualizer+=  t=1.169s  e_lat=0.140172
-
-+=visualizer+=  t=1.170s  e_lat=0.139948
-
-+=visualizer+=  t=1.171s  e_lat=0.139724
-
-+=visualizer+=  t=1.172s  e_lat=0.139499
-
-+=visualizer+=  t=1.173s  e_lat=0.139275
-
-+=visualizer+=  t=1.174s  e_lat=0.139051
-
-+=visualizer+=  t=1.175s  e_lat=0.138826
-
-+=visualizer+=  t=1.176s  e_lat=0.138602
-
-+=visualizer+=  t=1.177s  e_lat=0.138377
-
-+=visualizer+=  t=1.178s  e_lat=0.138152
-
-+=visualizer+=  t=1.179s  e_lat=0.137928
-
-+=visualizer+=  t=1.180s  e_lat=0.137703
-
-+=visualizer+=  t=1.181s  e_lat=0.137478
-
-+=visualizer+=  t=1.182s  e_lat=0.137253
-
-+=visualizer+=  t=1.183s  e_lat=0.137028
-
-+=visualizer+=  t=1.184s  e_lat=0.136803
-
-+=visualizer+=  t=1.185s  e_lat=0.136578
-
-+=visualizer+=  t=1.186s  e_lat=0.136353
-
-+=visualizer+=  t=1.187s  e_lat=0.136128
-
-+=visualizer+=  t=1.188s  e_lat=0.135902
-
-+=visualizer+=  t=1.189s  e_lat=0.135677
-
-+=visualizer+=  t=1.190s  e_lat=0.135452
-
-+=visualizer+=  t=1.191s  e_lat=0.135226
-
-+=visualizer+=  t=1.192s  e_lat=0.135001
-
-+=visualizer+=  t=1.193s  e_lat=0.134775
-
-+=visualizer+=  t=1.194s  e_lat=0.134549
-
-+=visualizer+=  t=1.195s  e_lat=0.134324
-
-+=visualizer+=  t=1.196s  e_lat=0.134098
-
-+=visualizer+=  t=1.197s  e_lat=0.133872
-
-+=visualizer+=  t=1.198s  e_lat=0.133646
-
-+=visualizer+=  t=1.199s  e_lat=0.133420
-
-+=visualizer+=  t=1.200s  e_lat=0.133194
-
-+=visualizer+=  t=1.201s  e_lat=0.132968
-
-+=visualizer+=  t=1.202s  e_lat=0.132742
-
-+=visualizer+=  t=1.203s  e_lat=0.132516
-
-+=visualizer+=  t=1.204s  e_lat=0.132290
-
-+=visualizer+=  t=1.205s  e_lat=0.132064
-
-+=visualizer+=  t=1.206s  e_lat=0.131837
-
-+=visualizer+=  t=1.207s  e_lat=0.131611
-
-+=visualizer+=  t=1.208s  e_lat=0.131385
-
-+=visualizer+=  t=1.209s  e_lat=0.131158
-
-+=visualizer+=  t=1.210s  e_lat=0.130932
-
-+=visualizer+=  t=1.211s  e_lat=0.130705
-
-+=visualizer+=  t=1.212s  e_lat=0.130478
-
-+=visualizer+=  t=1.213s  e_lat=0.130252
-
-+=visualizer+=  t=1.214s  e_lat=0.130025
-
-+=visualizer+=  t=1.215s  e_lat=0.129798
-
-+=visualizer+=  t=1.216s  e_lat=0.129571
-
-+=visualizer+=  t=1.217s  e_lat=0.129344
-
-+=visualizer+=  t=1.218s  e_lat=0.129117
-
-+=visualizer+=  t=1.219s  e_lat=0.128890
-
-+=visualizer+=  t=1.220s  e_lat=0.128663
-
-+=visualizer+=  t=1.221s  e_lat=0.128436
-
-+=visualizer+=  t=1.222s  e_lat=0.128209
-
-+=visualizer+=  t=1.223s  e_lat=0.127982
-
-+=visualizer+=  t=1.224s  e_lat=0.127755
-
-+=visualizer+=  t=1.225s  e_lat=0.127527
-
-+=visualizer+=  t=1.226s  e_lat=0.127300
-
-+=visualizer+=  t=1.227s  e_lat=0.127072
-
-+=visualizer+=  t=1.228s  e_lat=0.126845
-
-+=visualizer+=  t=1.229s  e_lat=0.126617
-
-+=visualizer+=  t=1.230s  e_lat=0.126390
-
-+=visualizer+=  t=1.231s  e_lat=0.126162
-
-+=visualizer+=  t=1.232s  e_lat=0.125934
-
-+=visualizer+=  t=1.233s  e_lat=0.125707
-
-+=visualizer+=  t=1.234s  e_lat=0.125479
-
-+=visualizer+=  t=1.235s  e_lat=0.125251
-
-+=visualizer+=  t=1.236s  e_lat=0.125023
-
-+=visualizer+=  t=1.237s  e_lat=0.124795
-
-+=visualizer+=  t=1.238s  e_lat=0.124567
-
-+=visualizer+=  t=1.239s  e_lat=0.124339
-
-+=visualizer+=  t=1.240s  e_lat=0.124111
-
-+=visualizer+=  t=1.241s  e_lat=0.123883
-
-+=visualizer+=  t=1.242s  e_lat=0.123655
-
-+=visualizer+=  t=1.243s  e_lat=0.123427
-
-+=visualizer+=  t=1.244s  e_lat=0.123198
-
-+=visualizer+=  t=1.245s  e_lat=0.122970
-
-+=visualizer+=  t=1.246s  e_lat=0.122742
-
-+=visualizer+=  t=1.247s  e_lat=0.122513
-
-+=visualizer+=  t=1.248s  e_lat=0.122285
-
-+=visualizer+=  t=1.249s  e_lat=0.122056
-
-+=visualizer+=  t=1.250s  e_lat=0.121828
-
-+=visualizer+=  t=1.251s  e_lat=0.121599
-
-+=visualizer+=  t=1.252s  e_lat=0.121371
-
-+=visualizer+=  t=1.253s  e_lat=0.121142
-
-+=visualizer+=  t=1.254s  e_lat=0.120913
-
-+=visualizer+=  t=1.255s  e_lat=0.120684
-
-+=visualizer+=  t=1.256s  e_lat=0.120455
-
-+=visualizer+=  t=1.257s  e_lat=0.120227
-
-+=visualizer+=  t=1.258s  e_lat=0.119998
-
-+=visualizer+=  t=1.259s  e_lat=0.119769
-
-+=visualizer+=  t=1.260s  e_lat=0.119540
-
-+=visualizer+=  t=1.261s  e_lat=0.119311
-
-+=visualizer+=  t=1.262s  e_lat=0.119082
-
-+=visualizer+=  t=1.263s  e_lat=0.118852
-
-+=visualizer+=  t=1.264s  e_lat=0.118623
-
-+=visualizer+=  t=1.265s  e_lat=0.118394
-
-+=visualizer+=  t=1.266s  e_lat=0.118165
-
-+=visualizer+=  t=1.267s  e_lat=0.117935
-
-+=visualizer+=  t=1.268s  e_lat=0.117706
-
-+=visualizer+=  t=1.269s  e_lat=0.117477
-
-+=visualizer+=  t=1.270s  e_lat=0.117247
-
-+=visualizer+=  t=1.271s  e_lat=0.117018
-
-+=visualizer+=  t=1.272s  e_lat=0.116788
-
-+=visualizer+=  t=1.273s  e_lat=0.116559
-
-+=visualizer+=  t=1.274s  e_lat=0.116329
-
-+=visualizer+=  t=1.275s  e_lat=0.116099
-
-+=visualizer+=  t=1.276s  e_lat=0.115870
-
-+=visualizer+=  t=1.277s  e_lat=0.115640
-
-+=visualizer+=  t=1.278s  e_lat=0.115410
-
-+=visualizer+=  t=1.279s  e_lat=0.115180
-
-+=visualizer+=  t=1.280s  e_lat=0.114951
-
-+=visualizer+=  t=1.281s  e_lat=0.114721
-
-+=visualizer+=  t=1.282s  e_lat=0.114491
-
-+=visualizer+=  t=1.283s  e_lat=0.114261
-
-+=visualizer+=  t=1.284s  e_lat=0.114031
-
-+=visualizer+=  t=1.285s  e_lat=0.113801
-
-+=visualizer+=  t=1.286s  e_lat=0.113571
-
-+=visualizer+=  t=1.287s  e_lat=0.113341
-
-+=visualizer+=  t=1.288s  e_lat=0.113110
-
-+=visualizer+=  t=1.289s  e_lat=0.112880
-
-+=visualizer+=  t=1.290s  e_lat=0.112650
-
-+=visualizer+=  t=1.291s  e_lat=0.112420
-
-+=visualizer+=  t=1.292s  e_lat=0.112189
-
-+=visualizer+=  t=1.293s  e_lat=0.111959
-
-+=visualizer+=  t=1.294s  e_lat=0.111729
-
-+=visualizer+=  t=1.295s  e_lat=0.111498
-
-+=visualizer+=  t=1.296s  e_lat=0.111268
-
-+=visualizer+=  t=1.297s  e_lat=0.111037
-
-+=visualizer+=  t=1.298s  e_lat=0.110807
-
-+=visualizer+=  t=1.299s  e_lat=0.110576
-
-+=visualizer+=  t=1.300s  e_lat=0.110345
-
-+=visualizer+=  t=1.301s  e_lat=0.110115
-
-+=visualizer+=  t=1.302s  e_lat=0.109884
-
-+=visualizer+=  t=1.303s  e_lat=0.109653
-
-+=visualizer+=  t=1.304s  e_lat=0.109423
-
-+=visualizer+=  t=1.305s  e_lat=0.109192
-
-+=visualizer+=  t=1.306s  e_lat=0.108961
-
-+=visualizer+=  t=1.307s  e_lat=0.108730
-
-+=visualizer+=  t=1.308s  e_lat=0.108499
-
-+=visualizer+=  t=1.309s  e_lat=0.108268
-
-+=visualizer+=  t=1.310s  e_lat=0.108037
-
-+=visualizer+=  t=1.311s  e_lat=0.107806
-
-+=visualizer+=  t=1.312s  e_lat=0.107575
-
-+=visualizer+=  t=1.313s  e_lat=0.107344
-
-+=visualizer+=  t=1.314s  e_lat=0.107113
-
-+=visualizer+=  t=1.315s  e_lat=0.106882
-
-+=visualizer+=  t=1.316s  e_lat=0.106651
-
-+=visualizer+=  t=1.317s  e_lat=0.106420
-
-+=visualizer+=  t=1.318s  e_lat=0.106189
-
-+=visualizer+=  t=1.319s  e_lat=0.105957
-
-+=visualizer+=  t=1.320s  e_lat=0.105726
-
-+=visualizer+=  t=1.321s  e_lat=0.105495
-
-+=visualizer+=  t=1.322s  e_lat=0.105263
-
-+=visualizer+=  t=1.323s  e_lat=0.105032
-
-+=visualizer+=  t=1.324s  e_lat=0.104801
-
-+=visualizer+=  t=1.325s  e_lat=0.104569
-
-+=visualizer+=  t=1.326s  e_lat=0.104338
-
-+=visualizer+=  t=1.327s  e_lat=0.104106
-
-+=visualizer+=  t=1.328s  e_lat=0.103875
-
-+=visualizer+=  t=1.329s  e_lat=0.103643
-
-+=visualizer+=  t=1.330s  e_lat=0.103411
-
-+=visualizer+=  t=1.331s  e_lat=0.103180
-
-+=visualizer+=  t=1.332s  e_lat=0.102948
-
-+=visualizer+=  t=1.333s  e_lat=0.102717
-
-+=visualizer+=  t=1.334s  e_lat=0.102485
-
-+=visualizer+=  t=1.335s  e_lat=0.102253
-
-+=visualizer+=  t=1.336s  e_lat=0.102021
-
-+=visualizer+=  t=1.337s  e_lat=0.101789
-
-+=visualizer+=  t=1.338s  e_lat=0.101558
-
-+=visualizer+=  t=1.339s  e_lat=0.101326
-
-+=visualizer+=  t=1.340s  e_lat=0.101094
-
-+=visualizer+=  t=1.341s  e_lat=0.100862
-
-+=visualizer+=  t=1.342s  e_lat=0.100630
-
-+=visualizer+=  t=1.343s  e_lat=0.100398
-
-+=visualizer+=  t=1.344s  e_lat=0.100166
-
-+=visualizer+=  t=1.345s  e_lat=0.099934
-
-+=visualizer+=  t=1.346s  e_lat=0.099702
-
-+=visualizer+=  t=1.347s  e_lat=0.099470
-
-+=visualizer+=  t=1.348s  e_lat=0.099238
-
-+=visualizer+=  t=1.349s  e_lat=0.099006
-
-+=visualizer+=  t=1.350s  e_lat=0.098774
-
-+=visualizer+=  t=1.351s  e_lat=0.098541
-
-+=visualizer+=  t=1.352s  e_lat=0.098309
-
-+=visualizer+=  t=1.353s  e_lat=0.098077
-
-+=visualizer+=  t=1.354s  e_lat=0.097845
-
-+=visualizer+=  t=1.355s  e_lat=0.097613
-
-+=visualizer+=  t=1.356s  e_lat=0.097380
-
-+=visualizer+=  t=1.357s  e_lat=0.097148
-
-+=visualizer+=  t=1.358s  e_lat=0.096916
-
-+=visualizer+=  t=1.359s  e_lat=0.096683
-
-+=visualizer+=  t=1.360s  e_lat=0.096451
-
-+=visualizer+=  t=1.361s  e_lat=0.096218
-
-+=visualizer+=  t=1.362s  e_lat=0.095986
-
-+=visualizer+=  t=1.363s  e_lat=0.095754
-
-+=visualizer+=  t=1.364s  e_lat=0.095521
-
-+=visualizer+=  t=1.365s  e_lat=0.095289
-
-+=visualizer+=  t=1.366s  e_lat=0.095056
-
-+=visualizer+=  t=1.367s  e_lat=0.094823
-
-+=visualizer+=  t=1.368s  e_lat=0.094591
-
-+=visualizer+=  t=1.369s  e_lat=0.094358
-
-+=visualizer+=  t=1.370s  e_lat=0.094126
-
-+=visualizer+=  t=1.371s  e_lat=0.093893
-
-+=visualizer+=  t=1.372s  e_lat=0.093660
-
-+=visualizer+=  t=1.373s  e_lat=0.093428
-
-+=visualizer+=  t=1.374s  e_lat=0.093195
-
-+=visualizer+=  t=1.375s  e_lat=0.092962
-
-+=visualizer+=  t=1.376s  e_lat=0.092730
-
-+=visualizer+=  t=1.377s  e_lat=0.092497
-
-+=visualizer+=  t=1.378s  e_lat=0.092264
-
-+=visualizer+=  t=1.379s  e_lat=0.092031
-
-+=visualizer+=  t=1.380s  e_lat=0.091798
-
-+=visualizer+=  t=1.381s  e_lat=0.091565
-
-+=visualizer+=  t=1.382s  e_lat=0.091333
-
-+=visualizer+=  t=1.383s  e_lat=0.091100
-
-+=visualizer+=  t=1.384s  e_lat=0.090867
-
-+=visualizer+=  t=1.385s  e_lat=0.090634
-
-+=visualizer+=  t=1.386s  e_lat=0.090401
-
-+=visualizer+=  t=1.387s  e_lat=0.090168
-
-+=visualizer+=  t=1.388s  e_lat=0.089935
-
-+=visualizer+=  t=1.389s  e_lat=0.089702
-
-+=visualizer+=  t=1.390s  e_lat=0.089469
-
-+=visualizer+=  t=1.391s  e_lat=0.089236
-
-+=visualizer+=  t=1.392s  e_lat=0.089003
-
-+=visualizer+=  t=1.393s  e_lat=0.088770
-
-+=visualizer+=  t=1.394s  e_lat=0.088537
-
-+=visualizer+=  t=1.395s  e_lat=0.088304
-
-+=visualizer+=  t=1.396s  e_lat=0.088071
-
-+=visualizer+=  t=1.397s  e_lat=0.087838
-
-+=visualizer+=  t=1.398s  e_lat=0.087604
-
-+=visualizer+=  t=1.399s  e_lat=0.087371
-
-+=visualizer+=  t=1.400s  e_lat=0.087138
-
-+=visualizer+=  t=1.401s  e_lat=0.086905
-
-+=visualizer+=  t=1.402s  e_lat=0.086672
-
-+=visualizer+=  t=1.403s  e_lat=0.086438
-
-+=visualizer+=  t=1.404s  e_lat=0.086205
-
-+=visualizer+=  t=1.405s  e_lat=0.085972
-
-+=visualizer+=  t=1.406s  e_lat=0.085739
-
-+=visualizer+=  t=1.407s  e_lat=0.085505
-
-+=visualizer+=  t=1.408s  e_lat=0.085272
-
-+=visualizer+=  t=1.409s  e_lat=0.085039
-
-+=visualizer+=  t=1.410s  e_lat=0.084806
-
-+=visualizer+=  t=1.411s  e_lat=0.084572
-
-+=visualizer+=  t=1.412s  e_lat=0.084339
-
-+=visualizer+=  t=1.413s  e_lat=0.084106
-
-+=visualizer+=  t=1.414s  e_lat=0.083872
-
-+=visualizer+=  t=1.415s  e_lat=0.083639
-
-+=visualizer+=  t=1.416s  e_lat=0.083405
-
-+=visualizer+=  t=1.417s  e_lat=0.083172
-
-+=visualizer+=  t=1.418s  e_lat=0.082939
-
-+=visualizer+=  t=1.419s  e_lat=0.082705
-
-+=visualizer+=  t=1.420s  e_lat=0.082472
-
-+=visualizer+=  t=1.421s  e_lat=0.082238
-
-+=visualizer+=  t=1.422s  e_lat=0.082005
-
-+=visualizer+=  t=1.423s  e_lat=0.081771
-
-+=visualizer+=  t=1.424s  e_lat=0.081538
-
-+=visualizer+=  t=1.425s  e_lat=0.081304
-
-+=visualizer+=  t=1.426s  e_lat=0.081071
-
-+=visualizer+=  t=1.427s  e_lat=0.080837
-
-+=visualizer+=  t=1.428s  e_lat=0.080604
-
-+=visualizer+=  t=1.429s  e_lat=0.080370
-
-+=visualizer+=  t=1.430s  e_lat=0.080137
-
-+=visualizer+=  t=1.431s  e_lat=0.079903
-
-+=visualizer+=  t=1.432s  e_lat=0.079670
-
-+=visualizer+=  t=1.433s  e_lat=0.079436
-
-+=visualizer+=  t=1.434s  e_lat=0.079202
-
-+=visualizer+=  t=1.435s  e_lat=0.078969
-
-+=visualizer+=  t=1.436s  e_lat=0.078735
-
-+=visualizer+=  t=1.437s  e_lat=0.078502
-
-+=visualizer+=  t=1.438s  e_lat=0.078268
-
-+=visualizer+=  t=1.439s  e_lat=0.078034
-
-+=visualizer+=  t=1.440s  e_lat=0.077801
-
-+=visualizer+=  t=1.441s  e_lat=0.077567
-
-+=visualizer+=  t=1.442s  e_lat=0.077334
-
-+=visualizer+=  t=1.443s  e_lat=0.077100
-
-+=visualizer+=  t=1.444s  e_lat=0.076866
-
-+=visualizer+=  t=1.445s  e_lat=0.076633
-
-+=visualizer+=  t=1.446s  e_lat=0.076399
-
-+=visualizer+=  t=1.447s  e_lat=0.076165
-
-+=visualizer+=  t=1.448s  e_lat=0.075932
-
-+=visualizer+=  t=1.449s  e_lat=0.075698
-
-+=visualizer+=  t=1.450s  e_lat=0.075464
-
-+=visualizer+=  t=1.451s  e_lat=0.075231
-
-+=visualizer+=  t=1.452s  e_lat=0.074997
-
-+=visualizer+=  t=1.453s  e_lat=0.074763
-
-+=visualizer+=  t=1.454s  e_lat=0.074529
-
-+=visualizer+=  t=1.455s  e_lat=0.074296
-
-+=visualizer+=  t=1.456s  e_lat=0.074062
-
-+=visualizer+=  t=1.457s  e_lat=0.073828
-
-+=visualizer+=  t=1.458s  e_lat=0.073594
-
-+=visualizer+=  t=1.459s  e_lat=0.073361
-
-+=visualizer+=  t=1.460s  e_lat=0.073127
-
-+=visualizer+=  t=1.461s  e_lat=0.072893
-
-+=visualizer+=  t=1.462s  e_lat=0.072660
-
-+=visualizer+=  t=1.463s  e_lat=0.072426
-
-+=visualizer+=  t=1.464s  e_lat=0.072192
-
-+=visualizer+=  t=1.465s  e_lat=0.071958
-
-+=visualizer+=  t=1.466s  e_lat=0.071725
-
-+=visualizer+=  t=1.467s  e_lat=0.071491
-
-+=visualizer+=  t=1.468s  e_lat=0.071257
-
-+=visualizer+=  t=1.469s  e_lat=0.071023
-
-+=visualizer+=  t=1.470s  e_lat=0.070790
-
-+=visualizer+=  t=1.471s  e_lat=0.070556
-
-+=visualizer+=  t=1.472s  e_lat=0.070322
-
-+=visualizer+=  t=1.473s  e_lat=0.070088
-
-+=visualizer+=  t=1.474s  e_lat=0.069854
-
-+=visualizer+=  t=1.475s  e_lat=0.069621
-
-+=visualizer+=  t=1.476s  e_lat=0.069387
-
-+=visualizer+=  t=1.477s  e_lat=0.069153
-
-+=visualizer+=  t=1.478s  e_lat=0.068919
-
-+=visualizer+=  t=1.479s  e_lat=0.068686
-
-+=visualizer+=  t=1.480s  e_lat=0.068452
-
-+=visualizer+=  t=1.481s  e_lat=0.068218
-
-+=visualizer+=  t=1.482s  e_lat=0.067984
-
-+=visualizer+=  t=1.483s  e_lat=0.067751
-
-+=visualizer+=  t=1.484s  e_lat=0.067517
-
-+=visualizer+=  t=1.485s  e_lat=0.067283
-
-+=visualizer+=  t=1.486s  e_lat=0.067049
-
-+=visualizer+=  t=1.487s  e_lat=0.066816
-
-+=visualizer+=  t=1.488s  e_lat=0.066582
-
-+=visualizer+=  t=1.489s  e_lat=0.066348
-
-+=visualizer+=  t=1.490s  e_lat=0.066114
-
-+=visualizer+=  t=1.491s  e_lat=0.065881
-
-+=visualizer+=  t=1.492s  e_lat=0.065647
-
-+=visualizer+=  t=1.493s  e_lat=0.065413
-
-+=visualizer+=  t=1.494s  e_lat=0.065179
-
-+=visualizer+=  t=1.495s  e_lat=0.064946
-
-+=visualizer+=  t=1.496s  e_lat=0.064712
-
-+=visualizer+=  t=1.497s  e_lat=0.064478
-
-+=visualizer+=  t=1.498s  e_lat=0.064244
-
-+=visualizer+=  t=1.499s  e_lat=0.064011
-
-+=visualizer+=  t=1.500s  e_lat=0.063777
-
-+=visualizer+=  t=1.501s  e_lat=0.063543
-
-+=visualizer+=  t=1.502s  e_lat=0.063310
-
-+=visualizer+=  t=1.503s  e_lat=0.063076
-
-+=visualizer+=  t=1.504s  e_lat=0.062842
-
-+=visualizer+=  t=1.505s  e_lat=0.062609
-
-+=visualizer+=  t=1.506s  e_lat=0.062375
-
-+=visualizer+=  t=1.507s  e_lat=0.062141
-
-+=visualizer+=  t=1.508s  e_lat=0.061908
-
-+=visualizer+=  t=1.509s  e_lat=0.061674
-
-+=visualizer+=  t=1.510s  e_lat=0.061440
-
-+=visualizer+=  t=1.511s  e_lat=0.061207
-
-+=visualizer+=  t=1.512s  e_lat=0.060973
-
-+=visualizer+=  t=1.513s  e_lat=0.060739
-
-+=visualizer+=  t=1.514s  e_lat=0.060506
-
-+=visualizer+=  t=1.515s  e_lat=0.060272
-
-+=visualizer+=  t=1.516s  e_lat=0.060038
-
-+=visualizer+=  t=1.517s  e_lat=0.059805
-
-+=visualizer+=  t=1.518s  e_lat=0.059571
-
-+=visualizer+=  t=1.519s  e_lat=0.059338
-
-+=visualizer+=  t=1.520s  e_lat=0.059104
-
-+=visualizer+=  t=1.521s  e_lat=0.058870
-
-+=visualizer+=  t=1.522s  e_lat=0.058637
-
-+=visualizer+=  t=1.523s  e_lat=0.058403
-
-+=visualizer+=  t=1.524s  e_lat=0.058170
-
-+=visualizer+=  t=1.525s  e_lat=0.057936
-
-+=visualizer+=  t=1.526s  e_lat=0.057703
-
-+=visualizer+=  t=1.527s  e_lat=0.057469
-
-+=visualizer+=  t=1.528s  e_lat=0.057236
-
-+=visualizer+=  t=1.529s  e_lat=0.057002
-
-+=visualizer+=  t=1.530s  e_lat=0.056769
-
-+=visualizer+=  t=1.531s  e_lat=0.056535
-
-+=visualizer+=  t=1.532s  e_lat=0.056302
-
-+=visualizer+=  t=1.533s  e_lat=0.056068
-
-+=visualizer+=  t=1.534s  e_lat=0.055835
-
-+=visualizer+=  t=1.535s  e_lat=0.055601
-
-+=visualizer+=  t=1.536s  e_lat=0.055368
-
-+=visualizer+=  t=1.537s  e_lat=0.055135
-
-+=visualizer+=  t=1.538s  e_lat=0.054901
-
-+=visualizer+=  t=1.539s  e_lat=0.054668
-
-+=visualizer+=  t=1.540s  e_lat=0.054434
-
-+=visualizer+=  t=1.541s  e_lat=0.054201
-
-+=visualizer+=  t=1.542s  e_lat=0.053968
-
-+=visualizer+=  t=1.543s  e_lat=0.053734
-
-+=visualizer+=  t=1.544s  e_lat=0.053501
-
-+=visualizer+=  t=1.545s  e_lat=0.053268
-
-+=visualizer+=  t=1.546s  e_lat=0.053034
-
-+=visualizer+=  t=1.547s  e_lat=0.052801
-
-+=visualizer+=  t=1.548s  e_lat=0.052568
-
-+=visualizer+=  t=1.549s  e_lat=0.052335
-
-+=visualizer+=  t=1.550s  e_lat=0.052101
-
-+=visualizer+=  t=1.551s  e_lat=0.051868
-
-+=visualizer+=  t=1.552s  e_lat=0.051635
-
-+=visualizer+=  t=1.553s  e_lat=0.051402
-
-+=visualizer+=  t=1.554s  e_lat=0.051168
-
-+=visualizer+=  t=1.555s  e_lat=0.050935
-
-+=visualizer+=  t=1.556s  e_lat=0.050702
-
-+=visualizer+=  t=1.557s  e_lat=0.050469
-
-+=visualizer+=  t=1.558s  e_lat=0.050236
-
-+=visualizer+=  t=1.559s  e_lat=0.050003
-
-+=visualizer+=  t=1.560s  e_lat=0.049770
-
-+=visualizer+=  t=1.561s  e_lat=0.049537
-
-+=visualizer+=  t=1.562s  e_lat=0.049304
-
-+=visualizer+=  t=1.563s  e_lat=0.049070
-
-+=visualizer+=  t=1.564s  e_lat=0.048837
-
-+=visualizer+=  t=1.565s  e_lat=0.048604
-
-+=visualizer+=  t=1.566s  e_lat=0.048371
-
-+=visualizer+=  t=1.567s  e_lat=0.048138
-
-+=visualizer+=  t=1.568s  e_lat=0.047906
-
-+=visualizer+=  t=1.569s  e_lat=0.047673
-
-+=visualizer+=  t=1.570s  e_lat=0.047440
-
-+=visualizer+=  t=1.571s  e_lat=0.047207
-
-+=visualizer+=  t=1.572s  e_lat=0.046974
-
-+=visualizer+=  t=1.573s  e_lat=0.046741
-
-+=visualizer+=  t=1.574s  e_lat=0.046508
-
-+=visualizer+=  t=1.575s  e_lat=0.046275
-
-+=visualizer+=  t=1.576s  e_lat=0.046043
-
-+=visualizer+=  t=1.577s  e_lat=0.045810
-
-+=visualizer+=  t=1.578s  e_lat=0.045577
-
-+=visualizer+=  t=1.579s  e_lat=0.045344
-
-+=visualizer+=  t=1.580s  e_lat=0.045112
-
-+=visualizer+=  t=1.581s  e_lat=0.044879
-
-+=visualizer+=  t=1.582s  e_lat=0.044646
-
-+=visualizer+=  t=1.583s  e_lat=0.044413
-
-+=visualizer+=  t=1.584s  e_lat=0.044181
-
-+=visualizer+=  t=1.585s  e_lat=0.043948
-
-+=visualizer+=  t=1.586s  e_lat=0.043716
-
-+=visualizer+=  t=1.587s  e_lat=0.043483
-
-+=visualizer+=  t=1.588s  e_lat=0.043250
-
-+=visualizer+=  t=1.589s  e_lat=0.043018
-
-+=visualizer+=  t=1.590s  e_lat=0.042785
-
-+=visualizer+=  t=1.591s  e_lat=0.042553
-
-+=visualizer+=  t=1.592s  e_lat=0.042320
-
-+=visualizer+=  t=1.593s  e_lat=0.042088
-
-+=visualizer+=  t=1.594s  e_lat=0.041855
-
-+=visualizer+=  t=1.595s  e_lat=0.041623
-
-+=visualizer+=  t=1.596s  e_lat=0.041391
-
-+=visualizer+=  t=1.597s  e_lat=0.041158
-
-+=visualizer+=  t=1.598s  e_lat=0.040926
-
-+=visualizer+=  t=1.599s  e_lat=0.040694
-
-+=visualizer+=  t=1.600s  e_lat=0.040461
-
-+=visualizer+=  t=1.601s  e_lat=0.040229
-
-+=visualizer+=  t=1.602s  e_lat=0.039997
-
-+=visualizer+=  t=1.603s  e_lat=0.039765
-
-+=visualizer+=  t=1.604s  e_lat=0.039532
-
-+=visualizer+=  t=1.605s  e_lat=0.039300
-
-+=visualizer+=  t=1.606s  e_lat=0.039068
-
-+=visualizer+=  t=1.607s  e_lat=0.038836
-
-+=visualizer+=  t=1.608s  e_lat=0.038604
-
-+=visualizer+=  t=1.609s  e_lat=0.038372
-
-+=visualizer+=  t=1.610s  e_lat=0.038140
-
-+=visualizer+=  t=1.611s  e_lat=0.037908
-
-+=visualizer+=  t=1.612s  e_lat=0.037676
-
-+=visualizer+=  t=1.613s  e_lat=0.037444
-
-+=visualizer+=  t=1.614s  e_lat=0.037212
-
-+=visualizer+=  t=1.615s  e_lat=0.036980
-
-+=visualizer+=  t=1.616s  e_lat=0.036748
-
-+=visualizer+=  t=1.617s  e_lat=0.036516
-
-+=visualizer+=  t=1.618s  e_lat=0.036284
-
-+=visualizer+=  t=1.619s  e_lat=0.036053
-
-+=visualizer+=  t=1.620s  e_lat=0.035821
-
-+=visualizer+=  t=1.621s  e_lat=0.035589
-
-+=visualizer+=  t=1.622s  e_lat=0.035357
-
-+=visualizer+=  t=1.623s  e_lat=0.035126
-
-+=visualizer+=  t=1.624s  e_lat=0.034894
-
-+=visualizer+=  t=1.625s  e_lat=0.034662
-
-+=visualizer+=  t=1.626s  e_lat=0.034431
-
-+=visualizer+=  t=1.627s  e_lat=0.034199
-
-+=visualizer+=  t=1.628s  e_lat=0.033968
-
-+=visualizer+=  t=1.629s  e_lat=0.033736
-
-+=visualizer+=  t=1.630s  e_lat=0.033505
-
-+=visualizer+=  t=1.631s  e_lat=0.033273
-
-+=visualizer+=  t=1.632s  e_lat=0.033042
-
-+=visualizer+=  t=1.633s  e_lat=0.032810
-
-+=visualizer+=  t=1.634s  e_lat=0.032579
-
-+=visualizer+=  t=1.635s  e_lat=0.032348
-
-+=visualizer+=  t=1.636s  e_lat=0.032116
-
-+=visualizer+=  t=1.637s  e_lat=0.031885
-
-+=visualizer+=  t=1.638s  e_lat=0.031654
-
-+=visualizer+=  t=1.639s  e_lat=0.031423
-
-+=visualizer+=  t=1.640s  e_lat=0.031191
-
-+=visualizer+=  t=1.641s  e_lat=0.030960
-
-+=visualizer+=  t=1.642s  e_lat=0.030729
-
-+=visualizer+=  t=1.643s  e_lat=0.030498
-
-+=visualizer+=  t=1.644s  e_lat=0.030267
-
-+=visualizer+=  t=1.645s  e_lat=0.030036
-
-+=visualizer+=  t=1.646s  e_lat=0.029805
-
-+=visualizer+=  t=1.647s  e_lat=0.029574
-
-+=visualizer+=  t=1.648s  e_lat=0.029343
-
-+=visualizer+=  t=1.649s  e_lat=0.029112
-
-+=visualizer+=  t=1.650s  e_lat=0.028881
-
-+=visualizer+=  t=1.651s  e_lat=0.028650
-
-+=visualizer+=  t=1.652s  e_lat=0.028420
-
-+=visualizer+=  t=1.653s  e_lat=0.028189
-
-+=visualizer+=  t=1.654s  e_lat=0.027958
-
-+=visualizer+=  t=1.655s  e_lat=0.027727
-
-+=visualizer+=  t=1.656s  e_lat=0.027497
-
-+=visualizer+=  t=1.657s  e_lat=0.027266
-
-+=visualizer+=  t=1.658s  e_lat=0.027036
-
-+=visualizer+=  t=1.659s  e_lat=0.026805
-
-+=visualizer+=  t=1.660s  e_lat=0.026575
-
-+=visualizer+=  t=1.661s  e_lat=0.026344
-
-+=visualizer+=  t=1.662s  e_lat=0.026114
-
-+=visualizer+=  t=1.663s  e_lat=0.025883
-
-+=visualizer+=  t=1.664s  e_lat=0.025653
-
-+=visualizer+=  t=1.665s  e_lat=0.025422
-
-+=visualizer+=  t=1.666s  e_lat=0.025192
-
-+=visualizer+=  t=1.667s  e_lat=0.024962
-
-+=visualizer+=  t=1.668s  e_lat=0.024732
-
-+=visualizer+=  t=1.669s  e_lat=0.024501
-
-+=visualizer+=  t=1.670s  e_lat=0.024271
-
-+=visualizer+=  t=1.671s  e_lat=0.024041
-
-+=visualizer+=  t=1.672s  e_lat=0.023811
-
-+=visualizer+=  t=1.673s  e_lat=0.023581
-
-+=visualizer+=  t=1.674s  e_lat=0.023351
-
-+=visualizer+=  t=1.675s  e_lat=0.023121
-
-+=visualizer+=  t=1.676s  e_lat=0.022891
-
-+=visualizer+=  t=1.677s  e_lat=0.022661
-
-+=visualizer+=  t=1.678s  e_lat=0.022431
-
-+=visualizer+=  t=1.679s  e_lat=0.022202
-
-+=visualizer+=  t=1.680s  e_lat=0.021972
-
-+=visualizer+=  t=1.681s  e_lat=0.021742
-
-+=visualizer+=  t=1.682s  e_lat=0.021512
-
-+=visualizer+=  t=1.683s  e_lat=0.021283
-
-+=visualizer+=  t=1.684s  e_lat=0.021053
-
-+=visualizer+=  t=1.685s  e_lat=0.020823
-
-+=visualizer+=  t=1.686s  e_lat=0.020594
-
-+=visualizer+=  t=1.687s  e_lat=0.020364
-
-+=visualizer+=  t=1.688s  e_lat=0.020135
-
-+=visualizer+=  t=1.689s  e_lat=0.019906
-
-+=visualizer+=  t=1.690s  e_lat=0.019676
-
-+=visualizer+=  t=1.691s  e_lat=0.019447
-
-+=visualizer+=  t=1.692s  e_lat=0.019218
-
-+=visualizer+=  t=1.693s  e_lat=0.018988
-
-+=visualizer+=  t=1.694s  e_lat=0.018759
-
-+=visualizer+=  t=1.695s  e_lat=0.018530
-
-+=visualizer+=  t=1.696s  e_lat=0.018301
-
-+=visualizer+=  t=1.697s  e_lat=0.018072
-
-+=visualizer+=  t=1.698s  e_lat=0.017843
-
-+=visualizer+=  t=1.699s  e_lat=0.017614
-
-+=visualizer+=  t=1.700s  e_lat=0.017385
-
-+=visualizer+=  t=1.701s  e_lat=0.017156
-
-+=visualizer+=  t=1.702s  e_lat=0.016927
-
-+=visualizer+=  t=1.703s  e_lat=0.016698
-
-+=visualizer+=  t=1.704s  e_lat=0.016469
-
-+=visualizer+=  t=1.705s  e_lat=0.016240
-
-+=visualizer+=  t=1.706s  e_lat=0.016012
-
-+=visualizer+=  t=1.707s  e_lat=0.015783
-
-+=visualizer+=  t=1.708s  e_lat=0.015554
-
-+=visualizer+=  t=1.709s  e_lat=0.015326
-
-+=visualizer+=  t=1.710s  e_lat=0.015097
-
-+=visualizer+=  t=1.711s  e_lat=0.014869
-
-+=visualizer+=  t=1.712s  e_lat=0.014640
-
-+=visualizer+=  t=1.713s  e_lat=0.014412
-
-+=visualizer+=  t=1.714s  e_lat=0.014184
-
-+=visualizer+=  t=1.715s  e_lat=0.013955
-
-+=visualizer+=  t=1.716s  e_lat=0.013727
-
-+=visualizer+=  t=1.717s  e_lat=0.013499
-
-+=visualizer+=  t=1.718s  e_lat=0.013271
-
-+=visualizer+=  t=1.719s  e_lat=0.013043
-
-+=visualizer+=  t=1.720s  e_lat=0.012815
-
-+=visualizer+=  t=1.721s  e_lat=0.012587
-
-+=visualizer+=  t=1.722s  e_lat=0.012359
-
-+=visualizer+=  t=1.723s  e_lat=0.012131
-
-+=visualizer+=  t=1.724s  e_lat=0.011903
-
-+=visualizer+=  t=1.725s  e_lat=0.011675
-
-+=visualizer+=  t=1.726s  e_lat=0.011447
-
-+=visualizer+=  t=1.727s  e_lat=0.011219
-
-+=visualizer+=  t=1.728s  e_lat=0.010992
-
-+=visualizer+=  t=1.729s  e_lat=0.010764
-
-+=visualizer+=  t=1.730s  e_lat=0.010536
-
-+=visualizer+=  t=1.731s  e_lat=0.010309
-
-+=visualizer+=  t=1.732s  e_lat=0.010081
-
-+=visualizer+=  t=1.733s  e_lat=0.009854
-
-+=visualizer+=  t=1.734s  e_lat=0.009626
-
-+=visualizer+=  t=1.735s  e_lat=0.009399
-
-+=visualizer+=  t=1.736s  e_lat=0.009172
-
-+=visualizer+=  t=1.737s  e_lat=0.008945
-
-+=visualizer+=  t=1.738s  e_lat=0.008717
-
-+=visualizer+=  t=1.739s  e_lat=0.008490
-
-+=visualizer+=  t=1.740s  e_lat=0.008263
-
-+=visualizer+=  t=1.741s  e_lat=0.008036
-
-+=visualizer+=  t=1.742s  e_lat=0.007809
-
-+=visualizer+=  t=1.743s  e_lat=0.007582
-
-+=visualizer+=  t=1.744s  e_lat=0.007355
-
-+=visualizer+=  t=1.745s  e_lat=0.007128
-
-+=visualizer+=  t=1.746s  e_lat=0.006901
-
-+=visualizer+=  t=1.747s  e_lat=0.006675
-
-+=visualizer+=  t=1.748s  e_lat=0.006448
-
-+=visualizer+=  t=1.749s  e_lat=0.006221
-
-+=visualizer+=  t=1.750s  e_lat=0.005995
-
-+=visualizer+=  t=1.751s  e_lat=0.005768
-
-+=visualizer+=  t=1.752s  e_lat=0.005542
-
-+=visualizer+=  t=1.753s  e_lat=0.005315
-
-+=visualizer+=  t=1.754s  e_lat=0.005089
-
-+=visualizer+=  t=1.755s  e_lat=0.004862
-
-+=visualizer+=  t=1.756s  e_lat=0.004636
-
-+=visualizer+=  t=1.757s  e_lat=0.004410
-
-+=visualizer+=  t=1.758s  e_lat=0.004184
-
-+=visualizer+=  t=1.759s  e_lat=0.003958
-
-+=visualizer+=  t=1.760s  e_lat=0.003732
-
-+=visualizer+=  t=1.761s  e_lat=0.003505
-
-+=visualizer+=  t=1.762s  e_lat=0.003280
-
-+=visualizer+=  t=1.763s  e_lat=0.003054
-
-+=visualizer+=  t=1.764s  e_lat=0.002828
-
-+=visualizer+=  t=1.765s  e_lat=0.002602
-
-+=visualizer+=  t=1.766s  e_lat=0.002376
-
-+=visualizer+=  t=1.767s  e_lat=0.002150
-
-+=visualizer+=  t=1.768s  e_lat=0.001925
-
-+=visualizer+=  t=1.769s  e_lat=0.001699
-
-+=visualizer+=  t=1.770s  e_lat=0.001474
-
-+=visualizer+=  t=1.771s  e_lat=0.001248
-
-+=visualizer+=  t=1.772s  e_lat=0.001023
-
-+=visualizer+=  t=1.773s  e_lat=0.000797
-
-+=visualizer+=  t=1.774s  e_lat=0.000572
-
-+=visualizer+=  t=1.775s  e_lat=0.000347
-
-+=visualizer+=  t=1.776s  e_lat=0.000122
-
-+=visualizer+=  t=1.777s  e_lat=-0.000103
-
-+=visualizer+=  t=1.778s  e_lat=-0.000329
-
-+=visualizer+=  t=1.779s  e_lat=-0.000554
-
-+=visualizer+=  t=1.780s  e_lat=-0.000779
-
-+=visualizer+=  t=1.781s  e_lat=-0.001003
-
-+=visualizer+=  t=1.782s  e_lat=-0.001228
-
-+=visualizer+=  t=1.783s  e_lat=-0.001453
-
-+=visualizer+=  t=1.784s  e_lat=-0.001678
-
-+=visualizer+=  t=1.785s  e_lat=-0.001903
-
-+=visualizer+=  t=1.786s  e_lat=-0.002127
-
-+=visualizer+=  t=1.787s  e_lat=-0.002352
-
-+=visualizer+=  t=1.788s  e_lat=-0.002576
-
-+=visualizer+=  t=1.789s  e_lat=-0.002801
-
-+=visualizer+=  t=1.790s  e_lat=-0.003025
-
-+=visualizer+=  t=1.791s  e_lat=-0.003249
-
-+=visualizer+=  t=1.792s  e_lat=-0.003474
-
-+=visualizer+=  t=1.793s  e_lat=-0.003698
-
-+=visualizer+=  t=1.794s  e_lat=-0.003922
-
-+=visualizer+=  t=1.795s  e_lat=-0.004146
-
-+=visualizer+=  t=1.796s  e_lat=-0.004370
-
-+=visualizer+=  t=1.797s  e_lat=-0.004594
-
-+=visualizer+=  t=1.798s  e_lat=-0.004818
-
-+=visualizer+=  t=1.799s  e_lat=-0.005042
-
-+=visualizer+=  t=1.800s  e_lat=-0.005266
-
-+=visualizer+=  t=1.801s  e_lat=-0.005489
-
-+=visualizer+=  t=1.802s  e_lat=-0.005713
-
-+=visualizer+=  t=1.803s  e_lat=-0.005937
-
-+=visualizer+=  t=1.804s  e_lat=-0.006160
-
-+=visualizer+=  t=1.805s  e_lat=-0.006384
-
-+=visualizer+=  t=1.806s  e_lat=-0.006607
-
-+=visualizer+=  t=1.807s  e_lat=-0.006830
-
-+=visualizer+=  t=1.808s  e_lat=-0.007054
-
-+=visualizer+=  t=1.809s  e_lat=-0.007277
-
-+=visualizer+=  t=1.810s  e_lat=-0.007500
-
-+=visualizer+=  t=1.811s  e_lat=-0.007723
-
-+=visualizer+=  t=1.812s  e_lat=-0.007946
-
-+=visualizer+=  t=1.813s  e_lat=-0.008169
-
-+=visualizer+=  t=1.814s  e_lat=-0.008392
-
-+=visualizer+=  t=1.815s  e_lat=-0.008615
-
-+=visualizer+=  t=1.816s  e_lat=-0.008838
-
-+=visualizer+=  t=1.817s  e_lat=-0.009061
-
-+=visualizer+=  t=1.818s  e_lat=-0.009283
-
-+=visualizer+=  t=1.819s  e_lat=-0.009506
-
-+=visualizer+=  t=1.820s  e_lat=-0.009728
-
-+=visualizer+=  t=1.821s  e_lat=-0.009951
-
-+=visualizer+=  t=1.822s  e_lat=-0.010173
-
-+=visualizer+=  t=1.823s  e_lat=-0.010396
-
-+=visualizer+=  t=1.824s  e_lat=-0.010618
-
-+=visualizer+=  t=1.825s  e_lat=-0.010840
-
-+=visualizer+=  t=1.826s  e_lat=-0.011062
-
-+=visualizer+=  t=1.827s  e_lat=-0.011284
-
-+=visualizer+=  t=1.828s  e_lat=-0.011506
-
-+=visualizer+=  t=1.829s  e_lat=-0.011728
-
-+=visualizer+=  t=1.830s  e_lat=-0.011950
-
-+=visualizer+=  t=1.831s  e_lat=-0.012172
-
-+=visualizer+=  t=1.832s  e_lat=-0.012394
-
-+=visualizer+=  t=1.833s  e_lat=-0.012616
-
-+=visualizer+=  t=1.834s  e_lat=-0.012837
-
-+=visualizer+=  t=1.835s  e_lat=-0.013059
-
-+=visualizer+=  t=1.836s  e_lat=-0.013280
-
-+=visualizer+=  t=1.837s  e_lat=-0.013502
-
-+=visualizer+=  t=1.838s  e_lat=-0.013723
-
-+=visualizer+=  t=1.839s  e_lat=-0.013944
-
-+=visualizer+=  t=1.840s  e_lat=-0.014166
-
-+=visualizer+=  t=1.841s  e_lat=-0.014387
-
-+=visualizer+=  t=1.842s  e_lat=-0.014608
-
-+=visualizer+=  t=1.843s  e_lat=-0.014829
-
-+=visualizer+=  t=1.844s  e_lat=-0.015050
-
-+=visualizer+=  t=1.845s  e_lat=-0.015271
-
-+=visualizer+=  t=1.846s  e_lat=-0.015491
-
-+=visualizer+=  t=1.847s  e_lat=-0.015712
-
-+=visualizer+=  t=1.848s  e_lat=-0.015933
-
-+=visualizer+=  t=1.849s  e_lat=-0.016153
-
-+=visualizer+=  t=1.850s  e_lat=-0.016374
-
-+=visualizer+=  t=1.851s  e_lat=-0.016594
-
-+=visualizer+=  t=1.852s  e_lat=-0.016815
-
-+=visualizer+=  t=1.853s  e_lat=-0.017035
-
-+=visualizer+=  t=1.854s  e_lat=-0.017255
-
-+=visualizer+=  t=1.855s  e_lat=-0.017476
-
-+=visualizer+=  t=1.856s  e_lat=-0.017696
-
-+=visualizer+=  t=1.857s  e_lat=-0.017916
-
-+=visualizer+=  t=1.858s  e_lat=-0.018136
-
-+=visualizer+=  t=1.859s  e_lat=-0.018356
-
-+=visualizer+=  t=1.860s  e_lat=-0.018575
-
-+=visualizer+=  t=1.861s  e_lat=-0.018795
-
-+=visualizer+=  t=1.862s  e_lat=-0.019015
-
-+=visualizer+=  t=1.863s  e_lat=-0.019234
-
-+=visualizer+=  t=1.864s  e_lat=-0.019454
-Killed
-make[1]: *** [Makefile.client2:31: sim] Error 137
-make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/.robot-line-follower/src/lineFollowerDT'
++=visualizer+=  t=0.294s  e_lat=0.263164
