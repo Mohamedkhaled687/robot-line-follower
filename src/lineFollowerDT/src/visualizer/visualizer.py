@@ -3,8 +3,8 @@
 
 Observes all CAN signals, logs time-series data, computes KPIs
 (overshoot, settling time, steady-state error), saves CSV + PNG
-results after the simulation ends, and shows a real-time PyQtGraph
-dashboard during the run.
+results, and shows both a pygame 2D top-down view and a PyQtGraph
+real-time dashboard during the simulation run.
 """
 from __future__ import print_function
 import struct
@@ -26,7 +26,14 @@ import VsiCanPythonGateway as vsiCanPythonGateway
 
 src_vis_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, src_vis_dir)
-from realTimePlotter import RealTimePlotter
+
+from pygameVisualizer import PygameVisualizer
+
+try:
+    from realTimePlotter import RealTimePlotter
+    _HAS_PYQTGRAPH = True
+except Exception:
+    _HAS_PYQTGRAPH = False
 
 
 class KPILogger:
@@ -100,7 +107,6 @@ class KPILogger:
 
         os.makedirs(os.path.dirname(filepath_prefix), exist_ok=True)
 
-        # Trajectory plot
         fig, ax = plt.subplots(figsize=(10, 6))
         ax.plot(self.x_robots, self.y_robots, 'b-', linewidth=1.5, label='Robot')
         ax.plot(self.x_paths, self.y_paths, 'g--', linewidth=1.5, label='Path')
@@ -113,7 +119,6 @@ class KPILogger:
         fig.savefig(f"{filepath_prefix}_trajectory.png", dpi=150, bbox_inches='tight')
         plt.close(fig)
 
-        # Error plot
         fig, ax = plt.subplots(figsize=(10, 4))
         ax.plot(self.times, self.lateral_errors, 'r-', linewidth=1)
         ax.axhline(y=0, color='k', linestyle='--', alpha=0.3)
@@ -124,7 +129,18 @@ class KPILogger:
         fig.savefig(f"{filepath_prefix}_error.png", dpi=150, bbox_inches='tight')
         plt.close(fig)
 
-        print(f"[OK] Plots saved to {filepath_prefix}_trajectory.png and _error.png")
+        fig, ax = plt.subplots(figsize=(10, 4))
+        ax.plot(self.times, self.v_cmds, 'm-', linewidth=1, label='v_cmd')
+        ax.plot(self.times, self.omega_cmds, 'c-', linewidth=1, label='omega_cmd')
+        ax.set_xlabel('Time (s)')
+        ax.set_ylabel('Command Value')
+        ax.set_title('Control Commands vs Time')
+        ax.legend()
+        ax.grid(True, alpha=0.3)
+        fig.savefig(f"{filepath_prefix}_commands.png", dpi=150, bbox_inches='tight')
+        plt.close(fig)
+
+        print(f"[OK] Plots saved to {filepath_prefix}_*.png")
 
 
 class MySignals:
@@ -151,7 +167,17 @@ class Visualizer:
         self.mySignals = MySignals()
         self.kpi_logger = KPILogger()
         self.output_tag = args.output_tag
-        self.plotter = RealTimePlotter(buffer_size=2000, update_frequency=5)
+
+        self.pygame_vis = PygameVisualizer(
+            width=800, height=600, update_frequency=10)
+
+        self.qt_plotter = None
+        if _HAS_PYQTGRAPH:
+            try:
+                self.qt_plotter = RealTimePlotter(
+                    buffer_size=2000, update_frequency=5)
+            except Exception:
+                pass
 
     def mainThread(self):
         dSession = vsiCommonPythonApi.connectToServer(
@@ -170,7 +196,6 @@ class Visualizer:
                 if vsiCommonPythonApi.isStopRequested():
                     raise Exception("stopRequested")
 
-                # Receive all 8 signals
                 for can_id, attr in [
                     (10, 'v_cmd'), (11, 'omega_cmd'),
                     (20, 'x_robot'), (21, 'y_robot'), (22, 'theta_robot'),
@@ -188,10 +213,16 @@ class Visualizer:
                 self.kpi_logger.log(t_sec, e_lat, s.x_robot, s.y_robot,
                                     s.x_path, s.y_path, s.v_cmd, s.omega_cmd)
 
-                self.plotter.update_data(
+                self.pygame_vis.update_data(
                     t_sec, s.x_robot, s.y_robot, s.theta_robot,
                     s.x_path, s.y_path, s.theta_path,
                     s.v_cmd, s.omega_cmd, e_lat)
+
+                if self.qt_plotter is not None:
+                    self.qt_plotter.update_data(
+                        t_sec, s.x_robot, s.y_robot, s.theta_robot,
+                        s.x_path, s.y_path, s.theta_path,
+                        s.v_cmd, s.omega_cmd, e_lat)
 
                 print(f"\n+=visualizer+=  t={t_sec:.3f}s  e_lat={e_lat:.6f}")
 
@@ -218,16 +249,18 @@ class Visualizer:
         except:
             vsiCommonPythonApi.advanceSimulation(self.simulationStep + 1)
 
-        self.plotter.close()
+        self.pygame_vis.close()
+        if self.qt_plotter is not None:
+            self.qt_plotter.close()
 
-        # Save results to <project_root>/results/
-        # Script is at: <root>/src/lineFollowerDT/src/visualizer/visualizer.py
         script_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.abspath(os.path.join(script_dir, '..', '..', '..', '..'))
         results_dir = os.path.join(project_root, 'results')
         figures_dir = os.path.join(results_dir, 'figures')
+
         self.kpi_logger.save_csv(os.path.join(results_dir, f"{self.output_tag}.csv"))
         self.kpi_logger.save_plots(os.path.join(figures_dir, self.output_tag))
+
         kpis = self.kpi_logger.compute_kpis()
         print("\n" + "=" * 50)
         print(f"  KPI RESULTS ({self.output_tag})")

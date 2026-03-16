@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Client 1 — PID Controller for Line-Following Robot.
 
-Receives robot pose and path reference from the Simulator,
-computes lateral error, applies PID control to produce angular
-velocity commands, and sends (v_cmd, omega_cmd) back.
+Uses a PID control law that minimizes both lateral and heading error:
+    omega = -(kp * e_lat  +  ki * integral(e_lat)  +  kd * e_heading)
+
+The heading error serves as the derivative term (derivative on measurement),
+since e_heading ~ de_lat/dt through the kinematic chain.  This avoids the
+finite-difference derivative spike that causes overshoot.
 """
 from __future__ import print_function
 import struct
@@ -11,7 +14,6 @@ import sys
 import os
 import math
 import argparse
-import numpy as np
 
 current_dir = os.getcwd()
 sys.path.append(current_dir)
@@ -24,27 +26,48 @@ import VsiCanPythonGateway as vsiCanPythonGateway
 
 
 class PIDController:
-    """Discrete PID with anti-windup clamping."""
+    """Discrete PID with anti-windup and integral saturation.
 
-    def __init__(self, kp, ki, kd, dt=0.001):
-        self.kp, self.ki, self.kd, self.dt = kp, ki, kd, dt
+    Supports an optional `derivative_override` so the caller can supply
+    the heading error directly instead of relying on finite differences.
+    """
+
+    def __init__(self, kp, ki, kd, dt=0.001,
+                 max_output=5.0, max_integral=1.0):
+        self.kp = kp
+        self.ki = ki
+        self.kd = kd
+        self.dt = dt
+        self.max_output = max_output
+        self.max_integral = max_integral
         self.integral = 0.0
-        self.prev_error = 0.0
+        self.prev_error = None
 
-    def compute(self, error):
+    def compute(self, error, derivative_override=None):
         self.integral += error * self.dt
-        derivative = (error - self.prev_error) / self.dt
+        self.integral = max(-self.max_integral,
+                            min(self.max_integral, self.integral))
+
+        if derivative_override is not None:
+            derivative = derivative_override
+        elif self.prev_error is None:
+            derivative = 0.0
+        else:
+            derivative = (error - self.prev_error) / self.dt
         self.prev_error = error
-        output = self.kp * error + self.ki * self.integral + self.kd * derivative
-        max_out = 5.0
-        if abs(output) > max_out:
+
+        output = (self.kp * error
+                  + self.ki * self.integral
+                  + self.kd * derivative)
+
+        if abs(output) > self.max_output:
             self.integral -= error * self.dt
-            output = max_out if output > 0 else -max_out
+            output = self.max_output if output > 0 else -self.max_output
         return output
 
     def reset(self):
         self.integral = 0.0
-        self.prev_error = 0.0
+        self.prev_error = None
 
 
 class MySignals:
@@ -80,6 +103,10 @@ class Controller:
         self._converge_counter = 0
         self._converged = False
 
+    @staticmethod
+    def _normalize_angle(a):
+        return (a + math.pi) % (2 * math.pi) - math.pi
+
     def mainThread(self):
         dSession = vsiCommonPythonApi.connectToServer(
             self.localHost, self.domain, self.portNum, self.componentId)
@@ -97,7 +124,6 @@ class Controller:
                 if vsiCommonPythonApi.isStopRequested():
                     raise Exception("stopRequested")
 
-                # --- Receive robot state from Simulator ---
                 for can_id, attr in [
                     (20, 'x_robot'), (21, 'y_robot'), (22, 'theta_robot'),
                     (23, 'x_path'),  (24, 'y_path'),  (25, 'theta_path'),
@@ -107,18 +133,18 @@ class Controller:
                     setattr(self.mySignals, attr, val)
 
                 s = self.mySignals
-                # Lateral error in the path's Frenet frame
                 e_lat = (-math.sin(s.theta_path) * (s.x_robot - s.x_path)
                          + math.cos(s.theta_path) * (s.y_robot - s.y_path))
+                e_heading = self._normalize_angle(s.theta_robot - s.theta_path)
 
                 if self._converged:
                     v_cmd = 0.0
                     omega_cmd = 0.0
                 else:
-                    omega_cmd = -self.pid.compute(e_lat)
+                    omega_cmd = -self.pid.compute(e_lat, derivative_override=e_heading)
                     v_cmd = self.v_const
 
-                    if abs(e_lat) < self.converge_threshold:
+                    if abs(e_lat) < self.converge_threshold and abs(e_heading) < 0.05:
                         self._converge_counter += 1
                     else:
                         self._converge_counter = 0
@@ -131,7 +157,6 @@ class Controller:
                 self.mySignals.v_cmd = v_cmd
                 self.mySignals.omega_cmd = omega_cmd
 
-                # --- Send velocity commands on CAN ---
                 packed_v = self.packBytes('d', v_cmd)
                 self.sendCanVariable(packed_v, 0, 64, 10)
 
@@ -140,7 +165,7 @@ class Controller:
 
                 print(f"\n+=controller+=")
                 print(f"  VSI time: {vsiCommonPythonApi.getSimulationTimeInNs()} ns")
-                print(f"  e_lat={e_lat:.6f}  v={v_cmd:.3f}  w={omega_cmd:.4f}\n")
+                print(f"  e_lat={e_lat:.6f}  e_head={e_heading:.4f}  v={v_cmd:.3f}  w={omega_cmd:.4f}\n")
 
                 self.updateInternalVariables()
                 if vsiCommonPythonApi.isStopRequested():
@@ -190,8 +215,8 @@ def main():
     p.add_argument('--domain', default='AF_UNIX')
     p.add_argument('--server-url', default='localhost')
     p.add_argument('--kp', type=float, default=2.0)
-    p.add_argument('--ki', type=float, default=0.3)
-    p.add_argument('--kd', type=float, default=1.0)
+    p.add_argument('--ki', type=float, default=0.1)
+    p.add_argument('--kd', type=float, default=3.0)
     p.add_argument('--v-const', type=float, default=0.5)
     args = p.parse_args()
     ctrl = Controller(args)
